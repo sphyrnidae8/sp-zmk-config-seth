@@ -23,7 +23,7 @@ The stock MBK Low Profile PBT Choc blank keycaps are more slippery than I am acc
 ### Design
 The column stagger Mariano wound up with for the Swept seems just perfect. My hands naturally curl to fit the profile perfectly. It's interesting how awkward it is to reach some of the far-column pinky-keys. I wonder if this might be why those keys on standard keyboards are traditionally wider. I'm still adjusting to the ortholinear layout; I suspect that is going to take a while to get used to.
 
-I'm a little worried about breaking or wearing out the tiny power switches. They are soldered on, and seem delicate.
+I'm a little worried about breaking or wearing out the tiny power switches. They are soldered on, and seem delicate. _Edit: Mariano tells me the power switches have two plastic support stems that secure them in the PCB and reduce stress from lateral movements; he also turns off his halves anytime he steps away for more than an hour, so it sounds like the component is well battle-tested._
 
 I love the clean look of the matte black PCB and neatly laid-out traces. And Mariano's soldering is impeccable.
 
