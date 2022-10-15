@@ -39,7 +39,7 @@
  &kp GRAVE        &kp N1        &kp N2        &kp N3        &kp N4        &kp N5            &kp N6    &kp N7  &kp N8     &kp N9  &kp N0  &kp BSPC
     &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4          &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans    &trans
  &kp LSHFT  &out OUT_USB  &out OUT_BLE    &bt BT_CLR    &bt BT_PRV    &bt BT_NXT            &trans    &trans  &trans     &trans  &trans    &trans
-                                              &trans         &mo 0        &trans            &trans    &trans  &trans
+                                               &trans        &trans        &trans            &trans    &trans  &trans
             >;
         };
 
@@ -55,6 +55,15 @@
  &kp LCTRL    &trans  &trans    &trans    &trans     &trans          &kp MINUS  &kp EQUAL         &kp LBKT  &kp RBKT  &kp BSLH  &kp GRAVE
  &kp LSHFT    &trans  &trans    &trans    &trans     &trans          &kp UNDER   &kp PLUS         &kp LBRC  &kp RBRC  &kp PIPE  &kp TILDE
                                 &trans    &trans     &trans              &mo 0     &trans           &trans
+            >;
+        };
+
+        media {
+            bindings = <
+ &kp C_BRI_DN  &kp C_BRIGHTNESS_INC  &kp F3  &kp F4  &kp F5  &kp F6          &kp C_PREV  &kp C_PP  &kp C_NEXT  &kp C_MUTE  &kp C_VOL_DN  &kp C_VOLUME_UP
+       &trans                &trans  &trans  &trans  &trans  &trans              &trans    &trans      &trans      &trans        &trans           &trans
+       &trans                &trans  &trans  &trans  &trans  &trans              &trans    &trans      &trans      &trans        &trans            &to 0
+                                             &trans  &trans  &trans              &trans    &trans      &trans
             >;
         };
     };
