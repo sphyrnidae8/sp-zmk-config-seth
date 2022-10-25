@@ -13,7 +13,6 @@
 #define NAV     1
 #define NUMPAD  2
 #define MEDIA   3
-
 #define HYPE LC(LA(LGUI))
 #define RYPE RC(LA(LGUI))
 
@@ -32,70 +31,100 @@
             compatible = "zmk,behavior-mod-morph";
             label = "NUMSH_1";
             #binding-cells = <0>;
-            bindings = <&kp KP_N1>, <&kp EXCLAMATION>;
+            bindings =
+                <&kp KP_N1>,
+                <&kp EXCLAMATION>;
+
             mods = <(MOD_LSFT)>;
         };
         npsh2: numpad_shift_2 {
             compatible = "zmk,behavior-mod-morph";
             label = "NUMSH_2";
             #binding-cells = <0>;
-            bindings = <&kp KP_N2>, <&kp AT>;
+            bindings =
+                <&kp KP_N2>,
+                <&kp AT>;
+
             mods = <(MOD_LSFT)>;
         };
         npsh3: numpad_shift_3 {
             compatible = "zmk,behavior-mod-morph";
             label = "NUMSH_3";
             #binding-cells = <0>;
-            bindings = <&kp KP_N3>, <&kp HASH>;
+            bindings =
+                <&kp KP_N3>,
+                <&kp HASH>;
+
             mods = <(MOD_LSFT)>;
         };
         npsh4: numpad_shift_4 {
             compatible = "zmk,behavior-mod-morph";
             label = "NUMSH_4";
             #binding-cells = <0>;
-            bindings = <&kp KP_N4>, <&kp DOLLAR>;
+            bindings =
+                <&kp KP_N4>,
+                <&kp DOLLAR>;
+
             mods = <(MOD_LSFT)>;
         };
         npsh5: numpad_shift_5 {
             compatible = "zmk,behavior-mod-morph";
             label = "NUMSH_5";
             #binding-cells = <0>;
-            bindings = <&kp KP_N5>, <&kp PERCENT>;
+            bindings =
+                <&kp KP_N5>,
+                <&kp PERCENT>;
+
             mods = <(MOD_LSFT)>;
         };
         npsh6: numpad_shift_6 {
             compatible = "zmk,behavior-mod-morph";
             label = "NUMSH_6";
             #binding-cells = <0>;
-            bindings = <&kp KP_N6>, <&kp CARET>;
+            bindings =
+                <&kp KP_N6>,
+                <&kp CARET>;
+
             mods = <(MOD_LSFT)>;
         };
         npsh7: numpad_shift_7 {
             compatible = "zmk,behavior-mod-morph";
             label = "NUMSH_7";
             #binding-cells = <0>;
-            bindings = <&kp KP_N7>, <&kp AMPERSAND>;
+            bindings =
+                <&kp KP_N7>,
+                <&kp AMPERSAND>;
+
             mods = <(MOD_LSFT)>;
         };
         npsh8: numpad_shift_8 {
             compatible = "zmk,behavior-mod-morph";
             label = "NUMSH_8";
             #binding-cells = <0>;
-            bindings = <&kp KP_N8>, <&kp ASTERISK>;
+            bindings =
+                <&kp KP_N8>,
+                <&kp ASTERISK>;
+
             mods = <(MOD_LSFT)>;
         };
         npsh9: numpad_shift_9 {
             compatible = "zmk,behavior-mod-morph";
             label = "NUMSH_9";
             #binding-cells = <0>;
-            bindings = <&kp KP_N9>, <&kp LEFT_PARENTHESIS>;
+            bindings =
+                <&kp KP_N9>,
+                <&kp LEFT_PARENTHESIS>;
+
             mods = <(MOD_LSFT)>;
         };
         npsh0: numpad_shift_0 {
             compatible = "zmk,behavior-mod-morph";
             label = "NUMSH_0";
             #binding-cells = <0>;
-            bindings = <&kp KP_N0>, <&kp RIGHT_PARENTHESIS>;
+            bindings =
+                <&kp KP_N0>,
+                <&kp RIGHT_PARENTHESIS>;
+
             mods = <(MOD_LSFT)>;
         };
     };
@@ -105,37 +134,37 @@
 
         default_layer {
             bindings = <
-&kp TAB                &kp Q   &kp W     &kp E       &kp R            &kp T               &kp Y      &kp U      &kp I      &kp O      &kp P      &kp BSPC
-&mt LEFT_CONTROL ESC   &kp A   &kp S     &kp D       &kp F            &kp G               &kp H      &kp J      &kp K      &kp L      &kp SEMI   &kp SQT
-&kp RETURN             &kp Z   &kp X     &kp C       &kp V            &kp B               &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH   &kp ESC
-                                         &kp LGUI    &kp LEFT_SHIFT   &mo NUMPAD          &mo NAV    &kp SPACE  &kp LEFT_ALT
+              &kp TAB   &kp Q   &kp W     &kp E           &kp R   &kp T           &kp Y      &kp U         &kp I    &kp O     &kp P  &kp BSPC
+ &mt LEFT_CONTROL ESC   &kp A   &kp S     &kp D           &kp F   &kp G           &kp H      &kp J         &kp K    &kp L  &kp SEMI   &kp SQT
+           &kp RETURN   &kp Z   &kp X     &kp C           &kp V   &kp B           &kp N      &kp M     &kp COMMA  &kp DOT  &kp FSLH   &kp ESC
+                                       &kp LGUI  &kp LEFT_SHIFT   &mo 2           &mo 1  &kp SPACE  &kp LEFT_ALT
             >;
         };
 
         lower_layer {
             bindings = <
-&kp TILDE &kp N1  &kp N2  &kp N3  &kp N4  &kp N5     &kp N6              &kp N7         &kp N8      &kp N9        &kp N0         &kp BSPC
-&kp HYPE  &trans  &trans  &trans  &trans  &trans     &kp LEFT            &kp DOWN       &kp UP      &kp RIGHT     &kp C_VOL_DN   &kp C_VOLUME_UP
-&kp RYPE  &trans  &trans  &trans  &trans  &trans     &kp PG_UP           &kp PAGE_DOWN  &kp HOME    &kp END       &mo DEFAULT    &to MEDIA
-                                  &trans  &trans     &trans              &trans         &trans         &trans
+        &kp TILDE  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5          &kp C_BRI_DN   &kp C_BRI_UP  &kp C_PLAY_PAUSE  &kp C_VOL_DN  &kp C_VOL_UP  &kp K_MUTE
+ &kp LC(LA(LGUI))  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0              &kp LEFT       &kp DOWN            &kp UP     &kp RIGHT    &bt BT_PRV  &bt BT_NXT
+ &kp RC(LA(LGUI))  &trans  &trans  &trans  &trans  &trans             &kp PG_UP  &kp PAGE_DOWN          &kp HOME       &kp END         &mo 0       &to 3
+                                   &trans  &trans  &trans                &trans         &trans            &trans
             >;
         };
 
         raise_layer {
             bindings = <
-&kp GRAVE &kp KP_ASTERISK  &npsh7  &npsh8  &npsh9  &kp KP_MINUS          &kp KP_SLASH &kp KP_CLEAR &kp LPAR  &kp RPAR  &kp SEMI  &kp BSPC
-&kp HYPE  &kp KP_EQUAL     &npsh4  &npsh5  &npsh6  &kp KP_PLUS           &kp MINUS    &kp EQUAL    &kp LBKT  &kp RBKT  &kp BSLH  &kp GRAVE
-&kp RYPE  &kp KP_DOT       &npsh1  &npsh2  &npsh3  &npsh0                &kp UNDER    &kp PLUS     &kp LBRC  &kp RBRC  &kp PIPE  &kp TILDE
-                                   &trans  &trans  &trans                &trans       &trans       &trans
+        &kp GRAVE  &kp KP_ASTERISK  &npsh7  &npsh8  &npsh9  &kp KP_MINUS          &kp KP_SLASH  &kp KP_CLEAR  &kp LPAR  &kp RPAR  &kp SEMI   &kp BSPC
+ &kp LC(LA(LGUI))     &kp KP_EQUAL  &npsh4  &npsh5  &npsh6   &kp KP_PLUS             &kp MINUS     &kp EQUAL  &kp LBKT  &kp RBKT  &kp BSLH  &kp GRAVE
+ &kp RC(LA(LGUI))       &kp KP_DOT  &npsh1  &npsh2  &npsh3        &npsh0             &kp UNDER      &kp PLUS  &kp LBRC  &kp RBRC  &kp PIPE  &kp TILDE
+                                            &trans  &trans        &trans                &trans        &trans    &trans
             >;
         };
 
         media {
             bindings = <
-&kp C_BRI_DN  &kp C_BRIGHTNESS_INC  &kp F3  &kp F4  &kp F5  &kp F6            &kp C_PREV    &kp C_PP      &kp C_NEXT    &kp C_MUTE    &kp C_VOL_DN  &kp C_VOLUME_UP
-&trans        &trans                &trans  &trans  &trans  &trans            &bt BT_CLR    &trans        &out OUT_USB  &out OUT_BLE  &bt BT_PRV    &bt BT_NXT
-&trans        &trans                &trans  &trans  &trans  &trans            &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &to DEFAULT
-                                            &trans  &trans  &trans            &trans        &trans        &trans
+ &kp C_BRI_DN  &kp C_BRIGHTNESS_INC  &kp F3  &kp F4  &kp F5  &kp F6            &kp C_PREV      &kp C_PP    &kp C_NEXT    &kp C_MUTE  &kp C_VOL_DN  &kp C_VOLUME_UP
+       &trans                &trans  &trans  &trans  &trans  &trans            &bt BT_CLR        &trans  &out OUT_USB  &out OUT_BLE    &bt BT_PRV       &bt BT_NXT
+       &trans                &trans  &trans  &trans  &trans  &trans          &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0            &to 0
+                                             &trans  &trans  &trans                &trans        &trans        &trans
             >;
         };
     };
