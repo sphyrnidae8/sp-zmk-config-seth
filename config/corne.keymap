@@ -35,7 +35,7 @@
             bindings = <
         &kp TILDE  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5             &kp N6         &kp N7    &kp N8     &kp N9        &kp N0         &kp BSPC
  &kp LC(LA(LGUI))  &trans  &trans  &trans  &trans  &trans           &kp LEFT       &kp DOWN    &kp UP  &kp RIGHT  &kp C_VOL_DN  &kp C_VOLUME_UP
- &kp RC(LA(LGUI))  &trans  &trans  &trans  &trans  &trans          &kp PG_UP  &kp PAGE_DOWN  &kp HOME    &kp END        &trans            &to 3
+ &kp RC(LA(LGUI))  &trans  &trans  &trans  &trans  &trans          &kp PG_UP  &kp PAGE_DOWN  &kp HOME    &kp END         &mo 0            &to 3
                                    &trans  &trans  &trans             &trans         &trans    &trans
             >;
         };
