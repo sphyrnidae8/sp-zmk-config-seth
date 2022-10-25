@@ -19,6 +19,79 @@
         };
     };
 
+    behaviors {
+        npsh1: numpad_shift_1 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "NUMSH_1";
+            #binding-cells = <0>;
+            bindings = <&kp KP_N1>, <&kp EXCLAMATION>;
+            mods = <(MOD_LSFT)>;
+        };
+        npsh2: numpad_shift_2 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "NUMSH_2";
+            #binding-cells = <0>;
+            bindings = <&kp KP_N2>, <&kp AT>;
+            mods = <(MOD_LSFT)>;
+        };
+        npsh3: numpad_shift_3 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "NUMSH_3";
+            #binding-cells = <0>;
+            bindings = <&kp KP_N3>, <&kp HASH>;
+            mods = <(MOD_LSFT)>;
+        };
+        npsh4: numpad_shift_4 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "NUMSH_4";
+            #binding-cells = <0>;
+            bindings = <&kp KP_N4>, <&kp DOLLAR>;
+            mods = <(MOD_LSFT)>;
+        };
+        npsh5: numpad_shift_5 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "NUMSH_5";
+            #binding-cells = <0>;
+            bindings = <&kp KP_N5>, <&kp PERCENT>;
+            mods = <(MOD_LSFT)>;
+        };
+        npsh6: numpad_shift_6 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "NUMSH_6";
+            #binding-cells = <0>;
+            bindings = <&kp KP_N6>, <&kp CARET>;
+            mods = <(MOD_LSFT)>;
+        };
+        npsh7: numpad_shift_7 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "NUMSH_7";
+            #binding-cells = <0>;
+            bindings = <&kp KP_N7>, <&kp AMPERSAND>;
+            mods = <(MOD_LSFT)>;
+        };
+        npsh8: numpad_shift_8 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "NUMSH_8";
+            #binding-cells = <0>;
+            bindings = <&kp KP_N8>, <&kp ASTERISK>;
+            mods = <(MOD_LSFT)>;
+        };
+        npsh9: numpad_shift_9 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "NUMSH_9";
+            #binding-cells = <0>;
+            bindings = <&kp KP_N9>, <&kp LEFT_PARENTHESIS>;
+            mods = <(MOD_LSFT)>;
+        };
+        npsh0: numpad_shift_0 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "NUMSH_0";
+            #binding-cells = <0>;
+            bindings = <&kp KP_N0>, <&kp RIGHT_PARENTHESIS>;
+            mods = <(MOD_LSFT)>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -42,10 +115,10 @@
 
         raise_layer {
             bindings = <
-&kp GRAVE         &kp KP_ASTERISK  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_MINUS       &kp KP_SLASH &kp KP_CLEAR &kp LPAR  &kp RPAR  &kp SEMI  &kp BSPC
-&kp LC(LA(LGUI))  &kp KP_EQUAL     &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_PLUS        &kp MINUS    &kp EQUAL    &kp LBKT  &kp RBKT  &kp BSLH  &kp GRAVE
-&kp RC(LA(LGUI))  &kp KP_DOT       &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_N0          &kp UNDER    &kp PLUS     &kp LBRC  &kp RBRC  &kp PIPE  &kp TILDE
-                                              &trans     &trans     &trans             &trans       &trans       &trans
+&kp GRAVE         &kp KP_ASTERISK  &npsh7  &npsh8  &npsh9  &kp KP_MINUS       &kp KP_SLASH &kp KP_CLEAR &kp LPAR  &kp RPAR  &kp SEMI  &kp BSPC
+&kp LC(LA(LGUI))  &kp KP_EQUAL     &npsh4  &npsh5  &npsh6  &kp KP_PLUS        &kp MINUS    &kp EQUAL    &kp LBKT  &kp RBKT  &kp BSLH  &kp GRAVE
+&kp RC(LA(LGUI))  &kp KP_DOT       &npsh1  &npsh2  &npsh3  &npsh0             &kp UNDER    &kp PLUS     &kp LBRC  &kp RBRC  &kp PIPE  &kp TILDE
+                                           &trans  &trans  &trans             &trans       &trans       &trans
             >;
         };
 
