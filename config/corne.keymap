@@ -13,8 +13,19 @@
 #define NAV     1
 #define NUMPAD  2
 #define MEDIA   3
+
 #define HYPE LC(LA(LGUI))
 #define RYPE RC(LA(LGUI))
+
+#define KA_TOG    LC(F1)
+#define F2_MENU   LC(F2)
+#define F2_DOCK   LC(F3)
+#define F2_WIN    LC(F4)
+#define F2_TOOL   LC(F5)
+#define F2_FLOAT  LC(F6)
+#define TAB_TOG   LC(F7)
+#define F2_STAT   LC(F8)
+#define HELP_MENU LG(LS(SLASH))
 
 / {
     macros {
@@ -143,7 +154,7 @@
 
         right {
             bindings = <
-        &kp TILDE  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5          &kp C_BRI_DN   &kp C_BRI_UP  &kp C_PLAY_PAUSE  &kp C_VOL_DN  &kp C_VOL_UP  &kp K_MUTE
+        &kp TILDE  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5           &kp F2_MENU    &kp F2_DOCK       &kp F2_STAT &kp HELP_MENU   &kp TAB_TOG  &kp KA_TOG
  &kp LC(LA(LGUI))  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0              &kp LEFT       &kp DOWN            &kp UP     &kp RIGHT    &bt BT_PRV  &bt BT_NXT
  &kp RC(LA(LGUI))  &trans  &trans  &trans  &trans  &trans             &kp PG_UP  &kp PAGE_DOWN          &kp HOME       &kp END        &trans      &trans
                                    &trans  &trans  &trans                &trans         &trans            &trans
