@@ -179,10 +179,10 @@
 
         window {
             bindings = <
- &trans  &trans  &trans  &trans  &trans  &trans          &kp N1  &kp N2  &kp N3  &kp N4  &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans          &kp N1  &kp N2  &kp N3  &kp N4  &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                         &trans  &trans  &trans          &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans          &kp     LG(LC(N1))      &kp LG(LC(N2))      &kp LG(LC(N3))      &kp LG(LC(N4))  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans          &kp LG(LC(LS(N1)))  &kp LG(LC(LS(N2)))  &kp LG(LC(LS(N3)))  &kp LG(LC(LS(N4)))  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans                      &trans              &trans              &trans              &trans  &trans  &trans
+                         &trans  &trans  &trans                      &trans              &trans              &trans
             >;
         };
     };
