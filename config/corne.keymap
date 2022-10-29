@@ -30,6 +30,14 @@
 };
 
 / {
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+        tri_layer {
+            if-layers = <1 2>;
+            then-layer = <5>;
+        };
+    };
+
     macros {
         hyper: hyper {
             compatible = "zmk,behavior-macro";
@@ -151,6 +159,7 @@
     keymap {
         compatible = "zmk,keymap";
 
+        /* 0 Layer */
         default {
             bindings = <
               &kp TAB   &kp Q   &kp W            &kp E           &kp R       &kp T               &kp Y        &kp U           &kp I    &kp O     &kp P     &lt 4 BACKSPACE
@@ -160,6 +169,7 @@
             >;
         };
 
+        /* 1 Layer */
         right {
             bindings = <
         &kp TILDE  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5          &kp LC(F2)     &kp LC(F3)  &kp LC(F8)  &kp LG(LS(SLASH))         &kp LC(F5)      &kp LC(F7)
@@ -169,6 +179,7 @@
             >;
         };
 
+        /* 2 Layer */
         left {
             bindings = <
       &mouse_keys  &kp KP_ASTERISK  &npsh7  &npsh8  &npsh9  &kp KP_MINUS          &kp KP_SLASH  &kp KP_CLEAR  &kp LPAR  &kp RPAR  &kp SEMI         &kp BSPC
@@ -178,6 +189,7 @@
             >;
         };
 
+        /* 3 Layer */
         media {
             bindings = <
  &trans   &kp F1   &kp F2   &kp F3   &kp F4   &kp F5            &kp C_MUTE    &kp C_PREV      &kp C_PP    &kp C_NEXT  &kp C_BRI_DN  &kp C_BRI_UP
@@ -187,6 +199,7 @@
             >;
         };
 
+        /* 4 Layer */
         window {
             bindings = <
  &trans  &trans  &trans  &trans  &trans  &trans              &kp LG(LC(N1))      &kp LG(LC(N2))      &kp LG(LC(N3))      &kp LG(LC(N4))  &kp LG(GRAVE)  &trans
@@ -195,5 +208,18 @@
                          &trans  &trans  &trans                      &trans              &trans              &trans
             >;
         };
+
+        /* 5 Layer */
+        adjust {
+            bindings = <
+ &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
+                         &trans  &trans  &trans                    &trans  &trans  &trans
+            >;
+        };
+
     };
 };
+
+/* vim:ft=c: */
