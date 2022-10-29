@@ -43,13 +43,41 @@
             compatible = "zmk,behavior-macro";
             label = "hyper";
             #binding-cells = <0>;
-            bindings = <&kp LCMD &kp LSHFT &kp LALT &kp LCTRL>;
+            bindings
+                = <&macro_press   &kp LCMD &kp LSHFT &kp LALT &kp LCTRL>
+                , <&macro_pause_for_release>
+                , <&macro_release &kp LCMD &kp LSHFT &kp LALT &kp LCTRL>
+                ;
         };
         mouse_keys: mouse_keys {
             compatible = "zmk,behavior-macro";
             label = "mouse_keys";
             #binding-cells = <0>;
             bindings = <&kp LALT &kp LALT &kp LALT &kp LALT &kp LALT>;
+        };
+        vim_save: vim_save {
+            compatible = "zmk,behavior-macro";
+            label = "vim_save";
+            #binding-cells = <0>;
+            bindings = <&macro_tap &kp ESC &kp COLON &kp W &kp RETURN>;
+        };
+        vim_exit: vim_exit {
+            compatible = "zmk,behavior-macro";
+            label = "vim_exit";
+            #binding-cells = <0>;
+            bindings = <&macro_tap &kp ESC &kp COLON &kp W &kp Q &kp RETURN>;
+        };
+        tmux_nw: tmux_nw {
+            compatible = "zmk,behavior-macro";
+            label = "tmux_nw";
+            #binding-cells = <0>;
+            bindings = <&kp LC(A) &kp RPAR>;
+        };
+        tmux_pw: tmux_pw {
+            compatible = "zmk,behavior-macro";
+            label = "tmux_pw";
+            #binding-cells = <0>;
+            bindings = <&kp LC(A) &kp LPAR>;
         };
     };
 
@@ -212,12 +240,13 @@
         /* 5 Layer */
         adjust {
             bindings = <
- &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
-                         &trans  &trans  &trans                    &trans  &trans  &trans
+ &trans  &trans     &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &vim_save  &trans  &trans  &trans            &trans  &trans  &trans  &tmux_pw  &trans  &trans
+ &trans  &trans  &vim_exit  &trans  &trans  &trans            &trans  &trans  &trans  &tmux_nw  &trans  &trans
+                            &trans  &trans  &trans            &trans  &trans  &trans
             >;
         };
+        /* Do not use this then-layer for regular layer switching */
 
     };
 };
