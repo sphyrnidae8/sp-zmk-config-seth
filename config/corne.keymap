@@ -25,6 +25,10 @@
 #define F2_STAT   LC(F8)
 #define HELP_MENU LG(LS(SLASH))
 
+&mt {
+    tapping-term-ms = <300>;
+};
+
 / {
     macros {
         hyper: hyper {
