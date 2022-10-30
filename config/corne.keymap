@@ -52,6 +52,48 @@
             #binding-cells = <0>;
             bindings = <&kp LALT &kp LALT &kp LALT &kp LALT &kp LALT>;
         };
+        vim_save: vim_save {
+            compatible = "zmk,behavior-macro";
+            label = "vim_save";
+            #binding-cells = <0>;
+            bindings = <&macro_tap &kp ESC &kp COLON &kp W &kp RETURN>;
+        };
+        vim_exit: vim_exit {
+            compatible = "zmk,behavior-macro";
+            label = "vim_exit";
+            #binding-cells = <0>;
+            bindings = <&macro_tap &kp ESC &kp COLON &kp W &kp Q &kp RETURN>;
+        };
+        vim_exit_all: vim_exit_all {
+            compatible = "zmk,behavior-macro";
+            label = "vim_exit_all";
+            #binding-cells = <0>;
+            bindings = <&macro_tap &kp ESC &kp COLON &kp Q &kp A &kp L &kp RETURN>;
+        };
+        tmux_ns: tmux_ns {
+            compatible = "zmk,behavior-macro";
+            label = "tmux_ns";
+            #binding-cells = <0>;
+            bindings = <&kp LC(A) &kp RPAR>;
+        };
+        tmux_ps: tmux_ps {
+            compatible = "zmk,behavior-macro";
+            label = "tmux_ps";
+            #binding-cells = <0>;
+            bindings = <&kp LC(A) &kp LPAR>;
+        };
+        tmux_nw: tmux_nw {
+            compatible = "zmk,behavior-macro";
+            label = "tmux_nw";
+            #binding-cells = <0>;
+            bindings = <&kp LC(A) &kp N>;
+        };
+        tmux_pw: tmux_pw {
+            compatible = "zmk,behavior-macro";
+            label = "tmux_pw";
+            #binding-cells = <0>;
+            bindings = <&kp LC(A) &kp P>;
+        };
     };
 
     behaviors {
@@ -219,10 +261,10 @@
 
         adjust {
             bindings = <
- &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                         &trans  &trans  &trans          &trans  &trans  &trans
+ &trans  &trans  &vim_exit_all  &trans  &trans  &trans            &trans  &trans  &trans      &trans  &trans  &trans
+ &trans  &trans      &vim_save  &trans  &trans  &trans            &trans  &trans  &tmux_pw  &tmux_ps  &trans  &trans
+ &trans  &trans      &vim_exit  &trans  &trans  &trans            &trans  &trans  &tmux_nw  &tmux_ns  &trans  &trans
+                                &trans  &trans  &trans            &trans  &trans  &trans
             >;
         };
 
