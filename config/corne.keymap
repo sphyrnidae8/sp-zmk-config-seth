@@ -217,7 +217,7 @@
         default {
             bindings = <
               &kp TAB  &lt 6 Q   &kp W            &kp E           &kp R       &kp T               &kp Y        &kp U           &kp I    &kp O     &kp P         &lt 4 BACKSPACE
- &mt LEFT_CONTROL ESC    &kp A   &kp S            &kp D           &kp F     &lt 6 G               &kp H        &kp J           &kp K    &kp L  &kp SEMI  &mt RCTRL SINGLE_QUOTE
+ &mt LEFT_CONTROL ESC    &kp A   &kp S            &kp D           &kp F     &lt 6 G               &kp H      &lt 6 J         &lt 2 K    &kp L  &kp SEMI  &mt RCTRL SINGLE_QUOTE
        &mt LALT GRAVE    &kp Z   &kp X            &kp C           &kp V       &kp B               &kp N        &kp M       &kp COMMA  &kp DOT  &kp FSLH      &mt RALT BACKSLASH
                                         &mt LGUI RETURN  &mt LSHIFT ESC  &lt 2 LBKT          &lt 1 RBKT  &lt 3 SPACE  &mt RGUI COLON
             >;
@@ -280,10 +280,10 @@
 
         symbol {
             bindings = <
- &trans  &trans  &trans    &kp LEFT_BRACE    &kp RIGHT_BRACE  &trans          &kp LESS_THAN  &kp GREATER_THAN    &kp LEFT_BRACE    &kp RIGHT_BRACE  &kp SEMICOLON  &kp AMPERSAND
- &trans  &trans  &trans          &kp LPAR           &kp RPAR  &trans               &kp PLUS         &kp EQUAL          &kp LPAR           &kp RPAR     &kp RETURN   &kp ASTERISK
- &trans  &trans  &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans              &kp MINUS   &kp EXCLAMATION  &kp LEFT_BRACKET  &kp RIGHT_BRACKET   &kp QUESTION       &kp PIPE
-                                   &trans             &trans  &trans                 &trans            &trans            &trans
+ &trans  &trans  &kp AMPERSAND  &kp ASTERISK   &kp LPAR  &kp GRAVE          &kp LESS_THAN  &kp GREATER_THAN    &kp LEFT_BRACE    &kp RIGHT_BRACE  &kp SEMICOLON  &kp AMPERSAND
+ &trans  &trans     &kp DOLLAR   &kp PERCENT  &kp CARET  &kp TILDE               &kp PLUS         &kp EQUAL          &kp LPAR           &kp RPAR     &kp RETURN   &kp ASTERISK
+ &trans  &trans       &kp EXCL        &kp AT   &kp HASH   &kp RPAR              &kp MINUS   &kp EXCLAMATION  &kp LEFT_BRACKET  &kp RIGHT_BRACKET   &kp QUESTION       &kp PIPE
+                                      &trans     &trans     &trans                 &trans            &trans            &trans
             >;
         };
 
