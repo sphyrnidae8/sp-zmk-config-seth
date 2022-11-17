@@ -280,10 +280,10 @@
 
         symbol {
             bindings = <
- &trans  &trans  &trans          &kp LPAR           &kp RPAR  &trans          &trans  &trans          &kp LPAR           &kp RPAR  &trans  &trans
- &trans  &trans  &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans          &trans  &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans  &trans
- &trans  &trans  &trans    &kp LEFT_BRACE    &kp RIGHT_BRACE  &trans          &trans  &trans          &kp LBRC    &kp RIGHT_BRACE  &trans  &trans
-                                   &trans             &trans  &trans          &trans  &trans            &trans
+ &trans  &trans  &trans    &kp LEFT_BRACE    &kp RIGHT_BRACE  &trans          &kp LESS_THAN  &kp GREATER_THAN    &kp LEFT_BRACE    &kp RIGHT_BRACE  &kp SEMICOLON  &kp AMPERSAND
+ &trans  &trans  &trans          &kp LPAR           &kp RPAR  &trans               &kp PLUS         &kp EQUAL          &kp LPAR           &kp RPAR     &kp RETURN   &kp ASTERISK
+ &trans  &trans  &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans              &kp MINUS   &kp EXCLAMATION  &kp LEFT_BRACKET  &kp RIGHT_BRACKET   &kp QUESTION       &kp PIPE
+                                   &trans             &trans  &trans                 &trans            &trans            &trans
             >;
         };
 
