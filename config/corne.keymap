@@ -272,9 +272,9 @@
 
         window {
             bindings = <
- &trans  &trans  &trans  &trans  &trans  &trans            &kp LG(LS(LBRC))    &kp LG(LS(RBRC))        &kp LG(LBKT)        &kp LG(RBKT)    &kp LG(GRAVE)  &trans
- &trans  &trans  &trans  &trans  &trans  &trans              &kp LG(LC(N1))      &kp LG(LC(N2))      &kp LG(LC(N3))      &kp LG(LC(N4))      &kp LG(TAB)  &trans
- &trans  &trans  &trans  &trans  &trans  &trans          &kp LG(LC(LS(N1)))  &kp LG(LC(LS(N2)))  &kp LG(LC(LS(N3)))  &kp LG(LC(LS(N4)))  &kp LG(LS(TAB))  &trans
+ &trans  &kp LC(LS(Q))  &kp LC(LS(W))  &kp LC(LS(E))  &kp LC(LS(R))  &kp LC(LS(T))            &kp LG(LS(LBRC))    &kp LG(LS(RBRC))        &kp LG(LBKT)        &kp LG(RBKT)    &kp LG(GRAVE)  &trans
+ &trans  &kp LC(LS(A))  &kp LC(LS(S))  &kp LC(LS(D))  &kp LC(LS(F))  &kp LC(LS(G))              &kp LG(LC(N1))      &kp LG(LC(N2))      &kp LG(LC(N3))      &kp LG(LC(N4))      &kp LG(TAB)  &trans
+ &trans  &kp LC(LS(Z))  &kp LC(LS(X))  &kp LC(LS(C))  &kp LC(LS(V))  &kp LC(LS(B))          &kp LG(LC(LS(N1)))  &kp LG(LC(LS(N2)))  &kp LG(LC(LS(N3)))  &kp LG(LC(LS(N4)))  &kp LG(LS(TAB))  &trans
                          &trans  &trans  &trans                      &trans              &trans              &trans
             >;
         };
@@ -303,4 +303,4 @@
     };
 };
 
-/* vim:ft=c: */
+
