@@ -108,13 +108,13 @@
             compatible = "zmk,behavior-macro";
             label = "warpd_l";
             #binding-cells = <0>;
-            bindings = <&kp LG(LC(S)) &kp J &kp LG(LC(H))>;
+            bindings = <&kp LG(LC(S)) &kp J &kp F>;
         };
         warpd_r: warpd_r {
             compatible = "zmk,behavior-macro";
             label = "warpd_r";
             #binding-cells = <0>;
-            bindings = <&kp LG(LC(S)) &kp K &kp LG(LC(H))>;
+            bindings = <&kp LG(LC(S)) &kp K &kp F>;
         };
     };
 
