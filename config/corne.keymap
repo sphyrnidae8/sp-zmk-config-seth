@@ -306,7 +306,7 @@
         adjust {
             bindings = <
  &trans  &trans  &vim_exit_all  &trans  &trans   &trans            &trans  &trans    &trans    &trans  &trans  &trans
- &trans  &trans      &vim_save  &trans  &trans  &warp_l          &warpd_r  &trans  &tmux_pw  &tmux_ps  &trans  &trans
+ &trans  &trans      &vim_save  &trans  &trans  &warpd_l          &warpd_r  &trans  &tmux_pw  &tmux_ps  &trans  &trans
  &trans  &trans      &vim_exit  &trans  &trans   &trans            &trans  &trans  &tmux_nw  &tmux_ns  &trans  &trans
                                 &trans  &trans   &trans            &trans  &trans    &trans
             >;
