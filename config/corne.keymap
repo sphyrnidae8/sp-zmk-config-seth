@@ -27,7 +27,7 @@
 #define HELP_MENU LG(LS(SLASH))
 
 &mt {
-    tapping-term-ms = <500>;
+    tapping-term-ms = <400>;
 };
 
 &lt {
