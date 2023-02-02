@@ -1,0 +1,367 @@
+/*
+ * Copyright (c) 2020 The ZMK Contributors
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/rgb.h>
+
+#define DEFAULT 0
+#define NAV     1
+#define NUMPAD  2
+#define MEDIA   3
+#define HYPE LC(LA(LGUI))
+#define RYPE RC(LA(LGUI))
+#define KA_TOG    LC(F1)
+#define F2_MENU   LC(F2)
+#define F2_DOCK   LC(F3)
+#define F2_WIN    LC(F4)
+#define F2_TOOL   LC(F5)
+#define F2_FLOAT  LC(F6)
+#define TAB_TOG   LC(F7)
+#define F2_STAT   LC(F8)
+#define HELP_MENU LG(LS(SLASH))
+
+&mt {
+    tapping-term-ms = <500>;
+};
+
+&lt {
+    tapping-term-ms = <400>;
+    quick-tap-ms = <250>;
+};
+
+&led_strip {
+    chain-length = <21>;
+};
+
+/ {
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        adjust_layer {
+            if-layers = <1 2>;
+            then-layer = <7>;
+        };
+
+        lighting_layer {
+            if-layers = <4 5>;
+            then-layer = <8>;
+        };
+    };
+
+    macros {
+        hyper: hyper {
+            compatible = "zmk,behavior-macro";
+            label = "hyper";
+            #binding-cells = <0>;
+            bindings = <&kp LCMD &kp LSHFT &kp LALT &kp LCTRL>;
+        };
+        mouse_keys: mouse_keys {
+            compatible = "zmk,behavior-macro";
+            label = "mouse_keys";
+            #binding-cells = <0>;
+            bindings = <&kp LALT &kp LALT &kp LALT &kp LALT &kp LALT>;
+        };
+        vim_save: vim_save {
+            compatible = "zmk,behavior-macro";
+            label = "vim_save";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_tap>,
+                <&kp ESC &kp COLON &kp W &kp RETURN>;
+        };
+        vim_exit: vim_exit {
+            compatible = "zmk,behavior-macro";
+            label = "vim_exit";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_tap>,
+                <&kp ESC &kp COLON &kp W &kp Q &kp RETURN>;
+        };
+        vim_exit_all: vim_exit_all {
+            compatible = "zmk,behavior-macro";
+            label = "vim_exit_all";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_tap>,
+                <&kp ESC &kp COLON &kp Q &kp A &kp L &kp RETURN>;
+        };
+        tmux_ns: tmux_ns {
+            compatible = "zmk,behavior-macro";
+            label = "tmux_ns";
+            #binding-cells = <0>;
+            bindings = <&kp LC(A) &kp RPAR>;
+        };
+        tmux_ps: tmux_ps {
+            compatible = "zmk,behavior-macro";
+            label = "tmux_ps";
+            #binding-cells = <0>;
+            bindings = <&kp LC(A) &kp LPAR>;
+        };
+        tmux_nw: tmux_nw {
+            compatible = "zmk,behavior-macro";
+            label = "tmux_nw";
+            #binding-cells = <0>;
+            bindings = <&kp LC(A) &kp N>;
+        };
+        tmux_pw: tmux_pw {
+            compatible = "zmk,behavior-macro";
+            label = "tmux_pw";
+            #binding-cells = <0>;
+            bindings = <&kp LC(A) &kp P>;
+        };
+        warpd_l: warpd_l {
+            compatible = "zmk,behavior-macro";
+            label = "warpd_l";
+            #binding-cells = <0>;
+            bindings = <&kp LG(LC(S)) &kp J &kp F>;
+        };
+        warpd_r: warpd_r {
+            compatible = "zmk,behavior-macro";
+            label = "warpd_r";
+            #binding-cells = <0>;
+            bindings = <&kp LG(LC(S)) &kp K &kp F>;
+        };
+    };
+
+    behaviors {
+        lthp: layer_tap_hold_preferred {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LT_HOLD_PREFERRED";
+            #binding-cells = <2>;
+            tapping-term-ms = <300>;
+            quick-tap-ms = <150>;
+
+            //global-quick-tap;
+
+            flavor = "hold-preferred";
+            bindings =
+                <&mo>,
+                <&kp>;
+        };
+        npsh1: numpad_shift_1 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "NUMSH_1";
+            #binding-cells = <0>;
+            bindings =
+                <&kp KP_N1>,
+                <&kp EXCLAMATION>;
+
+            mods = <(MOD_LSFT)>;
+        };
+        npsh2: numpad_shift_2 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "NUMSH_2";
+            #binding-cells = <0>;
+            bindings =
+                <&kp KP_N2>,
+                <&kp AT>;
+
+            mods = <(MOD_LSFT)>;
+        };
+        npsh3: numpad_shift_3 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "NUMSH_3";
+            #binding-cells = <0>;
+            bindings =
+                <&kp KP_N3>,
+                <&kp HASH>;
+
+            mods = <(MOD_LSFT)>;
+        };
+        npsh4: numpad_shift_4 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "NUMSH_4";
+            #binding-cells = <0>;
+            bindings =
+                <&kp KP_N4>,
+                <&kp DOLLAR>;
+
+            mods = <(MOD_LSFT)>;
+        };
+        npsh5: numpad_shift_5 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "NUMSH_5";
+            #binding-cells = <0>;
+            bindings =
+                <&kp KP_N5>,
+                <&kp PERCENT>;
+
+            mods = <(MOD_LSFT)>;
+        };
+        npsh6: numpad_shift_6 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "NUMSH_6";
+            #binding-cells = <0>;
+            bindings =
+                <&kp KP_N6>,
+                <&kp CARET>;
+
+            mods = <(MOD_LSFT)>;
+        };
+        npsh7: numpad_shift_7 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "NUMSH_7";
+            #binding-cells = <0>;
+            bindings =
+                <&kp KP_N7>,
+                <&kp AMPERSAND>;
+
+            mods = <(MOD_LSFT)>;
+        };
+        npsh8: numpad_shift_8 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "NUMSH_8";
+            #binding-cells = <0>;
+            bindings =
+                <&kp KP_N8>,
+                <&kp ASTERISK>;
+
+            mods = <(MOD_LSFT)>;
+        };
+        npsh9: numpad_shift_9 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "NUMSH_9";
+            #binding-cells = <0>;
+            bindings =
+                <&kp KP_N9>,
+                <&kp LEFT_PARENTHESIS>;
+
+            mods = <(MOD_LSFT)>;
+        };
+        npsh0: numpad_shift_0 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "NUMSH_0";
+            #binding-cells = <0>;
+            bindings =
+                <&kp KP_N0>,
+                <&kp RIGHT_PARENTHESIS>;
+
+            mods = <(MOD_LSFT)>;
+        };
+    };
+
+    // n.b. label strings are truncated after 8 characters
+
+    keymap {
+        compatible = "zmk,keymap";
+
+        /* 0 Layer */
+
+        default {
+            label = "araxia";
+            bindings = <
+            &lt 5 TAB   &kp Q   &kp W            &kp E           &kp R         &kp T                 &kp Y        &kp U           &kp I  &lt 2 O            &kp P         &lt 4 BACKSPACE
+ &mt LEFT_CONTROL ESC   &kp A   &kp S            &kp D           &kp F         &kp G                 &kp H        &kp J           &kp K    &kp L  &lt 6 SEMICOLON  &mt RCTRL SINGLE_QUOTE
+       &mt LALT GRAVE   &kp Z   &kp X            &kp C           &kp V         &kp B                 &kp N        &kp M       &kp COMMA  &kp DOT         &kp FSLH      &mt RALT BACKSLASH
+                                       &mt LGUI RETURN  &mt LSHIFT ESC  &lthp 2 LBKT          &lthp 1 RBKT  &lt 3 SPACE  &mt RGUI COLON
+            >;
+        };
+
+        /* 1 Layer */
+
+        right {
+            label = "function";
+            bindings = <
+        &kp TILDE  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5          &kp LC(F2)     &kp LC(F3)  &kp LC(F8)  &kp LG(LS(SLASH))         &kp LC(F5)      &kp LC(F7)
+ &kp LC(LA(LGUI))  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0            &kp LEFT       &kp DOWN      &kp UP          &kp RIGHT  &kp LG(LA(MINUS))  &kp LG(LA(N8))
+ &kp RC(LA(LGUI))  &trans  &trans  &trans  &trans  &trans           &kp PG_UP  &kp PAGE_DOWN    &kp HOME            &kp END   &kp LG(LA(PLUS))         &kp ESC
+                                   &trans  &trans  &trans              &trans         &trans      &trans
+            >;
+        };
+
+        /* 2 Layer */
+
+        numpad {
+            label = "numpad";
+            bindings = <
+      &mouse_keys  &kp KP_ASTERISK  &npsh7  &npsh8  &npsh9  &kp KP_MINUS          &kp LESS_THAN  &kp GREATER_THAN          &kp LPAR           &kp RPAR  &kp SEMI         &kp BSPC
+ &kp LC(LA(LGUI))     &kp KP_EQUAL  &npsh4  &npsh5  &npsh6   &kp KP_PLUS              &kp MINUS         &kp EQUAL    &kp LEFT_BRACE    &kp RIGHT_BRACE  &kp BSLH        &kp GRAVE
+ &kp RC(LA(LGUI))       &kp KP_DOT  &npsh1  &npsh2  &npsh3        &npsh0              &kp UNDER          &kp PLUS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PIPE  &mt LSHFT TILDE
+                                            &trans  &trans        &trans                 &trans            &trans            &trans
+            >;
+        };
+
+        /* 3 Layer */
+
+        media {
+            label = "media";
+            bindings = <
+      &trans   &kp F1   &kp F2   &kp F3   &kp F4   &kp F5            &kp C_MUTE    &kp C_PREV      &kp C_PP    &kp C_NEXT  &kp C_BRI_DN  &kp C_BRI_UP
+      &trans   &kp F6   &kp F7   &kp F8   &kp F9  &kp F10          &kp C_VOL_DN  &kp C_VOL_UP  &out OUT_BLE  &out OUT_USB    &bt BT_CLR    &bt BT_PRV
+ &kp C_POWER  &kp F11  &kp F12  &kp F13  &kp F14  &kp F15          &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &bt BT_NXT
+                                 &trans   &trans   &trans                &trans        &trans        &trans
+            >;
+        };
+
+        /* 4 Layer */
+
+        window_right {
+            label = "move [R]";
+            bindings = <
+ &trans  &kp LC(LS(Q))  &kp LC(LS(W))  &kp LC(LS(E))  &kp LC(LS(R))  &kp LC(LS(T))            &kp LG(LS(LBRC))    &kp LG(LS(RBRC))        &kp LG(LBKT)        &kp LG(RBKT)    &kp LG(GRAVE)       &trans
+ &trans  &kp LC(LS(A))  &kp LC(LS(S))  &kp LC(LS(D))  &kp LC(LS(F))  &kp LC(LS(G))              &kp LG(LC(N1))      &kp LG(LC(N2))      &kp LG(LC(N3))      &kp LG(LC(N4))      &kp LG(TAB)  &kp C_POWER
+ &trans  &kp LC(LS(Z))  &kp LC(LS(X))  &kp LC(LS(C))  &kp LC(LS(V))  &kp LC(LS(B))          &kp LG(LC(LS(N1)))  &kp LG(LC(LS(N2)))  &kp LG(LC(LS(N3)))  &kp LG(LC(LS(N4)))  &kp LG(LS(TAB))       &trans
+                                              &trans         &trans         &trans                      &trans              &trans              &trans
+            >;
+        };
+
+        /* 5 Layer */
+
+        window_left {
+            label = "move [L]";
+            bindings = <
+      &trans    &kp LG(GRAVE)        &kp LG(RBKT)        &kp LG(LBKT)    &kp LG(LS(RBRC))    &kp LG(LS(LBRC))          &kp LC(LS(Y))  &kp LC(LS(U))          &kp LC(LS(I))             &kp LC(LS(O))         &kp LC(LS(P))  &trans
+ &kp C_POWER      &kp LG(TAB)      &kp LG(LC(N4))      &kp LG(LC(N3))      &kp LG(LC(N2))      &kp LG(LC(N1))          &kp LC(LS(H))  &kp LC(LS(J))          &kp LC(LS(K))             &kp LC(LS(L))     &kp LC(LS(COLON))  &trans
+      &trans  &kp LG(LS(TAB))  &kp LG(LC(LS(N4)))  &kp LG(LC(LS(N3)))  &kp LG(LC(LS(N2)))  &kp LG(LC(LS(N1)))          &kp LC(LS(N))  &kp LC(LS(M))  &kp LC(LS(LESS_THAN))  &kp LC(LS(GREATER_THAN))  &kp LC(LS(QUESTION))  &trans
+                                                               &trans              &trans              &trans                 &trans         &trans                 &trans
+            >;
+        };
+
+        /* 6 Layer */
+
+        symbol {
+            label = "symbols";
+            bindings = <
+ &trans  &trans  &kp AMPERSAND  &kp ASTERISK   &kp LPAR  &kp GRAVE           &kp LESS_THAN  &kp GREATER_THAN  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMICOLON  &kp AMPERSAND
+ &trans  &trans     &kp DOLLAR   &kp PERCENT  &kp CARET  &kp TILDE               &kp MINUS         &kp EQUAL        &kp LEFT_BRACE        &kp RIGHT_BRACE         &trans   &kp ASTERISK
+ &trans  &trans       &kp EXCL        &kp AT   &kp HASH   &kp RPAR          &kp UNDERSCORE          &kp PLUS      &kp LEFT_BRACKET      &kp RIGHT_BRACKET   &kp QUESTION       &kp PIPE
+                                      &trans     &trans     &trans                  &trans            &trans                &trans
+            >;
+        };
+
+        /* 7 Layer */
+
+        adjust {
+            label = "adjust";
+            bindings = <
+ &trans  &trans  &vim_exit_all  &trans  &trans     &to 0            &trans  &trans    &trans    &trans  &trans  &trans
+ &trans  &trans      &vim_save  &trans  &trans  &warpd_l          &warpd_r  &trans  &tmux_pw  &tmux_ps  &trans  &trans
+ &trans  &trans      &vim_exit  &trans  &trans    &trans            &trans  &trans  &tmux_nw  &tmux_ns  &trans  &trans
+                                &trans  &trans    &trans            &trans  &trans    &trans
+            >;
+        };
+
+        /* Do not use this then-layer for regular layer switching */
+        /* 8 Layer */
+
+        lighting {
+            label = "lighting";
+            bindings = <
+ &trans  &trans  &trans  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD   &rgb_ug RGB_COLOR_HSB(25,100,0)          &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &rgb_ug RGB_SAI  &rgb_ug RGB_SAD  &rgb_ug RGB_COLOR_HSB(25,100,80)          &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &rgb_ug RGB_HUI  &rgb_ug RGB_HUD   &rgb_ug RGB_COLOR_HSB(25,0,100)          &trans  &trans  &trans  &trans  &trans  &trans
+                                  &trans           &trans                            &trans          &trans  &trans  &trans
+            >;
+        };
+
+        /* Do not use this then-layer for regular layer switching */
+    };
+};
+
+/* vim:ft=c: */
