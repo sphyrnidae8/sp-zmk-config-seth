@@ -256,10 +256,10 @@
         default {
             label = "araxia";
             bindings = <
-            &lt 5 TAB   &kp Q   &kp W            &kp E           &kp R         &kp T                 &kp Y        &kp U           &kp I  &lt 2 O            &kp P         &lt 4 BACKSPACE
- &mt LEFT_CONTROL ESC   &kp A   &kp S            &kp D           &kp F         &kp G                 &kp H        &kp J           &kp K    &kp L  &lt 6 SEMICOLON  &mt RCTRL SINGLE_QUOTE
-       &mt LALT GRAVE   &kp Z   &kp X            &kp C           &kp V         &kp B                 &kp N        &kp M       &kp COMMA  &kp DOT         &kp FSLH      &mt RALT BACKSLASH
-                                       &mt LGUI RETURN  &mt LSHIFT ESC  &lthp 2 LBKT          &lthp 1 RBKT  &lt 3 SPACE  &mt RGUI COLON
+            &lt 5 TAB   &kp Q   &kp W           &kp E             &kp R         &kp T                 &kp Y        &kp U           &kp I  &lt 2 O            &kp P         &lt 4 BACKSPACE
+ &mt LEFT_CONTROL ESC   &kp A   &kp S           &kp D             &kp F         &kp G                 &kp H        &kp J           &kp K    &kp L  &lt 6 SEMICOLON  &mt RCTRL SINGLE_QUOTE
+       &mt LALT GRAVE   &kp Z   &kp X           &kp C             &kp V         &kp B                 &kp N        &kp M       &kp COMMA  &kp DOT         &kp FSLH      &mt RALT BACKSLASH
+                                      &mt LGUI RETURN  &mt LSHIFT LC(W)   &lthp 2 ESC           &lthp 1 ESC  &lt 3 SPACE  &mt RGUI COLON
             >;
         };
 
