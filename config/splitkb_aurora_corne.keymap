@@ -127,6 +127,12 @@
             #binding-cells = <0>;
             bindings = <&kp LG(LC(S)) &kp K &kp F>;
         };
+        warpd_act: warpd_act {
+            compatible = "zmk,behavior-macro";
+            label = "warpd_act";
+            #binding-cells = <0>;
+            bindings = <&kp LG(LC(J))>;
+        };
     };
 
     behaviors {
@@ -364,4 +370,4 @@
     };
 };
 
-/* vim:ft=c: */
+/* vim: set ft=c: */
