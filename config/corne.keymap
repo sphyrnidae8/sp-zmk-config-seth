@@ -123,6 +123,18 @@
             #binding-cells = <0>;
             bindings = <&kp LG(LC(S)) &kp K &kp F>;
         };
+        warpd_j: warpd_j {
+            compatible = "zmk,behavior-macro";
+            label = "warpd_j";
+            #binding-cells = <0>;
+            bindings = <&kp LG(LC(J))>;
+        };
+        warpd_k: warpd_k {
+            compatible = "zmk,behavior-macro";
+            label = "warpd_k";
+            #binding-cells = <0>;
+            bindings = <&kp LG(LC(K))>;
+        };
     };
 
     behaviors {
@@ -336,10 +348,10 @@
         adjust {
             label = "adjust";
             bindings = <
- &trans  &trans  &vim_exit_all  &trans  &trans        &to 0            &trans  &trans     &trans    &trans  &trans  &trans
- &trans  &trans      &vim_save  &trans  &trans     &warpd_l          &warpd_r  &trans     &tmux_pw  &tmux_ps  &trans  &trans
- &trans  &trans      &vim_exit  &trans  &trans &out OUT_USB      &out OUT_BLE  &caps_word &tmux_nw  &tmux_ns  &trans  &trans
-                                &trans  &trans      &trans            &trans  &trans      &trans
+ &trans     &trans     &vim_exit_all     &trans     &trans            &to 0    &ext_power EP_TOG        &trans       &trans       &trans       &trans   &trans
+ &trans     &trans         &vim_save     &trans     &trans         &warpd_l             &warpd_r      &warpd_j     &warpd_k     &tmux_pw     &tmux_ps   &trans
+ &trans     &trans         &vim_exit     &trans     &trans     &out OUT_USB         &out OUT_BLE    &caps_word       &trans     &tmux_nw     &tmux_ns   &trans
+                                         &trans     &trans           &trans               &trans        &trans       &trans
             >;
         };
 
