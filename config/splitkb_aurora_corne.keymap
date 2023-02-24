@@ -299,10 +299,10 @@
         numpad {
             label = "numpad";
             bindings = <
-           &trans  &kp COMMA  &npsh7  &npsh8  &npsh9     &npsh0          &kp LESS_THAN  &kp GREATER_THAN          &kp LPAR           &kp RPAR  &kp SEMI         &kp BSPC
-         &kp FSLH    &kp DOT  &npsh4  &npsh5  &npsh6  &kp COLON              &kp MINUS         &kp EQUAL    &kp LEFT_BRACE    &kp RIGHT_BRACE  &kp BSLH        &kp GRAVE
- &kp SINGLE_QUOTE  &kp EQUAL  &npsh1  &npsh2  &npsh3  &kp MINUS              &kp UNDER          &kp PLUS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PIPE  &mt LSHFT TILDE
-                                      &trans  &trans     &trans                 &trans            &trans            &trans
+                &kp BACKSPACE    &kp COMMA    &npsh7     &npsh8     &npsh9        &npsh0    &kp LESS_THAN    &kp GREATER_THAN            &kp LPAR             &kp RPAR    &kp SEMI     &kp BSPC
+                     &kp FSLH      &kp DOT    &npsh4     &npsh5     &npsh6     &kp COLON        &kp MINUS           &kp EQUAL      &kp LEFT_BRACE      &kp RIGHT_BRACE    &kp BSLH    &kp GRAVE
+                    &kp SPACE    &kp EQUAL    &npsh1     &npsh2     &npsh3     &kp MINUS        &kp UNDER            &kp PLUS    &kp LEFT_BRACKET    &kp RIGHT_BRACKET    &kp PIPE    &mt LSHFT TILDE
+                                                               &trans  &trans     &trans           &trans              &trans              &trans
             >;
         };
 
