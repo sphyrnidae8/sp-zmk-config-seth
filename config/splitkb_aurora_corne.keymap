@@ -53,6 +53,12 @@
             if-layers = <4 5>;
             then-layer = <8>;
         };
+
+        discord_layer {
+            if-layers = <1 3>;
+            then-layer = <9>;
+        };
+
     };
 
     macros {
@@ -146,6 +152,12 @@
             #binding-cells = <0>;
             bindings = <&kp LG(LC(K))>;
         };
+
+        discord_layer {
+            if-layers = <1 3>;
+            then-layer = <9>;
+        };
+
     };
 
     behaviors {
@@ -354,6 +366,7 @@
             >;
         };
 
+        /* Do not use this then-layer for regular layer switching */
         /* 7 Layer */
 
         adjust {
@@ -380,6 +393,18 @@
         };
 
         /* Do not use this then-layer for regular layer switching */
+        /* 9 Layer */
+
+        discord {
+            label = "discord";
+            bindings = <
+ &trans     &trans     &trans     &trans     &trans     &trans     &trans              &trans               &trans     &trans     &trans   &trans
+ &trans     &trans     &trans     &trans     &trans     &trans     &trans    &kp LA(LS(DOWN))       &kp LA(LS(UP))     &trans     &trans   &trans
+ &trans     &trans     &trans     &trans     &trans     &trans     &trans              &trans               &trans     &trans     &trans   &trans
+                                  &trans     &trans     &trans     &trans              &trans               &trans
+            >;
+        };
+
     };
 };
 
