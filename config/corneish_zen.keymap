@@ -39,48 +39,46 @@
 //           ::  ╰────────────╯ ╰────────────╯
     combos {
         compatible = "zmk,combos";
-        combo_backspace {
-            timeout-ms = <150>;
-            key-positions = <12 18>;
-            bindings = <&kp BACKSPACE>;
-        };
         combo_tmux {
-            timeout-ms = <50>;
+            timeout-ms = <75>;
+            slow-release;
             key-positions = <16 19>;
             bindings = <&kp LC(A)>;
         };
         combo_capsword {
-            timeout-ms = <50>;
+            timeout-ms = <75>;
+            slow-release;
             key-positions = <12 23>;
             bindings = <&caps_word>;
         };
         combo_jdtag {
-            timeout-ms = <50>;
+            timeout-ms = <75>;
+            slow-release;
             key-positions = <15 19>;
             bindings = <&jdtag>;
         };
         combo_backtick {
-            timeout-ms = <50>;
+            timeout-ms = <75>;
             key-positions = <0 1>;
             bindings = <&kp GRAVE>;
         };
         combo_gui_left {
-            timeout-ms = <50>;
+            timeout-ms = <75>;
             key-positions = <24 25>;
             bindings = <&kp LGUI>;
         };
         combo_alt_left {
-            timeout-ms = <50>;
+            timeout-ms = <75>;
             key-positions = <12 24>;
             bindings = <&kp LALT>;
         };
         combo_gui_right {
-            timeout-ms = <50>;
+            timeout-ms = <75>;
             key-positions = <34 35>;
             bindings = <&kp LGUI>;
         };
         combo_alt_right {
-            timeout-ms = <50>;
+            timeout-ms = <75>;
             key-positions = <23 35>;
             bindings = <&kp LALT>;
         };
@@ -374,25 +372,25 @@
             compatible = "zmk,behavior-macro";
             label = "mac screenshot";
             #binding-cells = <0>;
-            bindings = <&kp LG(LS(3))>;
+            bindings = <&kp LG(LS(N3))>;
         };
         ss2c: ss2c {
             compatible = "zmk,behavior-macro";
             label = "mac screenshot to clipboard";
             #binding-cells = <0>;
-            bindings = <&kp LG(LA(LS(3)))>;
+            bindings = <&kp LG(LA(LS(N3)))>;
         };
         sss: sss {
             compatible = "zmk,behavior-macro";
             label = "mac select screenshot";
             #binding-cells = <0>;
-            bindings = <&kp LG(LS(4))>;
+            bindings = <&kp LG(LS(N4))>;
         };
         sss2c: sss2c {
             compatible = "zmk,behavior-macro";
             label = "mac select screenshot to clipboard";
             #binding-cells = <0>;
-            bindings = <&kp LG(LA(LS(4)))>;
+            bindings = <&kp LG(LA(LS(N4)))>;
         };
 
     };
@@ -512,6 +510,15 @@
                 <&kp RIGHT_PARENTHESIS>;
             mods = <(MOD_LSFT)>;
         };
+        h_bs: h_bs {
+            compatible = "zmk,behavior-mod-morph";
+            label = "true backspace for c-h";
+            #binding-cells = <0>;
+            bindings =
+                <&kp H>,
+                <&kp BACKSPACE>;
+            mods = <(MOD_LCTL)>;
+        };
         del_bs: del_bs {
             compatible = "zmk,behavior-mod-morph";
             label = "delete backspace";
@@ -543,7 +550,7 @@
             label = "araxia";
             bindings = <
             &lt 5 TAB   &kp Q   &kp W           &kp E             &kp R         &kp T                 &kp Y        &kp U           &kp I  &lt 2 O            &kp P      &lt_4_del
- &mt LEFT_CONTROL ESC   &kp A   &kp S           &kp D             &kp F         &kp G                 &kp H        &kp J           &kp K    &kp L  &lt 6 SEMICOLON      &mt RCTRL SINGLE_QUOTE
+ &mt LEFT_CONTROL ESC   &kp A   &kp S           &kp D             &kp F         &kp G                 &h_bs        &kp J           &kp K    &kp L  &lt 6 SEMICOLON      &mt RCTRL SINGLE_QUOTE
        &mt LALT GRAVE   &kp Z   &kp X           &kp C             &kp V         &kp B                 &kp N        &kp M       &kp COMMA  &kp DOT         &kp FSLH      &mt RALT BACKSLASH
                                       &mt LGUI RETURN  &mt LSHIFT LC(W)   &lthp 2 ESC           &lthp 1 ESC  &lt 3 SPACE  &mt RGUI COLON
             >;
