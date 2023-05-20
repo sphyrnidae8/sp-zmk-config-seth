@@ -553,7 +553,7 @@
         right {
             label = "function";
             bindings = <
-        &kp TILDE    &kp N1    &kp N2    &kp N3    &kp N4    &kp N5        &f2_menu      &f2_dock         &f2_status    &help_menu    &f2_tool    &kp BACKSPACE
+        &kp TILDE    &kp N1    &kp N2    &kp N3    &kp N4    &kp N5        &f2_menu      &f2_dock         &f2_status    &help_menu    &f2_tool    &kp TAB
         &trans       &kp N6    &kp N7    &kp N8    &kp N9    &kp N0        &kp LEFT      &kp DOWN         &kp UP        &kp RIGHT     &none       &kp RETURN
         &trans       &ss_win   &ss       &ss2c     &sss      &sss2c        &kp PAGE_UP   &kp PAGE_DOWN    &kp HOME      &kp END       &none       &win_close
                                          &trans    &trans    &trans        &trans        &trans           &trans
