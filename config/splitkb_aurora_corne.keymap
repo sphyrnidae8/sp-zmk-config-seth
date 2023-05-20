@@ -362,6 +362,36 @@
             #binding-cells = <0>;
             bindings = <&kp LA(LS(DOWN))>;
         };
+        ss_win: ss_win {
+            compatible = "zmk,behavior-macro";
+            label = "screenshot windows";
+            #binding-cells = <0>;
+            bindings = <&kp LG(PRINTSCREEN)>;
+        };
+        ss: ss {
+            compatible = "zmk,behavior-macro";
+            label = "mac screenshot";
+            #binding-cells = <0>;
+            bindings = <&kp LG(LS(3))>;
+        };
+        ss2c: ss2c {
+            compatible = "zmk,behavior-macro";
+            label = "mac screenshot to clipboard";
+            #binding-cells = <0>;
+            bindings = <&kp LG(LA(LS(3)))>;
+        };
+        sss: sss {
+            compatible = "zmk,behavior-macro";
+            label = "mac select screenshot";
+            #binding-cells = <0>;
+            bindings = <&kp LG(LS(4))>;
+        };
+        sss2c: sss2c {
+            compatible = "zmk,behavior-macro";
+            label = "mac select screenshot to clipboard";
+            #binding-cells = <0>;
+            bindings = <&kp LG(LA(LS(4)))>;
+        };
 
     };
 // }}}
@@ -373,9 +403,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <300>;
             quick-tap-ms = <150>;
-
             //global-quick-tap;
-
             flavor = "hold-preferred";
             bindings =
                 <&mo>,
@@ -388,7 +416,6 @@
             bindings =
                 <&kp KP_N1>,
                 <&kp EXCLAMATION>;
-
             mods = <(MOD_LSFT)>;
         };
         npsh2: numpad_shift_2 {
@@ -398,7 +425,6 @@
             bindings =
                 <&kp KP_N2>,
                 <&kp AT>;
-
             mods = <(MOD_LSFT)>;
         };
         npsh3: numpad_shift_3 {
@@ -408,7 +434,6 @@
             bindings =
                 <&kp KP_N3>,
                 <&kp HASH>;
-
             mods = <(MOD_LSFT)>;
         };
         npsh4: numpad_shift_4 {
@@ -418,7 +443,6 @@
             bindings =
                 <&kp KP_N4>,
                 <&kp DOLLAR>;
-
             mods = <(MOD_LSFT)>;
         };
         npsh5: numpad_shift_5 {
@@ -428,7 +452,6 @@
             bindings =
                 <&kp KP_N5>,
                 <&kp PERCENT>;
-
             mods = <(MOD_LSFT)>;
         };
         npsh6: numpad_shift_6 {
@@ -438,7 +461,6 @@
             bindings =
                 <&kp KP_N6>,
                 <&kp CARET>;
-
             mods = <(MOD_LSFT)>;
         };
         npsh7: numpad_shift_7 {
@@ -448,7 +470,6 @@
             bindings =
                 <&kp KP_N7>,
                 <&kp AMPERSAND>;
-
             mods = <(MOD_LSFT)>;
         };
         npsh8: numpad_shift_8 {
@@ -458,7 +479,6 @@
             bindings =
                 <&kp KP_N8>,
                 <&kp ASTERISK>;
-
             mods = <(MOD_LSFT)>;
         };
         npsh9: numpad_shift_9 {
@@ -468,7 +488,6 @@
             bindings =
                 <&kp KP_N9>,
                 <&kp LEFT_PARENTHESIS>;
-
             mods = <(MOD_LSFT)>;
         };
         npsh0: numpad_shift_0 {
@@ -478,7 +497,24 @@
             bindings =
                 <&kp KP_N0>,
                 <&kp RIGHT_PARENTHESIS>;
-
+            mods = <(MOD_LSFT)>;
+        };
+        del_bs: del_bs {
+            compatible = "zmk,behavior-mod-morph";
+            label = "delete backspace";
+            #binding-cells = <0>;
+            bindings =
+                <&kp BACKSPACE>,
+                <&kp DELETE>;
+            mods = <(MOD_LSFT)>;
+        };
+        lt_4_del: lt_4_del {
+            compatible = "zmk,behavior-mod-morph";
+            label = "lt 4 with delete backspace";
+            #binding-cells = <0>;
+            bindings =
+                <&lt 4 BACKSPACE>,
+                <&lt 4 DELETE>;
             mods = <(MOD_LSFT)>;
         };
     };
@@ -493,8 +529,8 @@
         default {
             label = "araxia";
             bindings = <
-            &lt 5 TAB   &kp Q   &kp W           &kp E             &kp R         &kp T                 &kp Y        &kp U           &kp I  &lt 2 O            &kp P         &lt 4 BACKSPACE
- &mt LEFT_CONTROL ESC   &kp A   &kp S           &kp D             &kp F         &kp G                 &kp H        &kp J           &kp K    &kp L  &lt 6 SEMICOLON  &mt RCTRL SINGLE_QUOTE
+            &lt 5 TAB   &kp Q   &kp W           &kp E             &kp R         &kp T                 &kp Y        &kp U           &kp I  &lt 2 O            &kp P      &lt_4_del
+ &mt LEFT_CONTROL ESC   &kp A   &kp S           &kp D             &kp F         &kp G                 &kp H        &kp J           &kp K    &kp L  &lt 6 SEMICOLON      &mt RCTRL SINGLE_QUOTE
        &mt LALT GRAVE   &kp Z   &kp X           &kp C             &kp V         &kp B                 &kp N        &kp M       &kp COMMA  &kp DOT         &kp FSLH      &mt RALT BACKSLASH
                                       &mt LGUI RETURN  &mt LSHIFT LC(W)   &lthp 2 ESC           &lthp 1 ESC  &lt 3 SPACE  &mt RGUI COLON
             >;
@@ -505,10 +541,10 @@
         right {
             label = "function";
             bindings = <
-        &kp TILDE          &kp N1  &kp N2  &kp N3  &kp N4  &kp N5        &f2_menu      &f2_dock         &f2_status    &help_menu    &f2_tool    &tab_tog
- &kp LC(LA(LGUI))          &kp N6  &kp N7  &kp N8  &kp N9  &kp N0        &kp LEFT      &kp DOWN         &kp UP        &kp RIGHT     &zoom_out   &zoom_tog
- &kp RC(LA(LGUI))  &kp KP_NUMLOCK  &trans  &trans  &trans  &trans        &kp PAGE_UP   &kp PAGE_DOWN    &kp HOME      &kp END       &zoom_in    &kp RETURN
-                                   &trans  &trans  &trans                &trans        &trans           &trans
+        &kp TILDE    &kp N1    &kp N2    &kp N3    &kp N4    &kp N5        &f2_menu      &f2_dock         &f2_status    &help_menu    &f2_tool    &tab_tog
+ &kp LC(LA(LGUI))    &kp N6    &kp N7    &kp N8    &kp N9    &kp N0        &kp LEFT      &kp DOWN         &kp UP        &kp RIGHT     &zoom_out   &zoom_tog
+ &kp RC(LA(LGUI))    &ss_win   &ss       &ss2c     &sss      &sss2c        &kp PAGE_UP   &kp PAGE_DOWN    &kp HOME      &kp END       &zoom_in    &kp RETURN
+                                         &trans    &trans    &trans        &trans        &trans           &trans
             >;
         };
 
@@ -517,10 +553,10 @@
         numpad {
             label = "numpad";
             bindings = <
-                &kp BACKSPACE    &kp COMMA    &npsh7     &npsh8     &npsh9        &npsh0    &kp LESS_THAN    &kp GREATER_THAN            &kp LPAR             &kp RPAR    &kp SEMI     &kp BSPC
-                     &kp FSLH      &kp DOT    &npsh4     &npsh5     &npsh6     &kp COLON        &kp MINUS           &kp EQUAL      &kp LEFT_BRACE      &kp RIGHT_BRACE    &kp BSLH    &kp GRAVE
-                    &kp SPACE    &kp EQUAL    &npsh1     &npsh2     &npsh3     &kp MINUS        &kp UNDER            &kp PLUS    &kp LEFT_BRACKET    &kp RIGHT_BRACKET    &kp PIPE    &mt LSHFT TILDE
-                                                               &trans  &trans     &trans           &trans              &trans              &trans
+                &del_bs           &kp COMMA    &npsh7     &npsh8     &npsh9     &npsh0           &kp LESS_THAN    &kp GREATER_THAN    &kp LPAR            &kp RPAR            &kp SEMI    &del_bs
+                &kp KP_NUMLOCK    &kp DOT      &npsh4     &npsh5     &npsh6     &kp COLON        &kp MINUS        &kp EQUAL           &kp LEFT_BRACE      &kp RIGHT_BRACE     &kp BSLH    &kp GRAVE
+                &kp SPACE         &kp EQUAL    &npsh1     &npsh2     &npsh3     &kp MINUS        &kp UNDER        &kp PLUS            &kp LEFT_BRACKET    &kp RIGHT_BRACKET   &kp PIPE    &mt LSHFT TILDE
+                                                          &trans     &trans     &trans           &trans           &trans              &trans
             >;
         };
 
@@ -543,7 +579,7 @@
             bindings = <
  &trans  &kp LC(LS(Q))  &kp LC(LS(W))  &kp LC(LS(E))  &kp LC(LS(R))  &kp LC(LS(T))      &tab_prev     &tab_next    &backward      &forward    &win_next        &trans
  &trans  &kp LC(LS(A))  &kp LC(LS(S))  &kp LC(LS(D))  &kp LC(LS(F))  &kp LC(LS(G))      &win_full     &win_half    &win_third     &win_quad   &kp LG(TAB)      &kp C_POWER
- &trans  &kp LC(LS(Z))  &kp LC(LS(X))  &kp LC(LS(C))  &kp LC(LS(V))  &kp LC(LS(B))      &win_screen   &win_vhalf   &win_vthird    &win_vquad  &kp LG(LS(TAB))  &trans
+ &trans  &kp LC(LS(Z))  &kp LC(LS(X))  &kp LC(LS(C))  &kp LC(LS(V))  &kp LC(LS(B))      &win_screen   &win_vhalf   &win_vthird    &win_vquad  &kp LG(LS(TAB))  &kp C_SLEEP
                                               &trans         &trans         &trans      &trans        &trans       &trans
             >;
         };
@@ -555,7 +591,7 @@
             bindings = <
       &trans   &win_next         &forward      &backward      &tab_next     &tab_prev          &kp LC(LS(Y))   &kp LC(LS(U))     &kp LC(LS(I))           &kp LC(LS(O))             &kp LC(LS(P))         &trans
  &kp C_POWER   &kp LG(TAB)       &win_quad     &win_third     &win_half     &win_full          &kp LC(LS(H))   &kp LC(LS(J))     &kp LC(LS(K))           &kp LC(LS(L))             &kp LC(LS(COLON))     &trans
-      &trans   &kp LG(LS(TAB))   &win_vquad    &win_vthird    &win_vhalf    &win_screen        &kp LC(LS(N))   &kp LC(LS(M))     &kp LC(LS(LESS_THAN))   &kp LC(LS(GREATER_THAN))  &kp LC(LS(QUESTION))  &trans
+ &kp C_SLEEP   &kp LG(LS(TAB))   &win_vquad    &win_vthird    &win_vhalf    &win_screen        &kp LC(LS(N))   &kp LC(LS(M))     &kp LC(LS(LESS_THAN))   &kp LC(LS(GREATER_THAN))  &kp LC(LS(QUESTION))  &trans
                                                &trans         &trans        &trans             &trans          &trans            &trans
             >;
         };
