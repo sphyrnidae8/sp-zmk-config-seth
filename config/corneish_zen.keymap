@@ -356,6 +356,12 @@
             #binding-cells = <0>;
             bindings = <&kp LG(LC(LS(N4)))>;
         };
+        win_close: win_close {
+            compatible = "zmk,behavior-macro";
+            label = "close window";
+            #binding-cells = <0>;
+            bindings = <&kp LA(F4)>;
+        };
         dis_up: dis_up {
             compatible = "zmk,behavior-macro";
             label = "discord next unread up";
@@ -549,7 +555,7 @@
             bindings = <
         &kp TILDE    &kp N1    &kp N2    &kp N3    &kp N4    &kp N5        &f2_menu      &f2_dock         &f2_status    &help_menu    &f2_tool    &kp BACKSPACE
         &trans       &kp N6    &kp N7    &kp N8    &kp N9    &kp N0        &kp LEFT      &kp DOWN         &kp UP        &kp RIGHT     &none       &kp RETURN
-        &trans       &ss_win   &ss       &ss2c     &sss      &sss2c        &kp PAGE_UP   &kp PAGE_DOWN    &kp HOME      &kp END       &none        &tab_tog
+        &trans       &ss_win   &ss       &ss2c     &sss      &sss2c        &kp PAGE_UP   &kp PAGE_DOWN    &kp HOME      &kp END       &none       &win_close
                                          &trans    &trans    &trans        &trans        &trans           &trans
             >;
         };
@@ -614,7 +620,7 @@
         adjust {
             label = "adjust";
             bindings = <
- &none     &zoom_tog     &vim_exit_all  &none     &none     &to 0                &ext_power EP_TOG   &none        &none      &none        &none      &none
+ &tab_tog  &zoom_tog     &vim_exit_all  &none     &none     &to 0                &ext_power EP_TOG   &none        &none      &none        &none      &none
  &none     &zoom_in      &vim_save      &none     &none     &warpd_l             &warpd_r            &warpd_j     &warpd_k   &tmux_pw     &tmux_ps   &none
  &none     &zoom_out     &vim_exit      &none     &none     &out OUT_USB         &out OUT_BLE        &none        &trans     &tmux_nw     &tmux_ns   &none
                                         &none     &none     &trans               &trans              &none        &none
