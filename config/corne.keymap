@@ -544,24 +544,24 @@
         };
 
         /* 2 Layer */
-        numpad {
-            label = "numpad";
+        media {
+            label = "media";
             bindings = <
-&trans   &kp COMMA    &npsh7     &npsh8     &npsh9     &npsh0           &f2_menu      &f2_dock         &f2_status    &help_menu    &f2_tool           &kp TAB
-&trans   &kp DOT      &npsh4     &npsh5     &npsh6     &kp COLON        &kp LEFT      &kp DOWN         &kp UP        &kp RIGHT     &none              &kp RETURN
-&trans   &kp EQUAL    &npsh1     &npsh2     &npsh3     &kp MINUS        &kp PAGE_UP   &kp PAGE_DOWN    &kp HOME      &kp END       &kp KP_NUMLOCK     &win_close 
-                                 &trans     &trans     &trans           &trans        &trans           &trans
+&none    &kp F1   &kp F2   &kp F3   &kp F4   &kp F5           &kp C_MUTE    &kp C_PREV    &kp C_PP      &kp C_NEXT    &kp C_BRI_DN  &kp C_BRI_UP
+&none    &kp F6   &kp F7   &kp F8   &kp F9   &kp F10          &kp C_VOL_DN  &kp C_VOL_UP  &out OUT_USB  &out OUT_BLE  &bt BT_CLR    &bt BT_PRV
+&none    &kp F11  &kp F12  &kp F13  &kp F14  &kp F15          &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_NXT
+                           &trans   &trans   &trans           &trans        &trans        &trans
             >;
         };
 
         /* 3 Layer */
-        media {
-            label = "media";
+        numpad {
+            label = "numpad";
             bindings = <
-      &none    &kp F1   &kp F2   &kp F3   &kp F4   &kp F5           &kp C_MUTE    &kp C_PREV    &kp C_PP      &kp C_NEXT    &kp C_BRI_DN  &kp C_BRI_UP
-      &trans   &kp F6   &kp F7   &kp F8   &kp F9   &kp F10          &kp C_VOL_DN  &kp C_VOL_UP  &out OUT_USB  &out OUT_BLE  &bt BT_CLR    &bt BT_PRV
-      &trans   &kp F11  &kp F12  &kp F13  &kp F14  &kp F15          &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_NXT
-                                 &trans   &trans   &trans           &trans        &trans        &trans
+&none   &kp COMMA    &npsh7     &npsh8     &npsh9     &npsh0           &f2_menu      &f2_dock         &f2_status    &help_menu    &f2_tool           &kp TAB
+&none   &kp DOT      &npsh4     &npsh5     &npsh6     &kp COLON        &kp LEFT      &kp DOWN         &kp UP        &kp RIGHT     &none              &kp RETURN
+&none   &kp EQUAL    &npsh1     &npsh2     &npsh3     &kp MINUS        &kp PAGE_UP   &kp PAGE_DOWN    &kp HOME      &kp END       &kp KP_NUMLOCK     &win_close 
+                                &trans     &trans     &trans           &trans        &trans           &trans
             >;
         };
 
