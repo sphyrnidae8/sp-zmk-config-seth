@@ -45,6 +45,12 @@
             key-positions = <16 19>;
             bindings = <&kp LC(A)>;
         };
+        combo_tmux_mode_select {
+            timeout-ms = <75>;
+            slow-release;
+            key-positions = <4 7>;
+            bindings = <&tmux_mode_select>;
+        };
         combo_capsword {
             timeout-ms = <75>;
             slow-release;
@@ -130,6 +136,12 @@
             bindings =
                 <&macro_tap>,
                 <&kp ESC &kp COLON &kp Q &kp A &kp L &kp RETURN>;
+        };
+        tmux_mode_select: tmux_mode_select {
+            compatible = "zmk,behavior-macro";
+            label = "tmux mode select";
+            #binding-cells = <0>;
+            bindings = <&kp LC(A) &kp F>;
         };
         tmux_ns: tmux_ns {
             compatible = "zmk,behavior-macro";
