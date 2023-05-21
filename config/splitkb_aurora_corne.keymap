@@ -257,15 +257,15 @@
         };
         forward: forward {
             compatible = "zmk,behavior-macro";
-            label = "next tab";
+            label = "forward";
             #binding-cells = <0>;
-            bindings = <&kp LG(RIGHT_BRACKET)>;
+            bindings = <&kp LG(RBKT)>;
         };
         backward: backward {
             compatible = "zmk,behavior-macro";
-            label = "previous tab";
+            label = "backward";
             #binding-cells = <0>;
-            bindings = <&kp LG(LEFT_BRACKET)>;
+            bindings = <&kp LG(LBKT)>;
         };
         tab_next: tab_next {
             compatible = "zmk,behavior-macro";
@@ -541,7 +541,7 @@
             label = "symbols";
             bindings = <
 &kp BACKSPACE   &kp LESS_THAN       &kp AMPERSAND   &kp ASTERISK  &kp LPAR    &kp RPAR            &kp LESS_THAN    &kp GREATER_THAN   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS   &kp SEMICOLON   &kp BACKSPACE
-&kp SPACE       &kp GREATER_THAN    &kp DOLLAR      &kp PERCENT   &kp CARET   &none               &kp MINUS        &kp EQUAL          &kp LEFT_BRACE        &kp RIGHT_BRACE         &kp BACKSLASH   &trans
+&kp SPACE       &kp GREATER_THAN    &kp DOLLAR      &kp PERCENT   &kp CARET   &none               &kp MINUS        &kp EQUAL          &kp LEFT_BRACE        &kp RIGHT_BRACE         &kp BACKSLASH   &kp GRAVE
 &trans          &kp PLUS            &kp EXCL        &kp AT        &kp HASH    &kp UNDERSCORE      &kp UNDERSCORE   &kp PLUS           &kp LEFT_BRACKET      &kp RIGHT_BRACKET       &kp PIPE        &trans
                                                     &trans        &trans      &trans              &trans           &trans             &trans
             >;
@@ -564,7 +564,7 @@
             bindings = <
 &none   &kp COMMA    &npsh7     &npsh8     &npsh9     &npsh0           &f2_menu      &f2_dock         &f2_status    &help_menu    &f2_tool           &kp TAB
 &none   &kp DOT      &npsh4     &npsh5     &npsh6     &kp COLON        &kp LEFT      &kp DOWN         &kp UP        &kp RIGHT     &none              &kp RETURN
-&none   &kp EQUAL    &npsh1     &npsh2     &npsh3     &kp MINUS        &kp PAGE_UP   &kp PAGE_DOWN    &kp HOME      &kp END       &kp KP_NUMLOCK     &win_close 
+&none   &kp EQUAL    &npsh1     &npsh2     &npsh3     &kp MINUS        &kp PAGE_UP   &kp PAGE_DOWN    &kp HOME      &kp END       &kp KP_NUMLOCK     &win_close
                                 &trans     &trans     &trans           &trans        &trans           &trans
             >;
         };
@@ -573,7 +573,7 @@
         window_left {
             label = "move [L]";
             bindings = <
-      &trans   &win_next         &forward      &backward      &tab_next     &tab_prev          &kp LC(LS(Y))   &kp LC(LS(U))     &kp LC(LS(I))           &kp LC(LS(O))             &kp LC(LS(P))         &trans
+      &none    &win_next         &forward      &backward      &tab_next     &tab_prev          &kp LC(LS(Y))   &kp LC(LS(U))     &kp LC(LS(I))           &kp LC(LS(O))             &kp LC(LS(P))         &none
  &kp C_POWER   &kp LG(TAB)       &win_quad     &win_third     &win_half     &win_full          &kp LC(LS(H))   &kp LC(LS(J))     &kp LC(LS(K))           &kp LC(LS(L))             &kp LC(LS(COLON))     &none
  &kp C_SLEEP   &kp LG(LS(TAB))   &win_vquad    &win_vthird    &win_vhalf    &win_screen        &kp LC(LS(N))   &kp LC(LS(M))     &kp LC(LS(LESS_THAN))   &kp LC(LS(GREATER_THAN))  &kp LC(LS(QUESTION))  &none
                                                &trans         &trans        &trans             &trans          &trans            &trans
@@ -584,7 +584,7 @@
         window_right {
             label = "move [R]";
             bindings = <
- &trans  &kp LC(LS(Q))  &kp LC(LS(W))  &kp LC(LS(E))  &kp LC(LS(R))  &kp LC(LS(T))      &tab_prev     &tab_next    &backward      &forward    &win_next        &trans
+ &none   &kp LC(LS(Q))  &kp LC(LS(W))  &kp LC(LS(E))  &kp LC(LS(R))  &kp LC(LS(T))      &tab_prev     &tab_next    &backward      &forward    &win_next        &none
  &none   &kp LC(LS(A))  &kp LC(LS(S))  &kp LC(LS(D))  &kp LC(LS(F))  &kp LC(LS(G))      &win_full     &win_half    &win_third     &win_quad   &kp LG(TAB)      &kp C_POWER
  &none   &kp LC(LS(Z))  &kp LC(LS(X))  &kp LC(LS(C))  &kp LC(LS(V))  &kp LC(LS(B))      &win_screen   &win_vhalf   &win_vthird    &win_vquad  &kp LG(LS(TAB))  &kp C_SLEEP
                                               &trans         &trans         &trans      &trans        &trans       &trans
