@@ -30,80 +30,13 @@
 };
 // }}}
 / {
-// COMBOS {{{
-//   ╭────────────────────────╮ ╭────────────────────────╮
-//   │  0   1   2   3   4   5 │ │  6   7   8   9  10  11 │
-//   │ 12  13  14  15  16  17 │ │ 18  19  20  21  22  23 │
-//   │ 24  25  26  27  28  29 │ │ 30  31  32  33  34  35 │
-//   ╰───────────╮ 36  37  38 │ │ 39  40  41 ╭───────────╯
-//           ::  ╰────────────╯ ╰────────────╯
-    combos {
-        compatible = "zmk,combos";
-        combo_version {
-            timeout-ms = <75>;
-            key-positions = <0 1>;
-            bindings = <&version>;
-        };
-        combo_tmux {
-            timeout-ms = <50>;
-            slow-release;
-            key-positions = <16 19>;
-            bindings = <&kp LC(A)>;
-        };
-        combo_tmux_mode_select {
-            timeout-ms = <50>;
-            slow-release;
-            key-positions = <4 7>;
-            bindings = <&tmux_mode_select>;
-        };
-        combo_capsword {
-            timeout-ms = <50>;
-            slow-release;
-            key-positions = <12 23>;
-            bindings = <&caps_word>;
-        };
-        combo_jdtag {
-            timeout-ms = <50>;
-            slow-release;
-            key-positions = <15 19>;
-            bindings = <&jdtag>;
-        };
-        combo_delete {
-            timeout-ms = <75>;
-            slow-release;
-            key-positions = <10 11>;
-            bindings = <&kp DELETE>;
-        };
-        combo_gui_left {
-            timeout-ms = <75>;
-            key-positions = <24 25>;
-            bindings = <&kp LGUI>;
-        };
-        combo_alt_left {
-            timeout-ms = <75>;
-            key-positions = <12 24>;
-            bindings = <&kp LALT>;
-        };
-        combo_gui_right {
-            timeout-ms = <75>;
-            key-positions = <34 35>;
-            bindings = <&kp LGUI>;
-        };
-        combo_alt_right {
-            timeout-ms = <75>;
-            key-positions = <23 35>;
-            bindings = <&kp LALT>;
-        };
-    };
-
-// }}}
 // MACROS LAYERS {{{
     macros {
         version: version {
             compatible = "zmk,behavior-macro";
             label = "config version";
             #binding-cells = <0>;
-            bindings = <&kp N1 &kp DOT &kp N0>;
+            bindings = <&kp N1 &kp DOT &kp N1>;
         };
         hyper: hyper {
             compatible = "zmk,behavior-macro";
@@ -403,6 +336,73 @@
         };
 
     };
+// }}}
+// COMBOS {{{
+//   ╭────────────────────────╮ ╭────────────────────────╮
+//   │  0   1   2   3   4   5 │ │  6   7   8   9  10  11 │
+//   │ 12  13  14  15  16  17 │ │ 18  19  20  21  22  23 │
+//   │ 24  25  26  27  28  29 │ │ 30  31  32  33  34  35 │
+//   ╰───────────╮ 36  37  38 │ │ 39  40  41 ╭───────────╯
+//           ::  ╰────────────╯ ╰────────────╯
+    combos {
+        compatible = "zmk,combos";
+        combo_tmux {
+            timeout-ms = <25>;
+            slow-release;
+            key-positions = <16 19>;
+            bindings = <&kp LC(A)>;
+        };
+        combo_tmux_mode_select {
+            timeout-ms = <25>;
+            slow-release;
+            key-positions = <4 7>;
+            bindings = <&tmux_mode_select>;
+        };
+        combo_capsword {
+            timeout-ms = <25>;
+            slow-release;
+            key-positions = <12 23>;
+            bindings = <&caps_word>;
+        };
+        combo_jdtag {
+            timeout-ms = <25>;
+            slow-release;
+            key-positions = <15 19>;
+            bindings = <&jdtag>;
+        };
+        combo_version {
+            timeout-ms = <75>;
+            key-positions = <0 1>;
+            bindings = <&version>;
+        };
+        combo_delete {
+            timeout-ms = <75>;
+            slow-release;
+            key-positions = <10 11>;
+            bindings = <&kp DELETE>;
+        };
+        combo_gui_left {
+            timeout-ms = <75>;
+            key-positions = <24 25>;
+            bindings = <&kp LGUI>;
+        };
+        combo_alt_left {
+            timeout-ms = <75>;
+            key-positions = <12 24>;
+            bindings = <&kp LALT>;
+        };
+        combo_gui_right {
+            timeout-ms = <75>;
+            key-positions = <34 35>;
+            bindings = <&kp LGUI>;
+        };
+        combo_alt_right {
+            timeout-ms = <75>;
+            key-positions = <23 35>;
+            bindings = <&kp LALT>;
+        };
+    };
+
 // }}}
 // BEHAVIORS {{{
     behaviors {
