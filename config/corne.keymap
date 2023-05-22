@@ -30,7 +30,7 @@
             compatible = "zmk,behavior-macro";
             label = "config version";
             #binding-cells = <0>;
-            bindings = <&kp N1 &kp DOT &kp N0 &kp N1>;
+            bindings = <&kp N1 &kp DOT &kp N0 &kp N2>;
         };
         hyper: hyper {
             compatible = "zmk,behavior-macro";
@@ -341,25 +341,25 @@
     combos {
         compatible = "zmk,combos";
         combo_tmux {
-            timeout-ms = <25>;
+            timeout-ms = <35>;
             slow-release;
             key-positions = <16 19>;
             bindings = <&kp LC(A)>;
         };
         combo_tmux_mode_select {
-            timeout-ms = <25>;
+            timeout-ms = <35>;
             slow-release;
             key-positions = <4 7>;
             bindings = <&tmux_mode_select>;
         };
         combo_capsword {
-            timeout-ms = <25>;
+            timeout-ms = <35>;
             slow-release;
             key-positions = <12 23>;
             bindings = <&caps_word>;
         };
         combo_jdtag {
-            timeout-ms = <25>;
+            timeout-ms = <35>;
             slow-release;
             key-positions = <15 19>;
             bindings = <&jdtag>;
@@ -502,6 +502,96 @@
                 <&kp RIGHT_PARENTHESIS>;
             mods = <(MOD_LSFT)>;
         };
+        rs1: rs1 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "reverse shift 1";
+            #binding-cells = <0>;
+            bindings =
+                <&kp EXCLAMATION>,
+                <&kp KP_N1>;
+            mods = <(MOD_LSFT)>;
+        };
+        rs2: rs2 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "reverse shift 2";
+            #binding-cells = <0>;
+            bindings =
+                <&kp AT>,
+                <&kp KP_N2>;
+            mods = <(MOD_LSFT)>;
+        };
+        rs3: rs3 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "reverse shift 3";
+            #binding-cells = <0>;
+            bindings =
+                <&kp HASH>,
+                <&kp KP_N3>;
+            mods = <(MOD_LSFT)>;
+        };
+        rs4: rs4 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "reverse shift 4";
+            #binding-cells = <0>;
+            bindings =
+                <&kp DOLLAR>,
+                <&kp KP_N4>;
+            mods = <(MOD_LSFT)>;
+        };
+        rs5: rs5 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "reverse shift 5";
+            #binding-cells = <0>;
+            bindings =
+                <&kp PERCENT>,
+                <&kp KP_N5>;
+            mods = <(MOD_LSFT)>;
+        };
+        rs6: rs6 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "reverse shift 6";
+            #binding-cells = <0>;
+            bindings =
+                <&kp CARET>,
+                <&kp KP_N6>;
+            mods = <(MOD_LSFT)>;
+        };
+        rs7: rs7 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "reverse shift 7";
+            #binding-cells = <0>;
+            bindings =
+                <&kp AMPERSAND>,
+                <&kp KP_N7>;
+            mods = <(MOD_LSFT)>;
+        };
+        rs8: rs8 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "reverse shift 8";
+            #binding-cells = <0>;
+            bindings =
+                <&kp ASTERISK>,
+                <&kp KP_N8>;
+            mods = <(MOD_LSFT)>;
+        };
+        rs9: rs9 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "reverse shift 9";
+            #binding-cells = <0>;
+            bindings =
+                <&kp LEFT_PARENTHESIS>,
+                <&kp KP_N9>;
+            mods = <(MOD_LSFT)>;
+        };
+        rs0: rs0 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "reverse shift 0";
+            #binding-cells = <0>;
+            bindings =
+                <&kp RIGHT_PARENTHESIS>,
+                <&kp KP_N0>;
+            mods = <(MOD_LSFT)>;
+        };
         h_bs: h_bs {
             compatible = "zmk,behavior-mod-morph";
             label = "true backspace for c-h";
@@ -543,10 +633,10 @@
         default {
             label = "araxia";
             bindings = <
-            &lt 4 TAB   &kp Q   &kp W           &kp E             &kp R         &kp T                 &kp Y        &kp U           &kp I      &kp O     &kp P            &lt 5 BACKSPACE
- &mt LEFT_CONTROL ESC   &kp A   &kp S           &kp D             &kp F         &kp G                 &h_bs        &kp J           &kp K      &kp L     &kp SEMICOLON    &mt RCTRL SINGLE_QUOTE
-       &mt LALT GRAVE   &kp Z   &kp X           &kp C             &kp V         &kp B                 &kp N        &kp M       &kp COMMA    &kp DOT     &kp FSLH         &mt RALT BACKSLASH
-                                      &mt LGUI RETURN  &mt LSHIFT LC(W)   &lthp 1 ESC           &lthp 2 ESC  &lt 3 SPACE  &mt RGUI COLON
+            &lt 4 TAB   &kp Q   &kp W           &kp E              &kp R     &kp T               &kp Y      &kp U          &kp I            &kp O     &kp P            &lt 5 BACKSPACE
+ &mt LEFT_CONTROL ESC   &kp A   &kp S           &kp D              &kp F     &kp G               &h_bs      &kp J          &kp K            &kp L     &kp SEMICOLON    &mt RCTRL SINGLE_QUOTE
+       &mt LALT GRAVE   &kp Z   &kp X           &kp C              &kp V     &kp B               &kp N      &kp M          &kp COMMA        &kp DOT   &kp FSLH         &mt RALT BACKSLASH
+                                      &mt LGUI RETURN  &lthp LSHIFT LC(W)    &mt 1 ESC           &mt 2 ESC  &lthp 3 SPACE  &mt RGUI COLON
             >;
         };
 
@@ -554,10 +644,10 @@
         symbols {
             label = "symbols";
             bindings = <
-&kp BACKSPACE   &kp LESS_THAN       &kp AMPERSAND   &kp ASTERISK  &kp LPAR    &kp RPAR            &kp LESS_THAN    &kp GREATER_THAN   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS   &kp SEMICOLON   &kp BACKSPACE
-&kp SPACE       &kp GREATER_THAN    &kp DOLLAR      &kp PERCENT   &kp CARET   &none               &kp MINUS        &kp EQUAL          &kp LEFT_BRACE        &kp RIGHT_BRACE         &kp BACKSLASH   &kp GRAVE
-&trans          &kp PLUS            &kp EXCL        &kp AT        &kp HASH    &kp UNDERSCORE      &kp UNDERSCORE   &kp PLUS           &kp LEFT_BRACKET      &kp RIGHT_BRACKET       &kp PIPE        &trans
-                                                    &trans        &trans      &trans              &trans           &trans             &trans
+&kp BACKSPACE   &kp LESS_THAN       &rs7    &rs8      &rs9      &rs0                &kp LESS_THAN    &kp GREATER_THAN   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS   &kp SEMICOLON   &kp BACKSPACE
+&kp SPACE       &kp GREATER_THAN    &rs4    &rs5      &rs6      &kp TILDE           &kp MINUS        &kp EQUAL          &kp LEFT_BRACE        &kp RIGHT_BRACE         &kp BACKSLASH   &kp GRAVE
+&trans          &kp PLUS            &rs1    &rs2      &rs3      &kp UNDERSCORE      &kp UNDERSCORE   &kp PLUS           &kp LEFT_BRACKET      &kp RIGHT_BRACKET       &kp PIPE        &trans
+                                            &trans    &trans    &trans              &trans           &trans             &trans
             >;
         };
 
@@ -576,10 +666,10 @@
         numpad {
             label = "numpad";
             bindings = <
-&none   &kp COMMA    &npsh7     &npsh8     &npsh9     &npsh0           &f2_menu      &f2_dock         &f2_status    &help_menu    &f2_tool           &kp TAB
-&none   &kp DOT      &npsh4     &npsh5     &npsh6     &kp COLON        &kp LEFT      &kp DOWN         &kp UP        &kp RIGHT     &none              &kp RETURN
-&none   &kp EQUAL    &npsh1     &npsh2     &npsh3     &kp MINUS        &kp PAGE_UP   &kp PAGE_DOWN    &kp HOME      &kp END       &kp KP_NUMLOCK     &win_close
-                                &trans     &trans     &trans           &trans        &trans           &trans
+&kp ASTERISK    &kp COMMA    &npsh7     &npsh8     &npsh9     &npsh0           &f2_menu      &f2_dock         &f2_status    &help_menu    &f2_tool           &kp TAB
+&kp FSLH        &kp DOT      &npsh4     &npsh5     &npsh6     &kp COLON        &kp LEFT      &kp DOWN         &kp UP        &kp RIGHT     &none              &kp RETURN
+&kp PLUS        &kp EQUAL    &npsh1     &npsh2     &npsh3     &kp MINUS        &kp PAGE_UP   &kp PAGE_DOWN    &kp HOME      &kp END       &kp KP_NUMLOCK     &win_close
+                                        &trans     &trans     &trans           &trans        &trans           &trans
             >;
         };
 
