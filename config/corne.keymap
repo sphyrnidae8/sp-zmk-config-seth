@@ -30,7 +30,7 @@
             compatible = "zmk,behavior-macro";
             label = "config version";
             #binding-cells = <0>;
-            bindings = <&kp N1 &kp DOT &kp N0 &kp N5>;
+            bindings = <&kp N1 &kp DOT &kp N0 &kp N6>;
         };
         hyper: hyper {
             compatible = "zmk,behavior-macro";
@@ -409,7 +409,7 @@
             //global-quick-tap;
             flavor = "hold-preferred";
             bindings =
-                <&lt>,
+                <&mo>,
                 <&kp>;
         };
         mthp: mod_tap_hold_preferred {
