@@ -30,7 +30,7 @@
             compatible = "zmk,behavior-macro";
             label = "config version";
             #binding-cells = <0>;
-            bindings = <&kp N1 &kp DOT &kp N1 &kp N4>;
+            bindings = <&kp N1 &kp DOT &kp N1 &kp N5>;
         };
         hyper: hyper {
             compatible = "zmk,behavior-macro";
@@ -612,7 +612,7 @@
             #binding-cells = <0>;
             bindings =
                 <&kp EXCLAMATION>,
-                <&kp KP_N1>;
+                <&kp N1>;
             mods = <(MOD_LSFT)>;
         };
         rs2: rs2 {
@@ -621,7 +621,7 @@
             #binding-cells = <0>;
             bindings =
                 <&kp AT>,
-                <&kp KP_N2>;
+                <&kp N2>;
             mods = <(MOD_LSFT)>;
         };
         rs3: rs3 {
@@ -630,7 +630,7 @@
             #binding-cells = <0>;
             bindings =
                 <&kp HASH>,
-                <&kp KP_N3>;
+                <&kp N3>;
             mods = <(MOD_LSFT)>;
         };
         rs4: rs4 {
@@ -639,7 +639,7 @@
             #binding-cells = <0>;
             bindings =
                 <&kp DOLLAR>,
-                <&kp KP_N4>;
+                <&kp N4>;
             mods = <(MOD_LSFT)>;
         };
         rs5: rs5 {
@@ -648,7 +648,7 @@
             #binding-cells = <0>;
             bindings =
                 <&kp PERCENT>,
-                <&kp KP_N5>;
+                <&kp N5>;
             mods = <(MOD_LSFT)>;
         };
         rs6: rs6 {
@@ -657,7 +657,7 @@
             #binding-cells = <0>;
             bindings =
                 <&kp CARET>,
-                <&kp KP_N6>;
+                <&kp N6>;
             mods = <(MOD_LSFT)>;
         };
         rs7: rs7 {
@@ -666,7 +666,7 @@
             #binding-cells = <0>;
             bindings =
                 <&kp AMPERSAND>,
-                <&kp KP_N7>;
+                <&kp N7>;
             mods = <(MOD_LSFT)>;
         };
         rs8: rs8 {
@@ -675,7 +675,7 @@
             #binding-cells = <0>;
             bindings =
                 <&kp ASTERISK>,
-                <&kp KP_N8>;
+                <&kp N8>;
             mods = <(MOD_LSFT)>;
         };
         rs9: rs9 {
@@ -684,7 +684,7 @@
             #binding-cells = <0>;
             bindings =
                 <&kp LEFT_PARENTHESIS>,
-                <&kp KP_N9>;
+                <&kp N9>;
             mods = <(MOD_LSFT)>;
         };
         rs0: rs0 {
@@ -693,7 +693,7 @@
             #binding-cells = <0>;
             bindings =
                 <&kp RIGHT_PARENTHESIS>,
-                <&kp KP_N0>;
+                <&kp N0>;
             mods = <(MOD_LSFT)>;
         };
         h_bs: h_bs {
