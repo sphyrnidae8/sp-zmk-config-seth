@@ -28,7 +28,7 @@
             compatible = "zmk,behavior-macro";
             label = "config version";
             #binding-cells = <0>;
-            bindings = <&kp N1 &kp DOT &kp N1 &kp N6>;
+            bindings = <&kp N1 &kp DOT &kp N1 &kp N7>;
         };
         hyper: hyper {
             compatible = "zmk,behavior-macro";
@@ -747,10 +747,10 @@
         symbols {
             label = "symbols";
             bindings = <
-&kp BACKSPACE   &rs_lt       &rs7    &rs8      &rs9      &rs0                &kp LESS_THAN    &kp GREATER_THAN   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS   &kp SEMICOLON   &kp BACKSPACE
-&kp SPACE       &rs_gt       &rs4    &rs5      &rs6      &rs_tilde           &kp MINUS        &kp EQUAL          &kp LEFT_BRACE        &kp RIGHT_BRACE         &kp BACKSLASH   &kp GRAVE
-&trans          &rs_plus     &rs1    &rs2      &rs3      &rs_underscore      &kp UNDERSCORE   &kp PLUS           &kp LEFT_BRACKET      &kp RIGHT_BRACKET       &kp PIPE        &trans
-                                     &trans    &trans    &trans              &trans           &trans             &trans
+&kp BACKSPACE   &rs_lt       &rs7    &rs8      &rs9         &rs0                &kp LESS_THAN    &kp GREATER_THAN   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS   &kp SEMICOLON   &kp BACKSPACE
+&kp SPACE       &rs_gt       &rs4    &rs5      &rs6         &rs_tilde           &kp MINUS        &kp EQUAL          &kp LEFT_BRACE        &kp RIGHT_BRACE         &kp BACKSLASH   &kp GRAVE
+&trans          &rs_plus     &rs1    &rs2      &rs3         &rs_underscore      &kp UNDERSCORE   &kp PLUS           &kp LEFT_BRACKET      &kp RIGHT_BRACKET       &kp PIPE        &trans
+                                     &trans    &kp LSHFT    &trans              &trans           &trans             &trans
             >;
         };
 
@@ -769,10 +769,10 @@
         numpad {
             label = "numpad";
             bindings = <
-&kp ASTERISK    &kp COMMA    &npsh7     &npsh8     &npsh9     &npsh0           &f2_menu      &f2_dock         &f2_status    &help_menu    &f2_tool           &kp TAB
-&kp FSLH        &kp DOT      &npsh4     &npsh5     &npsh6     &kp COLON        &kp LEFT      &kp DOWN         &kp UP        &kp RIGHT     &none              &kp RETURN
-&kp PLUS        &kp EQUAL    &npsh1     &npsh2     &npsh3     &kp MINUS        &kp PAGE_UP   &kp PAGE_DOWN    &kp HOME      &kp END       &kp KP_NUMLOCK     &win_close
-                                        &trans     &trans     &trans           &trans        &trans           &trans
+&kp ASTERISK    &kp COMMA    &npsh7     &npsh8     &npsh9        &npsh0           &f2_menu      &f2_dock         &f2_status    &help_menu    &f2_tool           &kp TAB
+&kp FSLH        &kp DOT      &npsh4     &npsh5     &npsh6        &kp COLON        &kp LEFT      &kp DOWN         &kp UP        &kp RIGHT     &none              &kp RETURN
+&kp PLUS        &kp EQUAL    &npsh1     &npsh2     &npsh3        &kp MINUS        &kp PAGE_UP   &kp PAGE_DOWN    &kp HOME      &kp END       &kp KP_NUMLOCK     &win_close
+                                        &trans     &kp LSHFT     &trans           &trans        &trans           &trans
             >;
         };
 
