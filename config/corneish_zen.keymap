@@ -30,7 +30,7 @@
             compatible = "zmk,behavior-macro";
             label = "config version";
             #binding-cells = <0>;
-            bindings = <&kp N1 &kp DOT &kp N1 &kp N7>;
+            bindings = <&kp N1 &kp DOT &kp N1 &kp N8>;
         };
         hyper: hyper {
             compatible = "zmk,behavior-macro";
@@ -43,14 +43,6 @@
             label = "mouse_keys";
             #binding-cells = <0>;
             bindings = <&kp LALT &kp LALT &kp LALT &kp LALT &kp LALT>;
-        };
-        jdtag: jdtag {
-            compatible = "zmk,behavior-macro";
-            label = "jdtag";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_tap>,
-                <&kp LEFT_BRACE &kp AT &kp RIGHT_BRACE &kp LEFT>;
         };
         vim_save: vim_save {
             compatible = "zmk,behavior-macro";
@@ -341,52 +333,34 @@
     combos {
         compatible = "zmk,combos";
         combo_inverse_winl {
-            timeout-ms = <50>;
+            timeout-ms = <75>;
             slow-release;
             key-positions = <0 38>;
             bindings = <&mo 5>;
         };
         combo_inverse_winr {
-            timeout-ms = <50>;
+            timeout-ms = <75>;
             slow-release;
             key-positions = <11 39>;
             bindings = <&mo 4>;
         };
         combo_tmux {
-            timeout-ms = <50>;
-            slow-release;
-            key-positions = <16 19>;
-            bindings = <&kp LC(A)>;
-        };
-        combo_tmux_mode_select {
-            timeout-ms = <30>;
-            slow-release;
-            key-positions = <4 7>;
-            bindings = <&tmux_mode_select>;
-        };
-        combo_tmux_alt {
-            timeout-ms = <50>;
+            timeout-ms = <75>;
             slow-release;
             key-positions = <2 3 4>;
             bindings = <&kp LC(A)>;
         };
-        combo_tmux_mode_select_alt {
-            timeout-ms = <50>;
+        combo_tmux_mode_select {
+            timeout-ms = <75>;
             slow-release;
             key-positions = <7 8 9>;
             bindings = <&tmux_mode_select>;
         };
         combo_capsword {
-            timeout-ms = <50>;
+            timeout-ms = <75>;
             slow-release;
             key-positions = <12 23>;
             bindings = <&caps_word>;
-        };
-        combo_jdtag {
-            timeout-ms = <35>;
-            slow-release;
-            key-positions = <15 19>;
-            bindings = <&jdtag>;
         };
         combo_version {
             timeout-ms = <75>;
