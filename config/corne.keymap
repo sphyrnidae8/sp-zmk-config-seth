@@ -24,7 +24,7 @@
             compatible = "zmk,behavior-macro";
             label = "config version";
             #binding-cells = <0>;
-            bindings = <&kp N1 &kp DOT &kp N1 &kp N8>;
+            bindings = <&kp N1 &kp DOT &kp N1 &kp N9>;
         };
         hyper: hyper {
             compatible = "zmk,behavior-macro";
@@ -341,13 +341,13 @@
         combo_tmux {
             timeout-ms = <75>;
             slow-release;
-            key-positions = <2 3 4>;
+            key-positions = <7 8 9>;
             bindings = <&kp LC(A)>;
         };
         combo_tmux_mode_select {
             timeout-ms = <75>;
             slow-release;
-            key-positions = <7 8 9>;
+            key-positions = <2 3 4>;
             bindings = <&tmux_mode_select>;
         };
         combo_capsword {
