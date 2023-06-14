@@ -28,7 +28,7 @@
             compatible = "zmk,behavior-macro";
             label = "config version";
             #binding-cells = <0>;
-            bindings = <&kp N1 &kp DOT &kp N2 &kp N0>;
+            bindings = <&kp N1 &kp DOT &kp N2 &kp N1>;
         };
         hyper: hyper {
             compatible = "zmk,behavior-macro";
@@ -789,10 +789,10 @@
         lighting {
             label = "lighting";
             bindings = <
- &trans  &none   &none   &rgb_ug RGB_BRI  &rgb_ug RGB_BRD   &rgb_ug RGB_COLOR_HSB(25,100,0)       &none   &none   &kp F18   &kp F17   &kp F16   &trans
- &none   &none   &none   &rgb_ug RGB_SAI  &rgb_ug RGB_SAD   &rgb_ug RGB_COLOR_HSB(25,100,80)      &none   &none   &kp F21   &kp F20   &kp F19   &none
- &none   &none   &none   &rgb_ug RGB_HUI  &rgb_ug RGB_HUD   &rgb_ug RGB_COLOR_HSB(25,0,100)       &none   &none   &kp F24   &kp F23   &kp F22   &none
-                         &none            &none             &none                                 &none   &none   &none
+ &trans     &none   &none   &rgb_ug RGB_BRI  &rgb_ug RGB_BRD   &rgb_ug RGB_COLOR_HSB(25,100,0)       &none   &none   &kp F18   &kp F17   &kp F16   &trans
+ &kp LCTL   &none   &none   &rgb_ug RGB_SAI  &rgb_ug RGB_SAD   &rgb_ug RGB_COLOR_HSB(25,100,80)      &none   &none   &kp F21   &kp F20   &kp F19   &none
+ &kp LALT   &none   &none   &rgb_ug RGB_HUI  &rgb_ug RGB_HUD   &rgb_ug RGB_COLOR_HSB(25,0,100)       &none   &none   &kp F24   &kp F23   &kp F22   &none
+                            &kp LGUI         &kp LSHFT         &none                                 &none   &none   &none
             >;
         };
 
