@@ -30,7 +30,18 @@
             compatible = "zmk,behavior-macro";
             label = "config version";
             #binding-cells = <0>;
-            bindings = <&kp N1 &kp DOT &kp N2 &kp N1>;
+            bindings = <&kp N1 &kp DOT &kp N2 &kp N3>;
+        };
+        act: act {
+            compatible = "zmk,behavior-macro-one-param";
+            label = "activate";
+            #binding-cells = <1>;
+            bindings
+                = <&macro_press &kp LSHFT &kp LCTRL>
+                , <&macro_param_1to1>
+                , <&macro_tap &kp MACRO_PLACEHOLDER>
+                , <&macro_release &kp LSHFT &kp LCTRL>
+                ;
         };
         hyper: hyper {
             compatible = "zmk,behavior-macro";
@@ -768,10 +779,10 @@
         window_left {
             label = "move [L]";
             bindings = <
-      &none    &win_next         &forward      &backward      &tab_next     &tab_prev          &kp LC(LS(Y))   &kp LC(LS(U))     &kp LC(LS(I))           &kp LC(LS(O))             &kp LC(LS(P))         &none
- &kp C_POWER   &kp LG(TAB)       &win_quad     &win_third     &win_half     &win_full          &kp LC(LS(H))   &kp LC(LS(J))     &kp LC(LS(K))           &kp LC(LS(L))             &kp LC(LS(COLON))     &none
- &kp C_SLEEP   &kp LG(LS(TAB))   &win_vquad    &win_vthird    &win_vhalf    &win_screen        &kp LC(LS(N))   &kp LC(LS(M))     &kp LC(LS(LESS_THAN))   &kp LC(LS(GREATER_THAN))  &kp LC(LS(QUESTION))  &none
-                                               &trans         &trans        &trans             &trans          &trans            &trans
+      &none    &win_next         &forward      &backward      &tab_next     &tab_prev          &act Y   &act U     &act I           &act O             &act P         &none
+ &kp C_POWER   &kp LG(TAB)       &win_quad     &win_third     &win_half     &win_full          &act H   &act J     &act K           &act L             &act COLON     &none
+ &kp C_SLEEP   &kp LG(LS(TAB))   &win_vquad    &win_vthird    &win_vhalf    &win_screen        &act N   &act M     &act LESS_THAN   &act GREATER_THAN  &act QUESTION  &none
+                                               &trans         &trans        &trans             &trans   &trans     &trans
             >;
         };
 
@@ -779,10 +790,10 @@
         window_right {
             label = "move [R]";
             bindings = <
- &none   &kp LC(LS(Q))  &kp LC(LS(W))  &kp LC(LS(E))  &kp LC(LS(R))  &kp LC(LS(T))      &tab_prev     &tab_next    &backward      &forward    &win_next        &none
- &none   &kp LC(LS(A))  &kp LC(LS(S))  &kp LC(LS(D))  &kp LC(LS(F))  &kp LC(LS(G))      &win_full     &win_half    &win_third     &win_quad   &kp LG(TAB)      &kp C_POWER
- &none   &kp LC(LS(Z))  &kp LC(LS(X))  &kp LC(LS(C))  &kp LC(LS(V))  &kp LC(LS(B))      &win_screen   &win_vhalf   &win_vthird    &win_vquad  &kp LG(LS(TAB))  &kp C_SLEEP
-                                              &trans         &trans         &trans      &trans        &trans       &trans
+ &none   &act Q  &act W  &act E  &act R  &act T      &tab_prev     &tab_next    &backward      &forward    &win_next        &none
+ &none   &act A  &act S  &act D  &act F  &act G      &win_full     &win_half    &win_third     &win_quad   &kp LG(TAB)      &kp C_POWER
+ &none   &act Z  &act X  &act C  &act V  &act B      &win_screen   &win_vhalf   &win_vthird    &win_vquad  &kp LG(LS(TAB))  &kp C_SLEEP
+                         &trans  &trans  &trans      &trans        &trans       &trans
             >;
         };
 
@@ -814,7 +825,7 @@
         discord {
             label = "discord";
             bindings = <
- &none      &none      &none      &none      &none      &none           &kp LC(LS(N))   &none            &none       &none            &none    &none
+ &none      &none      &none      &none      &none      &none           &act N          &none            &none       &none            &none    &none
  &none      &none      &none      &none      &none      &none           &kp PAGE_DOWN   &dis_down        &dis_up     &kp PAGE_UP      &none    &none
  &none      &none      &none      &none      &none      &none           &kp PAGE_UP     &kp PAGE_DOWN    &kp HOME    &kp END          &none    &none
                                   &none      &none      &none           &trans          &trans           &none
