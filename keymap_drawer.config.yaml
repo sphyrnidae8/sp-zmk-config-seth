@@ -267,6 +267,7 @@ parse_config:
     C_PREV: ⏮️
     LESS_THAN: '<'
     GREATER_THAN: '>'
+    LC(A): 'tmux prefix'
 
   zmk_combos:
     combo_inverse_winl:     { align: right  , o: 0.0 }
