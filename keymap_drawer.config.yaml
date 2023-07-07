@@ -265,6 +265,8 @@ parse_config:
     C_PP: ⏯
     C_NEXT: ⏭️
     C_PREV: ⏮️
+    LESS_THAN: '<'
+    GREATER_THAN: '>'
 
   zmk_combos:
     combo_inverse_winl:     { align: right  , o: 0.0 }
