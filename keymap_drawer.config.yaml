@@ -259,4 +259,23 @@ parse_config:
     NON_US_HASH: '#'
     NUHS: '#'
     TILDE2: '~'
-  zmk_combos: {}
+    SPACE: ␣
+    BACKSPACE: ⌫
+    DELETE: ⌦
+    C_PP: ⏯
+    C_NEXT: ⏭️
+    C_PREV: ⏮️
+
+  zmk_combos:
+    combo_inverse_winl:     { align: right  , o: 0.0 }
+    combo_inverse_winr:     { align: left   , o: 0.0 }
+    combo_lighting:         { align: top    , o: 1.5 }
+    combo_tmux:             { align: top    , o: 0.5 }
+    combo_tmux_mode_select: { align: top    , o: 0.5 }
+    combo_capsword:         { align: bottom , o: 2.5 }
+    combo_version:          { align: top    , o: 0.5 }
+    combo_delete:           { align: top    , o: 0.5 }
+    combo_gui_left:         { align: left   , o: 0.5 }
+    combo_alt_left:         { align: left   , o: 0.5 }
+    combo_gui_right:        { align: right  , o: 0.5 }
+    combo_alt_right:        { align: right  , o: 0.5 }
