@@ -209,7 +209,8 @@ path.combo {
 <path d="M674.0,111.0 l0.0,45.800000000000004" class="combo"/>
 <path d="M674.0,111.0 h50.0 a6.0,6.0 0 0 1 6.0,6.0 v37.93333333333332" class="combo"/>
 <rect rx="6.0" ry="6.0" x="660.0" y="98.0" width="28.0" height="26.0" class="combo"/>
-<text x="674.0" y="111.0" class="combo tap">LC(A)</text>
+<text x="674.0" y="111.0" class="combo tap">
+<tspan x="674.0" dy="-0.6em">tmux</tspan><tspan x="674.0" dy="1.2em">prefix</tspan></text>
 <path d="M226.0,111.0 h-50.0 a6.0,6.0 0 0 0 -6.0,6.0 v37.93333333333332" class="combo"/>
 <path d="M226.0,111.0 l0.0,45.800000000000004" class="combo"/>
 <path d="M226.0,111.0 h50.0 a6.0,6.0 0 0 1 6.0,6.0 v37.93333333333332" class="combo"/>
@@ -361,7 +362,8 @@ path.combo {
 <path d="M674.0,654.2 l0.0,45.800000000000004" class="combo"/>
 <path d="M674.0,654.2 h50.0 a6.0,6.0 0 0 1 6.0,6.0 v37.93333333333335" class="combo"/>
 <rect rx="6.0" ry="6.0" x="660.0" y="641.2" width="28.0" height="26.0" class="combo"/>
-<text x="674.0" y="654.2" class="combo tap">LC(A)</text>
+<text x="674.0" y="654.2" class="combo tap">
+<tspan x="674.0" dy="-0.6em">tmux</tspan><tspan x="674.0" dy="1.2em">prefix</tspan></text>
 <path d="M226.0,654.2 h-50.0 a6.0,6.0 0 0 0 -6.0,6.0 v37.93333333333335" class="combo"/>
 <path d="M226.0,654.2 l0.0,45.800000000000004" class="combo"/>
 <path d="M226.0,654.2 h50.0 a6.0,6.0 0 0 1 6.0,6.0 v37.93333333333335" class="combo"/>
@@ -510,7 +512,8 @@ path.combo {
 <path d="M674.0,1197.4 l0.0,45.800000000000004" class="combo"/>
 <path d="M674.0,1197.4 h50.0 a6.0,6.0 0 0 1 6.0,6.0 v37.93333333333324" class="combo"/>
 <rect rx="6.0" ry="6.0" x="660.0" y="1184.4" width="28.0" height="26.0" class="combo"/>
-<text x="674.0" y="1197.4" class="combo tap">LC(A)</text>
+<text x="674.0" y="1197.4" class="combo tap">
+<tspan x="674.0" dy="-0.6em">tmux</tspan><tspan x="674.0" dy="1.2em">prefix</tspan></text>
 <path d="M226.0,1197.4 h-50.0 a6.0,6.0 0 0 0 -6.0,6.0 v37.93333333333324" class="combo"/>
 <path d="M226.0,1197.4 l0.0,45.800000000000004" class="combo"/>
 <path d="M226.0,1197.4 h50.0 a6.0,6.0 0 0 1 6.0,6.0 v37.93333333333324" class="combo"/>
@@ -670,7 +673,8 @@ path.combo {
 <path d="M674.0,1740.6000000000001 l0.0,45.800000000000004" class="combo"/>
 <path d="M674.0,1740.6000000000001 h50.0 a6.0,6.0 0 0 1 6.0,6.0 v37.93333333333324" class="combo"/>
 <rect rx="6.0" ry="6.0" x="660.0" y="1727.6000000000001" width="28.0" height="26.0" class="combo"/>
-<text x="674.0" y="1740.6000000000001" class="combo tap">LC(A)</text>
+<text x="674.0" y="1740.6000000000001" class="combo tap">
+<tspan x="674.0" dy="-0.6em">tmux</tspan><tspan x="674.0" dy="1.2em">prefix</tspan></text>
 <path d="M226.0,1740.6000000000001 h-50.0 a6.0,6.0 0 0 0 -6.0,6.0 v37.93333333333324" class="combo"/>
 <path d="M226.0,1740.6000000000001 l0.0,45.800000000000004" class="combo"/>
 <path d="M226.0,1740.6000000000001 h50.0 a6.0,6.0 0 0 1 6.0,6.0 v37.93333333333324" class="combo"/>
@@ -820,7 +824,8 @@ path.combo {
 <path d="M674.0,2283.8 l0.0,45.800000000000004" class="combo"/>
 <path d="M674.0,2283.8 h50.0 a6.0,6.0 0 0 1 6.0,6.0 v37.93333333333324" class="combo"/>
 <rect rx="6.0" ry="6.0" x="660.0" y="2270.8" width="28.0" height="26.0" class="combo"/>
-<text x="674.0" y="2283.8" class="combo tap">LC(A)</text>
+<text x="674.0" y="2283.8" class="combo tap">
+<tspan x="674.0" dy="-0.6em">tmux</tspan><tspan x="674.0" dy="1.2em">prefix</tspan></text>
 <path d="M226.0,2283.8 h-50.0 a6.0,6.0 0 0 0 -6.0,6.0 v37.93333333333324" class="combo"/>
 <path d="M226.0,2283.8 l0.0,45.800000000000004" class="combo"/>
 <path d="M226.0,2283.8 h50.0 a6.0,6.0 0 0 1 6.0,6.0 v37.93333333333324" class="combo"/>
@@ -970,7 +975,8 @@ path.combo {
 <path d="M674.0,2827.0 l0.0,45.800000000000004" class="combo"/>
 <path d="M674.0,2827.0 h50.0 a6.0,6.0 0 0 1 6.0,6.0 v37.93333333333324" class="combo"/>
 <rect rx="6.0" ry="6.0" x="660.0" y="2814.0" width="28.0" height="26.0" class="combo"/>
-<text x="674.0" y="2827.0" class="combo tap">LC(A)</text>
+<text x="674.0" y="2827.0" class="combo tap">
+<tspan x="674.0" dy="-0.6em">tmux</tspan><tspan x="674.0" dy="1.2em">prefix</tspan></text>
 <path d="M226.0,2827.0 h-50.0 a6.0,6.0 0 0 0 -6.0,6.0 v37.93333333333324" class="combo"/>
 <path d="M226.0,2827.0 l0.0,45.800000000000004" class="combo"/>
 <path d="M226.0,2827.0 h50.0 a6.0,6.0 0 0 1 6.0,6.0 v37.93333333333324" class="combo"/>
@@ -1095,7 +1101,8 @@ path.combo {
 <path d="M674.0,3370.2 l0.0,45.800000000000004" class="combo"/>
 <path d="M674.0,3370.2 h50.0 a6.0,6.0 0 0 1 6.0,6.0 v37.93333333333324" class="combo"/>
 <rect rx="6.0" ry="6.0" x="660.0" y="3357.2" width="28.0" height="26.0" class="combo"/>
-<text x="674.0" y="3370.2" class="combo tap">LC(A)</text>
+<text x="674.0" y="3370.2" class="combo tap">
+<tspan x="674.0" dy="-0.6em">tmux</tspan><tspan x="674.0" dy="1.2em">prefix</tspan></text>
 <path d="M226.0,3370.2 h-50.0 a6.0,6.0 0 0 0 -6.0,6.0 v37.93333333333324" class="combo"/>
 <path d="M226.0,3370.2 l0.0,45.800000000000004" class="combo"/>
 <path d="M226.0,3370.2 h50.0 a6.0,6.0 0 0 1 6.0,6.0 v37.93333333333324" class="combo"/>
@@ -1223,7 +1230,8 @@ path.combo {
 <path d="M674.0,3913.3999999999996 l0.0,45.800000000000004" class="combo"/>
 <path d="M674.0,3913.3999999999996 h50.0 a6.0,6.0 0 0 1 6.0,6.0 v37.93333333333324" class="combo"/>
 <rect rx="6.0" ry="6.0" x="660.0" y="3900.3999999999996" width="28.0" height="26.0" class="combo"/>
-<text x="674.0" y="3913.3999999999996" class="combo tap">LC(A)</text>
+<text x="674.0" y="3913.3999999999996" class="combo tap">
+<tspan x="674.0" dy="-0.6em">tmux</tspan><tspan x="674.0" dy="1.2em">prefix</tspan></text>
 <path d="M226.0,3913.3999999999996 h-50.0 a6.0,6.0 0 0 0 -6.0,6.0 v37.93333333333324" class="combo"/>
 <path d="M226.0,3913.3999999999996 l0.0,45.800000000000004" class="combo"/>
 <path d="M226.0,3913.3999999999996 h50.0 a6.0,6.0 0 0 1 6.0,6.0 v37.93333333333324" class="combo"/>
@@ -1334,7 +1342,8 @@ path.combo {
 <path d="M674.0,4456.599999999999 l0.0,45.800000000000004" class="combo"/>
 <path d="M674.0,4456.599999999999 h50.0 a6.0,6.0 0 0 1 6.0,6.0 v37.93333333333369" class="combo"/>
 <rect rx="6.0" ry="6.0" x="660.0" y="4443.599999999999" width="28.0" height="26.0" class="combo"/>
-<text x="674.0" y="4456.599999999999" class="combo tap">LC(A)</text>
+<text x="674.0" y="4456.599999999999" class="combo tap">
+<tspan x="674.0" dy="-0.6em">tmux</tspan><tspan x="674.0" dy="1.2em">prefix</tspan></text>
 <path d="M226.0,4456.599999999999 h-50.0 a6.0,6.0 0 0 0 -6.0,6.0 v37.93333333333369" class="combo"/>
 <path d="M226.0,4456.599999999999 l0.0,45.800000000000004" class="combo"/>
 <path d="M226.0,4456.599999999999 h50.0 a6.0,6.0 0 0 1 6.0,6.0 v37.93333333333369" class="combo"/>
