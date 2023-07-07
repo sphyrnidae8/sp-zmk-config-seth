@@ -1,0 +1,436 @@
+layout: {qmk_keyboard: crkbd/rev1, qmk_layout: LAYOUT_split_3x6_3}
+layers:
+  araxia:
+  - {t: TAB, h: 'move [L]'}
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - {t: BACKSPACE, h: 'move [R]'}
+  - {t: ESC, h: LEFT CONTROL}
+  - A
+  - S
+  - D
+  - F
+  - G
+  - {t: H, s: BACKSPACE}
+  - J
+  - K
+  - L
+  - ;
+  - {t: '''', h: RCTRL}
+  - {t: '`', h: LALT}
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - {t: \, h: RALT}
+  - {t: RETURN, h: LGUI}
+  - {t: LC(W), h: LSHIFT}
+  - {t: ESC, h: symbols}
+  - {t: ESC, h: media}
+  - {t: SPACE, h: numpad}
+  - {t: ':', h: RGUI}
+  symbols:
+  - BACKSPACE
+  - {t: <, s: ','}
+  - {t: '&', s: '7'}
+  - {t: '*', s: '8'}
+  - {t: (, s: '9'}
+  - {t: ), s: '0'}
+  - <
+  - '>'
+  - (
+  - )
+  - ;
+  - BACKSPACE
+  - SPACE
+  - {t: '>', s: .}
+  - {t: $, s: '4'}
+  - {t: '%', s: '5'}
+  - {t: ^, s: '6'}
+  - {t: '~', s: '`'}
+  - '-'
+  - '='
+  - '{'
+  - '}'
+  - \
+  - '`'
+  - {t: ▽, type: trans}
+  - {t: +, s: '='}
+  - {t: '!', s: '1'}
+  - {t: '@', s: '2'}
+  - {t: '#', s: '3'}
+  - {t: _, s: '-'}
+  - _
+  - +
+  - '['
+  - ']'
+  - '|'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - LSHFT
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  media:
+  - ''
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - MUTE
+  - PREV
+  - PP
+  - NEXT
+  - BRI DN
+  - BRI UP
+  - ''
+  - F6
+  - F7
+  - F8
+  - F9
+  - F10
+  - VOL DN
+  - VOL UP
+  - OUT USB
+  - OUT BLE
+  - BT CLR
+  - BT PRV
+  - ''
+  - F11
+  - F12
+  - F13
+  - F14
+  - F15
+  - BT 0
+  - BT 1
+  - BT 2
+  - BT 3
+  - BT 4
+  - BT NXT
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  numpad:
+  - '*'
+  - ','
+  - {t: KP 7, s: '&'}
+  - {t: KP 8, s: '*'}
+  - {t: KP 9, s: (}
+  - {t: KP 0, s: )}
+  - '&f2_menu'
+  - '&f2_dock'
+  - '&f2_status'
+  - '&help_menu'
+  - '&f2_tool'
+  - TAB
+  - /
+  - .
+  - {t: KP 4, s: $}
+  - {t: KP 5, s: '%'}
+  - {t: KP 6, s: ^}
+  - ':'
+  - LEFT
+  - DOWN
+  - UP
+  - RIGHT
+  - ''
+  - RETURN
+  - +
+  - '='
+  - {t: KP 1, s: '!'}
+  - {t: KP 2, s: '@'}
+  - {t: KP 3, s: '#'}
+  - '-'
+  - PAGE UP
+  - PAGE DOWN
+  - HOME
+  - END
+  - KP NUMLOCK
+  - '&win_close'
+  - {t: ▽, type: trans}
+  - LSHFT
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  move [L]:
+  - {type: held}
+  - '&win_next'
+  - '&forward'
+  - '&backward'
+  - '&tab_next'
+  - '&tab_prev'
+  - '&act Y'
+  - '&act U'
+  - '&act I'
+  - '&act O'
+  - '&act P'
+  - ''
+  - POWER
+  - LG(TAB)
+  - '&win_quad'
+  - '&win_third'
+  - '&win_half'
+  - '&win_full'
+  - '&act H'
+  - '&act J'
+  - '&act K'
+  - '&act L'
+  - '&act COLON'
+  - ''
+  - SLEEP
+  - LG(LS(TAB))
+  - '&win_vquad'
+  - '&win_vthird'
+  - '&win_vhalf'
+  - '&win_screen'
+  - '&act N'
+  - '&act M'
+  - '&act LESS_THAN'
+  - '&act GREATER_THAN'
+  - '&act QUESTION'
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  move [R]:
+  - ''
+  - '&act Q'
+  - '&act W'
+  - '&act E'
+  - '&act R'
+  - '&act T'
+  - '&tab_prev'
+  - '&tab_next'
+  - '&backward'
+  - '&forward'
+  - '&win_next'
+  - {type: held}
+  - ''
+  - '&act A'
+  - '&act S'
+  - '&act D'
+  - '&act F'
+  - '&act G'
+  - '&win_full'
+  - '&win_half'
+  - '&win_third'
+  - '&win_quad'
+  - LG(TAB)
+  - POWER
+  - ''
+  - '&act Z'
+  - '&act X'
+  - '&act C'
+  - '&act V'
+  - '&act B'
+  - '&win_screen'
+  - '&win_vhalf'
+  - '&win_vthird'
+  - '&win_vquad'
+  - LG(LS(TAB))
+  - SLEEP
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  adjust:
+  - '&tab_tog'
+  - '&zoom_tog'
+  - '&vim_exit_all'
+  - ''
+  - '&ss_win'
+  - araxia
+  - EP TOG
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '&zoom_in'
+  - '&vim_save'
+  - '&ss2c'
+  - '&ss'
+  - '&warpd_l'
+  - '&warpd_r'
+  - '&warpd_j'
+  - '&warpd_k'
+  - '&tmux_pw'
+  - '&tmux_ps'
+  - ''
+  - ''
+  - '&zoom_out'
+  - '&vim_exit'
+  - '&sss2c'
+  - '&sss'
+  - OUT USB
+  - OUT BLE
+  - ''
+  - {t: ▽, type: trans}
+  - '&tmux_nw'
+  - '&tmux_ns'
+  - ''
+  - ''
+  - ''
+  - {type: held}
+  - {type: held}
+  - ''
+  - ''
+  lighting:
+  - {type: held}
+  - ''
+  - ''
+  - RGB BRI
+  - RGB BRD
+  - RGB COLOR HSB(25,100,0)
+  - ''
+  - ''
+  - F18
+  - F17
+  - F16
+  - {type: held}
+  - LCTL
+  - ''
+  - ''
+  - RGB SAI
+  - RGB SAD
+  - RGB COLOR HSB(25,100,80)
+  - ''
+  - ''
+  - F21
+  - F20
+  - F19
+  - ''
+  - LALT
+  - ''
+  - ''
+  - RGB HUI
+  - RGB HUD
+  - RGB COLOR HSB(25,0,100)
+  - ''
+  - ''
+  - F24
+  - F23
+  - F22
+  - ''
+  - LGUI
+  - LSHFT
+  - ''
+  - ''
+  - ''
+  - ''
+  discord:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '&act N'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - PAGE DOWN
+  - '&dis_down'
+  - '&dis_up'
+  - PAGE UP
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - PAGE UP
+  - PAGE DOWN
+  - HOME
+  - END
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {type: held}
+  - {type: held}
+  - ''
+combos:
+- p: [0, 38]
+  k: move [R]
+  a: right
+- p: [11, 39]
+  k: move [L]
+  a: left
+- p: [0, 11]
+  k: lighting
+  a: top
+  o: 1.5
+- p: [7, 8, 9]
+  k: LC(A)
+  a: top
+  o: 0.5
+- p: [2, 3, 4]
+  k: '&tmux_mode_select'
+  a: top
+  o: 0.5
+- p: [12, 23]
+  k: '&caps_word'
+  a: bottom
+  o: 2.5
+- p: [0, 1]
+  k: '&version'
+  a: top
+  o: 0.5
+- p: [10, 11]
+  k: DELETE
+  a: top
+  o: 0.5
+- p: [24, 25]
+  k: LGUI
+  a: left
+  o: 0.5
+- p: [12, 24]
+  k: LALT
+  a: left
+  o: 0.5
+- p: [34, 35]
+  k: LGUI
+  a: right
+  o: 0.5
+- p: [23, 35]
+  k: LALT
+  a: right
+  o: 0.5
