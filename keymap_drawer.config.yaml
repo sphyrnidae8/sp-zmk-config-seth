@@ -8,7 +8,7 @@ draw_config:
   key_ry: 6.0
   inner_pad_w: 2.0
   inner_pad_h: 2.0
-  outer_pad_w: 30.0
+  outer_pad_w: 40.0
   outer_pad_h: 56.0
   line_spacing: 1.2
   arc_radius: 6.0
@@ -22,8 +22,8 @@ draw_config:
     }
     /* font and background color specifications */
     svg.keymap {
-        font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
-        font-size: 14px;
+        font-family: Ubuntu Mono,SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
+        font-size: 13px;
         font-kerning: normal;
         text-rendering: optimizeLegibility;
         fill: #24292e;
@@ -108,8 +108,8 @@ draw_config:
         visibility: collapse;
     }
     /* End Tabler Icons Cleanup */
-  shrink_wide_legends: 7
-  glyph_tap_size: 14
+  shrink_wide_legends: 6
+  glyph_tap_size: 13
   glyph_hold_size: 12
   glyph_shifted_size: 10
   glyphs: {}
@@ -287,7 +287,7 @@ parse_config:
     combo_capsword:         { align: bottom , o: 2.5 }
     combo_version:          { align: top    , o: 0.5 }
     combo_delete:           { align: top    , o: 0.5 }
-    combo_gui_left:         { align: left   , o: 0.5 }
-    combo_alt_left:         { align: bottom , o: 0.5 }
-    combo_gui_right:        { align: right  , o: 0.5 }
-    combo_alt_right:        { align: bottom , o: 0.5 }
+    combo_gui_left:         { align: bottom , o: 0.5 }
+    combo_alt_left:         { align: left   , o: 0.5 }
+    combo_gui_right:        { align: bottom , o: 0.5 }
+    combo_alt_right:        { align: right  , o: 0.5 }
