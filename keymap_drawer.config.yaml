@@ -259,18 +259,27 @@ parse_config:
     NON_US_HASH: '#'
     NUHS: '#'
     TILDE2: '~'
-    SPACE: ␣
-    BACKSPACE: ⌫
+    SPACE: $$tabler:space$$
+    BACKSPACE: $$tabler:backspace$$
     DELETE: ⌦
-    C_PP: ⏯
-    C_NEXT: ⏭️
-    C_PREV: ⏮️
+    C_PP: $$tabler:player-play$$
+    C_NEXT: $$tabler:player-track-next$$
+    C_PREV: $$tabler:player-track-prev$$
+    C_MUTE: $$tabler:volume-3$$
+    C_VOL_UP: $$tabler:volume$$
+    C_VOL_DN: $$tabler:volume-2$$
     C_BRI_UP: $$tabler:brightness-up$$
-    C_BRI_DOWN: $$tabler:brightness-down$$
+    C_BRI_DN: $$tabler:brightness-down$$
+    C_POWER: $$tabler:power$$
+    C_SLEEP: $$tabler:moon-filled$$
+    UP: $$tabler:arrow-narrow-up$$
+    DOWN: $$tabler:arrow-narrow-down$$
+    LEFT: $$tabler:arrow-narrow-left$$
+    RIGHT: $$tabler:arrow-narrow-right$$
     RETURN: ⮐
     KP_NUMLOCK: Numlock
-    LGUI: ⌘
-    RGUI: ⌘
+    LGUI: $$tabler:command$$
+    RGUI: $$tabler:command$$
     LALT: ⌥
     RALT: ⌥
     LSHIFT: $$tabler:arrow-big-up$$
