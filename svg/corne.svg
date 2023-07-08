@@ -1,9 +1,9 @@
 <svg width="920.0" height="3323.9162413074173" viewBox="0 0 920.0 3323.9162413074173" class="keymap" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>/* start glyphs */
-<svg id="tabler:arrow-big-up">
-<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-big-up" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<svg id="tabler:player-play">
+<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-player-play" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-  <path d="M9 20v-8h-3.586a1 1 0 0 1 -.707 -1.707l6.586 -6.586a1 1 0 0 1 1.414 0l6.586 6.586a1 1 0 0 1 -.707 1.707h-3.586v8a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z" />
+  <path d="M7 4v16l13 -8z" />
 </svg>
 
 
@@ -21,6 +21,174 @@
   <path d="M7 17l-1.4 1.4" />
   <path d="M6 12l-2 0" />
   <path d="M7 7l-1.4 -1.4" />
+</svg>
+
+
+
+</svg>
+<svg id="tabler:volume">
+<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-volume" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M15 8a5 5 0 0 1 0 8" />
+  <path d="M17.7 5a9 9 0 0 1 0 14" />
+  <path d="M6 15h-2a1 1 0 0 1 -1 -1v-4a1 1 0 0 1 1 -1h2l3.5 -4.5a.8 .8 0 0 1 1.5 .5v14a.8 .8 0 0 1 -1.5 .5l-3.5 -4.5" />
+</svg>
+
+
+
+</svg>
+<svg id="tabler:player-track-prev">
+<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-player-track-prev" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M21 5v14l-8 -7z" />
+  <path d="M10 5v14l-8 -7z" />
+</svg>
+
+
+
+</svg>
+<svg id="tabler:player-track-next">
+<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-player-track-next" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M3 5v14l8 -7z" />
+  <path d="M14 5v14l8 -7z" />
+</svg>
+
+
+
+</svg>
+<svg id="tabler:command">
+<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-command" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M7 9a2 2 0 1 1 2 -2v10a2 2 0 1 1 -2 -2h10a2 2 0 1 1 -2 2v-10a2 2 0 1 1 2 2h-10" />
+</svg>
+
+
+
+</svg>
+<svg id="tabler:arrow-big-up">
+<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-big-up" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 20v-8h-3.586a1 1 0 0 1 -.707 -1.707l6.586 -6.586a1 1 0 0 1 1.414 0l6.586 6.586a1 1 0 0 1 -.707 1.707h-3.586v8a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z" />
+</svg>
+
+
+
+</svg>
+<svg id="tabler:backspace">
+<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-backspace" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M20 6a1 1 0 0 1 1 1v10a1 1 0 0 1 -1 1h-11l-5 -5a1.5 1.5 0 0 1 0 -2l5 -5z" />
+  <path d="M12 10l4 4m0 -4l-4 4" />
+</svg>
+
+
+
+</svg>
+<svg id="tabler:arrow-narrow-right">
+<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-narrow-right" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M5 12l14 0" />
+  <path d="M15 16l4 -4" />
+  <path d="M15 8l4 4" />
+</svg>
+
+
+
+</svg>
+<svg id="tabler:arrow-narrow-left">
+<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-narrow-left" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M5 12l14 0" />
+  <path d="M5 12l4 4" />
+  <path d="M5 12l4 -4" />
+</svg>
+
+
+
+</svg>
+<svg id="tabler:moon-filled">
+<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-moon-filled" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M12 1.992a10 10 0 1 0 9.236 13.838c.341 -.82 -.476 -1.644 -1.298 -1.31a6.5 6.5 0 0 1 -6.864 -10.787l.077 -.08c.551 -.63 .113 -1.653 -.758 -1.653h-.266l-.068 -.006l-.06 -.002z" stroke-width="0" fill="currentColor" />
+</svg>
+
+
+
+</svg>
+<svg id="tabler:arrow-narrow-up">
+<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-narrow-up" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M12 5l0 14" />
+  <path d="M16 9l-4 -4" />
+  <path d="M8 9l4 -4" />
+</svg>
+
+
+
+</svg>
+<svg id="tabler:space">
+<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-space" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M4 10v3a1 1 0 0 0 1 1h14a1 1 0 0 0 1 -1v-3" />
+</svg>
+
+
+
+</svg>
+<svg id="tabler:power">
+<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-power" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M7 6a7.75 7.75 0 1 0 10 0" />
+  <path d="M12 4l0 8" />
+</svg>
+
+
+
+</svg>
+<svg id="tabler:arrow-narrow-down">
+<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-narrow-down" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M12 5l0 14" />
+  <path d="M16 15l-4 4" />
+  <path d="M8 15l4 4" />
+</svg>
+
+
+
+</svg>
+<svg id="tabler:volume-3">
+<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-volume-3" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M6 15h-2a1 1 0 0 1 -1 -1v-4a1 1 0 0 1 1 -1h2l3.5 -4.5a.8 .8 0 0 1 1.5 .5v14a.8 .8 0 0 1 -1.5 .5l-3.5 -4.5" />
+  <path d="M16 10l4 4m0 -4l-4 4" />
+</svg>
+
+
+
+</svg>
+<svg id="tabler:volume-2">
+<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-volume-2" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M15 8a5 5 0 0 1 0 8" />
+  <path d="M6 15h-2a1 1 0 0 1 -1 -1v-4a1 1 0 0 1 1 -1h2l3.5 -4.5a.8 .8 0 0 1 1.5 .5v14a.8 .8 0 0 1 -1.5 .5l-3.5 -4.5" />
+</svg>
+
+
+
+</svg>
+<svg id="tabler:brightness-down">
+<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brightness-down" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+  <path d="M12 5l0 .01" />
+  <path d="M17 7l0 .01" />
+  <path d="M19 12l0 .01" />
+  <path d="M17 17l0 .01" />
+  <path d="M12 19l0 .01" />
+  <path d="M7 17l0 .01" />
+  <path d="M5 12l0 .01" />
+  <path d="M7 7l0 .01" />
 </svg>
 
 
@@ -146,7 +314,7 @@ path.combo {
 <rect rx="6.0" ry="6.0" x="770.0" y="203.60000000000002" width="52.0" height="52.0" class="key"/>
 <text x="796.0" y="229.60000000000002" class="tap">P</text>
 <rect rx="6.0" ry="6.0" x="826.0" y="203.60000000000002" width="52.0" height="52.0" class="key"/>
-<text x="852.0" y="229.60000000000002" class="tap">⌫</text>
+<use href="#tabler:backspace" xlink:href="#tabler:backspace" x="845.5" y="223.10000000000002" height="13" width="13.0" class="tap glyph tabler:backspace"/>
 <text x="852.0" y="253.60000000000002" class="hold" style="font-size: 75%">move [R]</text>
 <rect rx="6.0" ry="6.0" x="42.0" y="259.6" width="52.0" height="52.0" class="key"/>
 <text x="68.0" y="285.6" class="tap">ESC</text>
@@ -163,7 +331,7 @@ path.combo {
 <text x="348.0" y="252.0" class="tap">G</text>
 <rect rx="6.0" ry="6.0" x="546.0" y="226.0" width="52.0" height="52.0" class="key"/>
 <text x="572.0" y="252.0" class="tap">H</text>
-<text x="572.0" y="228.0" class="shifted">⌫</text>
+<use href="#tabler:backspace" xlink:href="#tabler:backspace" x="567.0" y="228.0" height="10" width="10.0" class="shifted glyph tabler:backspace"/>
 <rect rx="6.0" ry="6.0" x="602.0" y="217.60000000000002" width="52.0" height="52.0" class="key"/>
 <text x="628.0" y="243.60000000000002" class="tap">J</text>
 <rect rx="6.0" ry="6.0" x="658.0" y="200.8" width="52.0" height="52.0" class="key"/>
@@ -203,7 +371,7 @@ path.combo {
 <text x="852.0" y="365.6" class="hold">⌥</text>
 <rect rx="6.0" ry="6.0" x="260.40000000000003" y="335.20000000000005" width="52.0" height="52.0" class="key"/>
 <text x="286.40000000000003" y="361.20000000000005" class="tap">⮐</text>
-<text x="286.40000000000003" y="385.20000000000005" class="hold">⌘</text>
+<use href="#tabler:command" xlink:href="#tabler:command" x="280.40000000000003" y="373.20000000000005" height="12" width="12.0" class="hold glyph tabler:command"/>
 <g transform="rotate(13.0, 345.2, 361.20000000000005)">
 <rect rx="6.0" ry="6.0" x="319.2" y="335.20000000000005" width="52.0" height="52.0" class="key"/>
 <text x="345.2" y="361.20000000000005" class="tap">LC(W)</text>
@@ -221,12 +389,12 @@ path.combo {
 </g>
 <g transform="rotate(-13.0, 570.4947459839601, 368.2132704585057)">
 <rect rx="6.0" ry="6.0" x="544.4947459839601" y="342.2132704585057" width="52.0" height="52.0" class="key"/>
-<text x="570.4947459839601" y="368.2132704585057" class="tap">␣</text>
+<use href="#tabler:space" xlink:href="#tabler:space" x="563.9947459839601" y="361.7132704585057" height="13" width="13.0" class="tap glyph tabler:space"/>
 <text x="570.4947459839601" y="392.2132704585057" class="hold">numpad</text>
 </g>
 <rect rx="6.0" ry="6.0" x="607.6" y="335.20000000000005" width="52.0" height="52.0" class="key"/>
 <text x="633.6" y="361.20000000000005" class="tap">:</text>
-<text x="633.6" y="385.20000000000005" class="hold">⌘</text>
+<use href="#tabler:command" xlink:href="#tabler:command" x="627.6" y="373.20000000000005" height="12" width="12.0" class="hold glyph tabler:command"/>
 <path d="M427.40000000000003,302.40000000000003 v-66.80000000000001 a6.0,6.0 0 0 0 -6.0,-6.0 h-334.73333333333335" class="combo"/>
 <path d="M427.40000000000003,302.40000000000003 v66.80000000000001 a6.0,6.0 0 0 1 -6.0,6.0 h-4.333333333333332" class="combo"/>
 <rect rx="6.0" ry="6.0" x="413.40000000000003" y="289.40000000000003" width="28.0" height="26.0" class="combo"/>
@@ -267,7 +435,7 @@ path.combo {
 <path d="M96.0,398.6 h-22.0 a6.0,6.0 0 0 1 -6.0,-6.0 v-32.33333333333333" class="combo"/>
 <path d="M96.0,398.6 h22.0 a6.0,6.0 0 0 0 6.0,-6.0 v-32.33333333333333" class="combo"/>
 <rect rx="6.0" ry="6.0" x="82.0" y="385.6" width="28.0" height="26.0" class="combo"/>
-<text x="96.0" y="398.6" class="combo tap">⌘</text>
+<use href="#tabler:command" xlink:href="#tabler:command" x="89.5" y="392.1" height="13" width="13.0" class="combo tap glyph tabler:command"/>
 <path d="M11.0,313.6 v-22.0 a6.0,6.0 0 0 1 6.0,-6.0 h32.33333333333333" class="combo"/>
 <path d="M11.0,313.6 v22.0 a6.0,6.0 0 0 0 6.0,6.0 h32.33333333333333" class="combo"/>
 <rect rx="6.0" ry="6.0" x="-3.0" y="300.6" width="28.0" height="26.0" class="combo"/>
@@ -275,7 +443,7 @@ path.combo {
 <path d="M824.0,398.6 h-22.0 a6.0,6.0 0 0 1 -6.0,-6.0 v-32.33333333333333" class="combo"/>
 <path d="M824.0,398.6 h22.0 a6.0,6.0 0 0 0 6.0,-6.0 v-32.33333333333333" class="combo"/>
 <rect rx="6.0" ry="6.0" x="810.0" y="385.6" width="28.0" height="26.0" class="combo"/>
-<text x="824.0" y="398.6" class="combo tap">⌘</text>
+<use href="#tabler:command" xlink:href="#tabler:command" x="817.5" y="392.1" height="13" width="13.0" class="combo tap glyph tabler:command"/>
 <path d="M909.0,313.6 v-22.0 a6.0,6.0 0 0 0 -6.0,-6.0 h-32.33333333333333" class="combo"/>
 <path d="M909.0,313.6 v22.0 a6.0,6.0 0 0 1 -6.0,6.0 h-32.33333333333333" class="combo"/>
 <rect rx="6.0" ry="6.0" x="895.0" y="300.6" width="28.0" height="26.0" class="combo"/>
@@ -284,7 +452,7 @@ path.combo {
 <g class="layer-symbols">
 <text x="40.0" y="592.701804589713" class="label">symbols:</text>
 <rect rx="6.0" ry="6.0" x="42.0" y="681.501804589713" width="52.0" height="52.0" class="key"/>
-<text x="68.0" y="707.501804589713" class="tap">⌫</text>
+<use href="#tabler:backspace" xlink:href="#tabler:backspace" x="61.5" y="701.001804589713" height="13" width="13.0" class="tap glyph tabler:backspace"/>
 <rect rx="6.0" ry="6.0" x="98.0" y="681.501804589713" width="52.0" height="52.0" class="key"/>
 <text x="124.0" y="707.501804589713" class="tap">&lt;</text>
 <text x="124.0" y="683.501804589713" class="shifted">,</text>
@@ -311,9 +479,9 @@ path.combo {
 <rect rx="6.0" ry="6.0" x="770.0" y="681.501804589713" width="52.0" height="52.0" class="key"/>
 <text x="796.0" y="707.501804589713" class="tap">;</text>
 <rect rx="6.0" ry="6.0" x="826.0" y="681.501804589713" width="52.0" height="52.0" class="key"/>
-<text x="852.0" y="707.501804589713" class="tap">⌫</text>
+<use href="#tabler:backspace" xlink:href="#tabler:backspace" x="845.5" y="701.001804589713" height="13" width="13.0" class="tap glyph tabler:backspace"/>
 <rect rx="6.0" ry="6.0" x="42.0" y="737.501804589713" width="52.0" height="52.0" class="key"/>
-<text x="68.0" y="763.501804589713" class="tap">␣</text>
+<use href="#tabler:space" xlink:href="#tabler:space" x="61.5" y="757.001804589713" height="13" width="13.0" class="tap glyph tabler:space"/>
 <rect rx="6.0" ry="6.0" x="98.0" y="737.501804589713" width="52.0" height="52.0" class="key"/>
 <text x="124.0" y="763.501804589713" class="tap">&gt;</text>
 <text x="124.0" y="739.501804589713" class="shifted">.</text>
@@ -403,16 +571,15 @@ path.combo {
 <rect rx="6.0" ry="6.0" x="322.0" y="985.8036091794261" width="52.0" height="52.0" class="key"/>
 <text x="348.0" y="1011.8036091794261" class="tap">F5</text>
 <rect rx="6.0" ry="6.0" x="546.0" y="985.8036091794261" width="52.0" height="52.0" class="key"/>
-<text x="572.0" y="1011.8036091794261" class="tap">MUTE</text>
+<use href="#tabler:volume-3" xlink:href="#tabler:volume-3" x="565.5" y="1005.3036091794261" height="13" width="13.0" class="tap glyph tabler:volume-3"/>
 <rect rx="6.0" ry="6.0" x="602.0" y="977.403609179426" width="52.0" height="52.0" class="key"/>
-<text x="628.0" y="1003.403609179426" class="tap">⏮️</text>
+<use href="#tabler:player-track-prev" xlink:href="#tabler:player-track-prev" x="621.5" y="996.903609179426" height="13" width="13.0" class="tap glyph tabler:player-track-prev"/>
 <rect rx="6.0" ry="6.0" x="658.0" y="960.603609179426" width="52.0" height="52.0" class="key"/>
-<text x="684.0" y="986.603609179426" class="tap">⏯</text>
+<use href="#tabler:player-play" xlink:href="#tabler:player-play" x="677.5" y="980.103609179426" height="13" width="13.0" class="tap glyph tabler:player-play"/>
 <rect rx="6.0" ry="6.0" x="714.0" y="980.203609179426" width="52.0" height="52.0" class="key"/>
-<text x="740.0" y="1006.203609179426" class="tap">⏭️</text>
+<use href="#tabler:player-track-next" xlink:href="#tabler:player-track-next" x="733.5" y="999.703609179426" height="13" width="13.0" class="tap glyph tabler:player-track-next"/>
 <rect rx="6.0" ry="6.0" x="770.0" y="1019.403609179426" width="52.0" height="52.0" class="key"/>
-<text x="796.0" y="1045.403609179426" class="tap">
-<tspan x="796.0" dy="-0.6em">BRI</tspan><tspan x="796.0" dy="1.2em">DN</tspan></text>
+<use href="#tabler:brightness-down" xlink:href="#tabler:brightness-down" x="789.5" y="1038.903609179426" height="13" width="13.0" class="tap glyph tabler:brightness-down"/>
 <rect rx="6.0" ry="6.0" x="826.0" y="1019.403609179426" width="52.0" height="52.0" class="key"/>
 <use href="#tabler:brightness-up" xlink:href="#tabler:brightness-up" x="845.5" y="1038.903609179426" height="13" width="13.0" class="tap glyph tabler:brightness-up"/>
 <rect rx="6.0" ry="6.0" x="42.0" y="1075.403609179426" width="52.0" height="52.0" class="key"/>
@@ -427,11 +594,9 @@ path.combo {
 <rect rx="6.0" ry="6.0" x="322.0" y="1041.803609179426" width="52.0" height="52.0" class="key"/>
 <text x="348.0" y="1067.803609179426" class="tap">F10</text>
 <rect rx="6.0" ry="6.0" x="546.0" y="1041.803609179426" width="52.0" height="52.0" class="key"/>
-<text x="572.0" y="1067.803609179426" class="tap">
-<tspan x="572.0" dy="-0.6em">VOL</tspan><tspan x="572.0" dy="1.2em">DN</tspan></text>
+<use href="#tabler:volume-2" xlink:href="#tabler:volume-2" x="565.5" y="1061.303609179426" height="13" width="13.0" class="tap glyph tabler:volume-2"/>
 <rect rx="6.0" ry="6.0" x="602.0" y="1033.403609179426" width="52.0" height="52.0" class="key"/>
-<text x="628.0" y="1059.403609179426" class="tap">
-<tspan x="628.0" dy="-0.6em">VOL</tspan><tspan x="628.0" dy="1.2em">UP</tspan></text>
+<use href="#tabler:volume" xlink:href="#tabler:volume" x="621.5" y="1052.903609179426" height="13" width="13.0" class="tap glyph tabler:volume"/>
 <rect rx="6.0" ry="6.0" x="658.0" y="1016.603609179426" width="52.0" height="52.0" class="key"/>
 <text x="684.0" y="1042.603609179426" class="tap">
 <tspan x="684.0" dy="-0.6em">OUT</tspan><tspan x="684.0" dy="1.2em">USB</tspan></text>
@@ -546,13 +711,13 @@ path.combo {
 <rect rx="6.0" ry="6.0" x="322.0" y="1379.705413769139" width="52.0" height="52.0" class="key"/>
 <text x="348.0" y="1405.705413769139" class="tap">:</text>
 <rect rx="6.0" ry="6.0" x="546.0" y="1379.705413769139" width="52.0" height="52.0" class="key"/>
-<text x="572.0" y="1405.705413769139" class="tap">LEFT</text>
+<use href="#tabler:arrow-narrow-left" xlink:href="#tabler:arrow-narrow-left" x="565.5" y="1399.205413769139" height="13" width="13.0" class="tap glyph tabler:arrow-narrow-left"/>
 <rect rx="6.0" ry="6.0" x="602.0" y="1371.305413769139" width="52.0" height="52.0" class="key"/>
-<text x="628.0" y="1397.305413769139" class="tap">DOWN</text>
+<use href="#tabler:arrow-narrow-down" xlink:href="#tabler:arrow-narrow-down" x="621.5" y="1390.805413769139" height="13" width="13.0" class="tap glyph tabler:arrow-narrow-down"/>
 <rect rx="6.0" ry="6.0" x="658.0" y="1354.505413769139" width="52.0" height="52.0" class="key"/>
-<text x="684.0" y="1380.505413769139" class="tap">UP</text>
+<use href="#tabler:arrow-narrow-up" xlink:href="#tabler:arrow-narrow-up" x="677.5" y="1374.005413769139" height="13" width="13.0" class="tap glyph tabler:arrow-narrow-up"/>
 <rect rx="6.0" ry="6.0" x="714.0" y="1374.105413769139" width="52.0" height="52.0" class="key"/>
-<text x="740.0" y="1400.105413769139" class="tap">RIGHT</text>
+<use href="#tabler:arrow-narrow-right" xlink:href="#tabler:arrow-narrow-right" x="733.5" y="1393.605413769139" height="13" width="13.0" class="tap glyph tabler:arrow-narrow-right"/>
 <rect rx="6.0" ry="6.0" x="770.0" y="1413.305413769139" width="52.0" height="52.0" class="key"/>
 <rect rx="6.0" ry="6.0" x="826.0" y="1413.305413769139" width="52.0" height="52.0" class="key"/>
 <text x="852.0" y="1439.305413769139" class="tap">⮐</text>
@@ -638,7 +803,7 @@ path.combo {
 <tspan x="796.0" dy="-0.6em">&amp;act</tspan><tspan x="796.0" dy="1.2em">P</tspan></text>
 <rect rx="6.0" ry="6.0" x="826.0" y="1695.207218358852" width="52.0" height="52.0" class="key"/>
 <rect rx="6.0" ry="6.0" x="42.0" y="1751.207218358852" width="52.0" height="52.0" class="key"/>
-<text x="68.0" y="1777.207218358852" class="tap">POWER</text>
+<use href="#tabler:power" xlink:href="#tabler:power" x="61.5" y="1770.707218358852" height="13" width="13.0" class="tap glyph tabler:power"/>
 <rect rx="6.0" ry="6.0" x="98.0" y="1751.207218358852" width="52.0" height="52.0" class="key"/>
 <text x="124.0" y="1777.207218358852" class="tap" style="font-size: 86%">LG(TAB)</text>
 <rect rx="6.0" ry="6.0" x="154.0" y="1712.007218358852" width="52.0" height="52.0" class="key"/>
@@ -666,7 +831,7 @@ path.combo {
 <tspan x="796.0" dy="-0.6em">&amp;act</tspan><tspan x="796.0" dy="1.2em">COLON</tspan></text>
 <rect rx="6.0" ry="6.0" x="826.0" y="1751.207218358852" width="52.0" height="52.0" class="key"/>
 <rect rx="6.0" ry="6.0" x="42.0" y="1807.207218358852" width="52.0" height="52.0" class="key"/>
-<text x="68.0" y="1833.207218358852" class="tap">SLEEP</text>
+<use href="#tabler:moon-filled" xlink:href="#tabler:moon-filled" x="61.5" y="1826.707218358852" height="13" width="13.0" class="tap glyph tabler:moon-filled"/>
 <rect rx="6.0" ry="6.0" x="98.0" y="1807.207218358852" width="52.0" height="52.0" class="key"/>
 <text x="124.0" y="1833.207218358852" class="tap" style="font-size: 60%">LG(LS(TAB))</text>
 <rect rx="6.0" ry="6.0" x="154.0" y="1768.007218358852" width="52.0" height="52.0" class="key"/>
@@ -770,7 +935,7 @@ path.combo {
 <rect rx="6.0" ry="6.0" x="770.0" y="2089.1090229485653" width="52.0" height="52.0" class="key"/>
 <text x="796.0" y="2115.1090229485653" class="tap" style="font-size: 86%">LG(TAB)</text>
 <rect rx="6.0" ry="6.0" x="826.0" y="2089.1090229485653" width="52.0" height="52.0" class="key"/>
-<text x="852.0" y="2115.1090229485653" class="tap">POWER</text>
+<use href="#tabler:power" xlink:href="#tabler:power" x="845.5" y="2108.6090229485653" height="13" width="13.0" class="tap glyph tabler:power"/>
 <rect rx="6.0" ry="6.0" x="42.0" y="2145.1090229485653" width="52.0" height="52.0" class="key"/>
 <rect rx="6.0" ry="6.0" x="98.0" y="2145.1090229485653" width="52.0" height="52.0" class="key"/>
 <text x="124.0" y="2171.1090229485653" class="tap">
@@ -798,7 +963,7 @@ path.combo {
 <rect rx="6.0" ry="6.0" x="770.0" y="2145.1090229485653" width="52.0" height="52.0" class="key"/>
 <text x="796.0" y="2171.1090229485653" class="tap" style="font-size: 60%">LG(LS(TAB))</text>
 <rect rx="6.0" ry="6.0" x="826.0" y="2145.1090229485653" width="52.0" height="52.0" class="key"/>
-<text x="852.0" y="2171.1090229485653" class="tap">SLEEP</text>
+<use href="#tabler:moon-filled" xlink:href="#tabler:moon-filled" x="845.5" y="2164.6090229485653" height="13" width="13.0" class="tap glyph tabler:moon-filled"/>
 <rect rx="6.0" ry="6.0" x="260.40000000000003" y="2164.7090229485652" width="52.0" height="52.0" class="trans key"/>
 <text x="286.40000000000003" y="2190.7090229485652" class="trans tap">▽</text>
 <g transform="rotate(13.0, 345.2, 2190.7090229485652)">
@@ -969,7 +1134,7 @@ path.combo {
 <text x="796.0" y="2846.912632127991" class="tap">F22</text>
 <rect rx="6.0" ry="6.0" x="826.0" y="2820.912632127991" width="52.0" height="52.0" class="key"/>
 <rect rx="6.0" ry="6.0" x="260.40000000000003" y="2840.512632127991" width="52.0" height="52.0" class="key"/>
-<text x="286.40000000000003" y="2866.512632127991" class="tap">⌘</text>
+<use href="#tabler:command" xlink:href="#tabler:command" x="279.90000000000003" y="2860.012632127991" height="13" width="13.0" class="tap glyph tabler:command"/>
 <g transform="rotate(13.0, 345.2, 2866.512632127991)">
 <rect rx="6.0" ry="6.0" x="319.2" y="2840.512632127991" width="52.0" height="52.0" class="key"/>
 <use href="#tabler:arrow-big-up" xlink:href="#tabler:arrow-big-up" x="338.7" y="2860.012632127991" height="13" width="13.0" class="tap glyph tabler:arrow-big-up"/>
