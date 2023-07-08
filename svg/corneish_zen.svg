@@ -213,17 +213,17 @@ path.combo {
 <path d="M460.0,76.0 h386.0 a6.0,6.0 0 0 1 6.0,6.0 v88.33333333333333" class="combo"/>
 <rect rx="6.0" ry="6.0" x="446.0" y="63.0" width="28.0" height="26.0" class="combo"/>
 <text x="460.0" y="76.0" class="combo tap" style="font-size: 75%">lighting</text>
-<path d="M684.0,111.0 h-50.0 a6.0,6.0 0 0 0 -6.0,6.0 v39.33333333333333" class="combo"/>
-<path d="M684.0,111.0 l0.0,45.800000000000004" class="combo"/>
-<path d="M684.0,111.0 h50.0 a6.0,6.0 0 0 1 6.0,6.0 v39.33333333333333" class="combo"/>
-<rect rx="6.0" ry="6.0" x="670.0" y="98.0" width="28.0" height="26.0" class="combo"/>
-<text x="684.0" y="111.0" class="combo tap">
+<path d="M684.0,125.0 h-50.0 a6.0,6.0 0 0 0 -6.0,6.0 v25.333333333333332" class="combo"/>
+<path d="M684.0,125.0 l0.0,31.8" class="combo"/>
+<path d="M684.0,125.0 h50.0 a6.0,6.0 0 0 1 6.0,6.0 v25.333333333333332" class="combo"/>
+<rect rx="6.0" ry="6.0" x="670.0" y="112.0" width="28.0" height="26.0" class="combo"/>
+<text x="684.0" y="125.0" class="combo tap">
 <tspan x="684.0" dy="-0.6em">tmux</tspan><tspan x="684.0" dy="1.2em">prefix</tspan></text>
-<path d="M236.0,111.0 h-50.0 a6.0,6.0 0 0 0 -6.0,6.0 v39.33333333333333" class="combo"/>
-<path d="M236.0,111.0 l0.0,45.800000000000004" class="combo"/>
-<path d="M236.0,111.0 h50.0 a6.0,6.0 0 0 1 6.0,6.0 v39.33333333333333" class="combo"/>
-<rect rx="6.0" ry="6.0" x="222.0" y="98.0" width="28.0" height="26.0" class="combo"/>
-<text x="236.0" y="111.0" class="combo tap" style="font-size: 60%">&amp;tmux_mode_select</text>
+<path d="M236.0,125.0 h-50.0 a6.0,6.0 0 0 0 -6.0,6.0 v25.333333333333332" class="combo"/>
+<path d="M236.0,125.0 l0.0,31.8" class="combo"/>
+<path d="M236.0,125.0 h50.0 a6.0,6.0 0 0 1 6.0,6.0 v25.333333333333332" class="combo"/>
+<rect rx="6.0" ry="6.0" x="222.0" y="112.0" width="28.0" height="26.0" class="combo"/>
+<text x="236.0" y="125.0" class="combo tap" style="font-size: 60%">&amp;tmux_mode_select</text>
 <path d="M460.0,414.0 h-386.0 a6.0,6.0 0 0 1 -6.0,-6.0 v-144.33333333333334" class="combo"/>
 <path d="M460.0,414.0 h386.0 a6.0,6.0 0 0 0 6.0,-6.0 v-144.33333333333334" class="combo"/>
 <rect rx="6.0" ry="6.0" x="446.0" y="401.0" width="28.0" height="26.0" class="combo"/>
