@@ -279,15 +279,15 @@ parse_config:
     LC(A): 'tmux prefix'
 
   zmk_combos:
-    combo_inverse_winl:     { align: right  , o: 0.0 }
-    combo_inverse_winr:     { align: left   , o: 0.0 }
-    combo_lighting:         { align: top    , o: 1.5 }
-    combo_tmux:             { align: top    , o: 0.5 }
-    combo_tmux_mode_select: { align: top    , o: 0.5 }
-    combo_capsword:         { align: bottom , o: 2.5 }
-    combo_version:          { align: top    , o: 0.5 }
-    combo_delete:           { align: top    , o: 0.5 }
-    combo_gui_left:         { align: bottom , o: 0.5 }
-    combo_alt_left:         { align: left   , o: 0.5 }
-    combo_gui_right:        { align: bottom , o: 0.5 }
-    combo_alt_right:        { align: right  , o: 0.5 }
+    combo_inverse_winl:     { align: right  , o: 0.0  }
+    combo_inverse_winr:     { align: left   , o: 0.0  }
+    combo_lighting:         { align: top    , o: 1.5  }
+    combo_tmux:             { align: top    , o: 0.25 }
+    combo_tmux_mode_select: { align: top    , o: 0.25 }
+    combo_capsword:         { align: bottom , o: 2.5  }
+    combo_version:          { align: top    , o: 0.5  }
+    combo_delete:           { align: top    , o: 0.5  }
+    combo_gui_left:         { align: bottom , o: 0.5  }
+    combo_alt_left:         { align: left   , o: 0.5  }
+    combo_gui_right:        { align: bottom , o: 0.5  }
+    combo_alt_right:        { align: right  , o: 0.5  }
