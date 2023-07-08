@@ -265,8 +265,17 @@ parse_config:
     C_PP: ⏯
     C_NEXT: ⏭️
     C_PREV: ⏮️
-    LESS_THAN: '<'
-    GREATER_THAN: '>'
+    RETURN: ⮐
+    KP_NUMLOCK: Numlock
+    LGUI: ⌘
+    RGUI: ⌘
+    LALT: ⌥
+    RALT: ⌥
+    LSHIFT: ⇧
+    '&act COLON': '&act :'
+    '&act QUESTION': '&act ?'
+    '&act LESS_THAN': '&act <'
+    '&act GREATER_THAN': '&act >'
     LC(A): 'tmux prefix'
 
   zmk_combos:
@@ -279,6 +288,6 @@ parse_config:
     combo_version:          { align: top    , o: 0.5 }
     combo_delete:           { align: top    , o: 0.5 }
     combo_gui_left:         { align: left   , o: 0.5 }
-    combo_alt_left:         { align: left   , o: 0.5 }
+    combo_alt_left:         { align: bottom , o: 0.5 }
     combo_gui_right:        { align: right  , o: 0.5 }
-    combo_alt_right:        { align: right  , o: 0.5 }
+    combo_alt_right:        { align: bottom , o: 0.5 }
