@@ -271,7 +271,7 @@ parse_config:
     RGUI: ⌘
     LALT: ⌥
     RALT: ⌥
-    LSHIFT: ⇧
+    LSHIFT: $$tabler:arrow-big-up$$
     '&act COLON': '&act :'
     '&act QUESTION': '&act ?'
     '&act LESS_THAN': '&act <'
@@ -281,7 +281,7 @@ parse_config:
   zmk_combos:
     combo_inverse_winl:     { align: right  , o: 0.0  }
     combo_inverse_winr:     { align: left   , o: 0.0  }
-    combo_lighting:         { align: top    , o: 1.5  }
+    combo_lighting:         { align: top    , o: 1.55 }
     combo_tmux:             { align: top    , o: 0.25 }
     combo_tmux_mode_select: { align: top    , o: 0.25 }
     combo_capsword:         { align: bottom , o: 2.5  }
