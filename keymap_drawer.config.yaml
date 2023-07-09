@@ -122,7 +122,6 @@ draw_config:
 parse_config:
   preprocess: true
   skip_binding_parsing: false
-  raw_binding_map: {}
   sticky_label: sticky
   trans_legend:
     t: ▽
@@ -259,36 +258,52 @@ parse_config:
     NON_US_HASH: '#'
     NUHS: '#'
     TILDE2: '~'
-    SPACE: $$tabler:space$$
-    BACKSPACE: $$tabler:backspace$$
-    DELETE: ⌦
-    C_PP: $$tabler:player-play$$$$tabler:player-pause$$
-    C_NEXT: $$tabler:player-track-next$$
-    C_PREV: $$tabler:player-track-prev$$
-    C_MUTE: $$tabler:volume-3$$
-    C_VOL_UP: $$tabler:volume$$
-    C_VOL_DN: $$tabler:volume-2$$
+    SPACE: $$mdi:keyboard-space$$
+    BACKSPACE: $$mdi:backspace-outline$$
+    DELETE: $$mdi:backspace-reverse-outline$$
+    C_PP: $$mdi:play-pause$$
+    C_NEXT: $$mdi:skip-forward$$
+    C_PREV: $$mdi:skip-backward$$
+    C_MUTE: $$mdi:volume-mute$$
+    C_VOL_UP: $$mdi:volume-plus$$
+    C_VOL_DN: $$mdi:volume-minus$$
     C_BRI_UP: $$tabler:brightness-up$$
     C_BRI_DN: $$tabler:brightness-down$$
-    C_POWER: $$tabler:power$$
-    C_SLEEP: $$tabler:moon-filled$$
-    UP: $$tabler:arrow-narrow-up$$
-    DOWN: $$tabler:arrow-narrow-down$$
-    LEFT: $$tabler:arrow-narrow-left$$
-    RIGHT: $$tabler:arrow-narrow-right$$
+    C_POWER: $$mdi:power$$
+    C_SLEEP: $$mdi:power-sleep$$
+    UP: $$mdi:arrow-up$$
+    DOWN: $$mdi:arrow-down$$
+    LEFT: $$mdi:arrow-left$$
+    RIGHT: $$mdi:arrow-right$$
     RETURN: ⮐
     KP_NUMLOCK: Numlock
-    LGUI: $$tabler:command$$
-    RGUI: $$tabler:command$$
-    LALT: ⌥
-    RALT: ⌥
-    LSHIFT: $$tabler:arrow-big-up$$
-    LSHFT: $$tabler:arrow-big-up$$
+    TAB: $$mdi:keyboard-tab$$
+    LGUI: $$mdi:apple-keyboard-command$$
+    RGUI: $$mdi:apple-keyboard-command$$
+    LALT: $$mdi:apple-keyboard-option$$
+    RALT: $$mdi:apple-keyboard-option$$
+    LSHIFT: $$mdi:apple-keyboard-shift$$
+    LSHFT: $$mdi:apple-keyboard-shift$$
+    RCTRL: $$mdi:apple-keyboard-control$$
+    LCTL: $$mdi:apple-keyboard-control$$
+    LEFT_CONTROL: $$mdi:apple-keyboard-control$$
+    LC(A): 'tmux prefix'
+  raw_binding_map:
+    '&caps_word': 'CAPS WORD'
     '&act COLON': '&act :'
     '&act QUESTION': '&act ?'
     '&act LESS_THAN': '&act <'
     '&act GREATER_THAN': '&act >'
-    LC(A): 'tmux prefix'
+    '&bt BT_CLR': '$$mdi:bluetooth-off$$'
+    '&out OUT_BLE': '$$mdi:bluetooth$$'
+    '&out OUT_USB': '$$mdi:usb$$'
+    '&bt BT_SEL 0': {h: $$mdi:bluetooth$$ , t: $$mdi:numeric-0$$}
+    '&bt BT_SEL 1': {h: $$mdi:bluetooth$$ , t: $$mdi:numeric-1$$}
+    '&bt BT_SEL 2': {h: $$mdi:bluetooth$$ , t: $$mdi:numeric-2$$}
+    '&bt BT_SEL 3': {h: $$mdi:bluetooth$$ , t: $$mdi:numeric-3$$}
+    '&bt BT_SEL 4': {h: $$mdi:bluetooth$$ , t: $$mdi:numeric-4$$}
+    '&bt BT_PRV':   {h: $$mdi:bluetooth$$ , t: $$mdi:skip-previous$$}
+    '&bt BT_NXT':   {h: $$mdi:bluetooth$$ , t: $$mdi:skip-next$$}
 
   zmk_combos:
     combo_inverse_winl:     { align: right  , o: 0.0  }
