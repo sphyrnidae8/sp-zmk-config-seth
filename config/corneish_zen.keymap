@@ -30,7 +30,7 @@
             compatible = "zmk,behavior-macro";
             label = "config version";
             #binding-cells = <0>;
-            bindings = <&kp N1 &kp DOT &kp N2 &kp N6>;
+            bindings = <&kp N1 &kp DOT &kp N2 &kp N7>;
         };
         act: act {
             compatible = "zmk,behavior-macro-one-param";
