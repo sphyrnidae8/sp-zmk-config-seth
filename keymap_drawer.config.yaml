@@ -12,7 +12,6 @@ draw_config:
   outer_pad_h: 56.0
   line_spacing: 1.2
   arc_radius: 6.0
-  arc_scale: 1.03
   append_colon_to_layer_header: true
   small_pad: 2.0
   svg_style: |
@@ -306,15 +305,17 @@ parse_config:
     '&bt BT_NXT':   {h: $$mdi:bluetooth$$ , t: $$mdi:skip-next$$}
 
   zmk_combos:
-    combo_inverse_winl:     { align: right  , o: 0.0  }
-    combo_inverse_winr:     { align: left   , o: 0.0  }
-    combo_lighting:         { align: top    , o: 1.55 }
-    combo_tmux:             { align: top    , o: 0.25 }
-    combo_tmux_mode_select: { align: top    , o: 0.25 }
-    combo_capsword:         { align: bottom , o: 2.5  }
-    combo_version:          { align: top    , o: 0.5  }
-    combo_delete:           { align: top    , o: 0.5  }
-    combo_gui_left:         { align: bottom , o: 0.5  }
-    combo_alt_left:         { align: left   , o: 0.5  }
-    combo_gui_right:        { align: bottom , o: 0.5  }
-    combo_alt_right:        { align: right  , o: 0.5  }
+    combo_inverse_winl:     { align: right  , o: 0.0   , arc_scale: 1.03 }
+    combo_inverse_winr:     { align: left   , o: 0.0   , arc_scale: 1.03 }
+    combo_lighting:         { align: top    , o: 1.55  , arc_scale: 1.03 }
+    combo_tmux:             { align: top    , o: 0.25  , arc_scale: 1.03 }
+    combo_tmux_mode_select: { align: top    , o: 0.25  , arc_scale: 1.03 }
+    combo_capsword:         { align: bottom , o: 2.5   , arc_scale: 1.03 }
+    combo_version:          { align: top    , o: 0.5   , arc_scale: 1.03 }
+    combo_delete:           { align: top    , o: 0.5   , arc_scale: 1.03 }
+    combo_gui_left:         { align: bottom , o: 0.5   , arc_scale: 1.03 }
+    combo_alt_left:         { align: left   , o: 0.5   , arc_scale: 1.03 }
+    combo_gui_right:        { align: bottom , o: 0.5   , arc_scale: 1.03 }
+    combo_alt_right:        { align: right  , o: 0.5   , arc_scale: 1.03 }
+    combo_swap_left:        { align: top    , o: 0.75  , arc_scale: 1.03 }
+    combo_swap_right:       { align: top    , o: 0.75  , arc_scale: 1.03 }
