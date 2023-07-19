@@ -317,5 +317,5 @@ parse_config:
     combo_alt_left:         { align: left   , o: 0.5   , arc_scale: 1.03 }
     combo_gui_right:        { align: bottom , o: 0.5   , arc_scale: 1.03 }
     combo_alt_right:        { align: right  , o: 0.5   , arc_scale: 1.03 }
-    combo_swap_left:        { align: top    , o: 0.8   , arc_scale: 1.04 }
-    combo_swap_right:       { align: top    , o: 0.8   , arc_scale: 1.04 }
+    combo_swap_left:        { align: top    , o: 0.85  , arc_scale: 1.05 }
+    combo_swap_right:       { align: top    , o: 0.85  , arc_scale: 1.05 }
