@@ -30,7 +30,7 @@
             compatible = "zmk,behavior-macro";
             label = "config version";
             #binding-cells = <0>;
-            bindings = <&kp N1 &kp DOT &kp N3 &kp N6>;
+            bindings = <&kp N1 &kp DOT &kp N3 &kp N7>;
         };
         act: act {
             compatible = "zmk,behavior-macro-one-param";
@@ -751,7 +751,7 @@
                 <&kt LGUI>,
                 <&kp TAB>,
                 <&kt LGUI>;
-            ignored-key-positions = <0 18 19 20 21 37 40>;
+            ignored-key-positions = <0 4 6 10 18 19 20 21 37 40>;
             ignored-layers = <0 3>;
         };
     };
