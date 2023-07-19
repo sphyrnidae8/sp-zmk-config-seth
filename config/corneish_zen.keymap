@@ -30,7 +30,7 @@
             compatible = "zmk,behavior-macro";
             label = "config version";
             #binding-cells = <0>;
-            bindings = <&kp N1 &kp DOT &kp N3 &kp N4>;
+            bindings = <&kp N1 &kp DOT &kp N3 &kp N5>;
         };
         act: act {
             compatible = "zmk,behavior-macro-one-param";
@@ -721,14 +721,26 @@
             mods = <(MOD_LCTL)>;
         };
 
-        swap: swapper {
+        winswap: winswapper {
             compatible = "zmk,behavior-tri-state";
-            label = "SWAPPER";
+            label = "Windows SWAPPER";
             #binding-cells = <0>;
             bindings =
                 <&kt LALT>,
                 <&kp TAB>,
                 <&kt LALT>;
+            ignored-key-positions = <37>;
+        };
+
+        swap: swapper {
+            compatible = "zmk,behavior-tri-state";
+            label = "Mac SWAPPER";
+            #binding-cells = <0>;
+            bindings =
+                <&kt LGUI>,
+                <&kp TAB>,
+                <&kt LGUI>;
+            ignored-key-positions = <37>;
         };
 
     };
@@ -804,7 +816,7 @@
             bindings = <
       &none    &win_next         &forward      &backward      &tab_next     &tab_prev          &act Y   &act U     &act I           &act O             &act P         &none
  &kp C_POWER   &swap             &win_quad     &win_third     &win_half     &win_full          &act H   &act J     &act K           &act L             &act COLON     &none
- &kp C_SLEEP   &kp LG(LS(TAB))   &win_vquad    &win_vthird    &win_vhalf    &win_screen        &act N   &act M     &act LESS_THAN   &act GREATER_THAN  &act QUESTION  &none
+ &kp C_SLEEP   &winswap          &win_vquad    &win_vthird    &win_vhalf    &win_screen        &act N   &act M     &act LESS_THAN   &act GREATER_THAN  &act QUESTION  &none
                                                &trans         &trans        &trans             &trans   &trans     &trans
             >;
         };
@@ -815,7 +827,7 @@
             bindings = <
  &none   &act Q  &act W  &act E  &act R  &act T      &tab_prev     &tab_next    &backward      &forward    &win_next        &none
  &none   &act A  &act S  &act D  &act F  &act G      &win_full     &win_half    &win_third     &win_quad   &swap            &kp C_POWER
- &none   &act Z  &act X  &act C  &act V  &act B      &win_screen   &win_vhalf   &win_vthird    &win_vquad  &kp LG(LS(TAB))  &kp C_SLEEP
+ &none   &act Z  &act X  &act C  &act V  &act B      &win_screen   &win_vhalf   &win_vthird    &win_vquad  &winswap         &kp C_SLEEP
                          &trans  &trans  &trans      &trans        &trans       &trans
             >;
         };
