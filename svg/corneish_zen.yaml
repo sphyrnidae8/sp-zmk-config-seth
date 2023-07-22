@@ -458,7 +458,7 @@ combos:
   a: right
   o: 0.5
   arc_scale: 1.03
-- p: [0, 4]
+- p: [1, 4]
   k: '&swap'
   l: [araxia]
   a: top
