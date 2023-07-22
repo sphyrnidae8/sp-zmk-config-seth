@@ -1,0 +1,472 @@
+layout: {qmk_keyboard: corne_rotated, qmk_layout: LAYOUT_split_3x6_3}
+layers:
+  araxia:
+  - {t: '$$mdi:keyboard-tab$$', h: 'move [L]'}
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - {t: '$$mdi:backspace-outline$$', h: 'move [R]'}
+  - {t: ⮐, h: '$$mdi:apple-keyboard-control$$'}
+  - A
+  - S
+  - D
+  - F
+  - G
+  - {t: H, s: '$$mdi:backspace-outline$$'}
+  - J
+  - K
+  - L
+  - ;
+  - {t: '''', h: '$$mdi:apple-keyboard-control$$'}
+  - {t: '`', h: '$$mdi:apple-keyboard-option$$'}
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - {t: \, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: ⮐, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: LC(W), h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: ESC, h: symbols}
+  - {t: ESC, h: media}
+  - {t: '$$mdi:keyboard-space$$', h: numpad}
+  - {t: ':', h: '$$mdi:apple-keyboard-command$$'}
+  symbols:
+  - $$mdi:backspace-outline$$
+  - {t: <, s: ','}
+  - {t: '&', s: '7'}
+  - {t: '*', s: '8'}
+  - {t: (, s: '9'}
+  - {t: ), s: '0'}
+  - <
+  - '>'
+  - (
+  - )
+  - ;
+  - $$mdi:backspace-outline$$
+  - $$mdi:keyboard-space$$
+  - {t: '>', s: .}
+  - {t: $, s: '4'}
+  - {t: '%', s: '5'}
+  - {t: ^, s: '6'}
+  - {t: '~', s: '`'}
+  - '-'
+  - '='
+  - '{'
+  - '}'
+  - \
+  - ''
+  - {t: ▽, type: trans}
+  - {t: +, s: '='}
+  - {t: '!', s: '1'}
+  - {t: '@', s: '2'}
+  - {t: '#', s: '3'}
+  - {t: _, s: '-'}
+  - _
+  - +
+  - '['
+  - ']'
+  - '`'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - $$mdi:apple-keyboard-shift$$
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  media:
+  - ''
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - $$mdi:volume-mute$$
+  - $$mdi:skip-backward$$
+  - $$mdi:play-pause$$
+  - $$mdi:skip-forward$$
+  - $$tabler:brightness-down$$
+  - $$tabler:brightness-up$$
+  - ''
+  - F6
+  - F7
+  - F8
+  - F9
+  - F10
+  - $$mdi:volume-minus$$
+  - $$mdi:volume-plus$$
+  - $$mdi:usb$$
+  - $$mdi:bluetooth$$
+  - $$mdi:bluetooth-off$$
+  - {t: '$$mdi:skip-previous$$', h: '$$mdi:bluetooth$$'}
+  - ''
+  - F11
+  - F12
+  - F13
+  - F14
+  - F15
+  - {t: '$$mdi:numeric-0$$', h: '$$mdi:bluetooth$$'}
+  - {t: '$$mdi:numeric-1$$', h: '$$mdi:bluetooth$$'}
+  - {t: '$$mdi:numeric-2$$', h: '$$mdi:bluetooth$$'}
+  - {t: '$$mdi:numeric-3$$', h: '$$mdi:bluetooth$$'}
+  - {t: '$$mdi:numeric-4$$', h: '$$mdi:bluetooth$$'}
+  - {t: '$$mdi:skip-next$$', h: '$$mdi:bluetooth$$'}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  numpad:
+  - '*'
+  - ','
+  - {t: KP 7, s: '&'}
+  - {t: KP 8, s: '*'}
+  - {t: KP 9, s: (}
+  - {t: KP 0, s: )}
+  - '&f2_menu'
+  - '&f2_dock'
+  - '&f2_status'
+  - '&help_menu'
+  - '&f2_tool'
+  - $$mdi:keyboard-tab$$
+  - /
+  - .
+  - {t: KP 4, s: $}
+  - {t: KP 5, s: '%'}
+  - {t: KP 6, s: ^}
+  - ':'
+  - $$mdi:arrow-left$$
+  - $$mdi:arrow-down$$
+  - $$mdi:arrow-up$$
+  - $$mdi:arrow-right$$
+  - ''
+  - ⮐
+  - +
+  - '='
+  - {t: KP 1, s: '!'}
+  - {t: KP 2, s: '@'}
+  - {t: KP 3, s: '#'}
+  - '-'
+  - PAGE UP
+  - PAGE DOWN
+  - HOME
+  - END
+  - Numlock
+  - '&win_close'
+  - {t: ▽, type: trans}
+  - $$mdi:apple-keyboard-shift$$
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  move [L]:
+  - {type: held}
+  - '&win_next'
+  - '&forward'
+  - '&backward'
+  - '&tab_next'
+  - '&tab_prev'
+  - '&act Y'
+  - '&act U'
+  - '&act I'
+  - '&act O'
+  - '&act P'
+  - ''
+  - $$mdi:power$$
+  - '&swap'
+  - '&win_quad'
+  - '&win_third'
+  - '&win_half'
+  - '&win_full'
+  - '&act H'
+  - '&act J'
+  - '&act K'
+  - '&act L'
+  - '&act :'
+  - ''
+  - $$mdi:power-sleep$$
+  - '&winswap'
+  - '&win_vquad'
+  - '&win_vthird'
+  - '&win_vhalf'
+  - '&win_screen'
+  - '&act N'
+  - '&act M'
+  - '&act <'
+  - '&act >'
+  - '&act ?'
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  move [R]:
+  - ''
+  - '&act Q'
+  - '&act W'
+  - '&act E'
+  - '&act R'
+  - '&act T'
+  - '&tab_prev'
+  - '&tab_next'
+  - '&backward'
+  - '&forward'
+  - '&win_next'
+  - {type: held}
+  - ''
+  - '&act A'
+  - '&act S'
+  - '&act D'
+  - '&act F'
+  - '&act G'
+  - '&win_full'
+  - '&win_half'
+  - '&win_third'
+  - '&win_quad'
+  - '&swap'
+  - $$mdi:power$$
+  - ''
+  - '&act Z'
+  - '&act X'
+  - '&act C'
+  - '&act V'
+  - '&act B'
+  - '&win_screen'
+  - '&win_vhalf'
+  - '&win_vthird'
+  - '&win_vquad'
+  - '&winswap'
+  - $$mdi:power-sleep$$
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  adjust:
+  - '&tab_tog'
+  - '&zoom_tog'
+  - '&vim_exit_all'
+  - ''
+  - '&ss_win'
+  - araxia
+  - EP TOG
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '&zoom_in'
+  - '&vim_save'
+  - '&ss2c'
+  - '&ss'
+  - '&warpd_l'
+  - '&warpd_r'
+  - '&warpd_j'
+  - '&warpd_k'
+  - '&tmux_pw'
+  - '&tmux_ps'
+  - ''
+  - ''
+  - '&zoom_out'
+  - '&vim_exit'
+  - '&sss2c'
+  - '&sss'
+  - $$mdi:usb$$
+  - $$mdi:bluetooth$$
+  - ''
+  - {t: ▽, type: trans}
+  - '&tmux_nw'
+  - '&tmux_ns'
+  - ''
+  - ''
+  - ''
+  - {type: held}
+  - {type: held}
+  - ''
+  - ''
+  lighting:
+  - {type: held}
+  - ''
+  - ''
+  - RGB BRI
+  - RGB BRD
+  - RGB COLOR HSB(25,100,0)
+  - ''
+  - ''
+  - F18
+  - F17
+  - F16
+  - {type: held}
+  - $$mdi:apple-keyboard-control$$
+  - ''
+  - ''
+  - RGB SAI
+  - RGB SAD
+  - RGB COLOR HSB(25,100,80)
+  - ''
+  - ''
+  - F21
+  - F20
+  - F19
+  - ''
+  - $$mdi:apple-keyboard-option$$
+  - ''
+  - ''
+  - RGB HUI
+  - RGB HUD
+  - RGB COLOR HSB(25,0,100)
+  - ''
+  - ''
+  - F24
+  - F23
+  - F22
+  - ''
+  - $$mdi:apple-keyboard-command$$
+  - $$mdi:apple-keyboard-shift$$
+  - ''
+  - ''
+  - ''
+  - ''
+  discord:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '&act N'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - PAGE DOWN
+  - '&dis_down'
+  - '&dis_up'
+  - PAGE UP
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - PAGE UP
+  - PAGE DOWN
+  - HOME
+  - END
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {type: held}
+  - {type: held}
+  - ''
+combos:
+- p: [0, 38]
+  k: move [R]
+  l: [araxia]
+  a: right
+  arc_scale: 1.03
+- p: [11, 39]
+  k: move [L]
+  l: [araxia]
+  a: left
+  arc_scale: 1.03
+- p: [0, 11]
+  k: lighting
+  l: [araxia]
+  a: top
+  o: 1.55
+  arc_scale: 1.03
+- p: [7, 8, 9]
+  k: tmux prefix
+  l: [araxia]
+  a: top
+  o: 0.25
+  arc_scale: 1.03
+- p: [2, 3, 4]
+  k: '&tmux_mode_select'
+  l: [araxia]
+  a: top
+  o: 0.25
+  arc_scale: 1.03
+- p: [12, 23]
+  k: CAPS WORD
+  l: [araxia]
+  a: bottom
+  o: 2.5
+  arc_scale: 1.03
+- p: [0, 1]
+  k: '&version'
+  l: [araxia]
+  a: top
+  o: 0.5
+  arc_scale: 1.03
+- p: [10, 11]
+  k: $$mdi:backspace-reverse-outline$$
+  l: [araxia]
+  a: top
+  o: 0.5
+  arc_scale: 1.03
+- p: [24, 25]
+  k: $$mdi:apple-keyboard-command$$
+  l: [araxia]
+  a: bottom
+  o: 0.5
+  arc_scale: 1.03
+- p: [12, 24]
+  k: $$mdi:apple-keyboard-option$$
+  l: [araxia]
+  a: left
+  o: 0.5
+  arc_scale: 1.03
+- p: [34, 35]
+  k: $$mdi:apple-keyboard-command$$
+  l: [araxia]
+  a: bottom
+  o: 0.5
+  arc_scale: 1.03
+- p: [23, 35]
+  k: $$mdi:apple-keyboard-option$$
+  l: [araxia]
+  a: right
+  o: 0.5
+  arc_scale: 1.03
+- p: [0, 4]
+  k: '&swap'
+  l: [araxia]
+  a: top
+  o: 1.05
+  arc_scale: 1.055
+- p: [6, 10]
+  k: '&swap'
+  l: [araxia]
+  a: top
+  o: 1.05
+  arc_scale: 1.055
