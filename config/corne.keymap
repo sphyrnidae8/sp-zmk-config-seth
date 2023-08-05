@@ -24,7 +24,7 @@
             compatible = "zmk,behavior-macro";
             label = "config version";
             #binding-cells = <0>;
-            bindings = <&kp N1 &kp DOT &kp N4 &kp N1>;
+            bindings = <&kp N1 &kp DOT &kp N4 &kp N2>;
         };
         act: act {
             compatible = "zmk,behavior-macro-one-param";
@@ -417,13 +417,13 @@
             layers = <0>;
         };
         combo_swap_left {
-            timeout-ms = <50>;
+            timeout-ms = <30>;
             key-positions = <1 5>;
             bindings = <&swap>;
             layers = <0>;
         };
         combo_swap_right {
-            timeout-ms = <50>;
+            timeout-ms = <30>;
             key-positions = <6 10>;
             bindings = <&swap>;
             layers = <0>;
