@@ -24,7 +24,7 @@
             compatible = "zmk,behavior-macro";
             label = "config version";
             #binding-cells = <0>;
-            bindings = <&kp N1 &kp DOT &kp N4 &kp N4>;
+            bindings = <&kp N1 &kp DOT &kp N4 &kp N5>;
         };
         act: act {
             compatible = "zmk,behavior-macro-one-param";
@@ -792,9 +792,9 @@
         default {
             label = "araxia";
             bindings = <
- &lthp 4 TAB         &kp Q          &kp W              &kp E                &kp R                &kp T           &kp Y          &kp U             &kp I           &kp O          &kp P            &lthp 5 BACKSPACE
- &mthp LCTRL RETURN  &hrml LCTRL A  &hrml LGUI S       &hrml LALT D         &kp F                &kp G           &h_bs          &hrmr RALT J      &hrmr RGUI K    &hrmr RCTRL L  &kp SEMICOLON    &mttp RCTRL SINGLE_QUOTE
- &mttp LALT GRAVE    &kp Z          &kp X              &kp C                &kp V                &kp B           &kp N          &kp M             &kp COMMA       &kp DOT        &kp FSLH         &mttp RALT BACKSLASH
+ &lthp 4 TAB         &kp Q          &kp W              &kp E                &kp R                &kp T           &kp Y          &kp U             &kp I           &kp O         &kp P                 &lthp 5 BACKSPACE
+ &mthp LCTRL RETURN  &hrml LCTRL A  &hrml LGUI S       &hrml LALT D         &hrml LSHIFT F       &kp G           &h_bs          &hrmr RSHIFT J    &hrmr RALT K    &hrmr RGUI L  &hrmr RCTL SEMICOLON  &mttp RCTRL SINGLE_QUOTE
+ &mttp LALT GRAVE    &kp Z          &kp X              &kp C                &kp V                &kp B           &kp N          &kp M             &kp COMMA       &kp DOT       &kp FSLH              &mttp RALT BACKSLASH
                                     &mthp LGUI RETURN  &mthp LSHIFT LC(W)   &lthp 1 ESC          &lthp 2 ESC     &lttp 3 SPACE  &mttp RGUI COLON
             >;
         };
