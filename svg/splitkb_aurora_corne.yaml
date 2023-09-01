@@ -23,7 +23,7 @@ layers:
   - {t: J, h: RSHIFT}
   - {t: K, h: '$$mdi:apple-keyboard-option$$'}
   - {t: L, h: '$$mdi:apple-keyboard-command$$'}
-  - {t: ;, h: RCTL}
+  - {t: ;, h: '$$mdi:apple-keyboard-control$$'}
   - {t: '''', h: '$$mdi:apple-keyboard-control$$'}
   - {t: '`', h: '$$mdi:apple-keyboard-option$$'}
   - Z
