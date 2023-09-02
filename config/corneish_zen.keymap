@@ -30,7 +30,7 @@
             compatible = "zmk,behavior-macro";
             label = "config version";
             #binding-cells = <0>;
-            bindings = <&kp N1 &kp DOT &kp N4 &kp N7>;
+            bindings = <&kp N1 &kp DOT &kp N4 &kp N8>;
         };
         act: act {
             compatible = "zmk,behavior-macro-one-param";
@@ -381,7 +381,7 @@
         combo_capsword {
             timeout-ms = <75>;
             slow-release;
-            key-positions = <12 23>;
+            key-positions = <13 22>;
             bindings = <&caps_word>;
             layers = <0>;
         };

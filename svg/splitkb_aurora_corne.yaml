@@ -416,7 +416,7 @@ combos:
   a: top
   o: 0.25
   arc_scale: 1.03
-- p: [12, 23]
+- p: [13, 22]
   k: CAPS WORD
   l: [araxia]
   a: bottom
