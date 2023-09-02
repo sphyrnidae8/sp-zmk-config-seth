@@ -7,7 +7,9 @@
 #include <dt-bindings/zmk/ext_power.h>
 
 // }}}
-#define KEYMAP_VERSION &kp N1 &kp DOT &kp N5 &kp N0
+#define VER_MAJOR N1
+#define VER_MINOR N5
+#define VER_PATCH N1
 // CONFIG {{{
 &mt {
     tapping-term-ms = <400>;
@@ -31,7 +33,7 @@
             compatible = "zmk,behavior-macro";
             label = "keymap version";
             #binding-cells = <0>;
-            bindings = <KEYMAP_VERSION>;
+            bindings = <&kp VER_MAJOR &kp DOT &kp VER_MINOR &kp VER_PATCH>;
         };
         act: act {
             compatible = "zmk,behavior-macro-one-param";
