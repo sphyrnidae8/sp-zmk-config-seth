@@ -388,6 +388,12 @@ layers:
   - {type: held}
   - ''
 combos:
+- p: [17, 29]
+  k: $$mdi:keyboard-tab$$
+  l: [araxia]
+- p: [18, 30]
+  k: $$mdi:keyboard-tab$$
+  l: [araxia]
 - p: [0, 38]
   k: move [R]
   l: [araxia]
