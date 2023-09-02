@@ -7,6 +7,7 @@
 #include <dt-bindings/zmk/ext_power.h>
 
 // }}}
+#define KEYMAP_VERSION &kp N1 &kp DOT &kp N4 &kp N9
 // CONFIG {{{
 &mt {
     tapping-term-ms = <400>;
@@ -22,9 +23,9 @@
     macros {
         version: version {
             compatible = "zmk,behavior-macro";
-            label = "config version";
+            label = "keymap version";
             #binding-cells = <0>;
-            bindings = <&kp N1 &kp DOT &kp N4 &kp N8>;
+            bindings = <KEYMAP_VERSION>;
         };
         act: act {
             compatible = "zmk,behavior-macro-one-param";
@@ -337,6 +338,20 @@
 //               ╰────────────╯ ╰────────────╯
     combos {
         compatible = "zmk,combos";
+        combo_tab_left {
+            timeout-ms = <75>;
+            slow-release;
+            key-positions = <17 29>;
+            bindings = <&kp TAB>;
+            layers = <0>;
+        };
+        combo_tab_right {
+            timeout-ms = <75>;
+            slow-release;
+            key-positions = <18 30>;
+            bindings = <&kp TAB>;
+            layers = <0>;
+        };
         combo_inverse_winl {
             timeout-ms = <75>;
             slow-release;
