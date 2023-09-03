@@ -388,6 +388,12 @@ layers:
   - {type: held}
   - ''
 combos:
+- p: [5, 17]
+  k: ⮐
+  l: [araxia]
+- p: [6, 18]
+  k: ⮐
+  l: [araxia]
 - p: [16, 19]
   k: {t: '$$mdi:apple-keyboard-shift$$', h: sticky}
   l: [araxia]
