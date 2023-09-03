@@ -9,7 +9,7 @@
 // }}}
 #define VER_MAJOR N1
 #define VER_MINOR N5
-#define VER_PATCH N1
+#define VER_PATCH N2
 // CONFIG {{{
 &mt {
     tapping-term-ms = <400>;
@@ -346,6 +346,13 @@
 //               ╰────────────╯ ╰────────────╯
     combos {
         compatible = "zmk,combos";
+        combo_sticky_shift {
+            timeout-ms = <75>;
+            slow-release;
+            key-positions = <16 19>;
+            bindings = <&sk LEFT_SHIFT>;
+            layers = <0>;
+        };
         combo_tab_left {
             timeout-ms = <75>;
             slow-release;
