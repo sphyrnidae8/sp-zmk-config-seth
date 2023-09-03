@@ -9,7 +9,7 @@
 // }}}
 #define VER_MAJOR N1
 #define VER_MINOR N5
-#define VER_PATCH N5
+#define VER_PATCH N7
 // CONFIG {{{
 &mt {
     tapping-term-ms = <400>;
@@ -666,7 +666,7 @@
             label = "reverse shift plus";
             #binding-cells = <0>;
             bindings =
-                <&kp PLUS>,
+                <&kp KP_PLUS>,
                 <&kp EQUAL>;
             mods = <(MOD_LSFT)>;
         };
@@ -765,7 +765,7 @@
             label = "reverse shift 9";
             #binding-cells = <0>;
             bindings =
-                <&kp LEFT_PARENTHESIS>,
+                <&kp TAB>,
                 <&kp N9>;
             mods = <(MOD_LSFT)>;
         };
@@ -774,7 +774,7 @@
             label = "reverse shift 0";
             #binding-cells = <0>;
             bindings =
-                <&kp RIGHT_PARENTHESIS>,
+                <&kp BACKSLASH>,
                 <&kp N0>;
             mods = <(MOD_LSFT)>;
         };
@@ -860,7 +860,7 @@
             bindings = <
 &kp BACKSPACE   &rs_lt       &rs7    &rs8      &rs9         &rs0                &kp LESS_THAN    &kp GREATER_THAN   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS   &kp SEMICOLON     &kp BACKSPACE
 &kp SPACE       &rs_gt       &rs4    &rs5      &rs6         &kp GRAVE           &kp MINUS        &kp EQUAL          &kp LEFT_BRACE        &kp RIGHT_BRACE         &kp SINGLE_QUOTE  &none
-&trans          &rs_plus     &rs1    &rs2      &rs3         &kp BACKSLASH       &kp UNDERSCORE   &kp PLUS           &kp LEFT_BRACKET      &kp RIGHT_BRACKET       &kp GRAVE         &trans
+&trans          &rs_plus     &rs1    &rs2      &rs3         &kp RETURN          &kp UNDERSCORE   &kp PLUS           &kp LEFT_BRACKET      &kp RIGHT_BRACKET       &kp GRAVE         &trans
                                      &trans    &kp LSHFT    &trans              &trans           &trans             &trans
             >;
         };
