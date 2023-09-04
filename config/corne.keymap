@@ -9,7 +9,7 @@
 // }}}
 #define VER_MAJOR N1
 #define VER_MINOR N6
-#define VER_PATCH N0
+#define VER_PATCH N1
 // CONFIG {{{
 &mt {
     tapping-term-ms = <400>;
@@ -459,6 +459,14 @@
             bindings = <&swap>;
             layers = <0>;
         };
+       combo_lighting {
+           timeout-ms = <75>;
+           slow-release;
+           key-positions = <0 11>;
+           bindings = <&mo 8>;
+           layers = <0>;
+       };
+
     };
 
 // }}}
@@ -594,10 +602,11 @@
             then-layer = <7>;
         };
 
-        to_lighting {
-            if-layers = <5 6>;
-            then-layer = <8>;
-        };
+        // provided by combo_lighting due to transparent layer issues
+        //to_lighting {
+        //    if-layers = <5 6>;
+        //    then-layer = <8>;
+        //};
 
         to_discord {
             if-layers = <3 4>;

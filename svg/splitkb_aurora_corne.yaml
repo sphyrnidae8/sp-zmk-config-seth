@@ -522,3 +522,9 @@ combos:
   a: top
   o: 1.05
   arc_scale: 1.055
+- p: [0, 11]
+  k: lighting
+  l: [araxia]
+  a: top
+  o: 1.55
+  arc_scale: 1.03
