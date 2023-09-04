@@ -8,8 +8,8 @@
 
 // }}}
 #define VER_MAJOR N1
-#define VER_MINOR N5
-#define VER_PATCH N7
+#define VER_MINOR N6
+#define VER_PATCH N0
 // CONFIG {{{
 &mt {
     tapping-term-ms = <400>;
@@ -395,13 +395,6 @@
             bindings = <&mo 4>;
             layers = <0>;
         };
-        combo_lighting {
-            timeout-ms = <75>;
-            slow-release;
-            key-positions = <0 11>;
-            bindings = <&mo 7>;
-            layers = <0>;
-        };
         combo_tmux {
             timeout-ms = <75>;
             slow-release;
@@ -557,240 +550,6 @@
                 <&kp>,
                 <&kp>;
         };
-        npsh1: numpad_shift_1 {
-            compatible = "zmk,behavior-mod-morph";
-            label = "NUMSH_1";
-            #binding-cells = <0>;
-            bindings =
-                <&kp KP_N1>,
-                <&kp EXCLAMATION>;
-
-            mods = <(MOD_LSFT)>;
-        };
-        npsh2: numpad_shift_2 {
-            compatible = "zmk,behavior-mod-morph";
-            label = "NUMSH_2";
-            #binding-cells = <0>;
-            bindings =
-                <&kp KP_N2>,
-                <&kp AT>;
-
-            mods = <(MOD_LSFT)>;
-        };
-        npsh3: numpad_shift_3 {
-            compatible = "zmk,behavior-mod-morph";
-            label = "NUMSH_3";
-            #binding-cells = <0>;
-            bindings =
-                <&kp KP_N3>,
-                <&kp HASH>;
-
-            mods = <(MOD_LSFT)>;
-        };
-        npsh4: numpad_shift_4 {
-            compatible = "zmk,behavior-mod-morph";
-            label = "NUMSH_4";
-            #binding-cells = <0>;
-            bindings =
-                <&kp KP_N4>,
-                <&kp DOLLAR>;
-
-            mods = <(MOD_LSFT)>;
-        };
-        npsh5: numpad_shift_5 {
-            compatible = "zmk,behavior-mod-morph";
-            label = "NUMSH_5";
-            #binding-cells = <0>;
-            bindings =
-                <&kp KP_N5>,
-                <&kp PERCENT>;
-
-            mods = <(MOD_LSFT)>;
-        };
-        npsh6: numpad_shift_6 {
-            compatible = "zmk,behavior-mod-morph";
-            label = "NUMSH_6";
-            #binding-cells = <0>;
-            bindings =
-                <&kp KP_N6>,
-                <&kp CARET>;
-
-            mods = <(MOD_LSFT)>;
-        };
-        npsh7: numpad_shift_7 {
-            compatible = "zmk,behavior-mod-morph";
-            label = "NUMSH_7";
-            #binding-cells = <0>;
-            bindings =
-                <&kp KP_N7>,
-                <&kp AMPERSAND>;
-
-            mods = <(MOD_LSFT)>;
-        };
-        npsh8: numpad_shift_8 {
-            compatible = "zmk,behavior-mod-morph";
-            label = "NUMSH_8";
-            #binding-cells = <0>;
-            bindings =
-                <&kp KP_N8>,
-                <&kp ASTERISK>;
-
-            mods = <(MOD_LSFT)>;
-        };
-        npsh9: numpad_shift_9 {
-            compatible = "zmk,behavior-mod-morph";
-            label = "NUMSH_9";
-            #binding-cells = <0>;
-            bindings =
-                <&kp KP_N9>,
-                <&kp LEFT_PARENTHESIS>;
-
-            mods = <(MOD_LSFT)>;
-        };
-        npsh0: numpad_shift_0 {
-            compatible = "zmk,behavior-mod-morph";
-            label = "NUMSH_0";
-            #binding-cells = <0>;
-            bindings =
-                <&kp KP_N0>,
-                <&kp RIGHT_PARENTHESIS>;
-            mods = <(MOD_LSFT)>;
-        };
-        rs_lt: rs_lt {
-            compatible = "zmk,behavior-mod-morph";
-            label = "reverse shift less than";
-            #binding-cells = <0>;
-            bindings =
-                <&kp LESS_THAN>,
-                <&kp COMMA>;
-            mods = <(MOD_LSFT)>;
-        };
-        rs_gt: rs_gt {
-            compatible = "zmk,behavior-mod-morph";
-            label = "reverse shift greater than";
-            #binding-cells = <0>;
-            bindings =
-                <&kp GREATER_THAN>,
-                <&kp DOT>;
-            mods = <(MOD_LSFT)>;
-        };
-        rs_plus: rs_plus {
-            compatible = "zmk,behavior-mod-morph";
-            label = "reverse shift plus";
-            #binding-cells = <0>;
-            bindings =
-                <&kp KP_PLUS>,
-                <&kp EQUAL>;
-            mods = <(MOD_LSFT)>;
-        };
-        rs_tilde: rs_tilde {
-            compatible = "zmk,behavior-mod-morph";
-            label = "reverse shift tilde";
-            #binding-cells = <0>;
-            bindings =
-                <&kp TILDE>,
-                <&kp GRAVE>;
-            mods = <(MOD_LSFT)>;
-        };
-        rs_underscore: rs_underscore {
-            compatible = "zmk,behavior-mod-morph";
-            label = "reverse shift underscore";
-            #binding-cells = <0>;
-            bindings =
-                <&kp UNDERSCORE>,
-                <&kp MINUS>;
-            mods = <(MOD_LSFT)>;
-        };
-        rs1: rs1 {
-            compatible = "zmk,behavior-mod-morph";
-            label = "reverse shift 1";
-            #binding-cells = <0>;
-            bindings =
-                <&kp EXCLAMATION>,
-                <&kp N1>;
-            mods = <(MOD_LSFT)>;
-        };
-        rs2: rs2 {
-            compatible = "zmk,behavior-mod-morph";
-            label = "reverse shift 2";
-            #binding-cells = <0>;
-            bindings =
-                <&kp AT>,
-                <&kp N2>;
-            mods = <(MOD_LSFT)>;
-        };
-        rs3: rs3 {
-            compatible = "zmk,behavior-mod-morph";
-            label = "reverse shift 3";
-            #binding-cells = <0>;
-            bindings =
-                <&kp HASH>,
-                <&kp N3>;
-            mods = <(MOD_LSFT)>;
-        };
-        rs4: rs4 {
-            compatible = "zmk,behavior-mod-morph";
-            label = "reverse shift 4";
-            #binding-cells = <0>;
-            bindings =
-                <&kp DOLLAR>,
-                <&kp N4>;
-            mods = <(MOD_LSFT)>;
-        };
-        rs5: rs5 {
-            compatible = "zmk,behavior-mod-morph";
-            label = "reverse shift 5";
-            #binding-cells = <0>;
-            bindings =
-                <&kp PERCENT>,
-                <&kp N5>;
-            mods = <(MOD_LSFT)>;
-        };
-        rs6: rs6 {
-            compatible = "zmk,behavior-mod-morph";
-            label = "reverse shift 6";
-            #binding-cells = <0>;
-            bindings =
-                <&kp CARET>,
-                <&kp N6>;
-            mods = <(MOD_LSFT)>;
-        };
-        rs7: rs7 {
-            compatible = "zmk,behavior-mod-morph";
-            label = "reverse shift 7";
-            #binding-cells = <0>;
-            bindings =
-                <&kp AMPERSAND>,
-                <&kp N7>;
-            mods = <(MOD_LSFT)>;
-        };
-        rs8: rs8 {
-            compatible = "zmk,behavior-mod-morph";
-            label = "reverse shift 8";
-            #binding-cells = <0>;
-            bindings =
-                <&kp ASTERISK>,
-                <&kp N8>;
-            mods = <(MOD_LSFT)>;
-        };
-        rs9: rs9 {
-            compatible = "zmk,behavior-mod-morph";
-            label = "reverse shift 9";
-            #binding-cells = <0>;
-            bindings =
-                <&kp TAB>,
-                <&kp N9>;
-            mods = <(MOD_LSFT)>;
-        };
-        rs0: rs0 {
-            compatible = "zmk,behavior-mod-morph";
-            label = "reverse shift 0";
-            #binding-cells = <0>;
-            bindings =
-                <&kp BACKSLASH>,
-                <&kp N0>;
-            mods = <(MOD_LSFT)>;
-        };
         m_cr: m_cr {
             compatible = "zmk,behavior-mod-morph";
             label = "true cr for c-m";
@@ -838,14 +597,19 @@
     conditional_layers {
         compatible = "zmk,conditional-layers";
 
-        adjust_layer {
-            if-layers = <1 2>;
-            then-layer = <6>;
+        to_adjust {
+            if-layers = <1 4>;
+            then-layer = <7>;
         };
 
-        discord-layer {
-            if-layers = <2 3>;
+        to_lighting {
+            if-layers = <5 6>;
             then-layer = <8>;
+        };
+
+        to_discord {
+            if-layers = <3 4>;
+            then-layer = <9>;
         };
 
     };
@@ -859,10 +623,10 @@
         default {
             label = "araxia";
             bindings = <
- &lthp 4 TAB         &kp Q          &kp W              &kp E                &kp R                &kp T           &kp Y          &kp U             &kp I           &kp O         &kp P                 &lthp 5 BACKSPACE
- &mthp LCTRL RETURN  &hrml LCTRL A  &hrml LGUI S       &hrml LALT D         &hrml LSHIFT F       &kp G           &h_bs          &hrmr RSHIFT J    &hrmr RALT K    &hrmr RGUI L  &hrmr RCTRL SEMICOLON  &mttp RCTRL SINGLE_QUOTE
- &mttp LALT GRAVE    &kp Z          &kp X              &kp C                &kp V                &kp B           &kp N          &m_cr             &kp COMMA       &kp DOT       &kp FSLH              &mttp RALT BACKSLASH
-                                    &mthp LGUI RETURN  &mthp LSHIFT LC(W)   &lthp 1 ESC          &lthp 2 ESC     &lttp 3 SPACE  &mttp RGUI COLON
+ &lthp 5 TAB         &kp Q          &kp W              &kp E          &kp R              &kp T        &kp Y          &kp U             &kp I         &kp O         &kp P                  &lthp 6 BACKSPACE
+ &mthp LCTRL RETURN  &hrml LCTRL A  &hrml LGUI S       &hrml LALT D   &hrml LSHIFT F     &kp G        &h_bs          &hrmr RSHIFT J    &hrmr RALT K  &hrmr RGUI L  &hrmr RCTRL SEMICOLON  &mttp RCTRL SINGLE_QUOTE
+ &mttp LALT GRAVE    &kp Z          &kp X              &kp C          &kp V              &kp B        &kp N          &m_cr             &kp COMMA     &kp DOT       &kp FSLH               &mttp RALT BACKSLASH
+                                    &mthp LGUI RETURN  &lthp 2 LC(W)  &lthp 1 ESC        &lthp 4 ESC  &lttp 3 SPACE  &mttp RGUI COLON
             >;
         };
 
@@ -870,21 +634,21 @@
         symbols {
             label = "symbols";
             bindings = <
-&kp BACKSPACE   &rs_lt       &rs7    &rs8      &rs9         &rs0                &kp LESS_THAN    &kp GREATER_THAN   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS   &kp SEMICOLON     &kp BACKSPACE
-&kp SPACE       &rs_gt       &rs4    &rs5      &rs6         &kp GRAVE           &kp MINUS        &kp EQUAL          &kp LEFT_BRACE        &kp RIGHT_BRACE         &kp SINGLE_QUOTE  &none
-&trans          &rs_plus     &rs1    &rs2      &rs3         &kp RETURN          &kp UNDERSCORE   &kp PLUS           &kp LEFT_BRACKET      &kp RIGHT_BRACKET       &kp GRAVE         &trans
-                                     &trans    &kp LSHFT    &trans              &trans           &trans             &trans
+&none  &kp COMMA  &kp AMPERSAND    &kp ASTERISK  &kp TAB    &kp BACKSLASH     &kp LESS_THAN   &kp GREATER_THAN  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMICOLON     &none
+&none  &kp DOT    &kp DOLLAR       &kp PERCENT   &kp CARET  &kp GRAVE         &kp MINUS       &kp EQUAL         &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp SINGLE_QUOTE  &none
+&none  &kp EQUAL  &kp EXCLAMATION  &kp AT        &kp POUND  &kp RETURN        &kp UNDERSCORE  &kp PLUS          &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp GRAVE         &none
+                                   &trans        &trans     &trans            &trans          &trans            &trans
             >;
         };
 
         /* 2 Layer */
-        media {
-            label = "media";
+        lnum {
+            label = "lnum";
             bindings = <
-&none    &kp F1   &kp F2   &kp F3   &kp F4   &kp F5           &kp C_MUTE    &kp C_PREV    &kp C_PP      &kp C_NEXT    &kp C_BRI_DN  &kp C_BRI_UP
-&none    &kp F6   &kp F7   &kp F8   &kp F9   &kp F10          &kp C_VOL_DN  &kp C_VOL_UP  &out OUT_USB  &out OUT_BLE  &bt BT_CLR    &bt BT_PRV
-&none    &kp F11  &kp F12  &kp F13  &kp F14  &kp F15          &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_NXT
-                           &trans   &trans   &trans           &trans        &trans        &trans
+&none  &kp LESS_THAN     &kp N7  &kp N8  &kp N9  &kp N0       &none  &none  &none &none &none &none
+&none  &kp GREATER_THAN  &kp N4  &kp N5  &kp N6  &kp TILDE    &none  &none  &none &none &none &none
+&none  &kp KP_PLUS       &kp N1  &kp N2  &kp N3  &kp PIPE     &none  &none  &none &none &none &none
+                                 &trans  &trans  &trans       &trans &trans &trans
             >;
         };
 
@@ -892,67 +656,79 @@
         numpad {
             label = "numpad";
             bindings = <
-&kp ASTERISK    &kp COMMA    &npsh7     &npsh8     &npsh9        &npsh0           &f2_menu      &f2_dock         &f2_status    &help_menu    &f2_tool           &kp TAB
-&kp FSLH        &kp DOT      &npsh4     &npsh5     &npsh6        &kp COLON        &kp LEFT      &kp DOWN         &kp UP        &kp RIGHT     &none              &kp RETURN
-&kp PLUS        &kp EQUAL    &npsh1     &npsh2     &npsh3        &kp MINUS        &kp PAGE_UP   &kp PAGE_DOWN    &kp HOME      &kp END       &kp KP_NUMLOCK     &win_close
-                                        &trans     &kp LSHFT     &trans           &trans        &trans           &trans
+&kp ASTERISK  &kp COMMA  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_N0     &f2_menu     &f2_dock       &f2_status  &help_menu  &f2_tool        &kp TAB
+&kp FSLH      &kp DOT    &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp COLON     &kp LEFT     &kp DOWN       &kp UP      &kp RIGHT   &none           &kp RETURN
+&kp PLUS      &kp EQUAL  &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp MINUS     &kp PAGE_UP  &kp PAGE_DOWN  &kp HOME    &kp END     &kp KP_NUMLOCK  &win_close
+                                    &trans     &trans     &trans        &trans       &trans         &trans
             >;
         };
 
         /* 4 Layer */
-        window_left {
-            label = "move [L]";
+        media {
+            label = "media";
             bindings = <
-      &none    &win_next         &forward      &backward      &tab_next     &tab_prev          &act Y   &act U     &act I           &act O             &act P         &none
- &kp C_POWER   &swap             &win_quad     &win_third     &win_half     &win_full          &act H   &act J     &act K           &act L             &act COLON     &none
- &kp C_SLEEP   &winswap          &win_vquad    &win_vthird    &win_vhalf    &win_screen        &act N   &act M     &act LESS_THAN   &act GREATER_THAN  &act QUESTION  &none
-                                               &trans         &trans        &trans             &trans   &trans     &trans
+&none  &kp F1   &kp F2   &kp F3   &kp F4   &kp F5      &kp C_MUTE    &kp C_PREV    &kp C_PP      &kp C_NEXT    &kp C_BRI_DN  &kp C_BRI_UP
+&none  &kp F6   &kp F7   &kp F8   &kp F9   &kp F10     &kp C_VOL_DN  &kp C_VOL_UP  &out OUT_USB  &out OUT_BLE  &bt BT_CLR    &bt BT_PRV
+&none  &kp F11  &kp F12  &kp F13  &kp F14  &kp F15     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_NXT
+                         &trans   &trans   &trans      &trans        &trans        &trans
             >;
         };
 
         /* 5 Layer */
-        window_right {
-            label = "move [R]";
+        window_left {
+            label = "move [L]";
             bindings = <
- &none   &act Q  &act W  &act E  &act R  &act T      &tab_prev     &tab_next    &backward      &forward    &win_next        &none
- &none   &act A  &act S  &act D  &act F  &act G      &win_full     &win_half    &win_third     &win_quad   &swap            &kp C_POWER
- &none   &act Z  &act X  &act C  &act V  &act B      &win_screen   &win_vhalf   &win_vthird    &win_vquad  &winswap         &kp C_SLEEP
-                         &trans  &trans  &trans      &trans        &trans       &trans
+&none        &swap      &forward    &backward    &tab_next   &tab_prev       &act Y  &act U  &act I          &act O             &act P         &none
+&kp C_POWER  &win_next  &win_quad   &win_third   &win_half   &win_full       &act H  &act J  &act K          &act L             &act COLON     &none
+&kp C_SLEEP  &winswap   &win_vquad  &win_vthird  &win_vhalf  &win_screen     &act N  &act M  &act LESS_THAN  &act GREATER_THAN  &act QUESTION  &none
+                                    &none        &none       &none           &none   &none   &none
             >;
         };
 
         /* 6 Layer */
-        /* Do not use this then-layer for regular layer switching */
-        adjust {
-            label = "adjust";
+        window_right {
+            label = "move [R]";
             bindings = <
- &tab_tog  &zoom_tog     &vim_exit_all  &none     &ss_win   &to 0                &ext_power EP_TOG   &none        &none      &none        &none      &none
- &none     &zoom_in      &vim_save      &ss2c     &ss       &warpd_l             &warpd_r            &warpd_j     &warpd_k   &tmux_pw     &tmux_ps   &none
- &none     &zoom_out     &vim_exit      &sss2c    &sss      &out OUT_USB         &out OUT_BLE        &none        &trans     &tmux_nw     &tmux_ns   &none
-                                        &none     &none     &trans               &trans              &none        &none
+&none  &act Q  &act W  &act E  &act R  &act T     &tab_prev    &tab_next   &backward    &forward    &swap      &none
+&none  &act A  &act S  &act D  &act F  &act G     &win_full    &win_half   &win_third   &win_quad   &win_next  &kp C_POWER
+&none  &act Z  &act X  &act C  &act V  &act B     &win_screen  &win_vhalf  &win_vthird  &win_vquad  &winswap   &kp C_SLEEP
+                       &none   &none   &none      &none        &none       &none
             >;
         };
 
         /* 7 Layer */
-        lighting {
-            label = "lighting";
+        /* Do not use this then-layer for regular layer switching */
+        adjust {
+            label = "adjust";
             bindings = <
- &trans     &none   &none   &rgb_ug RGB_BRI  &rgb_ug RGB_BRD   &rgb_ug RGB_COLOR_HSB(25,100,0)       &none   &none   &kp F18   &kp F17   &kp F16   &trans
- &kp LCTL   &none   &none   &rgb_ug RGB_SAI  &rgb_ug RGB_SAD   &rgb_ug RGB_COLOR_HSB(25,100,80)      &none   &none   &kp F21   &kp F20   &kp F19   &none
- &kp LALT   &none   &none   &rgb_ug RGB_HUI  &rgb_ug RGB_HUD   &rgb_ug RGB_COLOR_HSB(25,0,100)       &none   &none   &kp F24   &kp F23   &kp F22   &none
-                            &kp LGUI         &kp LSHFT         &none                                 &none   &none   &none
+&tab_tog  &zoom_tog  &vim_exit_all  &none   &ss_win  &to 0            &ext_power EP_TOG  &none     &none     &none     &none     &none
+&none     &zoom_in   &vim_save      &ss2c   &ss      &warpd_l         &warpd_r           &warpd_j  &warpd_k  &tmux_pw  &tmux_ps  &none
+&none     &zoom_out  &vim_exit      &sss2c  &sss     &out OUT_USB     &out OUT_BLE       &none     &none     &tmux_nw  &tmux_ns  &none
+                                    &none   &none    &trans           &trans             &none     &none
             >;
         };
 
         /* 8 Layer */
         /* Do not use this then-layer for regular layer switching */
+        lighting {
+            label = "lighting";
+            bindings = <
+&trans  &none  &none  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &rgb_ug RGB_COLOR_HSB(25,100,0)      &none  &none  &kp F18  &kp F17  &kp F16  &trans
+&none   &none  &none  &rgb_ug RGB_SAI  &rgb_ug RGB_SAD  &rgb_ug RGB_COLOR_HSB(25,100,80)     &none  &none  &kp F21  &kp F20  &kp F19  &none
+&none   &none  &none  &rgb_ug RGB_HUI  &rgb_ug RGB_HUD  &rgb_ug RGB_COLOR_HSB(25,0,100)      &none  &none  &kp F24  &kp F23  &kp F22  &none
+                      &none            &none            &none                                &none  &none  &none
+            >;
+        };
+
+        /* 9 Layer */
+        /* Do not use this then-layer for regular layer switching */
         discord {
             label = "discord";
             bindings = <
- &none      &none      &none      &none      &none      &none           &act N          &none            &none       &none            &none    &none
- &none      &none      &none      &none      &none      &none           &kp PAGE_DOWN   &dis_down        &dis_up     &kp PAGE_UP      &act N   &none
- &none      &none      &none      &none      &none      &none           &kp PAGE_UP     &kp PAGE_DOWN    &kp HOME    &kp END          &none    &none
-                                  &none      &none      &none           &trans          &trans           &none
+&none  &none  &none  &none  &none  &none     &act N         &none          &none     &none        &none   &none
+&none  &none  &none  &none  &none  &none     &kp PAGE_DOWN  &dis_down      &dis_up   &kp PAGE_UP  &act N  &none
+&none  &none  &none  &none  &none  &none     &kp PAGE_UP    &kp PAGE_DOWN  &kp HOME  &kp END      &none   &none
+                     &none  &none  &none     &trans         &trans         &none
             >;
         };
 

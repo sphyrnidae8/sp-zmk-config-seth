@@ -38,29 +38,29 @@ layers:
   - /
   - {t: \, h: '$$mdi:apple-keyboard-option$$'}
   - {t: ⮐, h: '$$mdi:apple-keyboard-command$$'}
-  - {t: LC(W), h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: LC(W), h: lnum}
   - {t: ESC, h: symbols}
   - {t: ESC, h: media}
   - {t: '$$mdi:keyboard-space$$', h: numpad}
   - {t: ':', h: '$$mdi:apple-keyboard-command$$'}
   symbols:
-  - $$mdi:backspace-outline$$
-  - {t: <, s: ','}
-  - {t: '&', s: '7'}
-  - {t: '*', s: '8'}
-  - {t: '$$mdi:keyboard-tab$$', s: '9'}
-  - {t: \, s: '0'}
+  - ''
+  - ','
+  - '&'
+  - '*'
+  - $$mdi:keyboard-tab$$
+  - \
   - <
   - '>'
   - (
   - )
   - ;
-  - $$mdi:backspace-outline$$
-  - $$mdi:keyboard-space$$
-  - {t: '>', s: .}
-  - {t: $, s: '4'}
-  - {t: '%', s: '5'}
-  - {t: ^, s: '6'}
+  - ''
+  - ''
+  - .
+  - $
+  - '%'
+  - ^
   - '`'
   - '-'
   - '='
@@ -68,23 +68,109 @@ layers:
   - '}'
   - ''''
   - ''
-  - {t: ▽, type: trans}
-  - {t: KP PLUS, s: '='}
-  - {t: '!', s: '1'}
-  - {t: '@', s: '2'}
-  - {t: '#', s: '3'}
+  - ''
+  - '='
+  - '!'
+  - '@'
+  - '#'
   - ⮐
   - _
   - +
   - '['
   - ']'
   - '`'
+  - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - $$mdi:apple-keyboard-shift$$
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  lnum:
+  - ''
+  - <
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '>'
+  - '4'
+  - '5'
+  - '6'
+  - '~'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - KP PLUS
+  - '1'
+  - '2'
+  - '3'
+  - '|'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  numpad:
+  - '*'
+  - ','
+  - KP 7
+  - KP 8
+  - KP 9
+  - KP 0
+  - '&f2_menu'
+  - '&f2_dock'
+  - '&f2_status'
+  - '&help_menu'
+  - '&f2_tool'
+  - $$mdi:keyboard-tab$$
+  - /
+  - .
+  - KP 4
+  - KP 5
+  - KP 6
+  - ':'
+  - $$mdi:arrow-left$$
+  - $$mdi:arrow-down$$
+  - $$mdi:arrow-up$$
+  - $$mdi:arrow-right$$
+  - ''
+  - ⮐
+  - +
+  - '='
+  - KP 1
+  - KP 2
+  - KP 3
+  - '-'
+  - PAGE UP
+  - PAGE DOWN
+  - HOME
+  - END
+  - Numlock
+  - '&win_close'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   media:
   - ''
@@ -129,52 +215,9 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  numpad:
-  - '*'
-  - ','
-  - {t: KP 7, s: '&'}
-  - {t: KP 8, s: '*'}
-  - {t: KP 9, s: (}
-  - {t: KP 0, s: )}
-  - '&f2_menu'
-  - '&f2_dock'
-  - '&f2_status'
-  - '&help_menu'
-  - '&f2_tool'
-  - $$mdi:keyboard-tab$$
-  - /
-  - .
-  - {t: KP 4, s: $}
-  - {t: KP 5, s: '%'}
-  - {t: KP 6, s: ^}
-  - ':'
-  - $$mdi:arrow-left$$
-  - $$mdi:arrow-down$$
-  - $$mdi:arrow-up$$
-  - $$mdi:arrow-right$$
-  - ''
-  - ⮐
-  - +
-  - '='
-  - {t: KP 1, s: '!'}
-  - {t: KP 2, s: '@'}
-  - {t: KP 3, s: '#'}
-  - '-'
-  - PAGE UP
-  - PAGE DOWN
-  - HOME
-  - END
-  - Numlock
-  - '&win_close'
-  - {t: ▽, type: trans}
-  - $$mdi:apple-keyboard-shift$$
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {t: ▽, type: trans}
   move [L]:
   - {type: held}
-  - '&win_next'
+  - '&swap'
   - '&forward'
   - '&backward'
   - '&tab_next'
@@ -186,7 +229,7 @@ layers:
   - '&act P'
   - ''
   - $$mdi:power$$
-  - '&swap'
+  - '&win_next'
   - '&win_quad'
   - '&win_third'
   - '&win_half'
@@ -209,12 +252,12 @@ layers:
   - '&act >'
   - '&act ?'
   - ''
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   move [R]:
   - ''
   - '&act Q'
@@ -226,7 +269,7 @@ layers:
   - '&tab_next'
   - '&backward'
   - '&forward'
-  - '&win_next'
+  - '&swap'
   - {type: held}
   - ''
   - '&act A'
@@ -238,7 +281,7 @@ layers:
   - '&win_half'
   - '&win_third'
   - '&win_quad'
-  - '&swap'
+  - '&win_next'
   - $$mdi:power$$
   - ''
   - '&act Z'
@@ -252,12 +295,12 @@ layers:
   - '&win_vquad'
   - '&winswap'
   - $$mdi:power-sleep$$
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   adjust:
   - '&tab_tog'
   - '&zoom_tog'
@@ -291,7 +334,7 @@ layers:
   - $$mdi:usb$$
   - $$mdi:bluetooth$$
   - ''
-  - {t: ▽, type: trans}
+  - ''
   - '&tmux_nw'
   - '&tmux_ns'
   - ''
@@ -314,7 +357,7 @@ layers:
   - F17
   - F16
   - {type: held}
-  - LCTL
+  - ''
   - ''
   - ''
   - RGB SAI
@@ -326,7 +369,7 @@ layers:
   - F20
   - F19
   - ''
-  - $$mdi:apple-keyboard-option$$
+  - ''
   - ''
   - ''
   - RGB HUI
@@ -338,8 +381,8 @@ layers:
   - F23
   - F22
   - ''
-  - $$mdi:apple-keyboard-command$$
-  - $$mdi:apple-keyboard-shift$$
+  - ''
+  - ''
   - ''
   - ''
   - ''
@@ -404,20 +447,14 @@ combos:
   k: $$mdi:keyboard-tab$$
   l: [araxia]
 - p: [0, 38]
-  k: move [R]
+  k: move [L]
   l: [araxia]
   a: right
   arc_scale: 1.03
 - p: [11, 39]
-  k: move [L]
+  k: media
   l: [araxia]
   a: left
-  arc_scale: 1.03
-- p: [0, 11]
-  k: lighting
-  l: [araxia]
-  a: top
-  o: 1.55
   arc_scale: 1.03
 - p: [7, 8, 9]
   k: tmux prefix
