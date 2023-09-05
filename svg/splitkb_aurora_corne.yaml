@@ -510,13 +510,13 @@ combos:
   a: right
   o: 0.5
   arc_scale: 1.03
-- p: [1, 4]
+- p: [13, 4]
   k: '&swap'
   l: [araxia]
   a: top
   o: 1.05
   arc_scale: 1.055
-- p: [7, 10]
+- p: [7, 22]
   k: '&swap'
   l: [araxia]
   a: top

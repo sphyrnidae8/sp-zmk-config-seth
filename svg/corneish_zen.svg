@@ -551,14 +551,14 @@ path.combo {
 <use href="#mdi:apple-keyboard-option" xlink:href="#mdi:apple-keyboard-option" x="862" y="126" height="13" width="13.0" class="combo tap glyph mdi:apple-keyboard-option"/>
 </g>
 <g class="combo combopos-16">
-<path d="M168,-53 h-83 a6.0,6.0 0 0 0 -6.0,6.0 v77" class="combo"/>
+<path d="M168,-53 h-83 a6.0,6.0 0 0 0 -6.0,6.0 v133" class="combo"/>
 <path d="M168,-53 h83 a6.0,6.0 0 0 1 6.0,6.0 v63" class="combo"/>
 <rect rx="6" ry="6" x="154" y="-66" width="28" height="26" class="combo"/>
 <text x="168" y="-53" class="combo tap">&amp;swap</text>
 </g>
 <g class="combo combopos-17">
 <path d="M672,-53 h-83 a6.0,6.0 0 0 0 -6.0,6.0 v63" class="combo"/>
-<path d="M672,-53 h83 a6.0,6.0 0 0 1 6.0,6.0 v77" class="combo"/>
+<path d="M672,-53 h83 a6.0,6.0 0 0 1 6.0,6.0 v133" class="combo"/>
 <rect rx="6" ry="6" x="658" y="-66" width="28" height="26" class="combo"/>
 <text x="672" y="-53" class="combo tap">&amp;swap</text>
 </g>
