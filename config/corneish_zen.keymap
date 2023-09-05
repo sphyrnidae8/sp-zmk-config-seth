@@ -9,7 +9,7 @@
 // }}}
 #define VER_MAJOR N1
 #define VER_MINOR N6
-#define VER_PATCH N7
+#define VER_PATCH N8
 // CONFIG {{{
 &mt {
     tapping-term-ms = <400>;
@@ -695,8 +695,8 @@
         window_left {
             label = "move [L]";
             bindings = <
-&none        &swap      &forward    &backward    &tab_next   &tab_prev       &act Y  &act U  &act I          &act O             &act P         &none
-&kp C_POWER  &win_next  &win_quad   &win_third   &win_half   &win_full       &act H  &act J  &act K          &act L             &act COLON     &none
+&none        &win_next  &forward    &backward    &tab_next   &tab_prev       &act Y  &act U  &act I          &act O             &act P         &none
+&kp C_POWER  &swap      &win_quad   &win_third   &win_half   &win_full       &act H  &act J  &act K          &act L             &act COLON     &none
 &kp C_SLEEP  &winswap   &win_vquad  &win_vthird  &win_vhalf  &win_screen     &act N  &act M  &act LESS_THAN  &act GREATER_THAN  &act QUESTION  &none
                                     &none        &none       &none           &none   &none   &none
             >;
@@ -706,8 +706,8 @@
         window_right {
             label = "move [R]";
             bindings = <
-&none  &act Q  &act W  &act E  &act R  &act T     &tab_prev    &tab_next   &backward    &forward    &swap      &none
-&none  &act A  &act S  &act D  &act F  &act G     &win_full    &win_half   &win_third   &win_quad   &win_next  &kp C_POWER
+&none  &act Q  &act W  &act E  &act R  &act T     &tab_prev    &tab_next   &backward    &forward    &win_next  &none
+&none  &act A  &act S  &act D  &act F  &act G     &win_full    &win_half   &win_third   &win_quad   &swap      &kp C_POWER
 &none  &act Z  &act X  &act C  &act V  &act B     &win_screen  &win_vhalf  &win_vthird  &win_vquad  &winswap   &kp C_SLEEP
                        &none   &none   &none      &none        &none       &none
             >;

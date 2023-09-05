@@ -217,7 +217,7 @@ layers:
   - {t: ▽, type: trans}
   move [L]:
   - {type: held}
-  - '&swap'
+  - '&win_next'
   - '&forward'
   - '&backward'
   - '&tab_next'
@@ -229,7 +229,7 @@ layers:
   - '&act P'
   - ''
   - $$mdi:power$$
-  - '&win_next'
+  - '&swap'
   - '&win_quad'
   - '&win_third'
   - '&win_half'
@@ -269,7 +269,7 @@ layers:
   - '&tab_next'
   - '&backward'
   - '&forward'
-  - '&swap'
+  - '&win_next'
   - {type: held}
   - ''
   - '&act A'
@@ -281,7 +281,7 @@ layers:
   - '&win_half'
   - '&win_third'
   - '&win_quad'
-  - '&win_next'
+  - '&swap'
   - $$mdi:power$$
   - ''
   - '&act Z'
