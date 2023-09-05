@@ -9,7 +9,7 @@
 // }}}
 #define VER_MAJOR N1
 #define VER_MINOR N6
-#define VER_PATCH N4
+#define VER_PATCH N5
 // CONFIG {{{
 &mt {
     tapping-term-ms = <400>;
@@ -459,13 +459,13 @@
         };
         combo_swap_left {
             timeout-ms = <30>;
-            key-positions = <13 4>;
+            key-positions = <1 16>;
             bindings = <&swap>;
             layers = <0>;
         };
         combo_swap_right {
             timeout-ms = <30>;
-            key-positions = <7 22>;
+            key-positions = <19 10>;
             bindings = <&swap>;
             layers = <0>;
         };
