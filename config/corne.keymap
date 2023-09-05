@@ -9,7 +9,7 @@
 // }}}
 #define VER_MAJOR N1
 #define VER_MINOR N6
-#define VER_PATCH N5
+#define VER_PATCH N6
 // CONFIG {{{
 &mt {
     tapping-term-ms = <400>;
@@ -361,7 +361,7 @@
             layers = <0>;
         };
         combo_sticky_shift {
-            timeout-ms = <75>;
+            timeout-ms = <150>;
             slow-release;
             key-positions = <16 19>;
             bindings = <&sk LEFT_SHIFT>;
@@ -410,7 +410,7 @@
             layers = <0>;
         };
         combo_capsword {
-            timeout-ms = <75>;
+            timeout-ms = <150>;
             slow-release;
             key-positions = <13 22>;
             bindings = <&caps_word>;
@@ -454,13 +454,13 @@
             layers = <0>;
         };
         combo_swap_left {
-            timeout-ms = <30>;
+            timeout-ms = <75>;
             key-positions = <1 16>;
             bindings = <&swap>;
             layers = <0>;
         };
         combo_swap_right {
-            timeout-ms = <30>;
+            timeout-ms = <75>;
             key-positions = <19 10>;
             bindings = <&swap>;
             layers = <0>;
@@ -482,8 +482,8 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOME_ROW_MODS_LEFT";
             #binding-cells = <2>;
-            tapping-term-ms = <250>;
-            quick-tap-ms = <200>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <100>;
             flavor = "balanced";
             global-quick-tap;
             //global-quick-tap-ms = <150> // requires pr#1387
@@ -497,8 +497,8 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOME_ROW_MODS_RIGHT";
             #binding-cells = <2>;
-            tapping-term-ms = <250>;
-            quick-tap-ms = <200>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <100>;
             flavor = "balanced";
             global-quick-tap;
             //global-quick-tap-ms = <150> // requires pr#1387
@@ -582,7 +582,7 @@
                 <&kt LALT>,
                 <&kp TAB>,
                 <&kt LALT>;
-            ignored-key-positions = <0 18 19 20 21 37 40>;
+            ignored-key-positions = <0 16 18 19 20 21 40>;
             ignored-layers = <0 3>;
         };
         swap: swapper {
@@ -593,8 +593,10 @@
                 <&kt LGUI>,
                 <&kp TAB>,
                 <&kt LGUI>;
-            // must include the combo keys too or else tri-state will complete immediately for Mac
-            ignored-key-positions = <0 1 4 7 10 18 19 20 21 37 40>;
+            // must include activating combo keys too (1 16 18 10) or else tri-state will complete immediately for Mac
+            // include hjkl (18 19 20 21) and nav layer activation (40) for navigation
+            // include mode keys: h to hide (18), q to quit (1) 
+            ignored-key-positions = <1 16 10 18 19 20 21 40>;
             ignored-layers = <0 3>;
         };
     };
