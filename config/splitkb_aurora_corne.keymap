@@ -9,7 +9,7 @@
 // }}}
 #define VER_MAJOR N1
 #define VER_MINOR N6
-#define VER_PATCH N6
+#define VER_PATCH N7
 // CONFIG {{{
 &mt {
     tapping-term-ms = <400>;
@@ -414,7 +414,7 @@
             layers = <0>;
         };
         combo_capsword {
-            timeout-ms = <150>;
+            timeout-ms = <75>;
             slow-release;
             key-positions = <13 22>;
             bindings = <&caps_word>;
@@ -487,7 +487,7 @@
             label = "HOME_ROW_MODS_LEFT";
             #binding-cells = <2>;
             tapping-term-ms = <200>;
-            quick-tap-ms = <100>;
+            quick-tap-ms = <150>;
             flavor = "balanced";
             global-quick-tap;
             //global-quick-tap-ms = <150> // requires pr#1387
@@ -502,7 +502,7 @@
             label = "HOME_ROW_MODS_RIGHT";
             #binding-cells = <2>;
             tapping-term-ms = <200>;
-            quick-tap-ms = <100>;
+            quick-tap-ms = <150>;
             flavor = "balanced";
             global-quick-tap;
             //global-quick-tap-ms = <150> // requires pr#1387
