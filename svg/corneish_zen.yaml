@@ -13,7 +13,7 @@ layers:
   - O
   - P
   - {t: '$$mdi:backspace-outline$$', h: 'move [R]'}
-  - {t: ⮐, h: '$$mdi:apple-keyboard-control$$'}
+  - ''
   - {t: A, h: '$$mdi:apple-keyboard-control$$'}
   - {t: S, h: '$$mdi:apple-keyboard-command$$'}
   - {t: D, h: '$$mdi:apple-keyboard-option$$'}
@@ -24,8 +24,8 @@ layers:
   - {t: K, h: '$$mdi:apple-keyboard-option$$'}
   - {t: L, h: '$$mdi:apple-keyboard-command$$'}
   - {t: ;, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: '''', h: '$$mdi:apple-keyboard-control$$'}
-  - {t: '`', h: '$$mdi:apple-keyboard-option$$'}
+  - ''
+  - ''
   - Z
   - X
   - C
@@ -36,7 +36,7 @@ layers:
   - ','
   - .
   - /
-  - {t: \, h: '$$mdi:apple-keyboard-option$$'}
+  - ''
   - {t: ⮐, h: '$$mdi:apple-keyboard-command$$'}
   - {t: LC(W), h: lnum}
   - {t: ESC, h: symbols}
@@ -54,7 +54,7 @@ layers:
   - '>'
   - (
   - )
-  - ;
+  - '"'
   - ''
   - ''
   - .
@@ -109,7 +109,7 @@ layers:
   - ''
   - ''
   - ''
-  - '"'
+  - '`'
   - ''
   - ''
   - KP PLUS
@@ -140,8 +140,8 @@ layers:
   - '&f2_dock'
   - '&f2_status'
   - '&help_menu'
-  - '&f2_tool'
   - $$mdi:keyboard-tab$$
+  - '&f2_tool'
   - /
   - .
   - KP 4
@@ -152,8 +152,8 @@ layers:
   - $$mdi:arrow-down$$
   - $$mdi:arrow-up$$
   - $$mdi:arrow-right$$
-  - ''
   - ⮐
+  - ''
   - +
   - '='
   - KP 1

@@ -8,8 +8,8 @@
 
 // }}}
 #define VER_MAJOR N1
-#define VER_MINOR N6
-#define VER_PATCH N9
+#define VER_MINOR N7
+#define VER_PATCH N0
 // CONFIG {{{
 &sk {
     quick-release;
@@ -640,10 +640,10 @@
         default {
             label = "araxia";
             bindings = <
- &lthp 5 TAB         &kp Q          &kp W              &kp E          &kp R              &kp T        &kp Y          &kp U             &kp I         &kp O         &kp P                  &lthp 6 BACKSPACE
- &mthp LCTRL RETURN  &hrml LCTRL A  &hrml LGUI S       &hrml LALT D   &hrml LSHIFT F     &kp G        &h_bs          &hrmr RSHIFT J    &hrmr RALT K  &hrmr RGUI L  &hrmr RCTRL SEMICOLON  &mttp RCTRL SINGLE_QUOTE
- &mttp LALT GRAVE    &kp Z          &kp X              &kp C          &kp V              &kp B        &kp N          &m_cr             &kp COMMA     &kp DOT       &kp FSLH               &mttp RALT BACKSLASH
-                                    &mthp LGUI RETURN  &lthp 2 LC(W)  &lthp 1 ESC        &lthp 4 ESC  &lttp 3 SPACE  &mttp RGUI COLON
+ &lthp 5 TAB  &kp Q          &kp W         &kp E              &kp R           &kp T           &kp Y        &kp U           &kp I             &kp O         &kp P                  &lthp 6 BACKSPACE
+ &none        &hrml LCTRL A  &hrml LGUI S  &hrml LALT D       &hrml LSHIFT F  &kp G           &h_bs        &hrmr RSHIFT J  &hrmr RALT K      &hrmr RGUI L  &hrmr RCTRL SEMICOLON  &none
+ &none        &kp Z          &kp X         &kp C              &kp V           &kp B           &kp N        &m_cr           &kp COMMA         &kp DOT       &kp FSLH               &none
+                                           &mthp LGUI RETURN  &lthp 2 LC(W)   &lthp 1 ESC     &lthp 4 ESC  &lttp 3 SPACE   &mttp RGUI COLON
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
         };
@@ -652,9 +652,9 @@
         symbols {
             label = "symbols";
             bindings = <
-&none  &kp COMMA  &kp AMPERSAND    &kp ASTERISK  &kp RETURN  &kp BACKSLASH     &kp LESS_THAN   &kp GREATER_THAN  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMICOLON     &none
-&none  &kp DOT    &kp DOLLAR       &kp PERCENT   &kp CARET   &kp TAB           &kp MINUS       &kp EQUAL         &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp SINGLE_QUOTE  &none
-&none  &kp EQUAL  &kp EXCLAMATION  &kp AT        &kp POUND   &kp GRAVE         &kp UNDERSCORE  &kp PLUS          &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp GRAVE         &none
+&none  &kp COMMA  &kp AMPERSAND    &kp ASTERISK  &kp RETURN  &kp BACKSLASH     &kp LESS_THAN   &kp GREATER_THAN  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DOUBLE_QUOTES  &none
+&none  &kp DOT    &kp DOLLAR       &kp PERCENT   &kp CARET   &kp TAB           &kp MINUS       &kp EQUAL         &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp SINGLE_QUOTE   &none
+&none  &kp EQUAL  &kp EXCLAMATION  &kp AT        &kp POUND   &kp GRAVE         &kp UNDERSCORE  &kp PLUS          &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp GRAVE          &none
                                    &trans        &trans      &trans            &trans          &trans            &trans
             >;
         };
@@ -663,9 +663,9 @@
         lnum {
             label = "lnum";
             bindings = <
-&none  &kp LESS_THAN     &kp N7  &kp N8  &kp N9  &kp N0        &none  &none  &none &none &none              &none
-&none  &kp GREATER_THAN  &kp N4  &kp N5  &kp N6  &kp PIPE      &none  &none  &none &none &kp DOUBLE_QUOTES  &none
-&none  &kp KP_PLUS       &kp N1  &kp N2  &kp N3  &kp TILDE     &none  &none  &none &none &trigrave          &none
+&none  &kp LESS_THAN     &kp N7  &kp N8  &kp N9  &kp N0        &none  &none  &none &none &none      &none
+&none  &kp GREATER_THAN  &kp N4  &kp N5  &kp N6  &kp PIPE      &none  &none  &none &none &kp GRAVE  &none
+&none  &kp KP_PLUS       &kp N1  &kp N2  &kp N3  &kp TILDE     &none  &none  &none &none &trigrave  &none
                                  &trans  &trans  &trans        &trans &trans &trans
             >;
         };
@@ -674,8 +674,8 @@
         numpad {
             label = "numpad";
             bindings = <
-&kp ASTERISK  &kp COMMA  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_N0     &f2_menu     &f2_dock       &f2_status  &help_menu  &f2_tool        &kp TAB
-&kp FSLH      &kp DOT    &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp COLON     &kp LEFT     &kp DOWN       &kp UP      &kp RIGHT   &none           &kp RETURN
+&kp ASTERISK  &kp COMMA  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_N0     &f2_menu     &f2_dock       &f2_status  &help_menu  &kp TAB         &f2_tool
+&kp FSLH      &kp DOT    &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp COLON     &kp LEFT     &kp DOWN       &kp UP      &kp RIGHT   &kp RETURN      &none
 &kp PLUS      &kp EQUAL  &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp MINUS     &kp PAGE_UP  &kp PAGE_DOWN  &kp HOME    &kp END     &kp KP_NUMLOCK  &win_close
                                     &trans     &trans     &trans        &trans       &trans         &trans
             >;
