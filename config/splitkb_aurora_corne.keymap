@@ -9,7 +9,7 @@
 // }}}
 #define VER_MAJOR N1
 #define VER_MINOR N7
-#define VER_PATCH N0
+#define VER_PATCH N1
 // CONFIG {{{
 &sk {
     quick-release;
@@ -27,6 +27,11 @@
 &led_strip {
     chain-length = <21>;
 };
+
+&nice_view_spi {
+    cs-gpios = <&gpio1 1 GPIO_ACTIVE_HIGH>;
+};
+
 // }}}
 / {
 // MACROS LAYERS {{{
