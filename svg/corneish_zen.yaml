@@ -351,8 +351,8 @@ layers:
   - RGB BRI
   - RGB BRD
   - RGB COLOR HSB(25,100,0)
-  - ''
-  - ''
+  - '&glo C'
+  - '&glo N'
   - F18
   - F17
   - F16
@@ -363,8 +363,8 @@ layers:
   - RGB SAI
   - RGB SAD
   - RGB COLOR HSB(25,100,80)
-  - ''
-  - ''
+  - '&glo H'
+  - '&glo Q'
   - F21
   - F20
   - F19
@@ -375,7 +375,7 @@ layers:
   - RGB HUI
   - RGB HUD
   - RGB COLOR HSB(25,0,100)
-  - ''
+  - '&glo N'
   - ''
   - F24
   - F23

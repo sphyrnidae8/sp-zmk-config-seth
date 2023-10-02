@@ -9,7 +9,7 @@
 // }}}
 #define VER_MAJOR N1
 #define VER_MINOR N7
-#define VER_PATCH N2
+#define VER_PATCH N3
 // CONFIG {{{
 &sk {
     quick-release;
@@ -48,6 +48,17 @@
                 , <&macro_param_1to1>
                 , <&macro_tap &kp MACRO_PLACEHOLDER>
                 , <&macro_release &kp LSHFT &kp LCTRL>
+                ;
+        };
+        glo: glo {
+            compatible = "zmk,behavior-macro-one-param";
+            label = "globe pseudo mod func";
+            #binding-cells = <1>;
+            bindings
+                = <&macro_press &kp GLOBE>
+                , <&macro_param_1to1>
+                , <&macro_tap &kp MACRO_PLACEHOLDER>
+                , <&macro_release &kp GLOBE>
                 ;
         };
         hyper: hyper {
@@ -734,10 +745,10 @@
         lighting {
             label = "lighting";
             bindings = <
-&trans  &none  &none  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &rgb_ug RGB_COLOR_HSB(25,100,0)      &none  &none  &kp F18  &kp F17  &kp F16  &trans
-&none   &none  &none  &rgb_ug RGB_SAI  &rgb_ug RGB_SAD  &rgb_ug RGB_COLOR_HSB(25,100,80)     &none  &none  &kp F21  &kp F20  &kp F19  &none
-&none   &none  &none  &rgb_ug RGB_HUI  &rgb_ug RGB_HUD  &rgb_ug RGB_COLOR_HSB(25,0,100)      &none  &none  &kp F24  &kp F23  &kp F22  &none
-                      &none            &none            &none                                &none  &none  &none
+&trans  &none  &none  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &rgb_ug RGB_COLOR_HSB(25,100,0)      &glo C  &glo N  &kp F18  &kp F17  &kp F16  &trans
+&none   &none  &none  &rgb_ug RGB_SAI  &rgb_ug RGB_SAD  &rgb_ug RGB_COLOR_HSB(25,100,80)     &glo H  &glo Q  &kp F21  &kp F20  &kp F19  &none
+&none   &none  &none  &rgb_ug RGB_HUI  &rgb_ug RGB_HUD  &rgb_ug RGB_COLOR_HSB(25,0,100)      &glo N  &none   &kp F24  &kp F23  &kp F22  &none
+                      &none            &none            &none                                &none   &none  &none
             >;
         };
 
