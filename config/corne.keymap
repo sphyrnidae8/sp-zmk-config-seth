@@ -9,7 +9,7 @@
 // }}}
 #define VER_MAJOR N1
 #define VER_MINOR N7
-#define VER_PATCH N0
+#define VER_PATCH N2
 // CONFIG {{{
 &sk {
     quick-release;
@@ -636,10 +636,10 @@
         default {
             label = "araxia";
             bindings = <
- &lthp 5 TAB  &kp Q          &kp W         &kp E              &kp R           &kp T           &kp Y        &kp U           &kp I             &kp O         &kp P                  &lthp 6 BACKSPACE
- &none        &hrml LCTRL A  &hrml LGUI S  &hrml LALT D       &hrml LSHIFT F  &kp G           &h_bs        &hrmr RSHIFT J  &hrmr RALT K      &hrmr RGUI L  &hrmr RCTRL SEMICOLON  &none
- &none        &kp Z          &kp X         &kp C              &kp V           &kp B           &kp N        &m_cr           &kp COMMA         &kp DOT       &kp FSLH               &none
-                                           &mthp LGUI RETURN  &lthp 2 LC(W)   &lthp 1 ESC     &lthp 4 ESC  &lttp 3 SPACE   &mttp RGUI COLON
+ &lthp 5 TAB  &kp Q          &kp W         &kp E              &kp R           &kp T             &kp Y        &kp U           &kp I             &kp O         &kp P                  &lthp 6 BACKSPACE
+ &none        &hrml LCTRL A  &hrml LGUI S  &hrml LALT D       &hrml LSHIFT F  &hrml GLOBE G     &h_bs        &hrmr RSHIFT J  &hrmr RALT K      &hrmr RGUI L  &hrmr RCTRL SEMICOLON  &none
+ &none        &kp Z          &kp X         &kp C              &kp V           &kp B             &kp N        &m_cr           &kp COMMA         &kp DOT       &kp FSLH               &none
+                                           &mthp LGUI RETURN  &lthp 2 LC(W)   &lthp 1 ESC       &lthp 4 ESC  &lttp 3 SPACE   &mttp RGUI COLON
             >;
         };
 
