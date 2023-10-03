@@ -447,12 +447,12 @@ combos:
   k: $$mdi:keyboard-tab$$
   l: [araxia]
 - p: [0, 38]
-  k: move [L]
+  k: move [R]
   l: [araxia]
   a: right
   arc_scale: 1.03
 - p: [11, 39]
-  k: media
+  k: move [L]
   l: [araxia]
   a: left
   arc_scale: 1.03

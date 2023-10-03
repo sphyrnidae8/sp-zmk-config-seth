@@ -474,14 +474,16 @@ path.combo {
 <path d="M371,136 v83 a6.0,6.0 0 0 1 -6.0,6.0 h-4" class="combo"/>
 <rect rx="6" ry="6" x="357" y="123" width="28" height="26" class="combo"/>
 <text x="371" y="136" class="combo tap">
-<tspan x="371" dy="-0.6em">move</tspan><tspan x="371" dy="1.2em">[L]</tspan>
+<tspan x="371" dy="-0.6em">move</tspan><tspan x="371" dy="1.2em">[R]</tspan>
 </text>
 </g>
 <g class="combo combopos-6">
 <path d="M469,136 v-83 a6.0,6.0 0 0 1 6.0,-6.0 h318" class="combo"/>
 <path d="M469,136 v83 a6.0,6.0 0 0 0 6.0,6.0 h4" class="combo"/>
 <rect rx="6" ry="6" x="455" y="123" width="28" height="26" class="combo"/>
-<text x="469" y="136" class="combo tap">media</text>
+<text x="469" y="136" class="combo tap">
+<tspan x="469" dy="-0.6em">move</tspan><tspan x="469" dy="1.2em">[L]</tspan>
+</text>
 </g>
 <g class="combo combopos-7">
 <path d="M644,-15 h-52 a6.0,6.0 0 0 0 -6.0,6.0 v25" class="combo"/>

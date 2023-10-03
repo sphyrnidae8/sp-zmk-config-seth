@@ -9,7 +9,7 @@
 // }}}
 #define VER_MAJOR N1
 #define VER_MINOR N7
-#define VER_PATCH N3
+#define VER_PATCH N4
 // CONFIG {{{
 &sk {
     quick-release;
@@ -409,14 +409,14 @@
             timeout-ms = <75>;
             slow-release;
             key-positions = <0 38>;
-            bindings = <&mo 5>;
+            bindings = <&mo 6>;
             layers = <0>;
         };
         combo_inverse_winr {
             timeout-ms = <75>;
             slow-release;
             key-positions = <11 39>;
-            bindings = <&mo 4>;
+            bindings = <&mo 5>;
             layers = <0>;
         };
         combo_tmux {
