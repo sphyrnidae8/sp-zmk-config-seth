@@ -6,6 +6,7 @@ on:
     paths:
       - 'aurora_corne_oled.yaml'
       - 'config/splitkb_aurora_corne.*'
+      - 'config/shared.dtsi'
 
 jobs:
   build:

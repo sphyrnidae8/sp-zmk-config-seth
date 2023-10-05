@@ -5,6 +5,7 @@ on:
     paths:
       - 'zen.yaml'
       - 'config/corneish_zen.*'
+      - 'config/shared.dtsi'
 
 jobs:
   build:

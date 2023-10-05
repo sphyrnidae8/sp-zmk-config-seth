@@ -5,6 +5,7 @@ on:
     paths:
       - 'swept.yaml'
       - 'config/corne.*'
+      - 'config/shared.dtsi'
 
 jobs:
   build:

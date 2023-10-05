@@ -5,6 +5,7 @@ on:
     paths:
       - 'aurora_corne_niceview.yaml'
       - 'config/splitkb_aurora_corne.*'
+      - 'config/shared.dtsi'
 
 jobs:
   build:
