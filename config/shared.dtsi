@@ -1,5 +1,5 @@
-#define VER_PATCH N9
-#define VER_MINOR N7
+#define VER_PATCH N0
+#define VER_MINOR N8
 #define VER_MAJOR N1
 /* Key Positions
 ╭────────────────────────╮ ╭────────────────────────╮
@@ -611,6 +611,28 @@
             ignored-key-positions = <1 16 10 18 19 20 21 40>;
             ignored-layers = <0 3>;
         };
+    };
+// }}}
+// CONDITIONAL LAYERS {{{
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        to_adjust {
+            if-layers = <1 4>;
+            then-layer = <7>;
+        };
+
+        // provided by combo_lighting due to transparent layer issues
+        //to_lighting {
+        //    if-layers = <5 6>;
+        //    then-layer = <8>;
+        //};
+
+        to_discord {
+            if-layers = <3 4>;
+            then-layer = <9>;
+        };
+
     };
 // }}}
 };
