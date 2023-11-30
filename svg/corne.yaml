@@ -510,14 +510,14 @@ combos:
   a: right
   o: 0.5
   arc_scale: 1.03
-- p: [1, 16]
-  k: '&swap'
+- p: [16, 25]
+  k: {t: '&swap', h: LG(TAB)}
   l: [araxia]
   a: top
   o: 1.05
   arc_scale: 1.055
-- p: [19, 10]
-  k: '&swap'
+- p: [19, 34]
+  k: {t: '&swap', h: LG(TAB)}
   l: [araxia]
   a: top
   o: 1.05
