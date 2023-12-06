@@ -430,12 +430,55 @@ layers:
   - {type: held}
   - {type: held}
   - ''
+  pointer:
+  - ''
+  - ''
+  - ''
+  - '&mmv MOVE_UP'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '&mmv MOVE_LEFT'
+  - '&mkp LCLK'
+  - '&mmv MOVE_RIGHT'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '&mmv MOVE_DOWN'
+  - '&mkp RCLK'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
 combos:
 - p: [5, 17]
   k: ⮐
   l: [araxia]
 - p: [37, 38]
-  k: {t: ⮐, h: media}
+  k: {t: ⮐, h: pointer}
   l: [araxia]
 - p: [6, 18]
   k: ⮐

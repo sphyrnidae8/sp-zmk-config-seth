@@ -3,6 +3,7 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/mouse.h>
 #include <dt-bindings/zmk/rgb.h>
 #include <dt-bindings/zmk/ext_power.h>
 
@@ -124,6 +125,17 @@
 &none  &none  &none  &none  &none  &none     &kp PAGE_DOWN  &dis_down      &dis_up   &kp PAGE_UP  &act N  &none
 &none  &none  &none  &none  &none  &none     &kp PAGE_UP    &kp PAGE_DOWN  &kp HOME  &kp END      &none   &none
                      &none  &none  &none     &trans         &trans         &none
+            >;
+        };
+
+        /* 10 Layer */
+        pointer {
+            display-name = "pointer";
+            bindings = <
+&none  &none  &none           &mmv MOVE_UP    &none            &none    &none   &none   &none  &none  &none  &none
+&none  &none  &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &none    &none   &none   &none  &none  &none  &none
+&none  &none  &none           &mmv MOVE_DOWN  &mkp RCLK        &none    &none   &none   &none  &none  &none  &none
+                              &trans  &trans  &trans                    &trans  &trans  &trans
             >;
         };
 

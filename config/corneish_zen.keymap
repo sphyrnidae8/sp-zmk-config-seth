@@ -134,6 +134,18 @@
             >;
         };
 
+        /* 10 Layer */
+        pointer {
+            display-name = "pointer";
+            bindings = <
+&none  &none  &none           &mmv MOVE_UP    &none            &none    &none   &none   &none  &none  &none  &none
+&none  &none  &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &none    &none   &none   &none  &none  &none  &none
+&none  &none  &none           &mmv MOVE_DOWN  &mkp RCLK        &none    &none   &none   &none  &none  &none  &none
+                              &trans  &trans  &trans                    &trans  &trans  &trans
+            >;
+        };
+
+
     };
 
 };

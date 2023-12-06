@@ -1,6 +1,6 @@
-#define VER_PATCH N1
-#define VER_MINOR N9
-#define VER_MAJOR N1
+#define VER_PATCH N0
+#define VER_MINOR N0
+#define VER_MAJOR N2
 /* Key Positions
 ╭────────────────────────╮ ╭────────────────────────╮
 │  0   1   2   3   4   5 │ │  6   7   8   9  10  11 │
@@ -370,7 +370,7 @@
         combo_return_left_thumbs {
             timeout-ms = <75>;
             key-positions = <37 38>;
-            bindings = <&lthp 4 RETURN>;
+            bindings = <&lthp 10 RETURN>;
             layers = <0>;
         };
         combo_return_right {
