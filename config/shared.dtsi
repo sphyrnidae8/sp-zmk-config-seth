@@ -1,4 +1,4 @@
-#define VER_PATCH N1
+#define VER_PATCH N2
 #define VER_MINOR N1
 #define VER_MAJOR N2
 /* Key Positions
@@ -130,13 +130,13 @@
             compatible = "zmk,behavior-macro";
             label = "warpd_l";
             #binding-cells = <0>;
-            bindings = <&kp LG(LC(S)) &kp J &kp F>;
+            bindings = <&kp LG(LC(S)) &kp J &kp ESC &kp LG(LC(Y))>;
         };
         warpd_r: warpd_r {
             compatible = "zmk,behavior-macro";
             label = "warpd_r";
             #binding-cells = <0>;
-            bindings = <&kp LG(LC(S)) &kp K &kp F>;
+            bindings = <&kp LG(LC(S)) &kp K &kp ESC &kp LG(LC(Y))>;
         };
         warpd_j: warpd_j {
             compatible = "zmk,behavior-macro";
