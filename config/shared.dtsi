@@ -1,5 +1,5 @@
 #define VER_PATCH N0
-#define VER_MINOR N0
+#define VER_MINOR N1
 #define VER_MAJOR N2
 /* Key Positions
 ╭────────────────────────╮ ╭────────────────────────╮
@@ -634,6 +634,14 @@
             ignored-key-positions = <1 16 18 19 20 21 25 34 40>;
             ignored-layers = <0 3>;
         };
+        fmmv: fast_mouse_move {
+            compatible = "zmk,behavior-mouse-move";
+            #binding-cells = <1>;
+            delay-ms = <0>;
+            time-to-max-speed-ms = <500>;
+            acceleration-exponent = <4>;
+        };
+
     };
 // }}}
 // CONDITIONAL LAYERS {{{
