@@ -307,7 +307,7 @@ layers:
   - '&vim_exit_all'
   - ''
   - '&ss_win'
-  - araxia
+  - {t: araxia, h: toggle}
   - EP TOG
   - ''
   - ''
@@ -435,13 +435,13 @@ combos:
   k: ⮐
   l: [araxia]
 - p: [37, 38]
-  k: ⮐
+  k: {t: ⮐, h: media}
   l: [araxia]
 - p: [6, 18]
   k: ⮐
   l: [araxia]
 - p: [39, 40]
-  k: ⮐
+  k: {t: ⮐, h: discord}
   l: [araxia]
 - p: [16, 19]
   k: {t: '$$mdi:apple-keyboard-shift$$', h: sticky}

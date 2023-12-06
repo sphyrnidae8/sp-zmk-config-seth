@@ -1,4 +1,4 @@
-<svg width="1840" height="1986" viewBox="0 0 1840 1986" class="keymap" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="1840" height="1815" viewBox="0 0 1840 1815" class="keymap" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>/* start glyphs */
 <svg id="mdi:apple-keyboard-command">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-apple-keyboard-command" viewBox="0 0 24 24"><path d="M6,2A4,4 0 0,1 10,6V8H14V6A4,4 0 0,1 18,2A4,4 0 0,1 22,6A4,4 0 0,1 18,10H16V14H18A4,4 0 0,1 22,18A4,4 0 0,1 18,22A4,4 0 0,1 14,18V16H10V18A4,4 0 0,1 6,22A4,4 0 0,1 2,18A4,4 0 0,1 6,14H8V10H6A4,4 0 0,1 2,6A4,4 0 0,1 6,2M16,18A2,2 0 0,0 18,20A2,2 0 0,0 20,18A2,2 0 0,0 18,16H16V18M14,10H10V14H14V10M6,16A2,2 0 0,0 4,18A2,2 0 0,0 6,20A2,2 0 0,0 8,18V16H6M8,6A2,2 0 0,0 6,4A2,2 0 0,0 4,6A2,2 0 0,0 6,8H8V6M18,8A2,2 0 0,0 20,6A2,2 0 0,0 18,4A2,2 0 0,0 16,6V8H18Z" /></svg>
@@ -220,7 +220,7 @@ path.combo {
 </style>
 <g transform="translate(40, 0)" class="layer-araxia">
 <text x="0" y="28" class="label">araxia:</text>
-<g transform="translate(0, 143)">
+<g transform="translate(0, 85)">
 <g transform="translate(28, 87)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
@@ -453,6 +453,7 @@ path.combo {
 <g class="combo combopos-1">
 <rect rx="6" ry="6" x="324" y="223" width="28" height="26" class="combo"/>
 <text x="338" y="236" class="combo tap">⮐</text>
+<text x="338" y="247" class="combo hold">media</text>
 </g>
 <g class="combo combopos-2">
 <rect rx="6" ry="6" x="518" y="68" width="28" height="26" class="combo"/>
@@ -461,6 +462,7 @@ path.combo {
 <g class="combo combopos-3">
 <rect rx="6" ry="6" x="486" y="222" width="28" height="26" class="combo"/>
 <text x="500" y="235" class="combo tap">⮐</text>
+<text x="500" y="246" class="combo hold"><tspan style="font-size: 86%">discord</tspan></text>
 </g>
 <g class="combo combopos-4">
 <path d="M420,101 l-149,0" class="combo"/>
@@ -783,7 +785,7 @@ path.combo {
 </g>
 </g>
 </g>
-<g transform="translate(40, 567)" class="layer-lnum">
+<g transform="translate(40, 397)" class="layer-lnum">
 <text x="0" y="28" class="label">lnum:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 87)" class="key keypos-0">
@@ -978,7 +980,7 @@ path.combo {
 </g>
 </g>
 </g>
-<g transform="translate(960, 567)" class="layer-numpad">
+<g transform="translate(960, 397)" class="layer-numpad">
 <text x="0" y="28" class="label">numpad:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 87)" class="key keypos-0">
@@ -1195,7 +1197,7 @@ path.combo {
 </g>
 </g>
 </g>
-<g transform="translate(40, 908)" class="layer-media">
+<g transform="translate(40, 737)" class="layer-media">
 <text x="0" y="28" class="label">media:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 87)" class="key keypos-0">
@@ -1413,7 +1415,7 @@ path.combo {
 </g>
 </g>
 </g>
-<g transform="translate(960, 908)" class="layer-move [L]">
+<g transform="translate(960, 737)" class="layer-move [L]">
 <text x="0" y="28" class="label">move [L]:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 87)" class="key held keypos-0">
@@ -1648,7 +1650,7 @@ path.combo {
 </g>
 </g>
 </g>
-<g transform="translate(40, 1249)" class="layer-move [R]">
+<g transform="translate(40, 1078)" class="layer-move [R]">
 <text x="0" y="28" class="label">move [R]:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 87)" class="key keypos-0">
@@ -1883,7 +1885,7 @@ path.combo {
 </g>
 </g>
 </g>
-<g transform="translate(960, 1249)" class="layer-adjust">
+<g transform="translate(960, 1078)" class="layer-adjust">
 <text x="0" y="28" class="label">adjust:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 87)" class="key keypos-0">
@@ -1914,6 +1916,7 @@ path.combo {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <text x="0" y="-4" class="key tap">araxia</text>
+<text x="0" y="24" class="key hold">toggle</text>
 </g>
 <g transform="translate(532, 53)" class="key keypos-6">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -2082,7 +2085,7 @@ path.combo {
 </g>
 </g>
 </g>
-<g transform="translate(40, 1589)" class="layer-lighting">
+<g transform="translate(40, 1419)" class="layer-lighting">
 <text x="0" y="28" class="label">lighting:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 87)" class="key held keypos-0">
@@ -2309,7 +2312,7 @@ path.combo {
 </g>
 </g>
 </g>
-<g transform="translate(960, 1589)" class="layer-discord">
+<g transform="translate(960, 1419)" class="layer-discord">
 <text x="0" y="28" class="label">discord:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 87)" class="key keypos-0">
