@@ -19,7 +19,7 @@
 // }}}
 / {
 // KEYMAP {{{
-// n.b. label strings are truncated after 8 characters
+// n.b. display-name strings are truncated after 8 characters
     keymap {
         compatible = "zmk,keymap";
 

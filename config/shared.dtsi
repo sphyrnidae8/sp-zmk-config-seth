@@ -1,4 +1,4 @@
-#define VER_PATCH N2
+#define VER_PATCH N3
 #define VER_MINOR N1
 #define VER_MAJOR N2
 /* Key Positions
@@ -26,15 +26,13 @@
 / {
 // MACROS LAYERS {{{
     macros {
-        version: version {
+        version: keymap_version {
             compatible = "zmk,behavior-macro";
-            label = "keymap version";
             #binding-cells = <0>;
             bindings = <&kp VER_MAJOR &kp DOT &kp VER_MINOR &kp VER_PATCH>;
         };
-        act: act {
+        act: activate {
             compatible = "zmk,behavior-macro-one-param";
-            label = "activate";
             #binding-cells = <1>;
             bindings
                 = <&macro_press &kp LSHFT &kp LCTRL>
@@ -43,9 +41,8 @@
                 , <&macro_release &kp LSHFT &kp LCTRL>
                 ;
         };
-        glo: glo {
+        glo: globe_pseudo_mod {
             compatible = "zmk,behavior-macro-one-param";
-            label = "globe pseudo mod func";
             #binding-cells = <1>;
             bindings
                 = <&macro_press &kp GLOBE>
@@ -56,25 +53,21 @@
         };
         hyper: hyper {
             compatible = "zmk,behavior-macro";
-            label = "hyper";
             #binding-cells = <0>;
             bindings = <&kp LCMD &kp LSHFT &kp LALT &kp LCTRL>;
         };
         trigrave: trigrave {
             compatible = "zmk,behavior-macro";
-            label = "trigrave";
             #binding-cells = <0>;
             bindings = <&kp GRAVE &kp GRAVE &kp GRAVE>;
         };
         mouse_keys: mouse_keys {
             compatible = "zmk,behavior-macro";
-            label = "mouse_keys";
             #binding-cells = <0>;
             bindings = <&kp LALT &kp LALT &kp LALT &kp LALT &kp LALT>;
         };
         vim_save: vim_save {
             compatible = "zmk,behavior-macro";
-            label = "vim_save";
             #binding-cells = <0>;
             bindings =
                 <&macro_tap>,
@@ -82,7 +75,6 @@
         };
         vim_exit: vim_exit {
             compatible = "zmk,behavior-macro";
-            label = "vim_exit";
             #binding-cells = <0>;
             bindings =
                 <&macro_tap>,
@@ -90,7 +82,6 @@
         };
         vim_exit_all: vim_exit_all {
             compatible = "zmk,behavior-macro";
-            label = "vim_exit_all";
             #binding-cells = <0>;
             bindings =
                 <&macro_tap>,
@@ -98,253 +89,211 @@
         };
         tmux_mode_select: tmux_mode_select {
             compatible = "zmk,behavior-macro";
-            label = "tmux mode select";
             #binding-cells = <0>;
             bindings = <&kp LC(A) &kp F>;
         };
         tmux_ns: tmux_ns {
             compatible = "zmk,behavior-macro";
-            label = "tmux_ns";
             #binding-cells = <0>;
             bindings = <&kp LC(A) &kp RPAR>;
         };
         tmux_ps: tmux_ps {
             compatible = "zmk,behavior-macro";
-            label = "tmux_ps";
             #binding-cells = <0>;
             bindings = <&kp LC(A) &kp LPAR>;
         };
         tmux_nw: tmux_nw {
             compatible = "zmk,behavior-macro";
-            label = "tmux_nw";
             #binding-cells = <0>;
             bindings = <&kp LC(A) &kp N>;
         };
         tmux_pw: tmux_pw {
             compatible = "zmk,behavior-macro";
-            label = "tmux_pw";
             #binding-cells = <0>;
             bindings = <&kp LC(A) &kp P>;
         };
         warpd_l: warpd_l {
             compatible = "zmk,behavior-macro";
-            label = "warpd_l";
             #binding-cells = <0>;
             bindings = <&kp LG(LC(S)) &kp J &kp ESC &kp LG(LC(Y))>;
         };
         warpd_r: warpd_r {
             compatible = "zmk,behavior-macro";
-            label = "warpd_r";
             #binding-cells = <0>;
             bindings = <&kp LG(LC(S)) &kp K &kp ESC &kp LG(LC(Y))>;
         };
         warpd_j: warpd_j {
             compatible = "zmk,behavior-macro";
-            label = "warpd_j";
             #binding-cells = <0>;
             bindings = <&kp LG(LC(J))>;
         };
         warpd_k: warpd_k {
             compatible = "zmk,behavior-macro";
-            label = "warpd_k";
             #binding-cells = <0>;
             bindings = <&kp LG(LC(K))>;
         };
-        ka_tog: ka_tog {
+        ka_tog: keyboard_access_toggle {
             compatible = "zmk,behavior-macro";
-            label = "keyboard access toggle";
             #binding-cells = <0>;
             bindings = <&kp LC(F1)>;
         };
-        f2_menu: f2_menu {
+        f2_menu: focus_to_menu {
             compatible = "zmk,behavior-macro";
-            label = "focus to menu";
             #binding-cells = <0>;
             bindings = <&kp LC(F2)>;
         };
-        f2_dock: f2_dock {
+        f2_dock: focus_to_dock {
             compatible = "zmk,behavior-macro";
-            label = "focus to dock";
             #binding-cells = <0>;
             bindings = <&kp LC(F3)>;
         };
-        f2_win: f2_win {
+        f2_win: focus_to_active_window {
             compatible = "zmk,behavior-macro";
-            label = "focus to active or next window";
             #binding-cells = <0>;
             bindings = <&kp LC(F4)>;
         };
-        f2_tool: f2_tool {
+        f2_tool: focus_to_toolbar {
             compatible = "zmk,behavior-macro";
-            label = "focus to toolbar";
             #binding-cells = <0>;
             bindings = <&kp LC(F5)>;
         };
-        f2_float: f2_float {
+        f2_float: focus_to_floating_window {
             compatible = "zmk,behavior-macro";
-            label = "focus to floating window";
             #binding-cells = <0>;
             bindings = <&kp LC(F6)>;
         };
-        tab_tog: tab_tog {
+        tab_tog: toggle_tab_navigation {
             compatible = "zmk,behavior-macro";
-            label = "toggle tab navigation";
             #binding-cells = <0>;
             bindings = <&kp LC(F7)>;
         };
-        f2_status: f2_status {
+        f2_status: focus_to_status_menus {
             compatible = "zmk,behavior-macro";
-            label = "focus to status menus";
             #binding-cells = <0>;
             bindings = <&kp LC(F8)>;
         };
         help_menu: help_menu {
             compatible = "zmk,behavior-macro";
-            label = "show help menu";
             #binding-cells = <0>;
             bindings = <&kp LG(LS(SLASH))>;
         };
-        zoom_tog: zoom_tog {
+        zoom_tog: zoom_toggle {
             compatible = "zmk,behavior-macro";
-            label = "toggle zoom";
             #binding-cells = <0>;
             bindings = <&kp LG(LA(N8))>;
         };
         zoom_in: zoom_in {
             compatible = "zmk,behavior-macro";
-            label = "zoom in";
             #binding-cells = <0>;
             bindings = <&kp LG(LA(EQUAL))>;
         };
         zoom_out: zoom_out {
             compatible = "zmk,behavior-macro";
-            label = "zoom out";
             #binding-cells = <0>;
             bindings = <&kp LG(LA(MINUS))>;
         };
         forward: forward {
             compatible = "zmk,behavior-macro";
-            label = "forward";
             #binding-cells = <0>;
             bindings = <&kp LG(RBKT)>;
         };
         backward: backward {
             compatible = "zmk,behavior-macro";
-            label = "backward";
             #binding-cells = <0>;
             bindings = <&kp LG(LBKT)>;
         };
         tab_next: tab_next {
             compatible = "zmk,behavior-macro";
-            label = "next tab";
             #binding-cells = <0>;
             bindings = <&kp LG(LS(RIGHT_BRACE))>;
         };
         tab_prev: tab_prev {
             compatible = "zmk,behavior-macro";
-            label = "previous tab";
             #binding-cells = <0>;
             bindings = <&kp LG(LS(LEFT_BRACE))>;
         };
         win_next: win_next {
             compatible = "zmk,behavior-macro";
-            label = "next window in app";
             #binding-cells = <0>;
             bindings = <&kp LG(GRAVE)>;
         };
-        win_full: win_full {
+        win_full: win_full_screen {
             compatible = "zmk,behavior-macro";
-            label = "resize window to full screen";
             #binding-cells = <0>;
             bindings = <&kp LG(LC(N1))>;
         };
-        win_screen: win_screen {
+        win_screen: win_next_screen {
             compatible = "zmk,behavior-macro";
-            label = "move window to next screen";
             #binding-cells = <0>;
             bindings = <&kp LG(LC(LS(N1)))>;
         };
-        win_half: win_half {
+        win_half: win_halves_resize {
             compatible = "zmk,behavior-macro";
-            label = "resize window half screen";
             #binding-cells = <0>;
             bindings = <&kp LG(LC(N2))>;
         };
-        win_vhalf: win_vhalf {
+        win_vhalf: win_vertical_halves_resize {
             compatible = "zmk,behavior-macro";
-            label = "resize window half screen vert";
             #binding-cells = <0>;
             bindings = <&kp LG(LC(LS(N2)))>;
         };
-        win_third: win_third {
+        win_third: win_thirds_resize {
             compatible = "zmk,behavior-macro";
-            label = "resize window third screen";
             #binding-cells = <0>;
             bindings = <&kp LG(LC(N3))>;
         };
-        win_vthird: win_vthird {
+        win_vthird: win_vertical_thirds_resize {
             compatible = "zmk,behavior-macro";
-            label = "resize window third screen vert";
             #binding-cells = <0>;
             bindings = <&kp LG(LC(LS(N3)))>;
         };
-        win_quad: win_quad {
+        win_quad: win_quads_resize {
             compatible = "zmk,behavior-macro";
-            label = "resize window quarter screen";
             #binding-cells = <0>;
             bindings = <&kp LG(LC(N4))>;
         };
-        win_vquad: win_vquad {
+        win_vquad: win_vertical_quads_resize {
             compatible = "zmk,behavior-macro";
-            label = "resize window quarter screen vert";
             #binding-cells = <0>;
             bindings = <&kp LG(LC(LS(N4)))>;
         };
         win_close: win_close {
             compatible = "zmk,behavior-macro";
-            label = "close window";
             #binding-cells = <0>;
             bindings = <&kp LA(F4)>;
         };
-        dis_up: dis_up {
+        dis_up: discord_next_unread_up {
             compatible = "zmk,behavior-macro";
-            label = "discord next unread up";
             #binding-cells = <0>;
             bindings = <&kp LA(LS(UP))>;
         };
-        dis_down: dis_down {
+        dis_down: discord_next_unread_down {
             compatible = "zmk,behavior-macro";
-            label = "discord next unread down";
             #binding-cells = <0>;
             bindings = <&kp LA(LS(DOWN))>;
         };
-        ss_win: ss_win {
+        ss_win: screenshot_win {
             compatible = "zmk,behavior-macro";
-            label = "screenshot windows";
             #binding-cells = <0>;
             bindings = <&kp LG(PRINTSCREEN)>;
         };
-        ss: ss {
+        ss: screenshot_mac {
             compatible = "zmk,behavior-macro";
-            label = "mac screenshot";
             #binding-cells = <0>;
             bindings = <&kp LG(LS(N3))>;
         };
-        ss2c: ss2c {
+        ss2c: screenshot_to_clipboard {
             compatible = "zmk,behavior-macro";
-            label = "mac screenshot to clipboard";
             #binding-cells = <0>;
             bindings = <&kp LG(LA(LS(N3)))>;
         };
-        sss: sss {
+        sss: screenshot_select_mac {
             compatible = "zmk,behavior-macro";
-            label = "mac select screenshot";
             #binding-cells = <0>;
             bindings = <&kp LG(LS(N4))>;
         };
-        sss2c: sss2c {
+        sss2c: screenshot_select_to_clipboard_mac {
             compatible = "zmk,behavior-macro";
-            label = "mac select screenshot to clipboard";
             #binding-cells = <0>;
             bindings = <&kp LG(LA(LS(N4)))>;
         };
@@ -506,7 +455,6 @@
     behaviors {
         hrml: home_row_mods_left {
             compatible = "zmk,behavior-hold-tap";
-            label = "HOME_ROW_MODS_LEFT";
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             quick-tap-ms = <150>;
@@ -520,7 +468,6 @@
         };
         hrmr: home_row_mods_right {
             compatible = "zmk,behavior-hold-tap";
-            label = "HOME_ROW_MODS_RIGHT";
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             quick-tap-ms = <150>;
@@ -534,7 +481,6 @@
         };
         lttp: layer_tap_tap_preferred {
             compatible = "zmk,behavior-hold-tap";
-            label = "LT_TAP_PREFERRED";
             #binding-cells = <2>;
             tapping-term-ms = <300>;
             quick-tap-ms = <150>;
@@ -546,7 +492,6 @@
         };
         lthp: layer_tap_hold_preferred {
             compatible = "zmk,behavior-hold-tap";
-            label = "LT_HOLD_PREFERRED";
             #binding-cells = <2>;
             tapping-term-ms = <300>;
             quick-tap-ms = <150>;
@@ -558,7 +503,6 @@
         };
         mttp: mod_tap_tap_preferred {
             compatible = "zmk,behavior-hold-tap";
-            label = "MT_TAP_PREFERRED";
             #binding-cells = <2>;
             tapping-term-ms = <300>;
             quick-tap-ms = <150>;
@@ -570,7 +514,6 @@
         };
         mthp: mod_tap_hold_preferred {
             compatible = "zmk,behavior-hold-tap";
-            label = "MT_HOLD_PREFERRED";
             #binding-cells = <2>;
             tapping-term-ms = <300>;
             quick-tap-ms = <150>;
@@ -580,9 +523,8 @@
                 <&kp>,
                 <&kp>;
         };
-        swap_ht: swap_ht {
+        swap_ht: swapper_with_hold_tap {
             compatible = "zmk,behavior-hold-tap";
-            label = "swapper with hold-tap";
             #binding-cells = <2>;
             tapping-term-ms = <300>;
             quick-tap-ms = <150>;
@@ -591,27 +533,24 @@
                 <&swap>,
                 <&kp>;
         };
-        m_cr: m_cr {
+        m_cr: true_cr_for_control_m {
             compatible = "zmk,behavior-mod-morph";
-            label = "true cr for c-m";
             #binding-cells = <0>;
             bindings =
                 <&kp M>,
                 <&kp RETURN>;
             mods = <(MOD_LCTL)>;
         };
-        h_bs: h_bs {
+        h_bs: true_bs_for_control_h {
             compatible = "zmk,behavior-mod-morph";
-            label = "true backspace for c-h";
             #binding-cells = <0>;
             bindings =
                 <&kp H>,
                 <&kp BACKSPACE>;
             mods = <(MOD_LCTL)>;
         };
-        winswap: winswapper {
+        winswap: swapper_win {
             compatible = "zmk,behavior-tri-state";
-            label = "Windows SWAPPER";
             #binding-cells = <0>;
             bindings =
                 <&kt LALT>,
@@ -620,9 +559,8 @@
             ignored-key-positions = <0 16 18 19 20 21 40>;
             ignored-layers = <0 3>;
         };
-        swap: swapper {
+        swap: swapper_mac {
             compatible = "zmk,behavior-tri-state";
-            label = "Mac SWAPPER";
             #binding-cells = <0>;
             bindings =
                 <&kt LGUI>,
