@@ -144,9 +144,9 @@
         pointer {
             display-name = "pointer";
             bindings = <
-&none  &none  &warpd_l         &fmmv MOVE_UP    &warpd_r          &none     &none           &none           &none         &none            &none  &none
-&none  &none  &fmmv MOVE_LEFT  &mkp LCLK        &fmmv MOVE_RIGHT  &none     &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &none  &none
-&none  &none  &none            &fmmv MOVE_DOWN  &mkp RCLK         &none     &mkp LCLK       &mkp RCLK       &none         &none            &none  &none
+&none  &warpd_t  &warpd_l         &fmmv MOVE_UP    &warpd_r          &none     &none           &none           &none         &none            &none  &none
+&none  &none     &fmmv MOVE_LEFT  &mkp LCLK        &fmmv MOVE_RIGHT  &none     &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &none  &none
+&none  &none     &none            &fmmv MOVE_DOWN  &mkp RCLK         &none     &mkp LCLK       &mkp RCLK       &none         &none            &none  &none
                                &trans           &trans            &trans    &trans          &trans          &trans
             >;
         };
