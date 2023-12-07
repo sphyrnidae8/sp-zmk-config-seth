@@ -433,9 +433,9 @@ layers:
   pointer:
   - ''
   - ''
-  - ''
+  - '&warpd_l'
   - '&fmmv MOVE_UP'
-  - ''
+  - '&warpd_r'
   - ''
   - ''
   - ''
