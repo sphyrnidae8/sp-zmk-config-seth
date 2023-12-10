@@ -1,7 +1,7 @@
 layout: {qmk_keyboard: planck/rev6, qmk_layout: LAYOUT_ortho_4x12}
 layers:
   araxia:
-  - Q
+  - {t: Q, h: 'move [L]'}
   - W
   - E
   - R
@@ -12,7 +12,7 @@ layers:
   - U
   - I
   - O
-  - P
+  - {t: P, h: 'move [R]'}
   - {t: A, h: '$$mdi:apple-keyboard-control$$'}
   - {t: S, h: '$$mdi:apple-keyboard-command$$'}
   - {t: D, h: '$$mdi:apple-keyboard-option$$'}
@@ -246,7 +246,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   move [L]:
-  - '&win_next'
+  - {type: held}
   - '&forward'
   - '&backward'
   - '&tab_next'
@@ -257,8 +257,8 @@ layers:
   - '&act U'
   - '&act I'
   - '&act O'
-  - {t: '&act P', type: held}
-  - '&swap'
+  - '&act P'
+  - '&win_next'
   - '&win_quad'
   - '&win_third'
   - '&win_half'
@@ -285,7 +285,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -295,7 +295,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   move [R]:
-  - {t: '&act Q', type: held}
+  - '&act Q'
   - '&act W'
   - '&act E'
   - '&act R'
@@ -306,7 +306,7 @@ layers:
   - '&tab_next'
   - '&backward'
   - '&forward'
-  - '&win_next'
+  - {type: held}
   - '&act A'
   - '&act S'
   - '&act D'
@@ -318,7 +318,7 @@ layers:
   - '&win_half'
   - '&win_third'
   - '&win_quad'
-  - '&swap'
+  - '&win_next'
   - '&act Z'
   - '&act X'
   - '&act C'
@@ -333,7 +333,7 @@ layers:
   - '&winswap'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}

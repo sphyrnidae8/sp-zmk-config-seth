@@ -397,13 +397,13 @@
             layers = <0>;
         };
         combo_version {
-            timeout-ms = <75>;
+            timeout-ms = <50>;
             key-positions = <0 1>;
             bindings = <&version>;
             layers = <0>;
         };
         combo_delete {
-            timeout-ms = <75>;
+            timeout-ms = <50>;
             slow-release;
             key-positions = <10 11>;
             bindings = <&kp DELETE>;
