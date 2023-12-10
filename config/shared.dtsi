@@ -314,138 +314,138 @@
 //               ╰────────────╯ ╰────────────╯
     combos {
         compatible = "zmk,combos";
-        combo_return_left {
+        combo_return_left: combo_return_left {
             timeout-ms = <75>;
             slow-release;
             key-positions = <5 17>;
             bindings = <&kp RETURN>;
             layers = <0>;
         };
-        combo_return_left_thumbs {
+        combo_return_left_thumbs: combo_return_left_thumbs {
             timeout-ms = <75>;
             key-positions = <37 38>;
             bindings = <&lthp 10 RETURN>;
             layers = <0>;
         };
-        combo_return_right {
+        combo_return_right: combo_return_right {
             timeout-ms = <75>;
             slow-release;
             key-positions = <6 18>;
             bindings = <&kp RETURN>;
             layers = <0>;
         };
-        combo_return_right_thumbs {
+        combo_return_right_thumbs: combo_return_right_thumbs {
             timeout-ms = <75>;
             key-positions = <39 40>;
             bindings = <&lthp 9 RETURN>;
             layers = <0>;
         };
-        combo_sticky_shift {
+        combo_sticky_shift: combo_sticky_shift {
             timeout-ms = <150>;
             slow-release;
             key-positions = <16 19>;
             bindings = <&sk LEFT_SHIFT>;
             layers = <0>;
         };
-        combo_tab_left {
+        combo_tab_left: combo_tab_left {
             timeout-ms = <75>;
             slow-release;
             key-positions = <17 29>;
             bindings = <&kp TAB>;
             layers = <0>;
         };
-        combo_tab_right {
+        combo_tab_right: combo_tab_right {
             timeout-ms = <75>;
             slow-release;
             key-positions = <18 30>;
             bindings = <&kp TAB>;
             layers = <0>;
         };
-        combo_inverse_winl {
+        combo_inverse_winl: combo_inverse_winl {
             timeout-ms = <75>;
             slow-release;
             key-positions = <0 38>;
             bindings = <&mo 6>;
             layers = <0>;
         };
-        combo_inverse_winr {
+        combo_inverse_winr: combo_inverse_winr {
             timeout-ms = <75>;
             slow-release;
             key-positions = <11 39>;
             bindings = <&mo 5>;
             layers = <0>;
         };
-        combo_tmux {
+        combo_tmux: combo_tmux {
             timeout-ms = <75>;
             slow-release;
             key-positions = <7 8 9>;
             bindings = <&kp LC(A)>;
             layers = <0>;
         };
-        combo_tmux_mode_select {
+        combo_tmux_mode_select: combo_tmux_mode_select {
             timeout-ms = <75>;
             slow-release;
             key-positions = <2 3 4>;
             bindings = <&tmux_mode_select>;
             layers = <0>;
         };
-        combo_capsword {
+        combo_capsword: combo_capsword {
             timeout-ms = <75>;
             slow-release;
             key-positions = <13 22>;
             bindings = <&caps_word>;
             layers = <0>;
         };
-        combo_version {
+        combo_version: combo_version {
             timeout-ms = <50>;
             key-positions = <0 1>;
             bindings = <&version>;
             layers = <0>;
         };
-        combo_delete {
+        combo_delete: combo_delete {
             timeout-ms = <50>;
             slow-release;
             key-positions = <10 11>;
             bindings = <&kp DELETE>;
             layers = <0>;
         };
-        combo_gui_left {
+        combo_gui_left: combo_gui_left {
             timeout-ms = <75>;
             key-positions = <24 25>;
             bindings = <&kp LGUI>;
             layers = <0>;
         };
-        combo_alt_left {
+        combo_alt_left: combo_alt_left {
             timeout-ms = <75>;
             key-positions = <12 24>;
             bindings = <&kp LALT>;
             layers = <0>;
         };
-        combo_gui_right {
+        combo_gui_right: combo_gui_right {
             timeout-ms = <75>;
             key-positions = <34 35>;
             bindings = <&kp LGUI>;
             layers = <0>;
         };
-        combo_alt_right {
+        combo_alt_right: combo_alt_right {
             timeout-ms = <75>;
             key-positions = <23 35>;
             bindings = <&kp LALT>;
             layers = <0>;
         };
-        combo_swap_left {
+        combo_swap_left: combo_swap_left {
             timeout-ms = <75>;
             key-positions = <16 25>;
             bindings = <&swap_ht 0 LG(TAB)>;
             layers = <0>;
         };
-        combo_swap_right {
+        combo_swap_right: combo_swap_right {
             timeout-ms = <75>;
             key-positions = <19 34>;
             bindings = <&swap_ht 0 LG(TAB)>;
             layers = <0>;
         };
-       combo_lighting {
+       combo_lighting: combo_lighting {
            timeout-ms = <75>;
            slow-release;
            key-positions = <0 11>;

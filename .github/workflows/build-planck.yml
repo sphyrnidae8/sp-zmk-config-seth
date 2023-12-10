@@ -6,6 +6,7 @@ on:
       - 'planck_rev6.yaml'
       - 'config/planck_rev6.*'
       - 'config/shared.dtsi'
+      - 'config/planck_overrides.dtsi'
 
 jobs:
   build:
