@@ -20,7 +20,7 @@
         default {
             display-name = "araxia";
             bindings = <
-&kp Q          &kp W         &kp E              &kp R           &kp T            &kp F1  &kp F2     &kp Y        &kp U           &kp I             &kp O         &kp P
+&lttp 5 Q      &kp W         &kp E              &kp R           &kp T            &kp F1  &kp F2     &kp Y        &kp U           &kp I             &kp O         &lttp 6 P
 &hrml LCTRL A  &hrml LGUI S  &hrml LALT D       &hrml LSHIFT F  &hrml GLOBE G    &kp F3  &kp F4     &h_bs        &hrmr RSHIFT J  &hrmr RALT K      &hrmr RGUI L  &hrmr RCTRL SEMICOLON
 &kp Z          &kp X         &kp C              &kp V           &kp B            &kp F5  &kp F6     &kp N        &m_cr           &kp COMMA         &kp DOT       &kp FSLH
 &kp F7         &kp F8        &mthp LGUI RETURN  &lthp 2 LC(W)   &lthp 1 ESC      &kp F9  &kp F10    &lthp 4 ESC  &lttp 3 SPACE   &mttp RGUI COLON  &kp F11       &kp F12
@@ -75,8 +75,8 @@
         window_left {
             display-name = "move [L]";
             bindings = <
-&win_next  &forward    &backward    &tab_next   &tab_prev       &trans  &trans    &act Y  &act U  &act I          &act O             &act P
-&swap      &win_quad   &win_third   &win_half   &win_full       &trans  &trans    &act H  &act J  &act K          &act L             &act COLON
+&trans     &forward    &backward    &tab_next   &tab_prev       &trans  &trans    &act Y  &act U  &act I          &act O             &act P
+&win_next  &win_quad   &win_third   &win_half   &win_full       &trans  &trans    &act H  &act J  &act K          &act L             &act COLON
 &winswap   &win_vquad  &win_vthird  &win_vhalf  &win_screen     &trans  &trans    &act N  &act M  &act LESS_THAN  &act GREATER_THAN  &act QUESTION
 &trans     &trans      &trans       &trans      &trans          &trans  &trans    &trans  &trans  &trans          &trans             &trans
             >;
@@ -86,8 +86,8 @@
         window_right {
             display-name = "move [R]";
             bindings = <
-&act Q  &act W  &act E  &act R  &act T     &trans  &trans    &tab_prev    &tab_next   &backward    &forward    &win_next
-&act A  &act S  &act D  &act F  &act G     &trans  &trans    &win_full    &win_half   &win_third   &win_quad   &swap
+&act Q  &act W  &act E  &act R  &act T     &trans  &trans    &tab_prev    &tab_next   &backward    &forward    &trans    
+&act A  &act S  &act D  &act F  &act G     &trans  &trans    &win_full    &win_half   &win_third   &win_quad   &win_next
 &act Z  &act X  &act C  &act V  &act B     &trans  &trans    &win_screen  &win_vhalf  &win_vthird  &win_vquad  &winswap
 &trans  &trans  &trans  &trans  &trans     &trans  &trans    &trans       &trans      &trans       &trans      &trans
             >;
