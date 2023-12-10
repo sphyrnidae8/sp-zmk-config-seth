@@ -98,10 +98,10 @@
         adjust {
             display-name = "adjust";
             bindings = <
-&zoom_tog  &vim_exit_all  &none   &ss_win  &to 0            &trans  &trans    &ext_power EP_TOG  &none     &none     &none     &none
-&zoom_in   &vim_save      &ss2c   &ss      &warpd_l         &trans  &trans    &warpd_r           &warpd_j  &warpd_k  &tmux_pw  &tmux_ps
-&zoom_out  &vim_exit      &sss2c  &sss     &out OUT_USB     &trans  &trans    &out OUT_BLE       &none     &none     &tmux_nw  &tmux_ns
-&trans     &trans         &trans  &trans   &trans           &trans  &trans    &trans             &trans    &trans    &trans    &trans
+&zoom_tog  &vim_exit_all  &none   &ss_win  &to 0            &trans  &trans    &ext_power EP_TOG  &bootloader  &none     &none     &none
+&zoom_in   &vim_save      &ss2c   &ss      &warpd_l         &trans  &trans    &warpd_r           &warpd_j     &warpd_k  &tmux_pw  &tmux_ps
+&zoom_out  &vim_exit      &sss2c  &sss     &out OUT_USB     &trans  &trans    &out OUT_BLE       &none        &none     &tmux_nw  &tmux_ns
+&trans     &trans         &trans  &trans   &trans           &trans  &trans    &trans             &trans       &trans    &trans    &trans
             >;
         };
 
