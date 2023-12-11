@@ -43,6 +43,24 @@
         &combo_capsword {
             key-positions = <12 23>;
         };
+        &combo_version {
+            key-positions = <0 1>;
+        };
+        &combo_delete {
+            key-positions = <10 11>;
+        };
+        &combo_gui_left {
+            key-positions = <24 25>;
+        };
+        &combo_alt_left {
+            key-positions = <12 24>;
+        };
+        &combo_gui_right {
+            key-positions = <34 35>;
+        };
+        &combo_alt_right {
+            key-positions = <23 35>;
+        };
         &combo_swap_left {
             key-positions = <15 24>;
         };
@@ -52,7 +70,7 @@
 // }}}
 // BEHAVIORS {{{
         &winswap {
-            ignored-key-positions = <0 11 19 20 21 22 24 35 44>;
+            ignored-key-positions = <0 24 11 35 19 20 21 22 44>;
         };
         &swap {
             // must include activating combo keys too (15 24, 19 35) or else tri-state will complete immediately for Mac

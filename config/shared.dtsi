@@ -1,5 +1,5 @@
-#define VER_PATCH N7
-#define VER_MINOR N1
+#define VER_PATCH N0
+#define VER_MINOR N2
 #define VER_MAJOR N2
 /* Key Positions
 ╭────────────────────────╮ ╭────────────────────────╮
@@ -364,14 +364,14 @@
         combo_inverse_winl: combo_inverse_winl {
             timeout-ms = <75>;
             slow-release;
-            key-positions = <0 38>;
+            key-positions = <1 38>;
             bindings = <&mo 6>;
             layers = <0>;
         };
         combo_inverse_winr: combo_inverse_winr {
             timeout-ms = <75>;
             slow-release;
-            key-positions = <11 39>;
+            key-positions = <10 39>;
             bindings = <&mo 5>;
             layers = <0>;
         };
@@ -398,38 +398,38 @@
         };
         combo_version: combo_version {
             timeout-ms = <50>;
-            key-positions = <0 1>;
+            key-positions = <1 2>;
             bindings = <&version>;
             layers = <0>;
         };
         combo_delete: combo_delete {
             timeout-ms = <50>;
             slow-release;
-            key-positions = <10 11>;
+            key-positions = <9 10>;
             bindings = <&kp DELETE>;
             layers = <0>;
         };
         combo_gui_left: combo_gui_left {
             timeout-ms = <75>;
-            key-positions = <24 25>;
+            key-positions = <25 26>;
             bindings = <&kp LGUI>;
             layers = <0>;
         };
         combo_alt_left: combo_alt_left {
             timeout-ms = <75>;
-            key-positions = <12 24>;
+            key-positions = <13 25>;
             bindings = <&kp LALT>;
             layers = <0>;
         };
         combo_gui_right: combo_gui_right {
             timeout-ms = <75>;
-            key-positions = <34 35>;
+            key-positions = <33 34>;
             bindings = <&kp LGUI>;
             layers = <0>;
         };
         combo_alt_right: combo_alt_right {
             timeout-ms = <75>;
-            key-positions = <23 35>;
+            key-positions = <22 34>;
             bindings = <&kp LALT>;
             layers = <0>;
         };
@@ -446,6 +446,13 @@
             layers = <0>;
         };
        combo_lighting: combo_lighting {
+           timeout-ms = <75>;
+           slow-release;
+           key-positions = <1 10>;
+           bindings = <&mo 8>;
+           layers = <0>;
+       };
+       combo_lighting_transitional: combo_lighting_transitional {
            timeout-ms = <75>;
            slow-release;
            key-positions = <0 11>;
@@ -561,7 +568,7 @@
                 <&kt LALT>,
                 <&kp TAB>,
                 <&kt LALT>;
-            ignored-key-positions = <0 16 18 19 20 21 40>;
+            ignored-key-positions = <1 25 10 34 18 19 20 21 40>;
             ignored-layers = <0 3>;
         };
         swap: swapper_mac {

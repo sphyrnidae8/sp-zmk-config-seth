@@ -2,7 +2,7 @@ layout: {qmk_keyboard: corne_rotated, qmk_layout: LAYOUT_split_3x6_3}
 layers:
   araxia:
   - {t: '$$mdi:keyboard-tab$$', h: 'move [L]'}
-  - Q
+  - {t: Q, h: 'move [L]'}
   - W
   - E
   - R
@@ -11,7 +11,7 @@ layers:
   - U
   - I
   - O
-  - P
+  - {t: P, h: 'move [R]'}
   - {t: '$$mdi:backspace-outline$$', h: 'move [R]'}
   - ''
   - {t: A, h: '$$mdi:apple-keyboard-control$$'}
@@ -183,8 +183,8 @@ layers:
   - $$mdi:skip-backward$$
   - $$mdi:play-pause$$
   - $$mdi:skip-forward$$
-  - $$tabler:brightness-down$$
   - $$tabler:brightness-up$$
+  - ''
   - ''
   - F6
   - F7
@@ -193,10 +193,10 @@ layers:
   - F10
   - $$mdi:volume-minus$$
   - $$mdi:volume-plus$$
-  - $$mdi:usb$$
-  - $$mdi:bluetooth$$
+  - OUT TOG
   - $$mdi:bluetooth-off$$
-  - {t: '$$mdi:skip-previous$$', h: '$$mdi:bluetooth$$'}
+  - $$tabler:brightness-down$$
+  - ''
   - ''
   - F11
   - F12
@@ -208,7 +208,7 @@ layers:
   - {t: '$$mdi:numeric-2$$', h: '$$mdi:bluetooth$$'}
   - {t: '$$mdi:numeric-3$$', h: '$$mdi:bluetooth$$'}
   - {t: '$$mdi:numeric-4$$', h: '$$mdi:bluetooth$$'}
-  - {t: '$$mdi:skip-next$$', h: '$$mdi:bluetooth$$'}
+  - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -217,7 +217,7 @@ layers:
   - {t: ▽, type: trans}
   move [L]:
   - {type: held}
-  - '&win_next'
+  - {t: ▽, type: trans}
   - '&forward'
   - '&backward'
   - '&tab_next'
@@ -229,7 +229,7 @@ layers:
   - '&act P'
   - ''
   - $$mdi:power$$
-  - '&swap'
+  - '&win_next'
   - '&win_quad'
   - '&win_third'
   - '&win_half'
@@ -269,8 +269,8 @@ layers:
   - '&tab_next'
   - '&backward'
   - '&forward'
-  - '&win_next'
   - {type: held}
+  - ''
   - ''
   - '&act A'
   - '&act S'
@@ -281,7 +281,7 @@ layers:
   - '&win_half'
   - '&win_third'
   - '&win_quad'
-  - '&swap'
+  - '&win_next'
   - $$mdi:power$$
   - ''
   - '&act Z'
@@ -303,7 +303,7 @@ layers:
   - ''
   adjust:
   - '&tab_tog'
-  - '&zoom_tog'
+  - {t: ▽, type: trans}
   - '&vim_exit_all'
   - ''
   - '&ss_win'
@@ -314,7 +314,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - '&zoom_tog'
   - '&zoom_in'
   - '&vim_save'
   - '&ss2c'
@@ -345,8 +345,8 @@ layers:
   - ''
   - ''
   lighting:
+  - {t: ▽, type: trans}
   - {type: held}
-  - ''
   - ''
   - RGB BRI
   - RGB BRD
@@ -355,8 +355,8 @@ layers:
   - '&glo N'
   - F18
   - F17
-  - F16
-  - {type: held}
+  - {t: F16, type: held}
+  - {t: ▽, type: trans}
   - ''
   - ''
   - ''
@@ -495,12 +495,12 @@ combos:
 - p: [18, 30]
   k: $$mdi:keyboard-tab$$
   l: [araxia]
-- p: [0, 38]
+- p: [1, 38]
   k: move [R]
   l: [araxia]
   a: right
   arc_scale: 1.03
-- p: [11, 39]
+- p: [10, 39]
   k: move [L]
   l: [araxia]
   a: left
@@ -523,37 +523,37 @@ combos:
   a: bottom
   o: 2.5
   arc_scale: 1.03
-- p: [0, 1]
+- p: [1, 2]
   k: '&version'
   l: [araxia]
   a: top
   o: 0.5
   arc_scale: 1.03
-- p: [10, 11]
+- p: [9, 10]
   k: $$mdi:backspace-reverse-outline$$
   l: [araxia]
   a: top
   o: 0.5
   arc_scale: 1.03
-- p: [24, 25]
+- p: [25, 26]
   k: $$mdi:apple-keyboard-command$$
   l: [araxia]
   a: bottom
   o: 0.5
   arc_scale: 1.03
-- p: [12, 24]
+- p: [13, 25]
   k: $$mdi:apple-keyboard-option$$
   l: [araxia]
   a: left
   o: 0.5
   arc_scale: 1.03
-- p: [34, 35]
+- p: [33, 34]
   k: $$mdi:apple-keyboard-command$$
   l: [araxia]
   a: bottom
   o: 0.5
   arc_scale: 1.03
-- p: [23, 35]
+- p: [22, 34]
   k: $$mdi:apple-keyboard-option$$
   l: [araxia]
   a: right
@@ -571,9 +571,12 @@ combos:
   a: top
   o: 1.05
   arc_scale: 1.055
-- p: [0, 11]
+- p: [1, 10]
   k: lighting
   l: [araxia]
   a: top
   o: 1.55
   arc_scale: 1.03
+- p: [0, 11]
+  k: lighting
+  l: [araxia]
