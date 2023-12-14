@@ -1,4 +1,4 @@
-#define VER_PATCH N1
+#define VER_PATCH N2
 #define VER_MINOR N2
 #define VER_MAJOR N2
 /* Key Positions
@@ -448,13 +448,13 @@
         combo_winswap_left: combo_winswap_left {
             timeout-ms = <75>;
             key-positions = <25 28>;
-            bindings = <&winswap_ht 0 LG(TAB)>;
+            bindings = <&winswap_ht 0 LA(TAB)>;
             layers = <0>;
         };
         combo_winswap_right: combo_winswap_right {
             timeout-ms = <75>;
             key-positions = <31 34>;
-            bindings = <&winswap_ht 0 LG(TAB)>;
+            bindings = <&winswap_ht 0 LA(TAB)>;
             layers = <0>;
         };
        combo_lighting: combo_lighting {

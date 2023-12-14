@@ -598,14 +598,14 @@ path.combo {
 <path d="M168,140 l-65,0" class="combo"/>
 <path d="M168,140 l65,0" class="combo"/>
 <rect rx="6" ry="6" x="154" y="127" width="28" height="26" class="combo"/>
-<text x="168" y="140" class="combo tap"><tspan style="font-size: 86%">LG(TAB)</tspan></text>
+<text x="168" y="140" class="combo tap"><tspan style="font-size: 86%">LA(TAB)</tspan></text>
 <text x="168" y="151" class="combo hold"><tspan style="font-size: 75%">&amp;winswap</tspan></text>
 </g>
 <g class="combo combopos-21">
 <path d="M504,140 l-65,0" class="combo"/>
 <path d="M504,140 l65,0" class="combo"/>
 <rect rx="6" ry="6" x="490" y="127" width="28" height="26" class="combo"/>
-<text x="504" y="140" class="combo tap"><tspan style="font-size: 86%">LG(TAB)</tspan></text>
+<text x="504" y="140" class="combo tap"><tspan style="font-size: 86%">LA(TAB)</tspan></text>
 <text x="504" y="151" class="combo hold"><tspan style="font-size: 75%">&amp;winswap</tspan></text>
 </g>
 <g class="combo combopos-22">

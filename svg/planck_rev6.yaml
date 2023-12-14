@@ -638,10 +638,10 @@ combos:
   o: 1.05
   arc_scale: 1.055
 - p: [25, 28]
-  k: {t: LG(TAB), h: '&winswap'}
+  k: {t: LA(TAB), h: '&winswap'}
   l: [araxia]
 - p: [31, 34]
-  k: {t: LG(TAB), h: '&winswap'}
+  k: {t: LA(TAB), h: '&winswap'}
   l: [araxia]
 - p: [1, 10]
   k: lighting
