@@ -229,8 +229,8 @@ layers:
   - '&act P'
   - ''
   - $$mdi:power$$
-  - '&win_next'
   - '&win_quad'
+  - '&win_next'
   - '&win_third'
   - '&win_half'
   - '&win_full'
@@ -241,7 +241,7 @@ layers:
   - '&act :'
   - ''
   - $$mdi:power-sleep$$
-  - '&winswap'
+  - $$mdi:power$$
   - '&win_vquad'
   - '&win_vthird'
   - '&win_vhalf'
@@ -280,8 +280,8 @@ layers:
   - '&win_full'
   - '&win_half'
   - '&win_third'
-  - '&win_quad'
   - '&win_next'
+  - '&win_quad'
   - $$mdi:power$$
   - ''
   - '&act Z'
@@ -293,7 +293,7 @@ layers:
   - '&win_vhalf'
   - '&win_vthird'
   - '&win_vquad'
-  - '&winswap'
+  - $$mdi:power$$
   - $$mdi:power-sleep$$
   - ''
   - ''
@@ -571,6 +571,12 @@ combos:
   a: top
   o: 1.05
   arc_scale: 1.055
+- p: [25, 28]
+  k: {t: LG(TAB), h: '&winswap'}
+  l: [araxia]
+- p: [31, 34]
+  k: {t: LG(TAB), h: '&winswap'}
+  l: [araxia]
 - p: [1, 10]
   k: lighting
   l: [araxia]

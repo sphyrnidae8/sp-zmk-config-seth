@@ -1,4 +1,4 @@
-#define VER_PATCH N0
+#define VER_PATCH N1
 #define VER_MINOR N2
 #define VER_MAJOR N2
 /* Key Positions
@@ -445,6 +445,18 @@
             bindings = <&swap_ht 0 LG(TAB)>;
             layers = <0>;
         };
+        combo_winswap_left: combo_winswap_left {
+            timeout-ms = <75>;
+            key-positions = <25 28>;
+            bindings = <&winswap_ht 0 LG(TAB)>;
+            layers = <0>;
+        };
+        combo_winswap_right: combo_winswap_right {
+            timeout-ms = <75>;
+            key-positions = <31 34>;
+            bindings = <&winswap_ht 0 LG(TAB)>;
+            layers = <0>;
+        };
        combo_lighting: combo_lighting {
            timeout-ms = <75>;
            slow-release;
@@ -545,6 +557,16 @@
                 <&swap>,
                 <&kp>;
         };
+        winswap_ht: windows_swapper_with_hold_tap {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <300>;
+            quick-tap-ms = <150>;
+            flavor = "tap-preferred";
+            bindings =
+                <&winswap>,
+                <&kp>;
+        };
         m_cr: true_cr_for_control_m {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
@@ -568,7 +590,7 @@
                 <&kt LALT>,
                 <&kp TAB>,
                 <&kt LALT>;
-            ignored-key-positions = <1 25 10 34 18 19 20 21 40>;
+            ignored-key-positions = <1 25 28 10 31 34 18 19 20 21 40>;
             ignored-layers = <0 3>;
         };
         swap: swapper_mac {
