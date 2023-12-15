@@ -73,6 +73,9 @@
         &combo_winswap_right {
             key-positions = <32 35>;
         };
+        &combo_lighting {
+            key-positions = <0 11>;
+        };
 // }}}
 // BEHAVIORS {{{
         &winswap {
