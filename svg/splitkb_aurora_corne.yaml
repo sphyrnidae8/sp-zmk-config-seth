@@ -36,7 +36,7 @@ layers:
   - ','
   - .
   - /
-  - ''
+  - '&dis_tog'
   - {t: ⮐, h: '$$mdi:apple-keyboard-command$$'}
   - {t: LC(W), h: lnum}
   - {t: ESC, h: symbols}

@@ -1,4 +1,4 @@
-#define VER_PATCH N3
+#define VER_PATCH N4
 #define VER_MINOR N3
 #define VER_MAJOR N2
 /* Key Positions
@@ -270,11 +270,7 @@
         dis_tog: discord_layer_toggle {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings
-                = <&to 0>
-                , <&macro_wait_time 75>
-                , <&tog 9>
-                ;
+            bindings = <&tog 9>;
         };
         dis_up: discord_previous_unread {
             compatible = "zmk,behavior-macro";
