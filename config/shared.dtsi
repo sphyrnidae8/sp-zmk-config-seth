@@ -1,5 +1,5 @@
-#define VER_PATCH N2
-#define VER_MINOR N2
+#define VER_PATCH N0
+#define VER_MINOR N3
 #define VER_MAJOR N2
 /* Key Positions
 ╭────────────────────────╮ ╭────────────────────────╮
@@ -267,15 +267,40 @@
             #binding-cells = <0>;
             bindings = <&kp LA(F4)>;
         };
-        dis_up: discord_next_unread_up {
+        dis_up: discord_previous_unread {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LA(LS(UP))>;
         };
-        dis_down: discord_next_unread_down {
+        dis_down: discord_next_unread {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LA(LS(DOWN))>;
+        };
+        dis_next_server: discord_next_server {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(LA(DOWN))>;
+        };
+        dis_prev_server: discord_previous_server {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(LA(UP))>;
+        };
+        dis_next_history: discord_next_history {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(LEFT_BRACKET)>;
+        };
+        dis_prev_history: discord_previous_history {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(RIGHT_BRACKET)>;
+        };
+        dis_pins: discord_pins {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(P)>;
         };
         ss_win: screenshot_win {
             compatible = "zmk,behavior-macro";
