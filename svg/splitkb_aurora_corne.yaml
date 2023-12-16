@@ -390,27 +390,27 @@ layers:
   discord:
   - ''
   - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - $$mdi:keyboard-tab$$
+  - $$mdi:arrow-up$$
+  - +
+  - '&dis_tog'
+  - '&dis_tog'
+  - '&dis_next_server'
+  - '&dis_prev_server'
+  - '&dis_pins'
   - '&act N'
   - ''
   - ''
   - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - $$mdi:arrow-left$$
+  - $$mdi:arrow-down$$
+  - $$mdi:arrow-right$$
   - ''
   - PAGE DOWN
   - '&dis_down'
   - '&dis_up'
   - PAGE UP
-  - '&act N'
+  - PAGE DOWN
   - ''
   - ''
   - ''
@@ -419,8 +419,8 @@ layers:
   - ''
   - ''
   - PAGE UP
-  - PAGE DOWN
-  - HOME
+  - '&dis_prev_history'
+  - '&dis_next_history'
   - END
   - ''
   - ''
@@ -432,11 +432,11 @@ layers:
   - ''
   pointer:
   - ''
-  - '&warpd_t'
-  - '&warpd_l'
-  - '&fmmv MOVE_UP'
-  - '&warpd_r'
   - ''
+  - '&mkp LCLK'
+  - '&fmmv MOVE_UP'
+  - '&mkp RCLK'
+  - '&msc SCRL_UP'
   - ''
   - ''
   - ''
@@ -446,9 +446,9 @@ layers:
   - ''
   - ''
   - '&fmmv MOVE_LEFT'
-  - '&mkp LCLK'
+  - '&fmmv MOVE_DOWN'
   - '&fmmv MOVE_RIGHT'
-  - '&msc SCRL_UP'
+  - '&msc SCRL_DOWN'
   - '&mmv MOVE_LEFT'
   - '&mmv MOVE_DOWN'
   - '&mmv MOVE_UP'
@@ -457,10 +457,10 @@ layers:
   - ''
   - ''
   - ''
+  - '&warpd_l'
+  - '&warpd_t'
+  - '&warpd_r'
   - ''
-  - '&fmmv MOVE_DOWN'
-  - '&mkp RCLK'
-  - '&msc SCRL_DOWN'
   - '&mkp LCLK'
   - '&mkp RCLK'
   - ''

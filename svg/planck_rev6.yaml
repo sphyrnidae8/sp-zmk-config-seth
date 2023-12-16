@@ -443,21 +443,22 @@ layers:
   - {t: ▽, type: trans}
   discord:
   - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - $$mdi:keyboard-tab$$
+  - $$mdi:arrow-up$$
+  - +
+  - '&dis_tog'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - '&dis_tog'
+  - '&dis_next_server'
+  - '&dis_prev_server'
+  - '&dis_pins'
   - '&act N'
   - ''
   - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - $$mdi:arrow-left$$
+  - $$mdi:arrow-down$$
+  - $$mdi:arrow-right$$
   - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -465,6 +466,7 @@ layers:
   - '&dis_down'
   - '&dis_up'
   - PAGE UP
+  - PAGE DOWN
   - '&act N'
   - ''
   - ''
@@ -474,15 +476,17 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - PAGE UP
-  - PAGE DOWN
-  - HOME
+  - '&dis_prev_history'
+  - '&dis_next_history'
   - END
   - ''
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
   - {type: held}
   - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -491,11 +495,11 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   pointer:
-  - '&warpd_t'
-  - '&warpd_l'
-  - '&fmmv MOVE_UP'
-  - '&warpd_r'
   - ''
+  - '&mkp LCLK'
+  - '&fmmv MOVE_UP'
+  - '&mkp RCLK'
+  - '&msc SCRL_UP'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - ''
@@ -505,9 +509,9 @@ layers:
   - ''
   - ''
   - '&fmmv MOVE_LEFT'
-  - '&mkp LCLK'
+  - '&fmmv MOVE_DOWN'
   - '&fmmv MOVE_RIGHT'
-  - '&msc SCRL_UP'
+  - '&msc SCRL_DOWN'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&mmv MOVE_LEFT'
@@ -516,10 +520,10 @@ layers:
   - '&mmv MOVE_RIGHT'
   - ''
   - ''
+  - '&warpd_l'
+  - '&warpd_t'
+  - '&warpd_r'
   - ''
-  - '&fmmv MOVE_DOWN'
-  - '&mkp RCLK'
-  - '&msc SCRL_DOWN'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&mkp LCLK'
