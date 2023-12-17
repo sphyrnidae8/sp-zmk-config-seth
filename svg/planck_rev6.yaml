@@ -455,7 +455,6 @@ layers:
   - '&dis_pins'
   - '&act N'
   - ''
-  - ''
   - $$mdi:arrow-left$$
   - $$mdi:arrow-down$$
   - $$mdi:arrow-right$$
@@ -467,7 +466,6 @@ layers:
   - '&dis_up'
   - PAGE UP
   - PAGE DOWN
-  - '&act N'
   - ''
   - ''
   - ''
@@ -480,16 +478,14 @@ layers:
   - '&dis_next_history'
   - ''
   - '&dis_next_mention'
-  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
-  - {type: held}
+  - {t: '&dis_tog', type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&dis_tog'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '&dis_tog'
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
