@@ -1,4 +1,4 @@
-#define VER_PATCH N5
+#define VER_PATCH N6
 #define VER_MINOR N3
 #define VER_MAJOR N2
 /* Key Positions
@@ -295,12 +295,12 @@
         dis_next_history: discord_next_history {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(LEFT_BRACKET)>;
+            bindings = <&kp LG(RIGHT_BRACKET)>;
         };
         dis_prev_history: discord_previous_history {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(RIGHT_BRACKET)>;
+            bindings = <&kp LG(LEFT_BRACKET)>;
         };
         dis_next_mention: discord_next_mention {
             compatible = "zmk,behavior-macro";

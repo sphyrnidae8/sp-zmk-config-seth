@@ -48,7 +48,7 @@ layers:
   - {t: '$$mdi:keyboard-space$$', h: numpad}
   - {t: ':', h: '$$mdi:apple-keyboard-command$$'}
   - F11
-  - F12
+  - '&dis_tog'
   symbols:
   - ','
   - '&'
