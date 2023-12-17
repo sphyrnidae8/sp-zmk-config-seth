@@ -1,4 +1,4 @@
-#define VER_PATCH N4
+#define VER_PATCH N5
 #define VER_MINOR N3
 #define VER_MAJOR N2
 /* Key Positions
@@ -301,6 +301,11 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LG(RIGHT_BRACKET)>;
+        };
+        dis_next_mention: discord_next_mention {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(LA(LS(DOWN)))>;
         };
         dis_pins: discord_pins {
             compatible = "zmk,behavior-macro";

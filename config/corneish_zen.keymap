@@ -128,10 +128,10 @@
         discord {
             display-name = "discord";
             bindings = <
-&none  &none  &kp TAB   &kp UP    &kp PLUS   &dis_tog    &dis_tog       &dis_next_server      &dis_prev_server       &dis_pins    &act N         &none
-&none  &none  &kp LEFT  &kp DOWN  &kp RIGHT  &none       &kp PAGE_DOWN  &dis_down             &dis_up                &kp PAGE_UP  &kp PAGE_DOWN  &none
-&none  &none  &none     &none     &none      &none       &kp PAGE_UP    &dis_prev_history     &dis_next_history      &kp END      &none          &none
-                        &none     &none      &none       &trans         &trans                &none
+&none  &none  &kp TAB   &kp UP    &kp PLUS   &none       &dis_tog       &dis_prev_server      &dis_next_server       &dis_pins    &act N             &none
+&none  &none  &kp LEFT  &kp DOWN  &kp RIGHT  &none       &kp PAGE_DOWN  &dis_down             &dis_up                &kp PAGE_UP  &kp PAGE_DOWN      &none
+&none  &none  &kp HOME  &kp ESC   &kp END    &none       &kp PAGE_UP    &dis_prev_history     &dis_next_history      &none        &dis_next_mention  &dis_tog
+                        &none     &none      &dis_tog    &dis_tog       &trans                &none
             >;
         };
 

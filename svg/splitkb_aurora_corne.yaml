@@ -393,10 +393,10 @@ layers:
   - $$mdi:keyboard-tab$$
   - $$mdi:arrow-up$$
   - +
+  - ''
   - '&dis_tog'
-  - '&dis_tog'
-  - '&dis_next_server'
   - '&dis_prev_server'
+  - '&dis_next_server'
   - '&dis_pins'
   - '&act N'
   - ''
@@ -414,20 +414,20 @@ layers:
   - ''
   - ''
   - ''
-  - ''
-  - ''
-  - ''
+  - HOME
+  - ESC
+  - END
   - ''
   - PAGE UP
   - '&dis_prev_history'
   - '&dis_next_history'
-  - END
+  - ''
+  - '&dis_next_mention'
+  - '&dis_tog'
   - ''
   - ''
-  - ''
-  - ''
-  - ''
-  - {type: held}
+  - '&dis_tog'
+  - {t: '&dis_tog', type: held}
   - {type: held}
   - ''
   pointer:

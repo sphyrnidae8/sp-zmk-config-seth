@@ -450,8 +450,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&dis_tog'
-  - '&dis_next_server'
   - '&dis_prev_server'
+  - '&dis_next_server'
   - '&dis_pins'
   - '&act N'
   - ''
@@ -478,17 +478,17 @@ layers:
   - PAGE UP
   - '&dis_prev_history'
   - '&dis_next_history'
-  - END
   - ''
+  - '&dis_next_mention'
   - ''
   - {type: held}
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - '&dis_tog'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&dis_tog'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
