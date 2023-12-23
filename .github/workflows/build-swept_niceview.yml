@@ -5,6 +5,8 @@ on:
     paths:
       - 'swept_niceview.yaml'
       - 'config/corne.*'
+      - 'config/shared.dtsi'
+
 
 jobs:
   build:
