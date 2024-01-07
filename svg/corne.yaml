@@ -423,7 +423,7 @@ layers:
   - '&dis_next_history'
   - ''
   - '&dis_next_mention'
-  - '&dis_tog'
+  - '&act N'
   - ''
   - ''
   - '&dis_tog'

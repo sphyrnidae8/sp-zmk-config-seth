@@ -125,7 +125,7 @@
 &none   &kp TAB   &kp UP    &kp PLUS   &dis_tog    &trans  &trans    &dis_tog       &dis_prev_server      &dis_next_server       &dis_pins    &act N
 &none   &kp LEFT  &kp DOWN  &kp RIGHT  &none       &trans  &trans    &kp PAGE_DOWN  &dis_down             &dis_up                &kp PAGE_UP  &kp PAGE_DOWN
 &none   &none     &none     &none      &none       &trans  &trans    &kp PAGE_UP    &dis_prev_history     &dis_next_history      &none        &dis_next_mention
-&trans  &trans    &trans    &trans     &dis_tog    &trans  &trans    &dis_tog       &trans                &trans                 &trans       &trans
+&trans  &trans    &trans    &trans     &dis_tog    &trans  &trans    &dis_tog       &trans                &trans                 &trans       &act N
             >;
         };
 

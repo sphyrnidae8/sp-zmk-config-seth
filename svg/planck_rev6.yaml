@@ -489,7 +489,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&act N'
   pointer:
   - ''
   - '&mkp LCLK'
