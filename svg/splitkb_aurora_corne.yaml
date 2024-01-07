@@ -9,7 +9,7 @@ layers:
   - T
   - Y
   - U
-  - I
+  - '&iI'
   - O
   - {t: P, h: 'move [R]'}
   - {t: '$$mdi:backspace-outline$$', h: 'move [R]'}

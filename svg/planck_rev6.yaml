@@ -10,7 +10,7 @@ layers:
   - F2
   - Y
   - U
-  - I
+  - '&iI'
   - O
   - {t: P, h: 'move [R]'}
   - {t: A, h: '$$mdi:apple-keyboard-control$$'}
