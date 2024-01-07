@@ -47,7 +47,7 @@ layers:
   - {t: ESC, h: media}
   - {t: '$$mdi:keyboard-space$$', h: numpad}
   - {t: ':', h: '$$mdi:apple-keyboard-command$$'}
-  - F11
+  - '&point_tog'
   - '&dis_tog'
   symbols:
   - ','
@@ -498,11 +498,11 @@ layers:
   - '&msc SCRL_UP'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - '&warpd_l'
+  - '&warpd_t'
+  - '&warpd_r'
   - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - '&msc SCRL_UP'
   - ''
   - '&fmmv MOVE_LEFT'
   - '&fmmv MOVE_DOWN'
@@ -514,7 +514,7 @@ layers:
   - '&mmv MOVE_DOWN'
   - '&mmv MOVE_UP'
   - '&mmv MOVE_RIGHT'
-  - ''
+  - '&msc SCRL_DOWN'
   - ''
   - '&warpd_l'
   - '&warpd_t'
@@ -531,10 +531,10 @@ layers:
   - {type: held}
   - {type: held}
   - {t: ▽, type: trans}
+  - '&point_tog'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&point_tog'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
