@@ -47,7 +47,7 @@ layers:
   - {t: ESC, h: media}
   - {t: '$$mdi:keyboard-space$$', h: numpad}
   - {t: ':', h: '$$mdi:apple-keyboard-command$$'}
-  - {t: '&point_tog', h: '&warpd_tog'}
+  - '&point_tog'
   - '&dis_tog'
   symbols:
   - ','
@@ -536,9 +536,9 @@ layers:
   - {t: ▽, type: trans}
   - '&point_tog'
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&warpd_t'
+  - '&warpd_l'
+  - '&warpd_r'
 combos:
 - p: [5, 17]
   k: ⮐

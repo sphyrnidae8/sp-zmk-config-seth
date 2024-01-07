@@ -24,7 +24,7 @@ layers:
   - {t: K, h: '$$mdi:apple-keyboard-option$$'}
   - {t: L, h: '$$mdi:apple-keyboard-command$$'}
   - {t: ;, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: '&point_tog', h: '&warpd_tog'}
+  - '&point_tog'
   - ''
   - Z
   - X
