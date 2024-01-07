@@ -47,7 +47,7 @@ layers:
   - {t: ESC, h: media}
   - {t: '$$mdi:keyboard-space$$', h: numpad}
   - {t: ':', h: '$$mdi:apple-keyboard-command$$'}
-  - '&point_tog'
+  - {t: '&point_tog', h: '&warpd_tog'}
   - '&dis_tog'
   symbols:
   - ','
