@@ -1,4 +1,4 @@
-#define VER_PATCH N5
+#define VER_PATCH N6
 #define VER_MINOR N4
 #define VER_MAJOR N2
 
@@ -350,10 +350,8 @@
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
             bindings
-                = <&macro_press &kp LSHFT>
-                , <&macro_param_1to1>
-                , <&macro_tap &kp MACRO_PLACEHOLDER>
-                , <&macro_release &kp LSHFT>
+                = <&macro_param_1to1>
+                , <&macro_tap &kp LS(MACRO_PLACEHOLDER)>
                 , <&macro_tap &kp SPACE>
                 ;
         };
