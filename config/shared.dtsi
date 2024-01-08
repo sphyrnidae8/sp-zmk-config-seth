@@ -1,5 +1,5 @@
-#define VER_PATCH N9
-#define VER_MINOR N4
+#define VER_PATCH N0
+#define VER_MINOR N5
 #define VER_MAJOR N2
 
 // DEFINES {{{
@@ -346,17 +346,6 @@
             #binding-cells = <0>;
             bindings = <&kp LG(LA(LS(N4)))>;
         };
-        cap_space: cap_space {
-            compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>;
-            bindings
-                = <&macro_press &kp LSHIFT>
-                , <&macro_param_1to1>
-                , <&macro_tap &kp MACRO_PLACEHOLDER>
-                , <&macro_release &kp LSHIFT>
-                , <&macro_tap &kp SPACE>
-                ;
-        };
 
     };
 // }}}
@@ -685,7 +674,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <250>;
-            bindings = <&kp I>, <&cap_space I>;
+            bindings = <&kp I>, <&kp LS(I)>;
         };
         semiquote: semicolon_single_quote {
             compatible = "zmk,behavior-tap-dance";
