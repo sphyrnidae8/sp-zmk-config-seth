@@ -23,7 +23,7 @@ layers:
   - {t: J, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: K, h: '$$mdi:apple-keyboard-option$$'}
   - {t: L, h: '$$mdi:apple-keyboard-command$$'}
-  - {t: ;, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: '&semiquote', h: '$$mdi:apple-keyboard-control$$'}
   - '&point_tog'
   - ''
   - Z

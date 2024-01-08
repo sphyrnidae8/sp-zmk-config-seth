@@ -20,9 +20,9 @@
         default {
             display-name = "araxia";
             bindings = <
- &lthp 5 TAB  &lttp 5 Q      &kp W         &kp E              &kp R           &kp T             &kp Y        &kp U           &iI               &kp O         &lttp 6 P              &lthp 6 BACKSPACE
- &none        &hrml LCTRL A  &hrml LGUI S  &hrml LALT D       &hrml LSHIFT F  &hrml GLOBE G     &h_bs        &hrmr RSHIFT J  &hrmr RALT K      &hrmr RGUI L  &hrmr RCTRL SEMICOLON  &point_tog
- &none        &kp Z          &kp X         &kp C              &kp V           &kp B             &kp N        &m_cr           &kp COMMA         &kp DOT       &kp FSLH               &dis_tog
+ &lthp 5 TAB  &lttp 5 Q      &kp W         &kp E              &kp R           &kp T             &kp Y        &kp U           &iI               &kp O         &lttp 6 P      &lthp 6 BACKSPACE
+ &none        &hrml LCTRL A  &hrml LGUI S  &hrml LALT D       &hrml LSHIFT F  &hrml GLOBE G     &h_bs        &hrmr RSHIFT J  &hrmr RALT K      &hrmr RGUI L  &hrsq RCTRL 0  &point_tog
+ &none        &kp Z          &kp X         &kp C              &kp V           &kp B             &kp N        &m_cr           &kp COMMA         &kp DOT       &kp FSLH       &dis_tog
                                            &mthp LGUI RETURN  &lthp 2 LC(W)   &lthp 1 ESC       &lthp 4 ESC  &lttp 3 SPACE   &mttp RGUI COLON
             >;
         };
