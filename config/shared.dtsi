@@ -1,4 +1,4 @@
-#define VER_PATCH N0
+#define VER_PATCH N1
 #define VER_MINOR N5
 #define VER_MAJOR N2
 
@@ -34,6 +34,15 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp VER_MAJOR &kp DOT &kp VER_MINOR &kp VER_PATCH>;
+        };
+        kple: key_press_layer_escape {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            bindings
+                = <&macro_tap &to 0>
+                , <&macro_param_1to1>
+                , <&macro_tap &kp MACRO_PLACEHOLDER>
+                ;
         };
         act: activate {
             compatible = "zmk,behavior-macro-one-param";
@@ -612,7 +621,7 @@
             flavor = "tap-preferred";
             bindings =
                 <&swap>,
-                <&kp>;
+                <&kple>;
         };
         winswap_ht: windows_swapper_with_hold_tap {
             compatible = "zmk,behavior-hold-tap";
@@ -622,7 +631,7 @@
             flavor = "tap-preferred";
             bindings =
                 <&winswap>,
-                <&kp>;
+                <&kple>;
         };
         m_cr: true_cr_for_control_m {
             compatible = "zmk,behavior-mod-morph";

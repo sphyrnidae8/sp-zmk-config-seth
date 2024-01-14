@@ -560,22 +560,22 @@ combos:
   o: 0.5
   arc_scale: 1.03
 - p: [16, 25]
-  k: {t: LG(TAB), h: '&swap'}
+  k: {t: '&kple LG(TAB)', h: '&swap'}
   l: [araxia]
   a: top
   o: 1.05
   arc_scale: 1.055
 - p: [19, 34]
-  k: {t: LG(TAB), h: '&swap'}
+  k: {t: '&kple LG(TAB)', h: '&swap'}
   l: [araxia]
   a: top
   o: 1.05
   arc_scale: 1.055
 - p: [25, 28]
-  k: {t: LA(TAB), h: '&winswap'}
+  k: {t: '&kple LA(TAB)', h: '&winswap'}
   l: [araxia]
 - p: [31, 34]
-  k: {t: LA(TAB), h: '&winswap'}
+  k: {t: '&kple LA(TAB)', h: '&winswap'}
   l: [araxia]
 - p: [1, 10]
   k: lighting
