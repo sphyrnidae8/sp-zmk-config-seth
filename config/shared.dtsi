@@ -1,4 +1,4 @@
-#define VER_PATCH N1
+#define VER_PATCH N2
 #define VER_MINOR N5
 #define VER_MAJOR N2
 
@@ -128,17 +128,17 @@
         warpd_l: warpd_left {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&to 0 &kp LG(LC(S)) &kp J &kp ESC &kp LG(LC(Y))>;
+            bindings = <&kple LG(LC(S)) &kp J &kp ESC &kp LG(LC(Y))>;
         };
         warpd_r: warpd_right {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&to 0 &kp LG(LC(S)) &kp K &kp ESC &kp LG(LC(Y))>;
+            bindings = <&kple LG(LC(S)) &kp K &kp ESC &kp LG(LC(Y))>;
         };
         warpd_t: warpd_third {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&to 0 &kp LG(LC(S)) &kp L &kp ESC &kp LG(LC(Y))>;
+            bindings = <&kple LG(LC(S)) &kp L &kp ESC &kp LG(LC(Y))>;
         };
         warpd_j: warpd_j {
             compatible = "zmk,behavior-macro";
@@ -490,25 +490,21 @@
             timeout-ms = <75>;
             key-positions = <16 25>;
             bindings = <&swap_ht 0 LG(TAB)>;
-            layers = <0>;
         };
         combo_swap_right: combo_swap_right {
             timeout-ms = <75>;
             key-positions = <19 34>;
             bindings = <&swap_ht 0 LG(TAB)>;
-            layers = <0>;
         };
         combo_winswap_left: combo_winswap_left {
             timeout-ms = <75>;
             key-positions = <25 28>;
             bindings = <&winswap_ht 0 LA(TAB)>;
-            layers = <0>;
         };
         combo_winswap_right: combo_winswap_right {
             timeout-ms = <75>;
             key-positions = <31 34>;
             bindings = <&winswap_ht 0 LA(TAB)>;
-            layers = <0>;
         };
        combo_lighting: combo_lighting {
            timeout-ms = <75>;
