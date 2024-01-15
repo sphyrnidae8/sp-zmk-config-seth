@@ -141,7 +141,7 @@
 
         /* 11 Layer */
         mirror {
-            display-name = "pointer";
+            display-name = "mirror";
             bindings = <
  &to 0  &lttp 6 P      &kp O         &iI            &kp U           &kp Y          &kp T          &kp R           &kp E              &kp W         &lttp 5 Q      &to 0
  &none  &hrsq RCTRL 0  &hrmr RGUI L  &hrmr RALT K   &hrmr RSHIFT J  &h_bs          &hrml GLOBE G  &hrml LSHIFT F  &hrml LALT D       &hrml LGUI S  &hrml RCTRL A  &none
