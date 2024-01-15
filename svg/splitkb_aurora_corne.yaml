@@ -389,7 +389,7 @@ layers:
   - ''
   discord:
   - ''
-  - ''
+  - move [L]
   - $$mdi:keyboard-tab$$
   - $$mdi:arrow-up$$
   - +
@@ -398,7 +398,7 @@ layers:
   - '&dis_prev_server'
   - '&dis_next_server'
   - '&dis_pins'
-  - '&act N'
+  - move [R]
   - ''
   - ''
   - ''
@@ -432,7 +432,7 @@ layers:
   - ''
   pointer:
   - ''
-  - ''
+  - move [L]
   - '&mkp LCLK'
   - '&fmmv MOVE_UP'
   - '&mkp RCLK'
@@ -441,7 +441,7 @@ layers:
   - '&warpd_t'
   - '&warpd_r'
   - ''
-  - '&msc SCRL_UP'
+  - move [R]
   - '&warpd_t'
   - ''
   - ''
@@ -453,7 +453,7 @@ layers:
   - '&mmv MOVE_DOWN'
   - '&mmv MOVE_UP'
   - '&mmv MOVE_RIGHT'
-  - '&msc SCRL_DOWN'
+  - '&msc SCRL_UP'
   - '&warpd_l'
   - ''
   - ''
@@ -465,7 +465,7 @@ layers:
   - '&mkp RCLK'
   - ''
   - ''
-  - ''
+  - '&msc SCRL_DOWN'
   - '&warpd_r'
   - {t: ▽, type: trans}
   - {type: held}
