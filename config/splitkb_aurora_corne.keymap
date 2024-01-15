@@ -16,6 +16,10 @@
     chain-length = <21>;
 };
 
+&sensors {
+    triggers-per-rotation = <40>;
+};
+
 //&nice_view_spi {
 //    cs-gpios = <&gpio1 1 GPIO_ACTIVE_HIGH>;
 //};
