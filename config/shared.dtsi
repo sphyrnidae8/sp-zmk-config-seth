@@ -1,11 +1,25 @@
-#define VER_PATCH N1
-#define VER_MINOR N7
+#define VER_PATCH N0
+#define VER_MINOR N8
 #define VER_MAJOR N2
 
 // DEFINES {{{
 #define DISCORD_ACT LC(LS(N))
 #define LEFT_POSITIONS  0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38
 #define RIGHT_POSITIONS 6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 39 40 41
+
+// Layers
+#define DEFAULT   0
+#define SYMBOLS   1
+#define LNUM      2
+#define NUMPAD    3
+#define MEDIA     4
+#define WIN_LEFT  5
+#define WIN_RIGHT 6
+#define ADJUST    7
+#define LIGHTING  8
+#define DISCORD   9
+#define POINTER   10
+#define MIRROR    11 
 // }}}
 /* Key Positions
 ╭────────────────────────╮ ╭────────────────────────╮
@@ -41,7 +55,7 @@
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
             bindings
-                = <&macro_tap &to 0>
+                = <&macro_tap &to DEFAULT>
                 , <&macro_param_1to1>
                 , <&macro_tap &kp MACRO_PLACEHOLDER>
                 ;
@@ -50,7 +64,7 @@
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
             bindings
-                = <&macro_tap &to 0>
+                = <&macro_tap &to DEFAULT>
                 , <&macro_press &kp LSHFT &kp LCTRL>
                 , <&macro_param_1to1>
                 , <&macro_tap &kp MACRO_PLACEHOLDER>
@@ -286,7 +300,7 @@
         dis_tog: discord_layer_toggle {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&tog 9 &kp DISCORD_ACT>;
+            bindings = <&tog DISCORD &kp DISCORD_ACT>;
         };
         dis_up: discord_previous_unread {
             compatible = "zmk,behavior-macro";
@@ -331,12 +345,12 @@
         point_tog: pointer_layer_toggle {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&tog 10>;
+            bindings = <&tog POINTER>;
         };
         mirror_tog: mirror_layer_toggle {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&tog 11>;
+            bindings = <&tog MIRROR>;
         };
         ss_win: screenshot_win {
             compatible = "zmk,behavior-macro";
@@ -426,14 +440,14 @@
             timeout-ms = <75>;
             slow-release;
             key-positions = <1 38>;
-            bindings = <&mo 6>;
+            bindings = <&mo WIN_RIGHT>;
             layers = <0>;
         };
         combo_inverse_winr: combo_inverse_winr {
             timeout-ms = <75>;
             slow-release;
             key-positions = <10 39>;
-            bindings = <&mo 5>;
+            bindings = <&mo WIN_LEFT>;
             layers = <0>;
         };
         combo_tmux: combo_tmux {
@@ -518,14 +532,14 @@
            timeout-ms = <75>;
            slow-release;
            key-positions = <1 10>;
-           bindings = <&mo 8>;
+           bindings = <&mo LIGHTING>;
            layers = <0>;
        };
        combo_lighting_transitional: combo_lighting_transitional {
            timeout-ms = <75>;
            slow-release;
            key-positions = <0 11>;
-           bindings = <&mo 8>;
+           bindings = <&mo LIGHTING>;
            layers = <0>;
        };
 
@@ -715,20 +729,20 @@
         compatible = "zmk,conditional-layers";
 
         to_adjust {
-            if-layers = <1 4>;
-            then-layer = <7>;
+            if-layers = <SYMBOLS MEDIA>;
+            then-layer = <ADJUST>;
         };
 
         // provided by combo_lighting due to transparent layer issues
         //to_lighting {
-        //    if-layers = <5 6>;
-        //    then-layer = <8>;
+        //    if-layers = <WIN_LEFT WIN_RIGHT>;
+        //    then-layer = <LIGHTING>;
         //};
 
         // replaced with combo layer-tap
-        //to_discord {
-        //    if-layers = <3 4>;
-        //    then-layer = <9>;
+        //to_discord {f
+        //    if-layers = <NUMPAD MEDIA>;
+        //    then-layer = <DISCORD>;
         //};
 
     };

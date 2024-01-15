@@ -27,10 +27,10 @@
         default {
             display-name = "araxia";
             bindings = <
- &mirror_tog  &lttp 5 Q      &kp W         &kp E              &kp R           &kp T             &kp Y        &kp U           &iI               &kp O         &lttp 6 P      &mirror_tog
- &none        &hrml LCTRL A  &hrml LGUI S  &hrml LALT D       &hrml LSHIFT F  &hrml GLOBE G     &h_bs        &hrmr RSHIFT J  &hrmr RALT K      &hrmr RGUI L  &hrsq RCTRL 0  &point_tog
- &none        &kp Z          &kp X         &kp C              &kp V           &kp B             &kp N        &m_cr           &kp COMMA         &kp DOT       &kp FSLH       &dis_tog
-                                           &mthp LGUI RETURN  &lthp 2 LC(W)   &lthp 1 ESC       &lthp 4 ESC  &lttp 3 SPACE   &lthp 11 COLON
+ &mirror_tog  &lttp WIN_LEFT Q  &kp W         &kp E              &kp R             &kp T                &kp Y            &kp U               &iI                 &kp O         &lttp WIN_RIGHT P  &mirror_tog
+ &none        &hrml LCTRL A     &hrml LGUI S  &hrml LALT D       &hrml LSHIFT F    &hrml GLOBE G        &h_bs            &hrmr RSHIFT J      &hrmr RALT K        &hrmr RGUI L  &hrsq RCTRL 0      &point_tog
+ &none        &kp Z             &kp X         &kp C              &kp V             &kp B                &kp N            &m_cr               &kp COMMA           &kp DOT       &kp FSLH           &dis_tog
+                                              &mthp LGUI RETURN  &lthp LNUM LC(W)  &lthp SYMBOLS ESC    &lthp MEDIA ESC  &lttp NUMPAD SPACE  &lthp MIRROR COLON
             >;
         };
 
@@ -105,7 +105,7 @@
         adjust {
             display-name = "adjust";
             bindings = <
-&tab_tog  &trans     &vim_exit_all  &none   &ss_win  &to 0            &ext_power EP_TOG  &none     &none     &none     &none     &none
+&tab_tog  &trans     &vim_exit_all  &none   &ss_win  &to DEFAULT      &ext_power EP_TOG  &none     &none     &none     &none     &none
 &zoom_tog &zoom_in   &vim_save      &ss2c   &ss      &warpd_l         &warpd_r           &warpd_j  &warpd_k  &tmux_pw  &tmux_ps  &none
 &none     &zoom_out  &vim_exit      &sss2c  &sss     &out OUT_USB     &out OUT_BLE       &none     &none     &tmux_nw  &tmux_ns  &none
                                     &none   &none    &trans           &trans             &none     &none
@@ -128,10 +128,10 @@
         discord {
             display-name = "discord";
             bindings = <
-&none  &mo 5  &kp TAB   &kp UP    &kp PLUS   &none       &dis_tog       &dis_prev_server      &dis_next_server       &dis_pins    &mo 6              &none
-&none  &none  &kp LEFT  &kp DOWN  &kp RIGHT  &none       &kp PAGE_DOWN  &dis_down             &dis_up                &kp PAGE_UP  &kp PAGE_DOWN      &none
-&none  &none  &kp HOME  &kp ESC   &kp END    &none       &kp PAGE_UP    &dis_prev_history     &dis_next_history      &none        &dis_next_mention  &act N
-                        &none     &none      &dis_tog    &dis_tog       &trans                &none
+&none  &mo WIN_LEFT  &kp TAB   &kp UP    &kp PLUS   &none       &dis_tog       &dis_prev_server      &dis_next_server       &dis_pins    &mo WIN_RIGHT      &none
+&none  &none         &kp LEFT  &kp DOWN  &kp RIGHT  &none       &kp PAGE_DOWN  &dis_down             &dis_up                &kp PAGE_UP  &kp PAGE_DOWN      &none
+&none  &none         &kp HOME  &kp ESC   &kp END    &none       &kp PAGE_UP    &dis_prev_history     &dis_next_history      &none        &dis_next_mention  &act N
+                               &none     &none      &dis_tog    &dis_tog       &trans                &none
             >;
         };
 
@@ -139,10 +139,10 @@
         pointer {
             display-name = "pointer";
             bindings = <
-&none  &mo 5  &mkp LCLK        &fmmv MOVE_UP    &mkp RCLK         &msc SCRL_UP      &warpd_l        &warpd_t        &warpd_r      &none            &mo 6           &warpd_t
-&none  &none  &fmmv MOVE_LEFT  &fmmv MOVE_DOWN  &fmmv MOVE_RIGHT  &msc SCRL_DOWN    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &msc SCRL_UP    &warpd_l
-&none  &none  &warpd_l         &warpd_t         &warpd_r          &none             &mkp LCLK       &mkp RCLK       &none         &none            &msc SCRL_DOWN  &warpd_r
-                               &trans           &trans            &point_tog        &point_tog      &trans          &trans
+&none  &mo WIN_LEFT  &mkp LCLK        &fmmv MOVE_UP    &mkp RCLK         &msc SCRL_UP      &warpd_l        &warpd_t        &warpd_r      &none            &mo WIN_RIGHT   &warpd_t
+&none  &none         &fmmv MOVE_LEFT  &fmmv MOVE_DOWN  &fmmv MOVE_RIGHT  &msc SCRL_DOWN    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &msc SCRL_UP    &warpd_l
+&none  &none         &warpd_l         &warpd_t         &warpd_r          &none             &mkp LCLK       &mkp RCLK       &none         &none            &msc SCRL_DOWN  &warpd_r
+                                      &trans           &trans            &point_tog        &point_tog      &trans          &trans
             >;
         };
 
@@ -150,10 +150,10 @@
         mirror {
             display-name = "mirror";
             bindings = <
- &to 0  &lttp 6 P      &kp O         &iI            &kp U           &kp Y          &kp T          &kp R           &kp E              &kp W         &lttp 5 Q      &to 0
- &none  &hrsq RCTRL 0  &hrmr RGUI L  &hrmr RALT K   &hrmr RSHIFT J  &h_bs          &hrml GLOBE G  &hrml LSHIFT F  &hrml LALT D       &hrml LGUI S  &hrml RCTRL A  &none
- &none  &kp FSLH       &kp DOT       &kp COMMA      &m_cr           &kp N          &kp B          &kp V           &kp C              &kp X         &kp Z          &none
-                                     &lthp 0 COLON  &lthp 3 SPACE   &lthp 4 ESC    &lthp 1 ESC    &lthp 2 LC(W)   &mthp LGUI RETURN
+ &to DEFAULT  &lttp WIN_RIGHT P  &kp O         &iI                  &kp U               &kp Y              &kp T              &kp R             &kp E              &kp W         &lttp WIN_LEFT Q  &to DEFAULT
+ &none        &hrsq RCTRL 0      &hrmr RGUI L  &hrmr RALT K         &hrmr RSHIFT J      &h_bs              &hrml GLOBE G      &hrml LSHIFT F    &hrml LALT D       &hrml LGUI S  &hrml RCTRL A     &none
+ &none        &kp FSLH           &kp DOT       &kp COMMA            &m_cr               &kp N              &kp B              &kp V             &kp C              &kp X         &kp Z             &none
+                                               &lthp DEFAULT COLON  &lthp NUMPAD SPACE  &lthp MEDIA ESC    &lthp SYMBOLS ESC  &lthp LNUM LC(W)  &mthp LGUI RETURN
             >;
         };
 
