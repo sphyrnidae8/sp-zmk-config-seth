@@ -1,4 +1,4 @@
-#define VER_PATCH N2
+#define VER_PATCH N3
 #define VER_MINOR N6
 #define VER_MAJOR N2
 
@@ -695,11 +695,13 @@
         rot_mmv: sensor_rotate_mmv {
             compatible = "zmk,behavior-sensor-rotate-var";
             #sensor-binding-cells = <2>;
+            tap-ms = <100>;
             bindings = <&mmv>, <&mmv>;
         };
         rot_msc: sensor_rotate_msc {
             compatible = "zmk,behavior-sensor-rotate-var";
             #sensor-binding-cells = <2>;
+            tap-ms = <100>;
             bindings = <&msc>, <&msc>;
         };
 
