@@ -1,5 +1,5 @@
-#define VER_PATCH N2
-#define VER_MINOR N5
+#define VER_PATCH N0
+#define VER_MINOR N6
 #define VER_MAJOR N2
 
 // DEFINES {{{
@@ -329,6 +329,11 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&tog 10>;
+        };
+        mirror_tog: mirror_layer_toggle {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&tog 11>;
         };
         ss_win: screenshot_win {
             compatible = "zmk,behavior-macro";
