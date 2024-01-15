@@ -1,4 +1,4 @@
-// HEADERS {{{
+// HEADERS {{{
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
@@ -138,7 +138,7 @@
 &none  &none  &kp HOME  &kp ESC   &kp END    &none       &kp PAGE_UP    &dis_prev_history     &dis_next_history      &none        &dis_next_mention  &act N
                         &none     &none      &dis_tog    &dis_tog       &trans                &none
             >;
-            sensor-bindings = <&inc_dec_kp SCRL_UP SCRL_DOWN &inc_dec_kp SCRL_LEFT SCRL_RIGHT>;
+            sensor-bindings = <&rot_msc SCRL_UP SCRL_DOWN &rot_msc SCRL_LEFT SCRL_RIGHT>;
         };
 
         /* 10 Layer */
@@ -150,7 +150,7 @@
 &none  &none  &warpd_l         &warpd_t         &warpd_r          &none             &mkp LCLK       &mkp RCLK       &none         &none            &none           &warpd_r
                                &trans           &trans            &point_tog        &point_tog      &trans          &trans
             >;
-            sensor-bindings = <&inc_dec_kp SCRL_UP SCRL_DOWN &inc_dec_kp SCRL_LEFT SCRL_RIGHT>;
+            sensor-bindings = <&rot_mmv MOVE_LEFT MOVE_RIGHT &rot_mmv MOVE_UP MOVE_DOWN>;
         };
 
         /* 11 Layer */
