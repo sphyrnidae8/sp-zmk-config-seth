@@ -1,4 +1,4 @@
-#define VER_PATCH N3
+#define VER_PATCH N4
 #define VER_MINOR N6
 #define VER_MAJOR N2
 
@@ -677,7 +677,7 @@
             compatible = "zmk,behavior-mouse-move";
             #binding-cells = <1>;
             delay-ms = <0>;
-            time-to-max-speed-ms = <50>;
+            time-to-max-speed-ms = <0>;
             acceleration-exponent = <1>;
         };
         iI: i_cap_i {
@@ -695,13 +695,13 @@
         rot_mmv: sensor_rotate_mmv {
             compatible = "zmk,behavior-sensor-rotate-var";
             #sensor-binding-cells = <2>;
-            tap-ms = <100>;
-            bindings = <&mmv>, <&mmv>;
+            tap-ms = <75>;
+            bindings = <&fmmv>, <&fmmv>;
         };
         rot_msc: sensor_rotate_msc {
             compatible = "zmk,behavior-sensor-rotate-var";
             #sensor-binding-cells = <2>;
-            tap-ms = <100>;
+            tap-ms = <75>;
             bindings = <&msc>, <&msc>;
         };
 

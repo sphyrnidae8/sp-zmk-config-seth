@@ -154,7 +154,7 @@
 &none  &none  &warpd_l         &warpd_t         &warpd_r          &none             &mkp LCLK       &mkp RCLK       &none         &none            &none           &warpd_r
                                &trans           &trans            &point_tog        &point_tog      &trans          &trans
             >;
-            sensor-bindings = <&rot_mmv MOVE_X(2400) MOVE_X(-2400) &rot_mmv MOVE_Y(2400) MOVE_Y(-2400)>;
+            sensor-bindings = <&rot_mmv MOVE_X(-1200) MOVE_X(1200) &rot_mmv MOVE_Y(-1200) MOVE_Y(1200)>;
         };
 
         /* 11 Layer */
