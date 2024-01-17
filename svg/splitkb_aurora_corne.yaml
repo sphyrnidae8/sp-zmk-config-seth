@@ -340,8 +340,8 @@ layers:
   - '&act N'
   - ''
   - ''
-  - '&dis_tog'
-  - '&dis_tog'
+  - '&kple ESC'
+  - '&kple ESC'
   - {t: ▽, type: trans}
   - ''
   pointer:
@@ -383,8 +383,8 @@ layers:
   - '&warpd_r'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&point_tog'
-  - '&point_tog'
+  - '&kple ESC'
+  - '&kple ESC'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   mirror:
