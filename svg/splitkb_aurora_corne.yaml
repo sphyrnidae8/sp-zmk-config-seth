@@ -1,7 +1,7 @@
 layout: {qmk_keyboard: corne_rotated, qmk_layout: LAYOUT_split_3x6_3}
 layers:
   araxia:
-  - '&mirror_tog'
+  - '&mirror_sl'
   - {t: Q, h: 'move [L]'}
   - W
   - E
@@ -12,7 +12,7 @@ layers:
   - '&iI'
   - O
   - {t: P, h: 'move [R]'}
-  - '&mirror_tog'
+  - '&mirror_sl'
   - ''
   - {t: A, h: '$$mdi:apple-keyboard-control$$'}
   - {t: S, h: '$$mdi:apple-keyboard-command$$'}

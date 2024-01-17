@@ -1,4 +1,4 @@
-#define VER_PATCH N1
+#define VER_PATCH N2
 #define VER_MINOR N8
 #define VER_MAJOR N2
 
@@ -347,10 +347,10 @@
             #binding-cells = <0>;
             bindings = <&tog POINTER>;
         };
-        mirror_tog: mirror_layer_toggle {
+        mirror_sl: mirror_sticky_layer {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&tog MIRROR>;
+            bindings = <&sl MIRROR>;
         };
         ss_win: screenshot_win {
             compatible = "zmk,behavior-macro";
