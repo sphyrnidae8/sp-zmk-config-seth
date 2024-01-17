@@ -215,92 +215,6 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  move [L]:
-  - ''
-  - {type: held}
-  - '&forward'
-  - '&backward'
-  - '&tab_next'
-  - '&tab_prev'
-  - '&act Y'
-  - '&act U'
-  - '&act I'
-  - '&act O'
-  - '&act P'
-  - ''
-  - $$mdi:power$$
-  - '&win_quad'
-  - '&win_next'
-  - '&win_third'
-  - '&win_half'
-  - '&win_full'
-  - '&act H'
-  - '&act J'
-  - '&act K'
-  - '&act L'
-  - '&act :'
-  - ''
-  - $$mdi:power-sleep$$
-  - $$mdi:power$$
-  - '&win_vquad'
-  - '&win_vthird'
-  - '&win_vhalf'
-  - '&win_screen'
-  - '&act N'
-  - '&act M'
-  - '&act <'
-  - '&act >'
-  - '&act ?'
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  move [R]:
-  - ''
-  - '&act Q'
-  - '&act W'
-  - '&act E'
-  - '&act R'
-  - '&act T'
-  - '&tab_prev'
-  - '&tab_next'
-  - '&backward'
-  - '&forward'
-  - {type: held}
-  - ''
-  - ''
-  - '&act A'
-  - '&act S'
-  - '&act D'
-  - '&act F'
-  - '&act G'
-  - '&win_full'
-  - '&win_half'
-  - '&win_third'
-  - '&win_next'
-  - '&win_quad'
-  - $$mdi:power$$
-  - ''
-  - '&act Z'
-  - '&act X'
-  - '&act C'
-  - '&act V'
-  - '&act B'
-  - '&win_screen'
-  - '&win_vhalf'
-  - '&win_vthird'
-  - '&win_vquad'
-  - $$mdi:power$$
-  - $$mdi:power-sleep$$
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
   adjust:
   - '&tab_tog'
   - {t: ▽, type: trans}
@@ -427,8 +341,8 @@ layers:
   - ''
   - ''
   - '&dis_tog'
-  - {t: '&dis_tog', type: held}
-  - {type: held}
+  - '&dis_tog'
+  - {t: ▽, type: trans}
   - ''
   pointer:
   - ''
@@ -468,8 +382,8 @@ layers:
   - '&msc SCRL_DOWN'
   - '&warpd_r'
   - {t: ▽, type: trans}
-  - {type: held}
-  - {t: '&point_tog', type: held}
+  - {t: ▽, type: trans}
+  - '&point_tog'
   - '&point_tog'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -516,18 +430,104 @@ layers:
   - {t: ESC, h: symbols}
   - {t: LC(W), h: lnum}
   - {t: ⮐, h: '$$mdi:apple-keyboard-command$$', type: held}
+  move [L]:
+  - ''
+  - {type: held}
+  - '&forward'
+  - '&backward'
+  - '&tab_next'
+  - '&tab_prev'
+  - '&act Y'
+  - '&act U'
+  - '&act I'
+  - '&act O'
+  - '&act P'
+  - ''
+  - $$mdi:power$$
+  - '&win_quad'
+  - '&win_next'
+  - '&win_third'
+  - '&win_half'
+  - '&win_full'
+  - '&act H'
+  - '&act J'
+  - '&act K'
+  - '&act L'
+  - '&act :'
+  - ''
+  - $$mdi:power-sleep$$
+  - $$mdi:power$$
+  - '&win_vquad'
+  - '&win_vthird'
+  - '&win_vhalf'
+  - '&win_screen'
+  - '&act N'
+  - '&act M'
+  - '&act <'
+  - '&act >'
+  - '&act ?'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  move [R]:
+  - ''
+  - '&act Q'
+  - '&act W'
+  - '&act E'
+  - '&act R'
+  - '&act T'
+  - '&tab_prev'
+  - '&tab_next'
+  - '&backward'
+  - '&forward'
+  - {type: held}
+  - ''
+  - ''
+  - '&act A'
+  - '&act S'
+  - '&act D'
+  - '&act F'
+  - '&act G'
+  - '&win_full'
+  - '&win_half'
+  - '&win_third'
+  - '&win_next'
+  - '&win_quad'
+  - $$mdi:power$$
+  - ''
+  - '&act Z'
+  - '&act X'
+  - '&act C'
+  - '&act V'
+  - '&act B'
+  - '&win_screen'
+  - '&win_vhalf'
+  - '&win_vthird'
+  - '&win_vquad'
+  - $$mdi:power$$
+  - $$mdi:power-sleep$$
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
 combos:
 - p: [5, 17]
   k: ⮐
   l: [araxia]
 - p: [37, 38]
-  k: {t: ⮐, h: pointer}
+  k: {t: ⮐, h: 'move [L]'}
   l: [araxia]
 - p: [6, 18]
   k: ⮐
   l: [araxia]
 - p: [39, 40]
-  k: {t: ⮐, h: discord}
+  k: {t: ⮐, h: mirror}
   l: [araxia]
 - p: [16, 19]
   k: {t: '$$mdi:apple-keyboard-shift$$', h: sticky}

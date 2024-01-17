@@ -79,28 +79,6 @@
         };
 
         /* 5 Layer */
-        window_left {
-            display-name = "move [L]";
-            bindings = <
-&none        &trans       &forward    &backward    &tab_next   &tab_prev       &act Y  &act U  &act I          &act O             &act P         &none
-&kp C_POWER  &win_quad    &win_next   &win_third   &win_half   &win_full       &act H  &act J  &act K          &act L             &act COLON     &none
-&kp C_SLEEP  &kp C_POWER  &win_vquad  &win_vthird  &win_vhalf  &win_screen     &act N  &act M  &act LESS_THAN  &act GREATER_THAN  &act QUESTION  &none
-                                      &none        &none       &none           &none   &none   &none
-            >;
-        };
-
-        /* 6 Layer */
-        window_right {
-            display-name = "move [R]";
-            bindings = <
-&none  &act Q  &act W  &act E  &act R  &act T     &tab_prev    &tab_next   &backward    &forward    &trans       &none
-&none  &act A  &act S  &act D  &act F  &act G     &win_full    &win_half   &win_third   &win_next   &win_quad    &kp C_POWER
-&none  &act Z  &act X  &act C  &act V  &act B     &win_screen  &win_vhalf  &win_vthird  &win_vquad  &kp C_POWER  &kp C_SLEEP
-                       &none   &none   &none      &none        &none       &none
-            >;
-        };
-
-        /* 7 Layer */
         /* Do not use this then-layer for regular layer switching */
         adjust {
             display-name = "adjust";
@@ -112,7 +90,7 @@
             >;
         };
 
-        /* 8 Layer */
+        /* 6 Layer */
         /* Do not use this then-layer for regular layer switching */
         lighting {
             display-name = "lighting";
@@ -124,7 +102,7 @@
             >;
         };
 
-        /* 9 Layer */
+        /* 7 Layer */
         discord {
             display-name = "discord";
             bindings = <
@@ -135,7 +113,7 @@
             >;
         };
 
-        /* 10 Layer */
+        /* 8 Layer */
         pointer {
             display-name = "pointer";
             bindings = <
@@ -146,7 +124,7 @@
             >;
         };
 
-        /* 11 Layer */
+        /* 9 Layer */
         mirror {
             display-name = "mirror";
             bindings = <
@@ -156,6 +134,29 @@
                                                &lthp DEFAULT COLON  &lthp NUMPAD SPACE  &lthp MEDIA ESC    &lthp SYMBOLS ESC  &lthp LNUM LC(W)  &mthp LGUI RETURN
             >;
         };
+
+        /* 10 Layer */
+        window_left {
+            display-name = "move [L]";
+            bindings = <
+&none        &trans       &forward    &backward    &tab_next   &tab_prev       &act Y  &act U  &act I          &act O             &act P         &none
+&kp C_POWER  &win_quad    &win_next   &win_third   &win_half   &win_full       &act H  &act J  &act K          &act L             &act COLON     &none
+&kp C_SLEEP  &kp C_POWER  &win_vquad  &win_vthird  &win_vhalf  &win_screen     &act N  &act M  &act LESS_THAN  &act GREATER_THAN  &act QUESTION  &none
+                                      &none        &none       &none           &none   &none   &none
+            >;
+        };
+
+        /* 11 Layer */
+        window_right {
+            display-name = "move [R]";
+            bindings = <
+&none  &act Q  &act W  &act E  &act R  &act T     &tab_prev    &tab_next   &backward    &forward    &trans       &none
+&none  &act A  &act S  &act D  &act F  &act G     &win_full    &win_half   &win_third   &win_next   &win_quad    &kp C_POWER
+&none  &act Z  &act X  &act C  &act V  &act B     &win_screen  &win_vhalf  &win_vthird  &win_vquad  &kp C_POWER  &kp C_SLEEP
+                       &none   &none   &none      &none        &none       &none
+            >;
+        };
+
 
     };
 

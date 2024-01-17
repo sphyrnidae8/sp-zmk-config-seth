@@ -1,4 +1,4 @@
-#define VER_PATCH N0
+#define VER_PATCH N1
 #define VER_MINOR N8
 #define VER_MAJOR N2
 
@@ -13,13 +13,13 @@
 #define LNUM      2
 #define NUMPAD    3
 #define MEDIA     4
-#define WIN_LEFT  5
-#define WIN_RIGHT 6
-#define ADJUST    7
-#define LIGHTING  8
-#define DISCORD   9
-#define POINTER   10
-#define MIRROR    11 
+#define ADJUST    5
+#define LIGHTING  6
+#define DISCORD   7
+#define POINTER   8
+#define MIRROR    9
+#define WIN_LEFT  10
+#define WIN_RIGHT 11
 // }}}
 /* Key Positions
 ╭────────────────────────╮ ╭────────────────────────╮
