@@ -529,9 +529,6 @@ combos:
 - p: [39, 40]
   k: {t: ⮐, h: mirror}
   l: [araxia]
-- p: [16, 19]
-  k: {t: '$$mdi:apple-keyboard-shift$$', h: sticky}
-  l: [araxia]
 - p: [17, 29]
   k: $$mdi:keyboard-tab$$
   l: [araxia]
@@ -561,11 +558,8 @@ combos:
   o: 0.25
   arc_scale: 1.03
 - p: [13, 22]
-  k: CAPS WORD
+  k: '&shifty'
   l: [araxia]
-  a: bottom
-  o: 2.5
-  arc_scale: 1.03
 - p: [1, 2]
   k: '&version'
   l: [araxia]

@@ -23,9 +23,6 @@
         &combo_return_right_thumbs {
             key-positions = <43 44>;
         };
-        &combo_sticky_shift {
-            key-positions = <15 20>;
-        };
         &combo_tab_left {
             key-positions = <16 28>;
         };
@@ -44,7 +41,10 @@
         &combo_tmux_mode_select {
             key-positions = <1 2 3>;
         };
-        &combo_capsword {
+        //&combo_tbd {
+        //    key-positions = <15 20>;
+        //};
+        &combo_shifty {
             key-positions = <12 23>;
         };
         &combo_version {

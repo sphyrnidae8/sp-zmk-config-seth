@@ -1,5 +1,5 @@
-#define VER_PATCH N4
-#define VER_MINOR N8
+#define VER_PATCH N0
+#define VER_MINOR N9
 #define VER_MAJOR N2
 
 // DEFINES {{{
@@ -428,13 +428,6 @@
             bindings = <&lthp 9 RETURN>;
             layers = <0>;
         };
-        combo_sticky_shift: combo_sticky_shift {
-            timeout-ms = <150>;
-            slow-release;
-            key-positions = <16 19>;
-            bindings = <&sk LEFT_SHIFT>;
-            layers = <0>;
-        };
         combo_tab_left: combo_tab_left {
             timeout-ms = <75>;
             slow-release;
@@ -477,11 +470,18 @@
             bindings = <&tmux_mode_select>;
             layers = <0>;
         };
-        combo_capsword: combo_capsword {
-            timeout-ms = <75>;
+        //combo_tbd: combo_tbd {
+        //    timeout-ms = <150>;
+        //    slow-release;
+        //    key-positions = <16 19>;
+        //    bindings = <&kp TAB>;
+        //    layers = <0>;
+        //};
+        combo_shifty: combo_shifty {
+            timeout-ms = <150>;
             slow-release;
             key-positions = <13 22>;
-            bindings = <&caps_word>;
+            bindings = <&shifty>;
             layers = <0>;
         };
         combo_version: combo_version {
@@ -709,6 +709,15 @@
             delay-ms = <0>;
             time-to-max-speed-ms = <0>;
             acceleration-exponent = <1>;
+        };
+        shifty: sticky_shift_and_caps_word {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings
+                = <&sk LEFT_SHIFT>
+                , <&caps_word>
+                ;
         };
         iI: i_cap_i {
             compatible = "zmk,behavior-tap-dance";
