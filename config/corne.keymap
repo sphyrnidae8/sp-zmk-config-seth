@@ -65,13 +65,24 @@
             display-name = "media";
             bindings = <
 &none  &kp F1   &kp F2   &kp F3   &kp F4   &kp F5      &kp C_MUTE    &kp C_PREV    &kp C_PP      &kp C_NEXT    &kp C_BRI_UP  &none
-&none  &kp F6   &kp F7   &kp F8   &kp F9   &kp F10     &kp C_VOL_DN  &kp C_VOL_UP  &out OUT_TOG  &bt BT_CLR    &kp C_BRI_DN  &none
-&none  &kp F11  &kp F12  &kp F13  &kp F14  &kp F15     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none
+&none  &kp F6   &kp F7   &kp F8   &kp F9   &kp F10     &kp C_VOL_DN  &kp C_VOL_UP  &none         &none         &kp C_BRI_DN  &none
+&none  &kp F11  &kp F12  &kp F13  &kp F14  &kp F15     &none         &none         &none         &none         &none         &none
                          &trans   &trans   &trans      &trans        &trans        &trans
             >;
         };
 
         /* 5 Layer */
+        bluetooth {
+            display-name = "bluetooth";
+            bindings = <
+&none  &none  &none  &none   &none    &none     &bt BT_DISC 0 &bt BT_DISC 1 &bt BT_DISC 2 &bt BT_DISC 3   &bt BT_DISC 4  &bootloader
+&none  &none  &none  &none   &none    &none     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_SEL 4   &none
+&none  &none  &none  &none   &none    &none     &out OUT_USB  &out OUT_BLE  &bt BT_PRV    &bt BT_NXT      &bt BT_CLR     &none
+                     &trans  &trans   &trans    &trans        &trans        &bt BT_CLR_ALL
+            >;
+        };
+
+        /* 6 Layer */
         /* Do not use this then-layer for regular layer switching */
         adjust {
             display-name = "adjust";
@@ -83,7 +94,7 @@
             >;
         };
 
-        /* 6 Layer */
+        /* 7 Layer */
         /* Do not use this then-layer for regular layer switching */
         lighting {
             display-name = "lighting";
@@ -95,7 +106,7 @@
             >;
         };
 
-        /* 7 Layer */
+        /* 8 Layer */
         discord {
             display-name = "discord";
             bindings = <
@@ -106,7 +117,7 @@
             >;
         };
 
-        /* 8 Layer */
+        /* 9 Layer */
         pointer {
             display-name = "pointer";
             bindings = <
@@ -119,7 +130,7 @@
             >;
         };
 
-        /* 9 Layer */
+        /* 10 Layer */
         mirror {
             display-name = "mirror";
             bindings = <
@@ -130,7 +141,7 @@
             >;
         };
 
-        /* 10 Layer */
+        /* 11 Layer */
         window_left {
             display-name = "move [L]";
             bindings = <
@@ -141,7 +152,7 @@
             >;
         };
 
-        /* 11 Layer */
+        /* 12 Layer */
         window_right {
             display-name = "move [R]";
             bindings = <

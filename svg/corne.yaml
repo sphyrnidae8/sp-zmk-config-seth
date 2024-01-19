@@ -193,8 +193,8 @@ layers:
   - F10
   - $$mdi:volume-minus$$
   - $$mdi:volume-plus$$
-  - OUT TOG
-  - $$mdi:bluetooth-off$$
+  - ''
+  - ''
   - $$tabler:brightness-down$$
   - ''
   - ''
@@ -203,11 +203,11 @@ layers:
   - F13
   - F14
   - F15
-  - {t: '$$mdi:numeric-0$$', h: '$$mdi:bluetooth$$'}
-  - {t: '$$mdi:numeric-1$$', h: '$$mdi:bluetooth$$'}
-  - {t: '$$mdi:numeric-2$$', h: '$$mdi:bluetooth$$'}
-  - {t: '$$mdi:numeric-3$$', h: '$$mdi:bluetooth$$'}
-  - {t: '$$mdi:numeric-4$$', h: '$$mdi:bluetooth$$'}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -215,6 +215,49 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  bluetooth:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: BT DISC, h: '0'}
+  - {t: BT DISC, h: '1'}
+  - {t: BT DISC, h: '2'}
+  - {t: BT DISC, h: '3'}
+  - {t: BT DISC, h: '4'}
+  - '&bootloader'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: '$$mdi:numeric-0$$', h: '$$mdi:bluetooth$$'}
+  - {t: '$$mdi:numeric-1$$', h: '$$mdi:bluetooth$$'}
+  - {t: '$$mdi:numeric-2$$', h: '$$mdi:bluetooth$$'}
+  - {t: '$$mdi:numeric-3$$', h: '$$mdi:bluetooth$$'}
+  - {t: '$$mdi:numeric-4$$', h: '$$mdi:bluetooth$$'}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - $$mdi:usb$$
+  - $$mdi:bluetooth$$
+  - {t: '$$mdi:skip-previous$$', h: '$$mdi:bluetooth$$'}
+  - {t: '$$mdi:skip-next$$', h: '$$mdi:bluetooth$$'}
+  - $$mdi:bluetooth-off$$
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {type: held}
+  - BT CLR ALL
   adjust:
   - '&bootloader'
   - {t: ▽, type: trans}
@@ -253,9 +296,9 @@ layers:
   - '&tmux_ns'
   - ''
   - ''
-  - ''
   - {type: held}
   - {type: held}
+  - {t: ▽, type: trans}
   - ''
   - ''
   lighting:
@@ -521,13 +564,13 @@ combos:
   k: ⮐
   l: [araxia]
 - p: [37, 38]
-  k: {t: ⮐, h: 'move [L]'}
+  k: {t: ⮐, h: adjust}
   l: [araxia]
 - p: [6, 18]
   k: ⮐
   l: [araxia]
 - p: [39, 40]
-  k: {t: ⮐, h: mirror}
+  k: {t: ⮐, h: bluetooth}
   l: [araxia]
 - p: [17, 29]
   k: $$mdi:keyboard-tab$$

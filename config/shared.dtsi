@@ -1,6 +1,6 @@
-#define VER_PATCH N2
-#define VER_MINOR N9
-#define VER_MAJOR N2
+#define VER_PATCH N0
+#define VER_MINOR N0
+#define VER_MAJOR N3
 
 // DEFINES {{{
 #define HYPER(X) LG(LA(LC(LS(X))))
@@ -17,13 +17,14 @@
 #define LNUM      2
 #define NUMPAD    3
 #define MEDIA     4
-#define ADJUST    5
-#define LIGHTING  6
-#define DISCORD   7
-#define POINTER   8
-#define MIRROR    9
-#define WIN_LEFT  10
-#define WIN_RIGHT 11
+#define BLUETOOTH 5
+#define ADJUST    6
+#define LIGHTING  7
+#define DISCORD   8
+#define POINTER   9
+#define MIRROR    10
+#define WIN_LEFT  11
+#define WIN_RIGHT 12
 // }}}
 /* Key Positions
 ╭────────────────────────╮ ╭────────────────────────╮
@@ -427,7 +428,7 @@
         combo_return_left_thumbs: combo_return_left_thumbs {
             timeout-ms = <75>;
             key-positions = <37 38>;
-            bindings = <&lthp 10 RETURN>;
+            bindings = <&lthp ADJUST RETURN>;
             layers = <DEFAULT>;
         };
         combo_return_right: combo_return_right {
@@ -440,7 +441,7 @@
         combo_return_right_thumbs: combo_return_right_thumbs {
             timeout-ms = <75>;
             key-positions = <39 40>;
-            bindings = <&lthp 9 RETURN>;
+            bindings = <&lthp BLUETOOTH RETURN>;
             layers = <DEFAULT>;
         };
         combo_tab_left: combo_tab_left {
