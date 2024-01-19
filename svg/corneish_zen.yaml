@@ -566,6 +566,9 @@ combos:
 - p: [37, 38]
   k: {t: ⮐, h: adjust}
   l: [araxia]
+- p: [38, 39]
+  k: {t: '$$mdi:keyboard-tab$$', h: adjust}
+  l: [araxia]
 - p: [6, 18]
   k: ⮐
   l: [araxia]

@@ -17,6 +17,9 @@
         &combo_return_left_thumbs {
             key-positions = <39 40>;
         };
+        &combo_adjust_tab {
+            key-positions = <40 43>;
+        };
         &combo_return_right {
             key-positions = <7 19>;
         };

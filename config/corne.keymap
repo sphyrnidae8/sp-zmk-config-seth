@@ -83,7 +83,6 @@
         };
 
         /* 6 Layer */
-        /* Do not use this then-layer for regular layer switching */
         adjust {
             display-name = "adjust";
             bindings = <

@@ -1,4 +1,4 @@
-#define VER_PATCH N0
+#define VER_PATCH N1
 #define VER_MINOR N1
 #define VER_MAJOR N3
 
@@ -431,6 +431,12 @@
             bindings = <&lthp ADJUST RETURN>;
             layers = <DEFAULT>;
         };
+        combo_adjust_tab: combo_adjust_tab {
+            timeout-ms = <75>;
+            key-positions = <38 39>;
+            bindings = <&lttp ADJUST TAB>;
+            layers = <DEFAULT>;
+        };
         combo_return_right: combo_return_right {
             timeout-ms = <75>;
             slow-release;
@@ -770,10 +776,11 @@
     conditional_layers {
         compatible = "zmk,conditional-layers";
 
-        to_adjust {
-            if-layers = <SYMBOLS MEDIA>;
-            then-layer = <ADJUST>;
-        };
+        // replaced with combo layer-tap
+        //to_adjust {
+        //    if-layers = <SYMBOLS MEDIA>;
+        //    then-layer = <ADJUST>;
+        //};
 
         // provided by combo_lighting due to transparent layer issues
         //to_lighting {
