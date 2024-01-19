@@ -1,4 +1,4 @@
-#define VER_PATCH N0
+#define VER_PATCH N1
 #define VER_MINOR N9
 #define VER_MAJOR N2
 
@@ -407,153 +407,157 @@
             slow-release;
             key-positions = <5 17>;
             bindings = <&kp RETURN>;
-            layers = <0>;
+            layers = <DEFAULT>;
         };
         combo_return_left_thumbs: combo_return_left_thumbs {
             timeout-ms = <75>;
             key-positions = <37 38>;
             bindings = <&lthp 10 RETURN>;
-            layers = <0>;
+            layers = <DEFAULT>;
         };
         combo_return_right: combo_return_right {
             timeout-ms = <75>;
             slow-release;
             key-positions = <6 18>;
             bindings = <&kp RETURN>;
-            layers = <0>;
+            layers = <DEFAULT>;
         };
         combo_return_right_thumbs: combo_return_right_thumbs {
             timeout-ms = <75>;
             key-positions = <39 40>;
             bindings = <&lthp 9 RETURN>;
-            layers = <0>;
+            layers = <DEFAULT>;
         };
         combo_tab_left: combo_tab_left {
             timeout-ms = <75>;
             slow-release;
             key-positions = <17 29>;
             bindings = <&kp TAB>;
-            layers = <0>;
+            layers = <DEFAULT>;
         };
         combo_tab_right: combo_tab_right {
             timeout-ms = <75>;
             slow-release;
             key-positions = <18 30>;
             bindings = <&kp TAB>;
-            layers = <0>;
+            layers = <DEFAULT>;
         };
         combo_inverse_winl: combo_inverse_winl {
             timeout-ms = <75>;
             slow-release;
             key-positions = <1 38>;
             bindings = <&mo WIN_RIGHT>;
-            layers = <0>;
+            layers = <DEFAULT>;
         };
         combo_inverse_winr: combo_inverse_winr {
             timeout-ms = <75>;
             slow-release;
             key-positions = <10 39>;
             bindings = <&mo WIN_LEFT>;
-            layers = <0>;
+            layers = <DEFAULT>;
         };
         combo_tmux: combo_tmux {
             timeout-ms = <75>;
             slow-release;
             key-positions = <7 8 9>;
             bindings = <&kp LC(A)>;
-            layers = <0>;
+            layers = <DEFAULT>;
         };
         combo_tmux_mode_select: combo_tmux_mode_select {
             timeout-ms = <75>;
             slow-release;
             key-positions = <2 3 4>;
             bindings = <&tmux_mode_select>;
-            layers = <0>;
+            layers = <DEFAULT>;
         };
         //combo_tbd: combo_tbd {
         //    timeout-ms = <150>;
         //    slow-release;
         //    key-positions = <16 19>;
         //    bindings = <&kp TAB>;
-        //    layers = <0>;
+        //    layers = <DEFAULT>;
         //};
         combo_shifty: combo_shifty {
             timeout-ms = <150>;
             slow-release;
             key-positions = <13 22>;
             bindings = <&shifty>;
-            layers = <0>;
+            layers = <DEFAULT>;
         };
         combo_version: combo_version {
             timeout-ms = <50>;
             key-positions = <1 2>;
             bindings = <&version>;
-            layers = <0>;
+            layers = <DEFAULT>;
         };
         combo_delete: combo_delete {
             timeout-ms = <50>;
             slow-release;
             key-positions = <9 10>;
             bindings = <&kp DELETE>;
-            layers = <0>;
+            layers = <DEFAULT>;
         };
         combo_gui_left: combo_gui_left {
             timeout-ms = <75>;
             key-positions = <25 26>;
             bindings = <&kp LGUI>;
-            layers = <0>;
+            layers = <DEFAULT>;
         };
         combo_alt_left: combo_alt_left {
             timeout-ms = <75>;
             key-positions = <13 25>;
             bindings = <&kp LALT>;
-            layers = <0>;
+            layers = <DEFAULT>;
         };
         combo_gui_right: combo_gui_right {
             timeout-ms = <75>;
             key-positions = <33 34>;
             bindings = <&kp LGUI>;
-            layers = <0>;
+            layers = <DEFAULT>;
         };
         combo_alt_right: combo_alt_right {
             timeout-ms = <75>;
             key-positions = <22 34>;
             bindings = <&kp LALT>;
-            layers = <0>;
+            layers = <DEFAULT>;
         };
         combo_swap_left: combo_swap_left {
             timeout-ms = <75>;
             key-positions = <16 25>;
             bindings = <&swap_ht 0 LG(TAB)>;
+            layers = <DEFAULT DISCORD POINTER MIRROR>;
         };
         combo_swap_right: combo_swap_right {
             timeout-ms = <75>;
             key-positions = <19 34>;
             bindings = <&swap_ht 0 LG(TAB)>;
+            layers = <DEFAULT DISCORD POINTER MIRROR>;
         };
         combo_winswap_left: combo_winswap_left {
             timeout-ms = <75>;
             key-positions = <25 28>;
             bindings = <&winswap_ht 0 LA(TAB)>;
+            layers = <DEFAULT DISCORD POINTER MIRROR>;
         };
         combo_winswap_right: combo_winswap_right {
             timeout-ms = <75>;
             key-positions = <31 34>;
             bindings = <&winswap_ht 0 LA(TAB)>;
+            layers = <DEFAULT DISCORD POINTER MIRROR>;
         };
        combo_lighting: combo_lighting {
            timeout-ms = <75>;
            slow-release;
            key-positions = <1 10>;
            bindings = <&mo LIGHTING>;
-           layers = <0>;
+           layers = <DEFAULT>;
        };
        combo_lighting_transitional: combo_lighting_transitional {
            timeout-ms = <75>;
            slow-release;
            key-positions = <0 11>;
            bindings = <&mo LIGHTING>;
-           layers = <0>;
+           layers = <DEFAULT>;
        };
 
     };
@@ -688,7 +692,7 @@
                 <&kp TAB>,
                 <&kt LALT>;
             ignored-key-positions = <1 25 28 10 31 34 18 19 20 21 40>;
-            ignored-layers = <0 3>;
+            ignored-layers = <DEFAULT NUMPAD>;
         };
         swap: swapper_mac {
             compatible = "zmk,behavior-tri-state";
@@ -701,7 +705,7 @@
             // include hjkl (18 19 20 21) and nav layer activation (40) for navigation
             // include mode keys: h to hide (18), q to quit (1)
             ignored-key-positions = <1 16 18 19 20 21 25 34 40>;
-            ignored-layers = <0 3>;
+            ignored-layers = <DEFAULT NUMPAD>;
         };
         fmmv: fast_mouse_move {
             compatible = "zmk,behavior-mouse-move";
