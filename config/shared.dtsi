@@ -1,4 +1,4 @@
-#define VER_PATCH N1
+#define VER_PATCH N2
 #define VER_MINOR N9
 #define VER_MAJOR N2
 
@@ -332,6 +332,16 @@
             #binding-cells = <0>;
             bindings = <&kp LG(LA(UP))>;
         };
+        dis_next_chan: discord_next_channel {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(DOWN)>;
+        };
+        dis_prev_chan: discord_previous_channel {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(UP)>;
+        };
         dis_next_history: discord_next_history {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -346,6 +356,11 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LG(LA(LS(DOWN)))>;
+        };
+        dis_section_nav: discord_section_navigation {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp F6>;
         };
         dis_pins: discord_pins {
             compatible = "zmk,behavior-macro";

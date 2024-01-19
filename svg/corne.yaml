@@ -216,7 +216,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   adjust:
-  - '&tab_tog'
+  - '&bootloader'
   - {t: ▽, type: trans}
   - '&vim_exit_all'
   - ''
@@ -228,7 +228,7 @@ layers:
   - ''
   - ''
   - ''
-  - '&zoom_tog'
+  - '&tab_tog'
   - '&zoom_in'
   - '&vim_save'
   - '&ss2c'
@@ -240,7 +240,7 @@ layers:
   - '&tmux_pw'
   - '&tmux_ps'
   - ''
-  - ''
+  - '&zoom_tog'
   - '&zoom_out'
   - '&vim_exit'
   - '&sss2c'
@@ -259,7 +259,7 @@ layers:
   - ''
   - ''
   lighting:
-  - {t: ▽, type: trans}
+  - ''
   - {type: held}
   - ''
   - RGB BRI
@@ -307,7 +307,7 @@ layers:
   - $$mdi:keyboard-tab$$
   - $$mdi:arrow-up$$
   - +
-  - ''
+  - '&dis_section_nav'
   - '&dis_tog'
   - '&dis_prev_server'
   - '&dis_next_server'
@@ -323,8 +323,8 @@ layers:
   - PAGE DOWN
   - '&dis_down'
   - '&dis_up'
-  - PAGE UP
-  - PAGE DOWN
+  - '&dis_prev_chan'
+  - '&dis_next_chan'
   - ''
   - ''
   - ''
@@ -337,8 +337,8 @@ layers:
   - '&dis_next_history'
   - ''
   - '&dis_next_mention'
-  - '&act N'
-  - ''
+  - '&kple LG(TAB)'
+  - ⮐
   - ''
   - '&kple ESC'
   - '&kple ESC'
