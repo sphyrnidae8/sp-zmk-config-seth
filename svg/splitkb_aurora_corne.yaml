@@ -603,6 +603,9 @@ combos:
   a: top
   o: 0.25
   arc_scale: 1.03
+- p: [16, 19]
+  k: '&capsy'
+  l: [araxia]
 - p: [13, 22]
   k: '&shifty'
   l: [araxia]

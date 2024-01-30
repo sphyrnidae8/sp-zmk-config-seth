@@ -1,4 +1,4 @@
-#define VER_PATCH N2
+#define VER_PATCH N3
 #define VER_MINOR N1
 #define VER_MAJOR N3
 
@@ -496,13 +496,13 @@
             bindings = <&tmux_mode_select>;
             layers = <DEFAULT>;
         };
-        //combo_tbd: combo_tbd {
-        //    timeout-ms = <150>;
-        //    slow-release;
-        //    key-positions = <16 19>;
-        //    bindings = <&kp TAB>;
-        //    layers = <DEFAULT>;
-        //};
+        combo_capsy: combo_capsy {
+            timeout-ms = <150>;
+            slow-release;
+            key-positions = <16 19>;
+            bindings = <&capsy>;
+            layers = <DEFAULT>;
+        };
         combo_shifty: combo_shifty {
             timeout-ms = <150>;
             slow-release;
@@ -740,6 +740,15 @@
             time-to-max-speed-ms = <100>;
             acceleration-exponent = <1>;
         };
+        capsy: caps_word_and_lock {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings
+                = <&caps_word>
+                , <&caps_lock>
+                ;
+        };
         shifty: sticky_shift_and_caps_word {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
@@ -760,6 +769,13 @@
             #binding-cells = <0>;
             tapping-term-ms = <250>;
             bindings = <&kp SEMICOLON>, <&kp SINGLE_QUOTE>;
+        };
+        caps_lock: caps_lock {
+            compatible = "zmk,behavior-caps-word";
+            #binding-cells = <0>;
+            continue-list = <
+SPACE FSLH COLON RETURN COMMA AMPERSAND ASTERISK TILDE BACKSLASH LESS_THAN GREATER_THAN LEFT_PARENTHESIS RIGHT_PARENTHESIS DOUBLE_QUOTES DOT DOLLAR PERCENT CARET TAB MINUS EQUAL LEFT_BRACE RIGHT_BRACE SINGLE_QUOTE EXCLAMATION AT POUND PIPE UNDERSCORE PLUS LEFT_BRACKET RIGHT_BRACKET GRAVE
+            >;
         };
         rot_mmv: sensor_rotate_mmv {
             compatible = "zmk,behavior-sensor-rotate-var";

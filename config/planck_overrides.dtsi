@@ -44,9 +44,9 @@
         &combo_tmux_mode_select {
             key-positions = <1 2 3>;
         };
-        //&combo_tbd {
-        //    key-positions = <15 20>;
-        //};
+        &combo_capsy {
+            key-positions = <15 20>;
+        };
         &combo_shifty {
             key-positions = <12 23>;
         };
