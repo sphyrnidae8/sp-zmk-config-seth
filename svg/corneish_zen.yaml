@@ -369,7 +369,7 @@ layers:
   - '&dis_prev_chan'
   - '&dis_next_chan'
   - ''
-  - ''
+  - '&kple LG(TAB)'
   - ''
   - HOME
   - ESC
