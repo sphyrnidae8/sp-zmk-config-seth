@@ -304,7 +304,7 @@ layers:
   lighting:
   - ''
   - {type: held}
-  - ''
+  - RGB TOG
   - RGB BRI
   - RGB BRD
   - RGB COLOR HSB(25,100,0)
