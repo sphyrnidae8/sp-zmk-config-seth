@@ -1,4 +1,4 @@
-#define VER_PATCH N7
+#define VER_PATCH N8
 #define VER_MINOR N1
 #define VER_MAJOR N3
 
@@ -700,7 +700,7 @@
             bindings =
                 <&kp M>,
                 <&kp RETURN>;
-            mods = <(MOD_LCTL)>;
+            mods = <(MOD_LCTL|MOD_RCTL)>;
         };
         h_bs: true_bs_for_control_h {
             compatible = "zmk,behavior-mod-morph";
@@ -708,7 +708,7 @@
             bindings =
                 <&kp H>,
                 <&kp BACKSPACE>;
-            mods = <(MOD_LCTL)>;
+            mods = <(MOD_LCTL|MOD_RCTL)>;
         };
         winswap: swapper_win {
             compatible = "zmk,behavior-tri-state";

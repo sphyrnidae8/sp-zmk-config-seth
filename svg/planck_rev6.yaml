@@ -1,7 +1,7 @@
 layout: {qmk_keyboard: planck/rev6, qmk_layout: LAYOUT_ortho_4x12}
 layers:
   araxia:
-  - {t: Q, h: bluetooth}
+  - {t: Q, h: 'move [L]'}
   - W
   - E
   - R
@@ -12,7 +12,7 @@ layers:
   - U
   - '&iI'
   - O
-  - {t: P, h: adjust}
+  - {t: P, h: 'move [R]'}
   - {t: A, h: '$$mdi:apple-keyboard-control$$'}
   - {t: S, h: '$$mdi:apple-keyboard-command$$'}
   - {t: D, h: '$$mdi:apple-keyboard-option$$'}
@@ -46,7 +46,7 @@ layers:
   - F10
   - {t: ESC, h: media}
   - {t: '$$mdi:keyboard-space$$', h: numpad}
-  - {t: ':', h: '$$mdi:apple-keyboard-command$$'}
+  - {t: ':', h: '10'}
   - '&point_tog'
   - '&dis_tog'
   symbols:
@@ -246,7 +246,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   bluetooth:
-  - {t: F1, type: held}
+  - F1
   - F2
   - F3
   - F4
@@ -285,8 +285,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -306,7 +306,7 @@ layers:
   - '&bootloader'
   - ''
   - ''
-  - {type: held}
+  - ''
   - '&zoom_in'
   - '&vim_save'
   - '&ss2c'
@@ -332,8 +332,8 @@ layers:
   - '&tmux_nw'
   - '&tmux_ns'
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
