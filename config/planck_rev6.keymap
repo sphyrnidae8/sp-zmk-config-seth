@@ -21,10 +21,10 @@
         default {
             display-name = "araxia";
             bindings = <
-&lttp 5 Q      &kp W         &kp E              &kp R           &kp T            &kp F1  &kp F2     &kp Y        &kp U           &iI               &kp O         &lttp 6 P
-&hrml LCTRL A  &hrml LGUI S  &hrml LALT D       &hrml LSHIFT F  &hrml GLOBE G    &kp F3  &kp F4     &h_bs        &hrmr RSHIFT J  &hrmr RALT K      &hrmr RGUI L  &hrsq RCTRL 0
-&kp Z          &kp X         &kp C              &kp V           &kp B            &kp F5  &kp F6     &kp N        &m_cr           &kp COMMA         &kp DOT       &kp FSLH
-&kp F7         &kp F8        &mthp LGUI RETURN  &lthp 2 LC(W)   &lthp 1 ESC      &kp F9  &kp F10    &lthp 4 ESC  &lttp 3 SPACE   &mttp RGUI COLON  &point_tog    &dis_tog
+&lttp WIN_LEFT Q  &kp W         &kp E              &kp R             &kp T                &kp F1  &kp F2     &kp Y            &kp U               &iI                 &kp O         &lttp WIN_RIGHT P
+&hrml LCTRL A     &hrml LGUI S  &hrml LALT D       &hrml LSHIFT F    &hrml GLOBE G        &kp F3  &kp F4     &h_bs            &hrmr RSHIFT J      &hrmr RALT K        &hrmr RGUI L  &hrsq RCTRL 0
+&kp Z             &kp X         &kp C              &kp V             &kp B                &kp F5  &kp F6     &kp N            &m_cr               &kp COMMA           &kp DOT       &kp FSLH
+&kp F7            &kp F8        &mthp LGUI RETURN  &lthp LNUM LC(W)  &lthp SYMBOLS ESC    &kp F9  &kp F10    &lthp MEDIA ESC  &lttp NUMPAD SPACE  &mttp MIRROR COLON  &point_tog    &dis_tog
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
@@ -90,7 +90,7 @@
         adjust {
             display-name = "adjust";
             bindings = <
-&zoom_tog  &vim_exit_all  &none   &ss_win  &to 0            &trans  &trans    &ext_power EP_TOG  &bootloader  &none     &none     &none
+&zoom_tog  &vim_exit_all  &none   &ss_win  &to DEFAULT      &trans  &trans    &ext_power EP_TOG  &bootloader  &none     &none     &none
 &zoom_in   &vim_save      &ss2c   &ss      &warpd_l         &trans  &trans    &warpd_r           &warpd_j     &warpd_k  &tmux_pw  &tmux_ps
 &zoom_out  &vim_exit      &sss2c  &sss     &out OUT_USB     &trans  &trans    &out OUT_BLE       &none        &none     &tmux_nw  &tmux_ns
 &trans     &trans         &trans  &trans   &trans           &trans  &trans    &trans             &trans       &trans    &trans    &trans
