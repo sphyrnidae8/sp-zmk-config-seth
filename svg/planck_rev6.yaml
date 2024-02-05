@@ -693,6 +693,9 @@ combos:
   a: top
   o: 0.5
   arc_scale: 1.03
+- p: [10, 22]
+  k: $$mdi:backspace-outline$$
+  l: [araxia]
 - p: [25, 26]
   k: $$mdi:apple-keyboard-command$$
   l: [araxia]

@@ -56,6 +56,9 @@
         &combo_delete {
             key-positions = <10 11>;
         };
+        &combo_backspace {
+            key-positions = <11 23>;
+        };
         &combo_gui_left {
             key-positions = <24 25>;
         };

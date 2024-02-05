@@ -1,4 +1,4 @@
-#define VER_PATCH N8
+#define VER_PATCH N9
 #define VER_MINOR N1
 #define VER_MAJOR N3
 
@@ -521,6 +521,13 @@
             slow-release;
             key-positions = <9 10>;
             bindings = <&kp DELETE>;
+            layers = <DEFAULT>;
+        };
+        combo_backspace: combo_backspace {
+            timeout-ms = <50>;
+            slow-release;
+            key-positions = <10 22>;
+            bindings = <&kp BACKSPACE>;
             layers = <DEFAULT>;
         };
         combo_gui_left: combo_gui_left {
