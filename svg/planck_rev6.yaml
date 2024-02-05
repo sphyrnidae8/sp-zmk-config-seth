@@ -491,48 +491,54 @@ layers:
   - '&warpd_l'
   - '&warpd_r'
   mirror:
-  - {t: araxia, h: toggle}
   - {t: P, h: 'move [R]'}
   - O
   - '&iI'
   - U
   - Y
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - T
   - R
   - E
   - W
   - {t: Q, h: 'move [L]'}
-  - {t: araxia, h: toggle}
-  - ''
   - {t: '&semiquote', h: '$$mdi:apple-keyboard-control$$'}
   - {t: L, h: '$$mdi:apple-keyboard-command$$'}
   - {t: K, h: '$$mdi:apple-keyboard-option$$'}
   - {t: J, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: H, s: '$$mdi:backspace-outline$$'}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: G, h: GLOBE}
   - {t: F, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: D, h: '$$mdi:apple-keyboard-option$$'}
   - {t: S, h: '$$mdi:apple-keyboard-command$$'}
   - {t: A, h: '$$mdi:apple-keyboard-control$$'}
-  - ''
-  - ''
   - /
   - .
   - ','
   - {t: M, s: ⮐}
   - N
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - B
   - V
   - C
   - X
   - Z
-  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ':', h: araxia}
   - {t: '$$mdi:keyboard-space$$', h: numpad}
   - {t: ESC, h: media}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ESC, h: symbols}
   - {t: LC(W), h: lnum}
   - {t: ⮐, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   move [L]:
   - {type: held}
   - '&forward'

@@ -69,8 +69,8 @@
             bindings = <
 &kp F1   &kp F2     &kp F3   &kp F4   &kp F5      &trans  &trans    &kp C_MUTE    &kp C_PREV    &kp C_PP      &kp C_NEXT    &kp C_BRI_UP
 &kp F6   &kp F7     &kp F8   &kp F9   &kp F10     &trans  &trans    &kp C_VOL_DN  &kp C_VOL_UP  &out OUT_TOG  &trans        &kp C_BRI_DN
-&kp F11  &kp F12    &kp F13  &kp F14  &kp F15     &trans  &trans    &trans        &trans        &trans        &trans        &trans      
-&trans   &trans     &trans   &trans   &trans      &trans  &trans    &trans        &trans        &trans        &trans        &trans      
+&kp F11  &kp F12    &kp F13  &kp F14  &kp F15     &trans  &trans    &trans        &trans        &trans        &trans        &trans
+&trans   &trans     &trans   &trans   &trans      &trans  &trans    &trans        &trans        &trans        &trans        &trans
             >;
         };
 
@@ -81,8 +81,8 @@
             bindings = <
 &kp F1   &kp F2     &kp F3   &kp F4   &kp F5      &trans  &trans    &kp C_MUTE    &kp C_PREV    &kp C_PP      &kp C_NEXT    &kp C_BRI_UP
 &kp F6   &kp F7     &kp F8   &kp F9   &kp F10     &trans  &trans    &kp C_VOL_DN  &kp C_VOL_UP  &out OUT_TOG  &trans        &kp C_BRI_DN
-&kp F11  &kp F12    &kp F13  &kp F14  &kp F15     &trans  &trans    &trans        &trans        &trans        &trans        &trans      
-&trans   &trans     &trans   &trans   &trans      &trans  &trans    &trans        &trans        &trans        &trans        &trans      
+&kp F11  &kp F12    &kp F13  &kp F14  &kp F15     &trans  &trans    &trans        &trans        &trans        &trans        &trans
+&trans   &trans     &trans   &trans   &trans      &trans  &trans    &trans        &trans        &trans        &trans        &trans
             >;
         };
 
@@ -113,7 +113,7 @@
         discord {
             display-name = "discord";
             bindings = <
-&mo WIN_LEFT  &kp TAB   &kp UP    &kp PLUS   &dis_tog     &trans  &trans    &dis_tog       &dis_prev_server      &dis_next_server       &dis_pins    &mo WIN_RIGHT      
+&mo WIN_LEFT  &kp TAB   &kp UP    &kp PLUS   &dis_tog     &trans  &trans    &dis_tog       &dis_prev_server      &dis_next_server       &dis_pins    &mo WIN_RIGHT
 &none         &kp LEFT  &kp DOWN  &kp RIGHT  &none        &trans  &trans    &kp PAGE_DOWN  &dis_down             &dis_up                &kp PAGE_UP  &kp PAGE_DOWN
 &none         &none     &none     &none      &none        &trans  &trans    &kp PAGE_UP    &dis_prev_history     &dis_next_history      &none        &dis_next_mention
 &trans        &trans    &trans    &trans     &kple ESC    &trans  &trans    &kple ESC      &trans                &trans                 &trans       &kple LG(TAB)
@@ -124,10 +124,10 @@
         pointer {
             display-name = "pointer";
             bindings = <
-&none   &mkp LCLK        &fmmv MOVE_UP    &mkp RCLK         &msc SCRL_UP      &trans  &trans    &warpd_l        &warpd_t        &warpd_r      &none            &msc SCRL_UP  
+&none   &mkp LCLK        &fmmv MOVE_UP    &mkp RCLK         &msc SCRL_UP      &trans  &trans    &warpd_l        &warpd_t        &warpd_r      &none            &msc SCRL_UP
 &none   &fmmv MOVE_LEFT  &fmmv MOVE_DOWN  &fmmv MOVE_RIGHT  &msc SCRL_DOWN    &trans  &trans    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &msc SCRL_DOWN
-&none   &warpd_l         &warpd_t         &warpd_r          &none             &trans  &trans    &mkp LCLK       &mkp RCLK       &none         &none            &none         
-&trans  &trans           &trans           &trans            &kple ESC         &trans  &trans    &kple ESC       &trans          &warpd_t      &warpd_l         &warpd_r 
+&none   &warpd_l         &warpd_t         &warpd_r          &none             &trans  &trans    &mkp LCLK       &mkp RCLK       &none         &none            &none
+&trans  &trans           &trans           &trans            &kple ESC         &trans  &trans    &kple ESC       &trans          &warpd_t      &warpd_l         &warpd_r
             >;
             sensor-bindings = <&rot_msc MOVE_X(40) MOVE_X(-40)>;
         };
@@ -136,10 +136,10 @@
         mirror {
             display-name = "mirror";
             bindings = <
- &to DEFAULT  &lttp WIN_RIGHT P  &kp O         &iI                  &kp U               &kp Y              &kp T              &kp R             &kp E              &kp W         &lttp WIN_LEFT Q  &to DEFAULT
- &none        &hrsq RCTRL 0      &hrmr RGUI L  &hrmr RALT K         &hrmr RSHIFT J      &h_bs              &hrml GLOBE G      &hrml LSHIFT F    &hrml LALT D       &hrml LGUI S  &hrml RCTRL A     &none
- &none        &kp FSLH           &kp DOT       &kp COMMA            &m_cr               &kp N              &kp B              &kp V             &kp C              &kp X         &kp Z             &none
-                                               &lthp DEFAULT COLON  &lthp NUMPAD SPACE  &lthp MEDIA ESC    &lthp SYMBOLS ESC  &lthp LNUM LC(W)  &mthp LGUI RETURN
+&lttp WIN_RIGHT P  &kp O         &iI                  &kp U               &kp Y              &trans  &trans    &kp T              &kp R             &kp E              &kp W         &lttp WIN_LEFT Q
+&hrsq RCTRL 0      &hrmr RGUI L  &hrmr RALT K         &hrmr RSHIFT J      &h_bs              &trans  &trans    &hrml GLOBE G      &hrml LSHIFT F    &hrml LALT D       &hrml LGUI S  &hrml RCTRL A
+&kp FSLH           &kp DOT       &kp COMMA            &m_cr               &kp N              &trans  &trans    &kp B              &kp V             &kp C              &kp X         &kp Z
+&trans             &trans        &lthp DEFAULT COLON  &lthp NUMPAD SPACE  &lthp MEDIA ESC    &trans  &trans    &lthp SYMBOLS ESC  &lthp LNUM LC(W)  &mthp LGUI RETURN  &trans        &trans
             >;
         };
 
@@ -158,7 +158,7 @@
         window_right {
             display-name = "move [R]";
             bindings = <
-&act Q  &act W  &act E  &act R  &act T     &trans  &trans    &tab_prev    &tab_next   &backward    &forward    &trans    
+&act Q  &act W  &act E  &act R  &act T     &trans  &trans    &tab_prev    &tab_next   &backward    &forward    &trans
 &act A  &act S  &act D  &act F  &act G     &trans  &trans    &win_full    &win_half   &win_third   &win_next   &win_quad
 &act Z  &act X  &act C  &act V  &act B     &trans  &trans    &win_screen  &win_vhalf  &win_vthird  &win_vquad  &kp C_POWER
 &trans  &trans  &trans  &trans  &trans     &trans  &trans    &trans       &trans      &trans       &trans      &trans
