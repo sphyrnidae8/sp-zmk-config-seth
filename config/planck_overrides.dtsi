@@ -98,4 +98,24 @@
             ignored-key-positions = <0 15 19 20 21 22 24 35 44>;
         };
 // }}}
+// Encoder
+/ {
+    encoder: encoder {
+        compatible = "alps,ec11";
+        steps = <80>;
+        status = "disabled";
+
+        a-gpios = <&gpiob 12 GPIO_PULL_UP>;
+        b-gpios = <&gpiob 13 GPIO_PULL_UP>;
+    };
+    sensors: sensors {
+        compatible = "zmk,keymap-sensors";
+        sensors = <&encoder>;
+        triggers-per-rotation = <20>;
+    };
+
+};
+&encoder {
+    status = "okay";
+};
 /* vim: set ft=dts: */

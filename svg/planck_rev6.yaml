@@ -37,7 +37,7 @@ layers:
   - ','
   - .
   - /
-  - F7
+  - {t: '$$mdi:play-pause$$', h: symbols}
   - F8
   - {t: ⮐, h: '$$mdi:apple-keyboard-command$$'}
   - {t: LC(W), h: lnum}
@@ -86,11 +86,11 @@ layers:
   - '['
   - ']'
   - '`'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}

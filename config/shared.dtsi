@@ -1,5 +1,5 @@
-#define VER_PATCH N9
-#define VER_MINOR N1
+#define VER_PATCH N0
+#define VER_MINOR N2
 #define VER_MAJOR N3
 
 // DEFINES {{{
@@ -795,6 +795,11 @@ SPACE FSLH COLON RETURN COMMA AMPERSAND ASTERISK TILDE BACKSLASH LESS_THAN GREAT
             #sensor-binding-cells = <2>;
             tap-ms = <75>;
             bindings = <&msc>, <&msc>;
+        };
+        rot_discord: sensor_rotate_discord {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&dis_down>, <&dis_up>;
         };
 
     };
