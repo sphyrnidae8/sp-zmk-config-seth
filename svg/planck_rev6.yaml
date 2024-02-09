@@ -699,6 +699,9 @@ combos:
   a: top
   o: 0.5
   arc_scale: 1.03
+- p: [0, 12]
+  k: $$mdi:backspace-outline$$
+  l: [araxia]
 - p: [10, 22]
   k: $$mdi:backspace-outline$$
   l: [araxia]
