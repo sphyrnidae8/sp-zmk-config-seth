@@ -1,4 +1,4 @@
-#define VER_PATCH N6
+#define VER_PATCH N7
 #define VER_MINOR N3
 #define VER_MAJOR N3
 
@@ -105,6 +105,11 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp GRAVE &kp GRAVE &kp GRAVE>;
+        };
+        uripunc: uri_punctuation {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp COLON &kp SLASH &kp SLASH>;
         };
         mouse_keys: mouse_keys {
             compatible = "zmk,behavior-macro";
@@ -842,11 +847,11 @@
             tapping-term-ms = <250>;
             bindings = <&kp I>, <&kp LS(I)>;
         };
-        semiquote: semicolon_single_quote {
+        semiquote: semicolon_single_quote_uripunc {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <250>;
-            bindings = <&kp SEMICOLON>, <&kp SINGLE_QUOTE>;
+            bindings = <&kp SEMICOLON>, <&kp SINGLE_QUOTE>, <&uripunc>;
         };
         slashtick: slash_backtick_trigrave {
             compatible = "zmk,behavior-tap-dance";
