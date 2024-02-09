@@ -1,4 +1,4 @@
-#define VER_PATCH N0
+#define VER_PATCH N1
 #define VER_MINOR N3
 #define VER_MAJOR N3
 
@@ -511,7 +511,7 @@
             layers = <DEFAULT>;
         };
         combo_version: combo_version {
-            timeout-ms = <50>;
+            timeout-ms = <25>;
             key-positions = <1 2>;
             bindings = <&version>;
             layers = <DEFAULT>;
