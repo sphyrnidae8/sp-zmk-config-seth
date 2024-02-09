@@ -1,5 +1,5 @@
 #define VER_PATCH N0
-#define VER_MINOR N2
+#define VER_MINOR N3
 #define VER_MAJOR N3
 
 // DEFINES {{{
@@ -617,6 +617,32 @@
             tapping-term-ms = <200>;
             quick-tap-ms = <150>;
             flavor = "balanced";
+            //require-prior-idle-ms = <125>;
+            hold-trigger-key-positions = < LEFT_POSITIONS >;
+            //hold-trigger-on-release; // delay positional check until key release
+            bindings =
+                <&kp>,
+                <&kp>;
+        };
+        hrsl: home_row_mods_shift_left {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <175>;
+            quick-tap-ms = <150>;
+            flavor = "tap-preferred";
+            //require-prior-idle-ms = <125>;
+            hold-trigger-key-positions = < RIGHT_POSITIONS >;
+            //hold-trigger-on-release; // delay positional check until key release
+            bindings =
+                <&kp>,
+                <&kp>;
+        };
+        hrsr: home_row_mods_shift_right {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <175>;
+            quick-tap-ms = <150>;
+            flavor = "tap-preferred";
             //require-prior-idle-ms = <125>;
             hold-trigger-key-positions = < LEFT_POSITIONS >;
             //hold-trigger-on-release; // delay positional check until key release

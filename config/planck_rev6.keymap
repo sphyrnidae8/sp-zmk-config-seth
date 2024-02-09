@@ -22,7 +22,7 @@
             display-name = "araxia";
             bindings = <
 &lttp WIN_LEFT Q    &kp W         &kp E              &kp R             &kp T                &kp F1  &kp F2     &kp Y            &kp U               &iI                 &kp O         &lttp WIN_RIGHT P
-&hrml LCTRL A       &hrml LGUI S  &hrml LALT D       &hrml LSHIFT F    &hrml GLOBE G        &kp F3  &kp F4     &h_bs            &hrmr RSHIFT J      &hrmr RALT K        &hrmr RGUI L  &hrsq RCTRL 0
+&hrml LCTRL A       &hrml LGUI S  &hrml LALT D       &hrsl LSHIFT F    &hrml GLOBE G        &kp F3  &kp F4     &h_bs            &hrsr RSHIFT J      &hrmr RALT K        &hrmr RGUI L  &hrsq RCTRL 0
 &kp Z               &kp X         &kp C              &kp V             &kp B                &kp F5  &kp F6     &kp N            &m_cr               &kp COMMA           &kp DOT       &kp FSLH
 &lttp SYMBOLS C_PP  &kp F8        &mthp LGUI RETURN  &lthp LNUM LC(W)  &lthp SYMBOLS ESC    &kp F9  &kp F10    &lthp MEDIA ESC  &lttp NUMPAD SPACE  &mttp MIRROR COLON  &point_tog    &dis_tog
             >;
@@ -141,7 +141,7 @@
             display-name = "mirror";
             bindings = <
 &lttp WIN_RIGHT P  &kp O         &iI                  &kp U               &kp Y              &trans  &trans    &kp T              &kp R             &kp E              &kp W         &lttp WIN_LEFT Q
-&hrsq RCTRL 0      &hrmr RGUI L  &hrmr RALT K         &hrmr RSHIFT J      &h_bs              &trans  &trans    &hrml GLOBE G      &hrml LSHIFT F    &hrml LALT D       &hrml LGUI S  &hrml RCTRL A
+&hrsq RCTRL 0      &hrmr RGUI L  &hrmr RALT K         &hrsr RSHIFT J      &h_bs              &trans  &trans    &hrml GLOBE G      &hrsl LSHIFT F    &hrml LALT D       &hrml LGUI S  &hrml RCTRL A
 &kp FSLH           &kp DOT       &kp COMMA            &m_cr               &kp N              &trans  &trans    &kp B              &kp V             &kp C              &kp X         &kp Z
 &trans             &trans        &lthp DEFAULT COLON  &lthp NUMPAD SPACE  &lthp MEDIA ESC    &trans  &trans    &lthp SYMBOLS ESC  &lthp LNUM LC(W)  &mthp LGUI RETURN  &trans        &trans
             >;
