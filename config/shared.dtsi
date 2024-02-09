@@ -1,4 +1,4 @@
-#define VER_PATCH N2
+#define VER_PATCH N3
 #define VER_MINOR N3
 #define VER_MAJOR N3
 
@@ -133,25 +133,57 @@
             #binding-cells = <0>;
             bindings = <&kp LC(A) &kp F>;
         };
-        tmux_ns: tmux_ns {
+        tmux_ns: tmux_next_session {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LC(A) &kp RPAR>;
         };
-        tmux_ps: tmux_ps {
+        tmux_ps: tmux_prev_session {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LC(A) &kp LPAR>;
         };
-        tmux_nw: tmux_nw {
+        tmux_nw: tmux_next_window {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LC(A) &kp N>;
         };
-        tmux_pw: tmux_pw {
+        tmux_pw: tmux_prev_window {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LC(A) &kp P>;
+        };
+        tmux_pp: tmux_prev_pane {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(A) &kp P>;
+        };
+        tmux_np: tmux_next_pane {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(A) &kp P>;
+        };
+        tmux_oz: tmux_zoom_next_pane {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&kp LC(A) &kp O>
+                , <&kp LC(A) &kp Z>
+                ;
+        };
+        tmux_sw: tmux_swap_window {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&kp LC(A) &kp LC(A)>
+                ;
+        };
+        tmux_paste: tmux_paste {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&kp LC(A) &kp RIGHT_BRACKET>
+                ;
         };
         warpd_l: warpd_left {
             compatible = "zmk,behavior-macro";

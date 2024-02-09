@@ -303,10 +303,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - EP TOG
-  - '&bootloader'
   - ''
   - ''
-  - ''
+  - '&tmux_oz'
+  - '&tmux_paste'
   - '&zoom_in'
   - '&vim_save'
   - '&ss2c'
@@ -314,11 +314,11 @@ layers:
   - '&warpd_l'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&warpd_r'
-  - '&warpd_j'
-  - '&warpd_k'
   - '&tmux_pw'
-  - '&tmux_ps'
+  - '&tmux_pp'
+  - '&tmux_np'
+  - '&tmux_sw'
+  - ''
   - '&zoom_out'
   - '&vim_exit'
   - '&sss2c'
@@ -326,11 +326,11 @@ layers:
   - $$mdi:usb$$
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - $$mdi:bluetooth$$
-  - ''
-  - ''
   - '&tmux_nw'
+  - '&tmux_ps'
   - '&tmux_ns'
+  - ''
+  - ''
   - {t: ▽, type: trans}
   - {type: held}
   - {type: held}
