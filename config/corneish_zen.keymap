@@ -29,7 +29,7 @@
             bindings = <
  &mirror_sl  &lttp WIN_LEFT Q  &kp W         &kp E              &kp R             &kp T                &kp Y            &kp U               &iI                 &kp O         &lttp WIN_RIGHT P  &mirror_sl
  &point_tog  &hrml LCTRL A     &hrml LGUI S  &hrml LALT D       &hrsl LSHIFT F    &hrml GLOBE G        &h_bs            &hrsr RSHIFT J      &hrmr RALT K        &hrmr RGUI L  &hrsq RCTRL 0      &point_tog
- &dis_tog    &kp Z             &kp X         &kp C              &kp V             &kp B                &kp N            &m_cr               &kp COMMA           &kp DOT       &kp FSLH           &dis_tog
+ &dis_tog    &kp Z             &kp X         &kp C              &kp V             &kp B                &kp N            &m_cr               &kp COMMA           &kp DOT       &slashtick         &dis_tog
                                              &mthp LGUI RETURN  &lthp LNUM LC(W)  &lthp SYMBOLS ESC    &lthp MEDIA ESC  &lttp NUMPAD SPACE  &lthp MIRROR COLON
             >;
         };
@@ -61,7 +61,7 @@
             display-name = "numpad";
             bindings = <
 &kp ASTERISK  &kp COMMA  &kp N7  &kp N8  &kp N9  &kp N0        &f2_menu     &f2_dock       &f2_status  &help_menu  &kp TAB         &f2_tool
-&kp FSLH      &kp DOT    &kp N4  &kp N5  &kp N6  &kp COLON     &kp LEFT     &kp DOWN       &kp UP      &kp RIGHT   &kp RETURN      &none
+&kp SLASH     &kp DOT    &kp N4  &kp N5  &kp N6  &kp COLON     &kp LEFT     &kp DOWN       &kp UP      &kp RIGHT   &kp RETURN      &none
 &kp PLUS      &kp EQUAL  &kp N1  &kp N2  &kp N3  &kp MINUS     &kp PAGE_UP  &kp PAGE_DOWN  &kp HOME    &kp END     &kp KP_NUMLOCK  &win_close
                                  &trans  &trans  &trans        &trans       &trans         &trans
             >;
@@ -142,7 +142,7 @@
             bindings = <
  &to DEFAULT  &lttp WIN_RIGHT P  &kp O         &iI                  &kp U               &kp Y              &kp T              &kp R             &kp E              &kp W         &lttp WIN_LEFT Q  &to DEFAULT
  &none        &hrsq RCTRL 0      &hrmr RGUI L  &hrmr RALT K         &hrsr RSHIFT J      &h_bs              &hrml GLOBE G      &hrsl LSHIFT F    &hrml LALT D       &hrml LGUI S  &hrml RCTRL A     &none
- &none        &kp FSLH           &kp DOT       &kp COMMA            &m_cr               &kp N              &kp B              &kp V             &kp C              &kp X         &kp Z             &none
+ &none        &slashtick         &kp DOT       &kp COMMA            &m_cr               &kp N              &kp B              &kp V             &kp C              &kp X         &kp Z             &none
                                                &lthp DEFAULT COLON  &lthp NUMPAD SPACE  &lthp MEDIA ESC    &lthp SYMBOLS ESC  &lthp LNUM LC(W)  &mthp LGUI RETURN
             >;
         };

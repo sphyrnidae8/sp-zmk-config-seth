@@ -1,4 +1,4 @@
-#define VER_PATCH N5
+#define VER_PATCH N6
 #define VER_MINOR N3
 #define VER_MAJOR N3
 
@@ -848,11 +848,17 @@
             tapping-term-ms = <250>;
             bindings = <&kp SEMICOLON>, <&kp SINGLE_QUOTE>;
         };
+        slashtick: slash_backtick_trigrave {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings = <&kp SLASH>, <&kp GRAVE>, <&trigrave>;
+        };
         caps_lock: caps_lock {
             compatible = "zmk,behavior-caps-word";
             #binding-cells = <0>;
             continue-list = <
-SPACE FSLH COLON RETURN COMMA AMPERSAND ASTERISK TILDE BACKSLASH LESS_THAN GREATER_THAN LEFT_PARENTHESIS RIGHT_PARENTHESIS DOUBLE_QUOTES DOT DOLLAR PERCENT CARET TAB MINUS EQUAL LEFT_BRACE RIGHT_BRACE SINGLE_QUOTE EXCLAMATION AT POUND PIPE UNDERSCORE PLUS LEFT_BRACKET RIGHT_BRACKET GRAVE
+SPACE SLASH COLON RETURN COMMA AMPERSAND ASTERISK TILDE BACKSLASH LESS_THAN GREATER_THAN LEFT_PARENTHESIS RIGHT_PARENTHESIS DOUBLE_QUOTES DOT DOLLAR PERCENT CARET TAB MINUS EQUAL LEFT_BRACE RIGHT_BRACE SINGLE_QUOTE EXCLAMATION AT POUND PIPE UNDERSCORE PLUS LEFT_BRACKET RIGHT_BRACKET GRAVE
             >;
         };
         rot_mmv: sensor_rotate_mmv {
