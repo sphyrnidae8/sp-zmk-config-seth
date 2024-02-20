@@ -185,12 +185,12 @@
         tmux_pp: tmux_prev_pane {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(A) &kp P>;
+            bindings = <&kp LC(A) &kp O>;
         };
         tmux_np: tmux_next_pane {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(A) &kp P>;
+            bindings = <&kp LC(A) &kp SEMICOLON>;
         };
         tmux_oz: tmux_zoom_next_pane {
             compatible = "zmk,behavior-macro";
