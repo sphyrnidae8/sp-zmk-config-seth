@@ -36,7 +36,7 @@ layers:
   - {t: M, s: ⮐}
   - ','
   - .
-  - /
+  - '&slashtick'
   - {t: '$$mdi:play-pause$$', h: symbols}
   - F8
   - {t: ⮐, h: '$$mdi:apple-keyboard-command$$'}
@@ -515,7 +515,7 @@ layers:
   - {t: D, h: '$$mdi:apple-keyboard-option$$'}
   - {t: S, h: '$$mdi:apple-keyboard-command$$'}
   - {t: A, h: '$$mdi:apple-keyboard-control$$'}
-  - /
+  - '&slashtick'
   - .
   - ','
   - {t: M, s: ⮐}
@@ -699,7 +699,7 @@ combos:
   a: top
   o: 0.5
   arc_scale: 1.03
-- p: [0, 12]
+- p: [1, 13]
   k: $$mdi:backspace-outline$$
   l: [araxia]
 - p: [10, 22]

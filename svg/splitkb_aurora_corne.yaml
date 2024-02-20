@@ -35,7 +35,7 @@ layers:
   - {t: M, s: ⮐}
   - ','
   - .
-  - /
+  - '&slashtick'
   - '&dis_tog'
   - {t: ⮐, h: '$$mdi:apple-keyboard-command$$'}
   - {t: LC(W), h: lnum}
@@ -268,8 +268,8 @@ layers:
   - EP TOG
   - ''
   - ''
-  - ''
-  - ''
+  - '&tmux_oz'
+  - '&tmux_paste'
   - ''
   - '&tab_tog'
   - '&zoom_in'
@@ -277,11 +277,11 @@ layers:
   - '&ss2c'
   - '&ss'
   - '&warpd_l'
-  - '&warpd_r'
-  - '&warpd_j'
-  - '&warpd_k'
   - '&tmux_pw'
-  - '&tmux_ps'
+  - '&tmux_pp'
+  - '&tmux_np'
+  - '&tmux_sw'
+  - ''
   - ''
   - '&zoom_tog'
   - '&zoom_out'
@@ -289,11 +289,11 @@ layers:
   - '&sss2c'
   - '&sss'
   - $$mdi:usb$$
-  - $$mdi:bluetooth$$
-  - ''
-  - ''
   - '&tmux_nw'
+  - '&tmux_ps'
   - '&tmux_ns'
+  - ''
+  - ''
   - ''
   - ''
   - {type: held}
@@ -456,7 +456,7 @@ layers:
   - {t: A, h: '$$mdi:apple-keyboard-control$$'}
   - ''
   - ''
-  - /
+  - '&slashtick'
   - .
   - ','
   - {t: M, s: ⮐}
@@ -621,7 +621,7 @@ combos:
   a: top
   o: 0.5
   arc_scale: 1.03
-- p: [0, 12]
+- p: [1, 13]
   k: $$mdi:backspace-outline$$
   l: [araxia]
 - p: [10, 22]
