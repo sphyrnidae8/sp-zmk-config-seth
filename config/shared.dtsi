@@ -887,19 +887,19 @@
 SPACE SLASH COLON RETURN COMMA AMPERSAND ASTERISK TILDE BACKSLASH LESS_THAN GREATER_THAN LEFT_PARENTHESIS RIGHT_PARENTHESIS DOUBLE_QUOTES DOT DOLLAR PERCENT CARET TAB MINUS EQUAL LEFT_BRACE RIGHT_BRACE SINGLE_QUOTE EXCLAMATION AT POUND PIPE UNDERSCORE PLUS LEFT_BRACKET RIGHT_BRACKET GRAVE
             >;
         };
-        rot_mmv: sensor_rotate_mmv {
+        /omit-if-no-ref/ rot_mmv: sensor_rotate_mmv {
             compatible = "zmk,behavior-sensor-rotate-var";
             #sensor-binding-cells = <2>;
             tap-ms = <75>;
             bindings = <&fmmv>, <&fmmv>;
         };
-        rot_msc: sensor_rotate_msc {
+        /omit-if-no-ref/ rot_msc: sensor_rotate_msc {
             compatible = "zmk,behavior-sensor-rotate-var";
             #sensor-binding-cells = <2>;
             tap-ms = <75>;
             bindings = <&msc>, <&msc>;
         };
-        rot_discord: sensor_rotate_discord {
+        /omit-if-no-ref/ rot_discord: sensor_rotate_discord {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
             bindings = <&dis_down>, <&dis_up>;
