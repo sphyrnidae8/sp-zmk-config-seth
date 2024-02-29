@@ -203,11 +203,11 @@ layers:
   - F13
   - F14
   - F15
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - {t: '$$mdi:numeric-0$$', h: '$$mdi:bluetooth$$'}
+  - {t: '$$mdi:numeric-1$$', h: '$$mdi:bluetooth$$'}
+  - {t: '$$mdi:numeric-2$$', h: '$$mdi:bluetooth$$'}
+  - {t: '$$mdi:numeric-3$$', h: '$$mdi:bluetooth$$'}
+  - {t: '$$mdi:numeric-4$$', h: '$$mdi:bluetooth$$'}
   - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -215,7 +215,7 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  bluetooth:
+  output:
   - ''
   - ''
   - ''
@@ -229,11 +229,11 @@ layers:
   - {t: BT DISC, h: '4'}
   - '&bootloader'
   - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - {t: '$$mdi:numeric-0$$', h: '$$mdi:bluetooth$$'}
+  - {t: '$$mdi:numeric-1$$', h: '$$mdi:bluetooth$$'}
+  - {t: '$$mdi:numeric-2$$', h: '$$mdi:bluetooth$$'}
+  - {t: '$$mdi:numeric-3$$', h: '$$mdi:bluetooth$$'}
+  - {t: '$$mdi:numeric-4$$', h: '$$mdi:bluetooth$$'}
   - {t: '$$mdi:numeric-0$$', h: '$$mdi:bluetooth$$'}
   - {t: '$$mdi:numeric-1$$', h: '$$mdi:bluetooth$$'}
   - {t: '$$mdi:numeric-2$$', h: '$$mdi:bluetooth$$'}
@@ -573,7 +573,7 @@ combos:
   k: ⮐
   l: [araxia]
 - p: [39, 40]
-  k: {t: ⮐, h: bluetooth}
+  k: {t: ⮐, h: output}
   l: [araxia]
 - p: [17, 29]
   k: $$mdi:keyboard-tab$$

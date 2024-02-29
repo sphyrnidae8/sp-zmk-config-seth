@@ -1,5 +1,5 @@
-#define VER_PATCH N9
-#define VER_MINOR N3
+#define VER_PATCH N0
+#define VER_MINOR N4
 #define VER_MAJOR N3
 
 // DEFINES {{{
@@ -22,7 +22,7 @@
 #define LNUM      2
 #define NUMPAD    3
 #define MEDIA     4
-#define BLUETOOTH 5
+#define OUTPUT 5
 #define ADJUST    6
 #define LIGHTING  7
 #define DISCORD   8
@@ -514,7 +514,7 @@
         combo_return_right_thumbs: combo_return_right_thumbs {
             timeout-ms = <VERT_COMBO_MS>;
             key-positions = <39 40>;
-            bindings = <&lthp BLUETOOTH RETURN>;
+            bindings = <&lthp OUTPUT RETURN>;
             layers = <DEFAULT>;
         };
         combo_tab_left: combo_tab_left {
