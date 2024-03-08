@@ -285,12 +285,12 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -332,10 +332,10 @@ layers:
   - ''
   - ''
   - {t: ▽, type: trans}
-  - {type: held}
-  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {type: held}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -344,8 +344,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   lighting:
-  - ''
   - {type: held}
+  - ''
   - RGB BRI
   - RGB BRD
   - RGB COLOR HSB(25,100,0)
@@ -354,8 +354,8 @@ layers:
   - '&glo C'
   - '&glo N'
   - F18
-  - {t: F17, type: held}
-  - F16
+  - F17
+  - {t: F16, type: held}
   - ''
   - ''
   - RGB SAI
@@ -638,116 +638,116 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
 combos:
-- p: [5, 17]
-  k: ⮐
-  l: [araxia]
-- p: [37, 38]
-  k: {t: ⮐, h: adjust}
-  l: [araxia]
-- p: [38, 39]
-  k: {t: '$$mdi:keyboard-tab$$', h: adjust}
-  l: [araxia]
-- p: [6, 18]
+- p: [4, 16]
   k: ⮐
   l: [araxia]
 - p: [39, 40]
+  k: {t: ⮐, h: adjust}
+  l: [araxia]
+- p: [40, 43]
+  k: {t: '$$mdi:keyboard-tab$$', h: adjust}
+  l: [araxia]
+- p: [7, 19]
+  k: ⮐
+  l: [araxia]
+- p: [43, 44]
   k: {t: ⮐, h: bluetooth}
   l: [araxia]
-- p: [17, 29]
+- p: [16, 28]
   k: $$mdi:keyboard-tab$$
   l: [araxia]
-- p: [18, 30]
+- p: [19, 31]
   k: $$mdi:keyboard-tab$$
   l: [araxia]
-- p: [1, 38]
+- p: [0, 40]
   k: move [R]
   l: [araxia]
   a: right
   arc_scale: 1.03
-- p: [10, 39]
+- p: [11, 43]
   k: move [L]
   l: [araxia]
   a: left
   arc_scale: 1.03
-- p: [7, 8, 9]
+- p: [8, 9, 10]
   k: tmux prefix
   l: [araxia]
   a: top
   o: 0.25
   arc_scale: 1.03
-- p: [2, 3, 4]
+- p: [1, 2, 3]
   k: '&tmux_mode_select'
   l: [araxia]
   a: top
   o: 0.25
   arc_scale: 1.03
-- p: [16, 19]
+- p: [15, 20]
   k: '&capsy'
   l: [araxia]
-- p: [13, 22]
+- p: [12, 23]
   k: '&shifty'
   l: [araxia]
-- p: [1, 2]
+- p: [0, 1]
   k: '&version'
   l: [araxia]
   a: top
   o: 0.5
   arc_scale: 1.03
-- p: [9, 10]
+- p: [10, 11]
   k: $$mdi:backspace-reverse-outline$$
   l: [araxia]
   a: top
   o: 0.5
   arc_scale: 1.03
-- p: [1, 13]
+- p: [0, 12]
   k: $$mdi:backspace-outline$$
   l: [araxia]
-- p: [10, 22]
+- p: [11, 23]
   k: $$mdi:backspace-outline$$
   l: [araxia]
-- p: [25, 26]
+- p: [24, 25]
   k: $$mdi:apple-keyboard-command$$
   l: [araxia]
   a: bottom
   o: 0.5
   arc_scale: 1.03
-- p: [13, 25]
+- p: [12, 24]
   k: $$mdi:apple-keyboard-option$$
   l: [araxia]
   a: left
   o: 0.5
   arc_scale: 1.03
-- p: [33, 34]
+- p: [34, 35]
   k: $$mdi:apple-keyboard-command$$
   l: [araxia]
   a: bottom
   o: 0.5
   arc_scale: 1.03
-- p: [22, 34]
+- p: [23, 35]
   k: $$mdi:apple-keyboard-option$$
   l: [araxia]
   a: right
   o: 0.5
   arc_scale: 1.03
-- p: [16, 25]
+- p: [15, 24]
   k: {t: '&kple LG(TAB)', h: '&swap'}
   l: [araxia, discord, pointer, mirror]
   a: top
   o: 1.05
   arc_scale: 1.055
-- p: [19, 34]
+- p: [19, 35]
   k: {t: '&kple LG(TAB)', h: '&swap'}
   l: [araxia, discord, pointer, mirror]
   a: top
   o: 1.05
   arc_scale: 1.055
-- p: [25, 28]
+- p: [24, 27]
   k: {t: '&kple LA(TAB)', h: '&winswap'}
   l: [araxia, discord, pointer, mirror]
-- p: [31, 34]
+- p: [32, 35]
   k: {t: '&kple LA(TAB)', h: '&winswap'}
   l: [araxia, discord, pointer, mirror]
-- p: [1, 10]
+- p: [0, 11]
   k: lighting
   l: [araxia]
   a: top
