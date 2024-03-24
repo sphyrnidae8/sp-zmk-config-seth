@@ -20,7 +20,7 @@ jobs:
       keymap_patterns: "config/*.keymap"             # path to the keymaps to parse
       config_path: "keymap_drawer.config.yaml"       # config file, ignored if not exists
       output_folder: "svg"                           # path to save produced SVGs
-      install_branch: "hack"                           # branch to use
+      install_branch: "hack"                         # branch to use
       amend_commit: true                             # amend generated files to commit that produces them
       parse_args: ""                                 # map of extra args to pass to `keymap parse`, e.g. "corne:'-l Def Lwr Rse' cradio:''"
       draw_args: "corneish_zen:'-k corne_rotated'"   # map of extra args to pass to `keymap draw`, e.g. "corne:'-k corne_rotated' cradio:'-k paroxysm'"
