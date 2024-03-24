@@ -14,14 +14,15 @@ on:
 
 jobs:
   draw:
-    # uses: caksoylar/keymap-drawer/.github/workflows/draw-zmk.yml@main
-    uses: SethMilliken/keymap-drawer/.github/workflows/draw-zmk.yml@main
+    uses: caksoylar/keymap-drawer/.github/workflows/draw-zmk.yml@main
+    # uses: SethMilliken/keymap-drawer/.github/workflows/draw-zmk.yml@main
     with:
-      keymap_patterns: "config/*.keymap"             # path to the keymaps to parse
-      config_path: "keymap_drawer.config.yaml"       # config file, ignored if not exists
-      output_folder: "svg"                           # path to save produced SVGs
-      install_branch: "hack"                         # branch to use
-      amend_commit: true                             # amend generated files to commit that produces them
-      parse_args: ""                                 # map of extra args to pass to `keymap parse`, e.g. "corne:'-l Def Lwr Rse' cradio:''"
-      draw_args: "corneish_zen:'-k corne_rotated'"   # map of extra args to pass to `keymap draw`, e.g. "corne:'-k corne_rotated' cradio:'-k paroxysm'"
+      keymap_patterns: "config/*.keymap"                                  # path to the keymaps to parse
+      config_path: "keymap_drawer.config.yaml"                            # config file, ignored if not exists
+      output_folder: "svg"                                                # path to save produced SVGs
+      #install_repo: "https://github.com/SethMilliken/keymap-drawer.git"  # repo to use (typically should match "uses" property above)
+      install_branch: "main"                                              # branch to use
+      amend_commit: true                                                  # amend generated files to commit that produces them
+      parse_args: ""                                                      # map of extra args to pass to `keymap parse`, e.g. "corne:'-l Def Lwr Rse' cradio:''"
+      draw_args: "corneish_zen:'-k corne_rotated'"                        # map of extra args to pass to `keymap draw`, e.g. "corne:'-k corne_rotated' cradio:'-k paroxysm'"
       fail_on_error: true
