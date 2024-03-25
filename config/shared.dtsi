@@ -22,7 +22,7 @@
 #define LNUM      2
 #define NUMPAD    3
 #define MEDIA     4
-#define OUTPUT 5
+#define OUTPUT    5
 #define ADJUST    6
 #define LIGHTING  7
 #define DISCORD   8
