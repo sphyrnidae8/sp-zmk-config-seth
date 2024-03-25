@@ -17,17 +17,95 @@ draw_config:
   append_colon_to_layer_header: true
   small_pad: 2.0
   svg_extra_style: |
-    /* color accent for held keys */
+    /* For default sytles, see https://github.com/caksoylar/keymap-drawer/blob/main/keymap_drawer/config.py#L85 */
+
+    svg.keymap {
+      font-family: Ubuntu Mono, Inconsolata, Consolas, Liberation Mono, Menlo, monospace;
+      font-size: 12px;
+      font-weight: bold;
+      text-rendering: optimizeLegibility;
+    }
+
+    /* Color accent for held keys */
     rect.held, rect.combo.held {
         fill: #ffc;
     }
+
+    /* Technique borrowed and extended from https://github.com/englmaxi/zmk-config/blob/master/keymap-drawer/config.yaml */
+    .sym_sub_text.tap {
+      translate: -5px 2px;
+      font-size: 20px;
+    }
+    .sym_sub_text.shifted {
+      translate: 10px 13px;
+      font-size: 10px;
+      opacity: 1.0;
+    }
+    .combo.sym_sub_text.tap {
+      translate: -1px 1px;
+    }
+    .combo.sym_sub_text.shifted {
+      translate: 7px 5px;
+      font-size: 10px;
+      opacity: 1.0;
+    }
+
+    /* Toggle */
+    .toggle.shifted {
+      translate: -8px 15px;
+      font-size: 17px;
+      opacity: 1.0;
+    }
+    .toggle.hold {
+      font-size: 14px;
+      translate: 15px -25px;
+    }
+
+    /* Variant for tap-dances */
+    .tap_dance.tap {
+      translate: -7px 0px;
+      font-size: 12px;
+    }
+    .tap_dance.shifted {
+      translate: 7px 17px;
+      font-size: 12px;
+      opacity: 1.0;
+    }
+
+    /* Variant for symbol next to symbol */
+    .sym_by_sym.tap {
+      translate: -6px 0px;
+    }
+    .sym_by_sym.shifted {
+      translate: 10px 12px;
+      opacity: 1.0;
+    }
+
+    .combo.sym_by_sym.tap {
+      translate: -35px 0px;
+    }
+    .combo.sym_by_sym.shifted {
+      translate: 35px 20px;
+      opacity: 1.0;
+    }
+
+    .combo.sym_by_sym.hold {
+      visibility: hidden;
+    }
+
+    /* hide hold box for combo sym_by_sym */
+    .combo.sym_by_sym.hold > path[stroke="none"][fill="none"] {
+      visibility: hidden;
+    }
+
   shrink_wide_legends: 6
-  glyph_tap_size: 13
-  glyph_hold_size: 12
-  glyph_shifted_size: 10
+  glyph_tap_size: 18
+  glyph_hold_size: 11
+  glyph_shifted_size: 15
   glyphs: {}
   glyph_urls:
     tabler: https://unpkg.com/@tabler/icons/icons/outline/{}.svg
+    tablerf: https://unpkg.com/@tabler/icons/icons/filled/{}.svg
     mdi: https://raw.githubusercontent.com/Templarian/MaterialDesign-SVG/master/svg/{}.svg
     mdil: https://raw.githubusercontent.com/Pictogrammers/MaterialDesignLight/master/svg/{}.svg
     material: https://fonts.gstatic.com/s/i/short-term/release/materialsymbolsoutlined/{}/default/48px.svg
@@ -36,6 +114,7 @@ parse_config:
   preprocess: true
   skip_binding_parsing: false
   sticky_label: sticky
+  toggle_label: $$mdi:toggle-switch$$
   trans_legend:
     t: ▽
     type: trans
@@ -171,6 +250,12 @@ parse_config:
     NON_US_HASH: '#'
     NUHS: '#'
     TILDE2: '~'
+    PAGE_UP: 'PgUp'
+    PAGE_DOWN: 'PgDn'
+    HOME: 'Home'
+    END: 'End'
+    ESC: 'Esc'
+    GLOBE: $$tabler:world$$
     SPACE: $$mdi:keyboard-space$$
     BACKSPACE: $$mdi:backspace-outline$$
     DELETE: $$mdi:backspace-reverse-outline$$
@@ -180,8 +265,6 @@ parse_config:
     C_MUTE: $$mdi:volume-mute$$
     C_VOL_UP: $$mdi:volume-plus$$
     C_VOL_DN: $$mdi:volume-minus$$
-    #C_BRI_UP: $$mdi:weather-sunset-up$$
-    #C_BRI_DN: $$mdi:weather-sunset-down$$
     C_BRI_UP: $$tabler:brightness-up$$
     C_BRI_DN: $$tabler:brightness-down$$
     C_POWER: $$mdi:power$$
@@ -213,34 +296,300 @@ parse_config:
     LEFT_CONTROL: $$mdi:apple-keyboard-control$$
     LC(A): 'tmux prefix'
   raw_binding_map:
-    '&caps_word': 'CAPS WORD'
     '&act COLON': '&act :'
     '&act QUESTION': '&act ?'
     '&act LESS_THAN': '&act <'
     '&act GREATER_THAN': '&act >'
     '&bt BT_CLR': '$$mdi:bluetooth-off$$'
+    '&capsy': 'capsy'
+    '&dis_tog':     '$$tablerf:brand-discord$$'
+    '&combo_swap_left':
+      tap: $$mdi:arrow-decision-outline$$
+      shifted: $$mdi:apple$$
+      type: sym_by_sym
+    '&combo_swap_right':
+      tap: $$mdi:arrow-decision-outline$$
+      shifted: $$mdi:apple$$
+      type: sym_by_sym
+    '&kple LG(TAB)': $$mdi:arrow-decision-outline$$
+    '&kple LA(TAB)': $$mdi:arrow-decision-outline$$
+    #'&kple LG(TAB)':
+    #  tap: $$mdi:arrow-decision-outline$$
+    #  shifted: $$mdi:apple$$
+    #  type: sym_by_sym
+    #'&kple LA(TAB)':
+    #  tap: $$mdi:arrow-decision-outline$$
+    #  shifted: $$mdi:microsoft-windows$$
+    #  type: sym_by_sym
+    #'&winswap': $$mdi:microsoft-windows$$
+    #'&swap': $$mdi:apple$$
     '&out OUT_BLE': '$$mdi:bluetooth$$'
     '&out OUT_USB': '$$mdi:usb$$'
-    '&bt BT_SEL 0': {h: $$mdi:bluetooth$$ , t: $$mdi:numeric-0$$}
-    '&bt BT_SEL 1': {h: $$mdi:bluetooth$$ , t: $$mdi:numeric-1$$}
-    '&bt BT_SEL 2': {h: $$mdi:bluetooth$$ , t: $$mdi:numeric-2$$}
-    '&bt BT_SEL 3': {h: $$mdi:bluetooth$$ , t: $$mdi:numeric-3$$}
-    '&bt BT_SEL 4': {h: $$mdi:bluetooth$$ , t: $$mdi:numeric-4$$}
-    '&bt BT_PRV':   {h: $$mdi:bluetooth$$ , t: $$mdi:skip-previous$$}
-    '&bt BT_NXT':   {h: $$mdi:bluetooth$$ , t: $$mdi:skip-next$$}
+    '&out OUT_TOG':
+      tap: $$mdi:toggle-switch$$
+      hold: $$mdi:bluetooth$$
+      shifted: $$mdi:usb$$
+      type: toggle
+    '&mkp LCLK': $$mdi:cursor-default-click$$
+    '&mkp RCLK': $$mdi:cursor-default-click-outline$$
+    '&point_tog': '$$tablerf:pointer$$'
+    '&mirror_sl': '$$tabler:arrows-left-right$$'
+    '&kp KP_NUMLOCK':
+      tap: $$mdi:numeric$$
+      shifted: $$mdi:lock$$
+      type: sym_by_sym
+    '&trigrave': '```'
+    '&semiquote':
+      tap:     ";"
+      shifted: ''''
+      type:    tap_dance
+    '&slashtick':
+      tap:     "/"
+      shifted: "'"
+      type:    tap_dance
+    '&shifty': 'shifty'
+    '&tmux_mode_select': 'tmux app'
+    '&version': 'config version'
+    '&ext_power EP_TOG':
+      tap: $$tabler:bolt$$
+      shifted: $$mdi:toggle-switch$$
+      type: sym_by_sym
+    '&bt BT_CLR':
+      tap: $$mdi:bluetooth$$
+      shifted: $$mdi:close-thick$$
+      type: sym_sub_text
+    '&bt BT_CLR_ALL':
+      tap: $$mdi:bluetooth$$
+      shifted: $$mdi:close-thick$$
+      hold: "all"
+      type: sym_sub_text
+    '&bt BT_SEL 0':
+      tap: $$mdi:bluetooth-connect$$
+      shifted: '0'
+      type: sym_sub_text
+    '&bt BT_SEL 1':
+      tap: $$mdi:bluetooth-connect$$
+      shifted: '1'
+      type: sym_sub_text
+    '&bt BT_SEL 2':
+      tap: $$mdi:bluetooth-connect$$
+      shifted: '2'
+      type: sym_sub_text
+    '&bt BT_SEL 3':
+      tap: $$mdi:bluetooth-connect$$
+      shifted: '3'
+      type: sym_sub_text
+    '&bt BT_SEL 4':
+      tap: $$mdi:bluetooth-connect$$
+      shifted: '4'
+      type: sym_sub_text
+    '&bt BT_DISC 0':
+      tap: $$mdi:bluetooth-off$$
+      shifted: '0'
+      type: sym_sub_text
+    '&bt BT_DISC 1':
+      tap: $$mdi:bluetooth-off$$
+      shifted: '1'
+      type: sym_sub_text
+    '&bt BT_DISC 2':
+      tap: $$mdi:bluetooth-off$$
+      shifted: '2'
+      type: sym_sub_text
+    '&bt BT_DISC 3':
+      tap: $$mdi:bluetooth-off$$
+      shifted: '3'
+      type: sym_sub_text
+    '&bt BT_DISC 4':
+      tap: $$mdi:bluetooth-off$$
+      shifted: '4'
+      type: sym_sub_text
+    '&bt BT_PRV':
+      tap: $$mdi:bluetooth$$
+      shifted: $$mdi:skip-previous$$
+      type: sym_sub_text
+    '&bt BT_NXT':
+      tap: $$mdi:bluetooth$$
+      shifted: $$mdi:skip-next$$
+      type: sym_sub_text
+    '&dis_down':
+      tap:     '$$tablerf:brand-discord$$'
+      shifted: $$mdi:arrow-down$$
+      type:    sym_by_sym
+    '&dis_up':
+      tap:     '$$tablerf:brand-discord$$'
+      shifted: $$mdi:arrow-up$$
+      type:    sym_by_sym
+    '&dis_next_server':
+      tap:     '$$tablerf:brand-discord$$'
+      shifted: $$tabler:world-down$$
+      type:    sym_by_sym
+    '&dis_prev_server':
+      tap:     '$$tablerf:brand-discord$$'
+      shifted: $$tabler:world-up$$
+      type:    sym_by_sym
+    '&dis_next_chan':
+      tap:     '$$tablerf:brand-discord$$'
+      shifted: $$tabler:row-insert-top$$
+      type:    sym_by_sym
+    '&dis_prev_chan':
+      tap:     '$$tablerf:brand-discord$$'
+      shifted: $$tabler:row-insert-bottom$$
+      type:    sym_by_sym
+    '&dis_next_history':
+      tap:     '$$tablerf:brand-discord$$'
+      shifted: $$tabler:corner-down-right-double$$
+      type:    sym_by_sym
+    '&dis_prev_history':
+      tap:     '$$tablerf:brand-discord$$'
+      shifted: $$tabler:corner-up-left-double$$
+      type:    sym_by_sym
+    '&dis_next_mention':
+      tap:     '$$tablerf:brand-discord$$'
+      shifted: $$tabler:at$$
+      type:    sym_by_sym
+    '&dis_pins':
+      tap:     '$$tablerf:brand-discord$$'
+      shifted: $$tabler:pinned$$
+      type:    sym_by_sym
+    '&dis_section_nav':
+      tap:     '$$tablerf:brand-discord$$'
+      shifted: $$tabler:section-sign$$
+      type:    sym_by_sym
+    '&msc SCRL_UP': '$$mdi:mouse-move-up$$'
+    '&msc SCRL_DOWN': '$$mdi:mouse-move-down$$'
+    '&mmv MOVE_LEFT':
+      tap:     $$mdi:tortoise$$
+      shifted: $$mdi:arrow-left$$
+      type:    sym_by_sym
+    '&mmv MOVE_RIGHT':
+      tap:     $$mdi:tortoise$$
+      shifted: $$mdi:arrow-right$$
+      type:    sym_by_sym
+    '&mmv MOVE_UP':
+      tap:     $$mdi:tortoise$$
+      shifted: $$mdi:arrow-up$$
+      type:    sym_by_sym
+    '&mmv MOVE_DOWN':
+      tap:     $$mdi:tortoise$$
+      shifted: $$mdi:arrow-down$$
+      type:    sym_by_sym
+    '&fmmv MOVE_LEFT':
+      tap:     $$mdi:mouse$$
+      shifted: $$mdi:arrow-left$$
+      type:    sym_by_sym
+    '&fmmv MOVE_RIGHT':
+      tap:     $$mdi:mouse$$
+      shifted: $$mdi:arrow-right$$
+      type:    sym_by_sym
+    '&fmmv MOVE_UP':
+      tap:     $$mdi:mouse$$
+      shifted: $$mdi:arrow-up$$
+      type:    sym_by_sym
+    '&fmmv MOVE_DOWN':
+      tap:     $$mdi:mouse$$
+      shifted: $$mdi:arrow-down$$
+      type:    sym_by_sym
+    '&kp LC(W)':
+      tap:     $$mdi:apple-keyboard-control$$
+      shifted: "W"
+      type:    sym_sub_text
+    '&f2_menu':
+      tap:     $$tabler:focus-2$$
+      shifted: $$mdi:menu$$
+      type:    sym_by_sym
+    '&f2_dock':
+      tap:     $$tabler:focus-2$$
+      shifted: $$mdi:dock-bottom$$
+      type:    sym_by_sym
+    '&f2_status':
+      tap:     $$tabler:focus-2$$
+      shifted: $$mdi:list-status$$
+      type:    sym_by_sym
+    '&f2_tool':
+      tap:     $$tabler:focus-2$$
+      shifted: $$mdi:tools$$
+      type:    sym_by_sym
+    '&help_menu':
+      tap:     $$mdi:help-circle-outline$$
+      shifted: $$mdi:menu$$
+      type:    sym_by_sym
+    '&win_close':
+      tap:     $$mdi:curtains$$
+      shifted: $$mdi:window-close$$
+      type:    sym_sub_text
+    '&kple ESC':
+      tap:     $$mdi:keyboard-esc$$
+      shifted: $$mdi:layers-triple$$
+      type:    sym_by_sym
+    '&warpd_l':
+      tap:     $$mdi:star-shooting-outline$$
+      shifted: $$mdi:arrow-top-left-thick$$
+      type:    sym_by_sym
+    '&warpd_r':
+      tap:     $$mdi:star-shooting-outline$$
+      shifted: $$mdi:arrow-top-right-thick$$
+      type:    sym_by_sym
+    '&warpd_t':
+      tap:     $$mdi:star-shooting-outline$$
+      shifted: $$mdi:arrow-up-thick$$
+      type:    sym_by_sym
+    '&win_screen':
+      tap:     $$mdi:numeric-1-box-multiple-outline$$
+      shifted: $$mdi:fullscreen$$
+      type:    sym_by_sym
+    '&win_full':
+      tap:     $$mdi:numeric-1-box-multiple-outline$$
+      shifted: $$mdi:overscan$$
+      type:    sym_by_sym
+    '&win_half':
+      tap:     $$mdi:numeric-2-box-multiple-outline$$
+      shifted: $$mdi:table-arrow-down$$
+      type:    sym_by_sym
+    '&win_vhalf':
+      tap:     $$mdi:numeric-2-box-multiple-outline$$
+      shifted: $$mdi:table-arrow-right$$
+      type:    sym_by_sym
+    '&win_third':
+      tap:     $$mdi:numeric-3-box-multiple-outline$$
+      shifted: $$mdi:table-arrow-down$$
+      type:    sym_by_sym
+    '&win_vthird':
+      tap:     $$mdi:numeric-3-box-multiple-outline$$
+      shifted: $$mdi:table-arrow-right$$
+      type:    sym_by_sym
+    '&win_quad':
+      tap:     $$mdi:numeric-4-box-multiple-outline$$
+      shifted: $$mdi:table-arrow-down$$
+      type:    sym_by_sym
+    '&win_vquad':
+      tap:     $$mdi:numeric-4-box-multiple-outline$$
+      shifted: $$mdi:table-arrow-right$$
+      type:    sym_by_sym
 
   zmk_combos:
-    combo_inverse_winl:     { align: right  , o: 0.0   , arc_scale: 1.03  }
-    combo_inverse_winr:     { align: left   , o: 0.0   , arc_scale: 1.03  }
-    combo_lighting:         { align: top    , o: 1.55  , arc_scale: 1.03  }
-    combo_tmux:             { align: top    , o: 0.25  , arc_scale: 1.03  }
-    combo_tmux_mode_select: { align: top    , o: 0.25  , arc_scale: 1.03  }
-    combo_capsword:         { align: bottom , o: 2.5   , arc_scale: 1.03  }
-    combo_version:          { align: top    , o: 0.5   , arc_scale: 1.03  }
-    combo_delete:           { align: top    , o: 0.5   , arc_scale: 1.03  }
-    combo_gui_left:         { align: bottom , o: 0.5   , arc_scale: 1.03  }
-    combo_alt_left:         { align: left   , o: 0.5   , arc_scale: 1.03  }
-    combo_gui_right:        { align: bottom , o: 0.5   , arc_scale: 1.03  }
-    combo_alt_right:        { align: right  , o: 0.5   , arc_scale: 1.03  }
-    combo_swap_left:        { align: top    , o: 1.05  , arc_scale: 1.055 }
-    combo_swap_right:       { align: top    , o: 1.05  , arc_scale: 1.055 }
+    combo_lighting:               { align: top    , o: 2.12  , arc_scale: 1.03  }
+    combo_lighting_transitional:  { align: top    , o: 2.10  , arc_scale: 1.03  }
+    combo_tmux:                   { align: top    , o: 0.15  , arc_scale: 1.03  }
+    combo_tmux_mode_select:       { align: top    , o: 0.15  , arc_scale: 1.03  }
+    combo_capsword:               { align: bottom , o: 2.5   , arc_scale: 1.03  }
+    combo_version:                { align: top    , o: 0.05  , arc_scale: 1.03  }
+    combo_delete:                 { align: top    , o: 0.05  , arc_scale: 1.03  }
+    combo_alt_left:               { align: right  , o: 0.15  , arc_scale: 1.03  }
+    combo_alt_right:              { align: left   , o: 0.15  , arc_scale: 1.03  }
+    combo_gui_left:               { align: bottom , o: 0.05  , arc_scale: 1.03  }
+    combo_gui_right:              { align: bottom , o: 0.05  , arc_scale: 1.03  }
+    combo_return_left:            { align: right  , o: 0.10  , arc_scale: 1.03  }
+    combo_return_right:           { align: left   , o: 0.10  , arc_scale: 1.03  }
+    combo_tab_left:               { align: right  , o: 0.10  , arc_scale: 1.03  }
+    combo_tab_right:              { align: left   , o: 0.10  , arc_scale: 1.03  }
+    combo_backspace_left:         { align: left   , o: 0.20  , arc_scale: 1.03  }
+    combo_backspace_right:        { align: right  , o: 0.20  , arc_scale: 1.03  }
+    combo_swap_left:              { align: top    , o: 1.75  , arc_scale: 1.055 }
+    combo_swap_right:             { align: top    , o: 1.75  , arc_scale: 1.055 }
+    combo_winswap_left:           { align: bottom , o: 1.45  , arc_scale: 1.060 }
+    combo_winswap_right:          { align: bottom , o: 1.45  , arc_scale: 1.060 }
+    combo_inverse_winl:           { align: bottom , o: 0.25  , arc_scale: 1.070 }
+    combo_inverse_winr:           { align: bottom , o: 0.25  , arc_scale: 1.070 }
+    combo_shifty:                 { align: bottom , o: 3.00  , arc_scale: 1.075 }
+    combo_capsy:                  { align: top    , o: 1.85  , arc_scale: 1.075 }
+    combo_adjust_tab:             { align: top    , o: 0.05  , arc_scale: 1.055 }

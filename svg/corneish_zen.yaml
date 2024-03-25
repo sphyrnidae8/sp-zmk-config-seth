@@ -1,7 +1,7 @@
 layout: {qmk_keyboard: corne_rotated, qmk_layout: LAYOUT_split_3x6_3}
 layers:
   araxia:
-  - '&mirror_sl'
+  - $$tabler:arrows-left-right$$
   - {t: Q, h: 'move [L]'}
   - W
   - E
@@ -12,20 +12,20 @@ layers:
   - '&iI'
   - O
   - {t: P, h: 'move [R]'}
-  - '&mirror_sl'
-  - '&point_tog'
+  - $$tabler:arrows-left-right$$
+  - $$tablerf:pointer$$
   - {t: A, h: '$$mdi:apple-keyboard-control$$'}
   - {t: S, h: '$$mdi:apple-keyboard-command$$'}
   - {t: D, h: '$$mdi:apple-keyboard-option$$'}
   - {t: F, h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: G, h: GLOBE}
+  - {t: G, h: '$$tabler:world$$'}
   - {t: H, s: '$$mdi:backspace-outline$$'}
   - {t: J, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: K, h: '$$mdi:apple-keyboard-option$$'}
   - {t: L, h: '$$mdi:apple-keyboard-command$$'}
   - {t: '&semiquote', h: '$$mdi:apple-keyboard-control$$'}
-  - '&point_tog'
-  - '&dis_tog'
+  - $$tablerf:pointer$$
+  - $$tablerf:brand-discord$$
   - Z
   - X
   - C
@@ -35,12 +35,12 @@ layers:
   - {t: M, s: ⮐}
   - ','
   - .
-  - '&slashtick'
-  - '&dis_tog'
+  - {t: /, s: '''', type: tap_dance}
+  - $$tablerf:brand-discord$$
   - {t: ⮐, h: '$$mdi:apple-keyboard-command$$'}
-  - {t: LC(W), h: lnum}
-  - {t: ESC, h: symbols}
-  - {t: ESC, h: media}
+  - {t: '$$mdi:apple-keyboard-control$$', h: lnum, s: W}
+  - {t: Esc, h: symbols}
+  - {t: Esc, h: media}
   - {t: '$$mdi:keyboard-space$$', h: numpad}
   - {t: ':', h: mirror}
   symbols:
@@ -136,12 +136,12 @@ layers:
   - '8'
   - '9'
   - '0'
-  - '&f2_menu'
-  - '&f2_dock'
-  - '&f2_status'
-  - '&help_menu'
+  - {t: '$$tabler:focus-2$$', s: '$$mdi:menu$$', type: sym_by_sym}
+  - {t: '$$tabler:focus-2$$', s: '$$mdi:dock-bottom$$', type: sym_by_sym}
+  - {t: '$$tabler:focus-2$$', s: '$$mdi:list-status$$', type: sym_by_sym}
+  - {t: '$$mdi:help-circle-outline$$', s: '$$mdi:menu$$', type: sym_by_sym}
   - $$mdi:keyboard-tab$$
-  - '&f2_tool'
+  - {t: '$$tabler:focus-2$$', s: '$$mdi:tools$$', type: sym_by_sym}
   - /
   - .
   - '4'
@@ -160,12 +160,12 @@ layers:
   - '2'
   - '3'
   - '-'
-  - PAGE UP
-  - PAGE DOWN
-  - HOME
-  - END
-  - Numlock
-  - '&win_close'
+  - PgUp
+  - PgDn
+  - Home
+  - End
+  - {t: '$$mdi:numeric$$', s: '$$mdi:lock$$', type: sym_by_sym}
+  - {t: '$$mdi:curtains$$', s: '$$mdi:window-close$$', type: sym_sub_text}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -203,11 +203,11 @@ layers:
   - F13
   - F14
   - F15
-  - {t: '$$mdi:numeric-0$$', h: '$$mdi:bluetooth$$'}
-  - {t: '$$mdi:numeric-1$$', h: '$$mdi:bluetooth$$'}
-  - {t: '$$mdi:numeric-2$$', h: '$$mdi:bluetooth$$'}
-  - {t: '$$mdi:numeric-3$$', h: '$$mdi:bluetooth$$'}
-  - {t: '$$mdi:numeric-4$$', h: '$$mdi:bluetooth$$'}
+  - {t: '$$mdi:bluetooth-connect$$', s: '0', type: sym_sub_text}
+  - {t: '$$mdi:bluetooth-connect$$', s: '1', type: sym_sub_text}
+  - {t: '$$mdi:bluetooth-connect$$', s: '2', type: sym_sub_text}
+  - {t: '$$mdi:bluetooth-connect$$', s: '3', type: sym_sub_text}
+  - {t: '$$mdi:bluetooth-connect$$', s: '4', type: sym_sub_text}
   - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -222,23 +222,23 @@ layers:
   - ''
   - ''
   - ''
-  - {t: BT DISC, h: '0'}
-  - {t: BT DISC, h: '1'}
-  - {t: BT DISC, h: '2'}
-  - {t: BT DISC, h: '3'}
-  - {t: BT DISC, h: '4'}
+  - {t: '$$mdi:bluetooth-off$$', s: '0', type: sym_sub_text}
+  - {t: '$$mdi:bluetooth-off$$', s: '1', type: sym_sub_text}
+  - {t: '$$mdi:bluetooth-off$$', s: '2', type: sym_sub_text}
+  - {t: '$$mdi:bluetooth-off$$', s: '3', type: sym_sub_text}
+  - {t: '$$mdi:bluetooth-off$$', s: '4', type: sym_sub_text}
   - '&bootloader'
   - ''
-  - {t: '$$mdi:numeric-0$$', h: '$$mdi:bluetooth$$'}
-  - {t: '$$mdi:numeric-1$$', h: '$$mdi:bluetooth$$'}
-  - {t: '$$mdi:numeric-2$$', h: '$$mdi:bluetooth$$'}
-  - {t: '$$mdi:numeric-3$$', h: '$$mdi:bluetooth$$'}
-  - {t: '$$mdi:numeric-4$$', h: '$$mdi:bluetooth$$'}
-  - {t: '$$mdi:numeric-0$$', h: '$$mdi:bluetooth$$'}
-  - {t: '$$mdi:numeric-1$$', h: '$$mdi:bluetooth$$'}
-  - {t: '$$mdi:numeric-2$$', h: '$$mdi:bluetooth$$'}
-  - {t: '$$mdi:numeric-3$$', h: '$$mdi:bluetooth$$'}
-  - {t: '$$mdi:numeric-4$$', h: '$$mdi:bluetooth$$'}
+  - {t: '$$mdi:bluetooth-connect$$', s: '0', type: sym_sub_text}
+  - {t: '$$mdi:bluetooth-connect$$', s: '1', type: sym_sub_text}
+  - {t: '$$mdi:bluetooth-connect$$', s: '2', type: sym_sub_text}
+  - {t: '$$mdi:bluetooth-connect$$', s: '3', type: sym_sub_text}
+  - {t: '$$mdi:bluetooth-connect$$', s: '4', type: sym_sub_text}
+  - {t: '$$mdi:bluetooth-connect$$', s: '0', type: sym_sub_text}
+  - {t: '$$mdi:bluetooth-connect$$', s: '1', type: sym_sub_text}
+  - {t: '$$mdi:bluetooth-connect$$', s: '2', type: sym_sub_text}
+  - {t: '$$mdi:bluetooth-connect$$', s: '3', type: sym_sub_text}
+  - {t: '$$mdi:bluetooth-connect$$', s: '4', type: sym_sub_text}
   - ''
   - ''
   - ''
@@ -248,24 +248,24 @@ layers:
   - ''
   - $$mdi:usb$$
   - $$mdi:bluetooth$$
-  - {t: '$$mdi:skip-previous$$', h: '$$mdi:bluetooth$$'}
-  - {t: '$$mdi:skip-next$$', h: '$$mdi:bluetooth$$'}
-  - $$mdi:bluetooth-off$$
+  - {t: '$$mdi:bluetooth$$', s: '$$mdi:skip-previous$$', type: sym_sub_text}
+  - {t: '$$mdi:bluetooth$$', s: '$$mdi:skip-next$$', type: sym_sub_text}
+  - {t: '$$mdi:bluetooth$$', s: '$$mdi:close-thick$$', type: sym_sub_text}
   - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
   - {type: held}
-  - BT CLR ALL
+  - {t: '$$mdi:bluetooth$$', h: all, s: '$$mdi:close-thick$$', type: sym_sub_text}
   adjust:
   - '&bootloader'
   - {t: ▽, type: trans}
   - '&vim_exit_all'
   - ''
   - '&ss_win'
-  - {t: araxia, h: toggle}
-  - EP TOG
+  - {t: araxia, h: '$$mdi:toggle-switch$$'}
+  - {t: '$$tabler:bolt$$', s: '$$mdi:toggle-switch$$', type: sym_by_sym}
   - ''
   - ''
   - '&tmux_oz'
@@ -276,7 +276,7 @@ layers:
   - '&vim_save'
   - '&ss2c'
   - '&ss'
-  - '&warpd_l'
+  - {t: '$$mdi:star-shooting-outline$$', s: '$$mdi:arrow-top-left-thick$$', type: sym_by_sym}
   - '&tmux_pw'
   - '&tmux_pp'
   - '&tmux_np'
@@ -350,11 +350,11 @@ layers:
   - $$mdi:keyboard-tab$$
   - $$mdi:arrow-up$$
   - +
-  - '&dis_section_nav'
-  - '&dis_tog'
-  - '&dis_prev_server'
-  - '&dis_next_server'
-  - '&dis_pins'
+  - {t: '$$tablerf:brand-discord$$', s: '$$tabler:section-sign$$', type: sym_by_sym}
+  - $$tablerf:brand-discord$$
+  - {t: '$$tablerf:brand-discord$$', s: '$$tabler:world-up$$', type: sym_by_sym}
+  - {t: '$$tablerf:brand-discord$$', s: '$$tabler:world-down$$', type: sym_by_sym}
+  - {t: '$$tablerf:brand-discord$$', s: '$$tabler:pinned$$', type: sym_by_sym}
   - move [R]
   - ''
   - ''
@@ -363,75 +363,75 @@ layers:
   - $$mdi:arrow-down$$
   - $$mdi:arrow-right$$
   - ''
-  - PAGE DOWN
-  - '&dis_down'
-  - '&dis_up'
-  - '&dis_prev_chan'
-  - '&dis_next_chan'
+  - PgDn
+  - {t: '$$tablerf:brand-discord$$', s: '$$mdi:arrow-down$$', type: sym_by_sym}
+  - {t: '$$tablerf:brand-discord$$', s: '$$mdi:arrow-up$$', type: sym_by_sym}
+  - {t: '$$tablerf:brand-discord$$', s: '$$tabler:row-insert-bottom$$', type: sym_by_sym}
+  - {t: '$$tablerf:brand-discord$$', s: '$$tabler:row-insert-top$$', type: sym_by_sym}
   - ''
-  - '&kple LG(TAB)'
+  - $$mdi:arrow-decision-outline$$
   - ''
-  - HOME
-  - ESC
-  - END
+  - Home
+  - Esc
+  - End
   - ''
-  - PAGE UP
-  - '&dis_prev_history'
-  - '&dis_next_history'
+  - PgUp
+  - {t: '$$tablerf:brand-discord$$', s: '$$tabler:corner-up-left-double$$', type: sym_by_sym}
+  - {t: '$$tablerf:brand-discord$$', s: '$$tabler:corner-down-right-double$$', type: sym_by_sym}
   - ''
-  - '&dis_next_mention'
-  - '&kple LG(TAB)'
+  - {t: '$$tablerf:brand-discord$$', s: '$$tabler:at$$', type: sym_by_sym}
+  - $$mdi:arrow-decision-outline$$
   - ⮐
   - ''
-  - '&kple ESC'
-  - '&kple ESC'
+  - {t: '$$mdi:keyboard-esc$$', s: '$$mdi:layers-triple$$', type: sym_by_sym}
+  - {t: '$$mdi:keyboard-esc$$', s: '$$mdi:layers-triple$$', type: sym_by_sym}
   - {t: ▽, type: trans}
   - ''
   pointer:
   - ''
   - move [L]
-  - '&mkp LCLK'
-  - '&fmmv MOVE_UP'
-  - '&mkp RCLK'
-  - '&msc SCRL_UP'
-  - '&warpd_l'
-  - '&warpd_t'
-  - '&warpd_r'
+  - $$mdi:cursor-default-click$$
+  - {t: '$$mdi:mouse$$', s: '$$mdi:arrow-up$$', type: sym_by_sym}
+  - $$mdi:cursor-default-click-outline$$
+  - $$mdi:mouse-move-up$$
+  - {t: '$$mdi:star-shooting-outline$$', s: '$$mdi:arrow-top-left-thick$$', type: sym_by_sym}
+  - {t: '$$mdi:star-shooting-outline$$', s: '$$mdi:arrow-up-thick$$', type: sym_by_sym}
+  - {t: '$$mdi:star-shooting-outline$$', s: '$$mdi:arrow-top-right-thick$$', type: sym_by_sym}
   - ''
   - move [R]
-  - '&warpd_t'
+  - {t: '$$mdi:star-shooting-outline$$', s: '$$mdi:arrow-up-thick$$', type: sym_by_sym}
   - ''
   - ''
-  - '&fmmv MOVE_LEFT'
-  - '&fmmv MOVE_DOWN'
-  - '&fmmv MOVE_RIGHT'
-  - '&msc SCRL_DOWN'
-  - '&mmv MOVE_LEFT'
-  - '&mmv MOVE_DOWN'
-  - '&mmv MOVE_UP'
-  - '&mmv MOVE_RIGHT'
-  - '&msc SCRL_UP'
-  - '&warpd_l'
+  - {t: '$$mdi:mouse$$', s: '$$mdi:arrow-left$$', type: sym_by_sym}
+  - {t: '$$mdi:mouse$$', s: '$$mdi:arrow-down$$', type: sym_by_sym}
+  - {t: '$$mdi:mouse$$', s: '$$mdi:arrow-right$$', type: sym_by_sym}
+  - $$mdi:mouse-move-down$$
+  - {t: '$$mdi:tortoise$$', s: '$$mdi:arrow-left$$', type: sym_by_sym}
+  - {t: '$$mdi:tortoise$$', s: '$$mdi:arrow-down$$', type: sym_by_sym}
+  - {t: '$$mdi:tortoise$$', s: '$$mdi:arrow-up$$', type: sym_by_sym}
+  - {t: '$$mdi:tortoise$$', s: '$$mdi:arrow-right$$', type: sym_by_sym}
+  - $$mdi:mouse-move-up$$
+  - {t: '$$mdi:star-shooting-outline$$', s: '$$mdi:arrow-top-left-thick$$', type: sym_by_sym}
   - ''
   - ''
-  - '&warpd_l'
-  - '&warpd_t'
-  - '&warpd_r'
+  - {t: '$$mdi:star-shooting-outline$$', s: '$$mdi:arrow-top-left-thick$$', type: sym_by_sym}
+  - {t: '$$mdi:star-shooting-outline$$', s: '$$mdi:arrow-up-thick$$', type: sym_by_sym}
+  - {t: '$$mdi:star-shooting-outline$$', s: '$$mdi:arrow-top-right-thick$$', type: sym_by_sym}
   - ''
-  - '&mkp LCLK'
-  - '&mkp RCLK'
+  - $$mdi:cursor-default-click$$
+  - $$mdi:cursor-default-click-outline$$
   - ''
   - ''
-  - '&msc SCRL_DOWN'
-  - '&warpd_r'
+  - $$mdi:mouse-move-down$$
+  - {t: '$$mdi:star-shooting-outline$$', s: '$$mdi:arrow-top-right-thick$$', type: sym_by_sym}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&kple ESC'
-  - '&kple ESC'
+  - {t: '$$mdi:keyboard-esc$$', s: '$$mdi:layers-triple$$', type: sym_by_sym}
+  - {t: '$$mdi:keyboard-esc$$', s: '$$mdi:layers-triple$$', type: sym_by_sym}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   mirror:
-  - {t: araxia, h: toggle}
+  - {t: araxia, h: '$$mdi:toggle-switch$$'}
   - {t: P, h: 'move [R]'}
   - O
   - '&iI'
@@ -442,21 +442,21 @@ layers:
   - E
   - W
   - {t: Q, h: 'move [L]'}
-  - {t: araxia, h: toggle}
+  - {t: araxia, h: '$$mdi:toggle-switch$$'}
   - ''
   - {t: '&semiquote', h: '$$mdi:apple-keyboard-control$$'}
   - {t: L, h: '$$mdi:apple-keyboard-command$$'}
   - {t: K, h: '$$mdi:apple-keyboard-option$$'}
   - {t: J, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: H, s: '$$mdi:backspace-outline$$'}
-  - {t: G, h: GLOBE}
+  - {t: G, h: '$$tabler:world$$'}
   - {t: F, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: D, h: '$$mdi:apple-keyboard-option$$'}
   - {t: S, h: '$$mdi:apple-keyboard-command$$'}
   - {t: A, h: '$$mdi:apple-keyboard-control$$'}
   - ''
   - ''
-  - '&slashtick'
+  - {t: /, s: '''', type: tap_dance}
   - .
   - ','
   - {t: M, s: ⮐}
@@ -469,9 +469,9 @@ layers:
   - ''
   - {t: ':', h: araxia}
   - {t: '$$mdi:keyboard-space$$', h: numpad}
-  - {t: ESC, h: media}
-  - {t: ESC, h: symbols}
-  - {t: LC(W), h: lnum}
+  - {t: Esc, h: media}
+  - {t: Esc, h: symbols}
+  - {t: '$$mdi:apple-keyboard-control$$', h: lnum, s: W}
   - {t: ⮐, h: '$$mdi:apple-keyboard-command$$', type: held}
   move [L]:
   - ''
@@ -487,11 +487,11 @@ layers:
   - '&act P'
   - ''
   - $$mdi:power$$
-  - '&win_quad'
+  - {t: '$$mdi:numeric-4-box-multiple-outline$$', s: '$$mdi:table-arrow-down$$', type: sym_by_sym}
   - '&win_next'
-  - '&win_third'
-  - '&win_half'
-  - '&win_full'
+  - {t: '$$mdi:numeric-3-box-multiple-outline$$', s: '$$mdi:table-arrow-down$$', type: sym_by_sym}
+  - {t: '$$mdi:numeric-2-box-multiple-outline$$', s: '$$mdi:table-arrow-down$$', type: sym_by_sym}
+  - {t: '$$mdi:numeric-1-box-multiple-outline$$', s: '$$mdi:overscan$$', type: sym_by_sym}
   - '&act H'
   - '&act J'
   - '&act K'
@@ -500,10 +500,10 @@ layers:
   - ''
   - $$mdi:power-sleep$$
   - $$mdi:power$$
-  - '&win_vquad'
-  - '&win_vthird'
-  - '&win_vhalf'
-  - '&win_screen'
+  - {t: '$$mdi:numeric-4-box-multiple-outline$$', s: '$$mdi:table-arrow-right$$', type: sym_by_sym}
+  - {t: '$$mdi:numeric-3-box-multiple-outline$$', s: '$$mdi:table-arrow-right$$', type: sym_by_sym}
+  - {t: '$$mdi:numeric-2-box-multiple-outline$$', s: '$$mdi:table-arrow-right$$', type: sym_by_sym}
+  - {t: '$$mdi:numeric-1-box-multiple-outline$$', s: '$$mdi:fullscreen$$', type: sym_by_sym}
   - '&act N'
   - '&act M'
   - '&act <'
@@ -535,11 +535,11 @@ layers:
   - '&act D'
   - '&act F'
   - '&act G'
-  - '&win_full'
-  - '&win_half'
-  - '&win_third'
+  - {t: '$$mdi:numeric-1-box-multiple-outline$$', s: '$$mdi:overscan$$', type: sym_by_sym}
+  - {t: '$$mdi:numeric-2-box-multiple-outline$$', s: '$$mdi:table-arrow-down$$', type: sym_by_sym}
+  - {t: '$$mdi:numeric-3-box-multiple-outline$$', s: '$$mdi:table-arrow-down$$', type: sym_by_sym}
   - '&win_next'
-  - '&win_quad'
+  - {t: '$$mdi:numeric-4-box-multiple-outline$$', s: '$$mdi:table-arrow-down$$', type: sym_by_sym}
   - $$mdi:power$$
   - ''
   - '&act Z'
@@ -547,10 +547,10 @@ layers:
   - '&act C'
   - '&act V'
   - '&act B'
-  - '&win_screen'
-  - '&win_vhalf'
-  - '&win_vthird'
-  - '&win_vquad'
+  - {t: '$$mdi:numeric-1-box-multiple-outline$$', s: '$$mdi:fullscreen$$', type: sym_by_sym}
+  - {t: '$$mdi:numeric-2-box-multiple-outline$$', s: '$$mdi:table-arrow-right$$', type: sym_by_sym}
+  - {t: '$$mdi:numeric-3-box-multiple-outline$$', s: '$$mdi:table-arrow-right$$', type: sym_by_sym}
+  - {t: '$$mdi:numeric-4-box-multiple-outline$$', s: '$$mdi:table-arrow-right$$', type: sym_by_sym}
   - $$mdi:power$$
   - $$mdi:power-sleep$$
   - ''
@@ -563,118 +563,156 @@ combos:
 - p: [5, 17]
   k: ⮐
   l: [araxia]
+  a: right
+  o: 0.1
+  arc_scale: 1.03
 - p: [37, 38]
   k: {t: ⮐, h: adjust}
   l: [araxia]
 - p: [38, 39]
   k: {t: '$$mdi:keyboard-tab$$', h: adjust}
   l: [araxia]
+  a: top
+  o: 0.05
+  arc_scale: 1.055
 - p: [6, 18]
   k: ⮐
   l: [araxia]
+  a: left
+  o: 0.1
+  arc_scale: 1.03
 - p: [39, 40]
   k: {t: ⮐, h: output}
   l: [araxia]
 - p: [17, 29]
   k: $$mdi:keyboard-tab$$
   l: [araxia]
+  a: right
+  o: 0.1
+  arc_scale: 1.03
 - p: [18, 30]
   k: $$mdi:keyboard-tab$$
   l: [araxia]
+  a: left
+  o: 0.1
+  arc_scale: 1.03
 - p: [1, 38]
   k: move [R]
   l: [araxia]
-  a: right
-  arc_scale: 1.03
+  a: bottom
+  o: 0.25
+  arc_scale: 1.07
 - p: [10, 39]
   k: move [L]
   l: [araxia]
-  a: left
-  arc_scale: 1.03
+  a: bottom
+  o: 0.25
+  arc_scale: 1.07
 - p: [7, 8, 9]
   k: tmux prefix
   l: [araxia]
   a: top
-  o: 0.25
+  o: 0.15
   arc_scale: 1.03
 - p: [2, 3, 4]
-  k: '&tmux_mode_select'
+  k: tmux app
   l: [araxia]
   a: top
-  o: 0.25
+  o: 0.15
   arc_scale: 1.03
 - p: [16, 19]
-  k: '&capsy'
-  l: [araxia]
-- p: [13, 22]
-  k: '&shifty'
-  l: [araxia]
-- p: [1, 2]
-  k: '&version'
+  k: capsy
   l: [araxia]
   a: top
-  o: 0.5
+  o: 1.85
+  arc_scale: 1.075
+- p: [13, 22]
+  k: shifty
+  l: [araxia]
+  a: bottom
+  o: 3.0
+  arc_scale: 1.075
+- p: [1, 2]
+  k: config version
+  l: [araxia]
+  a: top
+  o: 0.05
   arc_scale: 1.03
 - p: [9, 10]
   k: $$mdi:backspace-reverse-outline$$
   l: [araxia]
   a: top
-  o: 0.5
+  o: 0.05
   arc_scale: 1.03
 - p: [1, 13]
   k: $$mdi:backspace-outline$$
   l: [araxia]
+  a: left
+  o: 0.2
+  arc_scale: 1.03
 - p: [10, 22]
   k: $$mdi:backspace-outline$$
   l: [araxia]
+  a: right
+  o: 0.2
+  arc_scale: 1.03
 - p: [25, 26]
   k: $$mdi:apple-keyboard-command$$
   l: [araxia]
   a: bottom
-  o: 0.5
+  o: 0.05
   arc_scale: 1.03
 - p: [13, 25]
   k: $$mdi:apple-keyboard-option$$
   l: [araxia]
-  a: left
-  o: 0.5
+  a: right
+  o: 0.15
   arc_scale: 1.03
 - p: [33, 34]
   k: $$mdi:apple-keyboard-command$$
   l: [araxia]
   a: bottom
-  o: 0.5
+  o: 0.05
   arc_scale: 1.03
 - p: [22, 34]
   k: $$mdi:apple-keyboard-option$$
   l: [araxia]
-  a: right
-  o: 0.5
+  a: left
+  o: 0.15
   arc_scale: 1.03
 - p: [16, 25]
-  k: {t: '&kple LG(TAB)', h: '&swap'}
+  k: {t: '$$mdi:arrow-decision-outline$$', h: '&swap'}
   l: [araxia, discord, pointer, mirror]
   a: top
-  o: 1.05
+  o: 1.75
   arc_scale: 1.055
 - p: [19, 34]
-  k: {t: '&kple LG(TAB)', h: '&swap'}
+  k: {t: '$$mdi:arrow-decision-outline$$', h: '&swap'}
   l: [araxia, discord, pointer, mirror]
   a: top
-  o: 1.05
+  o: 1.75
   arc_scale: 1.055
 - p: [25, 28]
-  k: {t: '&kple LA(TAB)', h: '&winswap'}
+  k: {t: '$$mdi:arrow-decision-outline$$', h: '&winswap'}
   l: [araxia, discord, pointer, mirror]
+  a: bottom
+  o: 1.45
+  arc_scale: 1.06
 - p: [31, 34]
-  k: {t: '&kple LA(TAB)', h: '&winswap'}
+  k: {t: '$$mdi:arrow-decision-outline$$', h: '&winswap'}
   l: [araxia, discord, pointer, mirror]
+  a: bottom
+  o: 1.45
+  arc_scale: 1.06
 - p: [1, 10]
   k: lighting
   l: [araxia]
   a: top
-  o: 1.55
+  o: 2.12
   arc_scale: 1.03
 - p: [0, 11]
   k: lighting
   l: [araxia]
+  a: top
+  o: 2.1
+  arc_scale: 1.03
