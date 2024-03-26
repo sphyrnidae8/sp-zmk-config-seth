@@ -599,9 +599,20 @@ parse_config:
       type:    sym_sub_text
     '&tmux_paste':
       tap:     $$mdi:collage$$
-      shifted: "paste"
+      shifted: "P"
       type:    sym_sub_text
-
+    '&vim_save':
+      tap:     $$mdi:vimeo$$
+      shifted: "w"
+      type:    sym_sub_text
+    '&vim_exit':
+      tap:     $$mdi:vimeo$$
+      shifted: "zz"
+      type:    sym_sub_text
+    '&vim_exit_all':
+      tap:     $$mdi:vimeo$$
+      shifted: "qal"
+      type:    sym_sub_text
 
   zmk_combos:
     combo_lighting:               { align: top    , o: 2.12  , arc_scale: 1.03  }
