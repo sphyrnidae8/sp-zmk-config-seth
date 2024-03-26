@@ -322,8 +322,14 @@ parse_config:
     #  type: sym_by_sym
     #'&winswap': $$mdi:microsoft-windows$$
     #'&swap': $$mdi:apple$$
-    '&out OUT_BLE': '$$mdi:bluetooth$$'
-    '&out OUT_USB': '$$mdi:usb$$'
+    '&out OUT_BLE':
+      tap: $$mdi:keyboard$$
+      shifted: $$mdi:bluetooth$$
+      type: sym_by_sym
+    '&out OUT_USB':
+      tap: $$mdi:keyboard$$
+      shifted: $$mdi:usb$$
+      type: sym_by_sym
     '&out OUT_TOG':
       tap: $$mdi:toggle-switch$$
       hold: $$mdi:bluetooth$$
@@ -634,8 +640,9 @@ parse_config:
       shifted: $$mdi:clipboard$$
       type:    sym_by_sym
     '&bootloader':
-      tap:     $$mdi:chip$$
+      tap:     $$mdi:flash$$
       shifted: $$mdi:micro-sd$$
+      hold:    $$mdi:new-box$$
       type:    sym_by_sym
 
   zmk_combos:
