@@ -565,6 +565,43 @@ parse_config:
       tap:     $$mdi:numeric-4-box-multiple-outline$$
       shifted: $$mdi:table-arrow-right$$
       type:    sym_by_sym
+    '&tmux_pw':
+      tap:     $$mdi:collage$$
+      shifted: "pw"
+      type:    sym_sub_text
+    '&tmux_ps':
+      tap:     $$mdi:collage$$
+      shifted: "ps"
+      type:    sym_sub_text
+    '&tmux_pp':
+      tap:     $$mdi:collage$$
+      shifted: "pp"
+      type:    sym_sub_text
+    '&tmux_nw':
+      tap:     $$mdi:collage$$
+      shifted: "nw"
+      type:    sym_sub_text
+    '&tmux_ns':
+      tap:     $$mdi:collage$$
+      shifted: "ns"
+      type:    sym_sub_text
+    '&tmux_np':
+      tap:     $$mdi:collage$$
+      shifted: "np"
+      type:    sym_sub_text
+    '&tmux_oz':
+      tap:     $$mdi:collage$$
+      shifted: "oz"
+      type:    sym_sub_text
+    '&tmux_sw':
+      tap:     $$mdi:collage$$
+      shifted: "sw"
+      type:    sym_sub_text
+    '&tmux_paste':
+      tap:     $$mdi:collage$$
+      shifted: "paste"
+      type:    sym_sub_text
+
 
   zmk_combos:
     combo_lighting:               { align: top    , o: 2.12  , arc_scale: 1.03  }
