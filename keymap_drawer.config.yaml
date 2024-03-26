@@ -300,7 +300,6 @@ parse_config:
     '&act QUESTION': '&act ?'
     '&act LESS_THAN': '&act <'
     '&act GREATER_THAN': '&act >'
-    '&bt BT_CLR': '$$mdi:bluetooth-off$$'
     '&capsy': 'capsy'
     '&dis_tog':     '$$tablerf:brand-discord$$'
     '&combo_swap_left':
@@ -333,7 +332,8 @@ parse_config:
     '&mkp LCLK': $$mdi:cursor-default-click$$
     '&mkp RCLK': $$mdi:cursor-default-click-outline$$
     '&point_tog': '$$tablerf:pointer$$'
-    '&mirror_sl': '$$tabler:arrows-left-right$$'
+    #'&mirror_sl': '$$tabler:arrows-left-right$$'
+    '&mirror_sl': '$$mdi:mirror-rectangle$$'
     '&kp KP_NUMLOCK':
       tap: $$mdi:numeric$$
       shifted: $$mdi:lock$$
@@ -355,13 +355,13 @@ parse_config:
       shifted: $$mdi:toggle-switch$$
       type: sym_by_sym
     '&bt BT_CLR':
-      tap: $$mdi:bluetooth$$
+      tap: $$mdi:bluetooth-settings$$
       shifted: $$mdi:close-thick$$
       type: sym_sub_text
     '&bt BT_CLR_ALL':
-      tap: $$mdi:bluetooth$$
+      tap: $$mdi:bluetooth-settings$$
       shifted: $$mdi:close-thick$$
-      hold: "all"
+      hold: $$mdi:asterisk$$
       type: sym_sub_text
     '&bt BT_SEL 0':
       tap: $$mdi:bluetooth-connect$$
@@ -522,15 +522,15 @@ parse_config:
       shifted: $$mdi:layers-triple$$
       type:    sym_by_sym
     '&warpd_l':
-      tap:     $$mdi:star-shooting-outline$$
+      tap:     $$mdi:monitor-shimmer$$
       shifted: $$mdi:arrow-top-left-thick$$
       type:    sym_by_sym
     '&warpd_r':
-      tap:     $$mdi:star-shooting-outline$$
+      tap:     $$mdi:monitor-shimmer$$
       shifted: $$mdi:arrow-top-right-thick$$
       type:    sym_by_sym
     '&warpd_t':
-      tap:     $$mdi:star-shooting-outline$$
+      tap:     $$mdi:monitor-shimmer$$
       shifted: $$mdi:arrow-up-thick$$
       type:    sym_by_sym
     '&win_screen':
@@ -613,6 +613,30 @@ parse_config:
       tap:     $$mdi:vimeo$$
       shifted: "qal"
       type:    sym_sub_text
+    '&ss':
+      tap:     $$mdi:camera$$
+      shifted: $$mdi:monitor-screenshot$$
+      type:    sym_by_sym
+    '&sss':
+      tap:     $$mdi:camera-image$$
+      shifted: $$mdi:monitor-screenshot$$
+      type:    sym_by_sym
+    '&ss_win':
+      tap:     $$mdi:camera$$
+      shifted: $$mdi:microsoft-windows$$
+      type:    sym_by_sym
+    '&ss2c':
+      tap:     $$mdi:camera$$
+      shifted: $$mdi:clipboard$$
+      type:    sym_by_sym
+    '&sss2c':
+      tap:     $$mdi:camera-image$$
+      shifted: $$mdi:clipboard$$
+      type:    sym_by_sym
+    '&bootloader':
+      tap:     $$mdi:chip$$
+      shifted: $$mdi:micro-sd$$
+      type:    sym_by_sym
 
   zmk_combos:
     combo_lighting:               { align: top    , o: 2.12  , arc_scale: 1.03  }
