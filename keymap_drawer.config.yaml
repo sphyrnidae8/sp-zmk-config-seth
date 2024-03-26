@@ -296,6 +296,20 @@ parse_config:
     LEFT_CONTROL: $$mdi:apple-keyboard-control$$
     LC(A): 'tmux prefix'
   raw_binding_map:
+    '&forward':  $$mdi:arrow-right-box$$
+    '&backward': $$mdi:arrow-left-box$$
+    '&tab_next':
+      tap: $$mdi:tab$$
+      shifted: $$mdi:arrow-down-box$$
+      type: sym_sub_text
+    '&tab_prev':
+      tap: $$mdi:tab$$
+      shifted: $$mdi:arrow-up-box$$
+      type: sym_sub_text
+    '&win_next':
+      tap: $$mdi:curtains$$
+      shifted: $$mdi:arrow-right-box$$
+      type: sym_sub_text
     '&act COLON': '&act :'
     '&act QUESTION': '&act ?'
     '&act LESS_THAN': '&act <'
