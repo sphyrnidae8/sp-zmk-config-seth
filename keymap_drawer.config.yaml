@@ -658,6 +658,50 @@ parse_config:
       shifted: $$mdi:micro-sd$$
       hold:    $$mdi:new-box$$
       type:    sym_by_sym
+    '&rgb_ug RGB_TOG':
+      tap: $$mdi:toggle-switch$$
+      hold: $$mdi:led-on$$
+      shifted: $$mdi:led-outline$$
+      type: toggle
+    '&rgb_ug RGB_BRI':
+      tap:     $$mdi:led-on$$
+      shifted: $$mdi:white-balance-sunny$$
+      type:    sym_by_sym
+    '&rgb_ug RGB_SAI':
+      tap:     $$mdi:led-on$$
+      shifted: $$mdi:eyedropper$$
+      type:    sym_by_sym
+    '&rgb_ug RGB_HUI':
+      tap:     $$mdi:led-on$$
+      shifted: $$mdi:palette$$
+      type:    sym_by_sym
+    '&rgb_ug RGB_BRD':
+      tap:     $$mdi:led-outline$$
+      shifted: $$mdi:white-balance-sunny$$
+      type:    sym_by_sym
+    '&rgb_ug RGB_SAD':
+      tap:     $$mdi:led-outline$$
+      shifted: $$mdi:eyedropper$$
+      type:    sym_by_sym
+    '&rgb_ug RGB_HUD':
+      tap:     $$mdi:led-outline$$
+      shifted: $$mdi:palette$$
+      type:    sym_by_sym
+    '&rgb_ug RGB_COLOR_HSB(25,100,0)':
+      tap:     $$mdi:led-on$$
+      shifted: $$mdi:gradient-horizontal$$
+      hold:    "(25,100,0)"
+      type:    sym_by_sym
+    '&rgb_ug RGB_COLOR_HSB(25,100,80)':
+      tap:     $$mdi:led-on$$
+      shifted: $$mdi:gradient-horizontal$$
+      hold:    "(25,100,80)"
+      type:    sym_by_sym
+    '&rgb_ug RGB_COLOR_HSB(25,0,100)':
+      tap:     $$mdi:led-on$$
+      shifted: $$mdi:gradient-horizontal$$
+      hold:    "(25,0,100)"
+      type:    sym_by_sym
 
   zmk_combos:
     combo_lighting:               { align: top    , o: 2.12  , arc_scale: 1.03  }
