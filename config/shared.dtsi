@@ -1,4 +1,4 @@
-#define VER_PATCH N0
+#define VER_PATCH N1
 #define VER_MINOR N4
 #define VER_MAJOR N3
 
@@ -30,6 +30,7 @@
 #define MIRROR    10
 #define WIN_LEFT  11
 #define WIN_RIGHT 12
+#define ACT       13
 // }}}
 /* Key Positions
 ╭────────────────────────╮ ╭────────────────────────╮
@@ -544,6 +545,13 @@
             key-positions = <10 39>;
             bindings = <&mo WIN_LEFT>;
             layers = <DEFAULT>;
+        };
+        combo_act: combo_act {
+            timeout-ms = <75>;
+            slow-release;
+            key-positions = <37 40>;
+            bindings = <&sl ACT>;
+            layers = <DEFAULT POINTER DISCORD>;
         };
         combo_tmux: combo_tmux {
             timeout-ms = <50>;

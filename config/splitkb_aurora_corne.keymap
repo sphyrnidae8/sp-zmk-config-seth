@@ -182,6 +182,16 @@
             >;
         };
 
+        /*  13 Layer */
+        act {
+            display-name = "act";
+            bindings = <
+&none  &act Q  &act W  &act E  &act R  &act T     &act Y  &act U  &act I          &act O             &act P         &none
+&none  &act A  &act S  &act D  &act F  &act G     &act H  &act J  &act K          &act L             &act COLON     &none
+&none  &act Z  &act X  &act C  &act V  &act B     &act N  &act M  &act LESS_THAN  &act GREATER_THAN  &act QUESTION  &none
+                       &trans  &trans  &trans     &trans  &trans  &trans
+            >;
+        };
 
     };
 
