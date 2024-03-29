@@ -57,10 +57,10 @@
         numpad {
             display-name = "numpad";
             bindings = <
-&kp COMMA  &kp N7  &kp N8  &kp N9  &kp N0        &trans  &trans    &f2_menu     &f2_dock       &f2_status  &help_menu  &kp TAB
-&kp DOT    &kp N4  &kp N5  &kp N6  &kp COLON     &trans  &trans    &kp LEFT     &kp DOWN       &kp UP      &kp RIGHT   &kp RETURN
-&kp EQUAL  &kp N1  &kp N2  &kp N3  &kp MINUS     &trans  &trans    &kp PAGE_UP  &kp PAGE_DOWN  &kp HOME    &kp END     &kp KP_NUMLOCK
-&trans     &trans  &trans  &trans  &trans        &trans  &trans    &trans       &trans         &trans      &trans      &trans
+&kp COMMA  &kp N7  &kp N8  &kp N9  &kp N0        &trans  &trans    &kp BACKSPACE  &kp TAB        &kp RC(N)   &kp RC(P)   &kp SPACE
+&kp DOT    &kp N4  &kp N5  &kp N6  &kp COLON     &trans  &trans    &kp LEFT       &kp DOWN       &kp UP      &kp RIGHT   &kp RETURN
+&kp EQUAL  &kp N1  &kp N2  &kp N3  &kp MINUS     &trans  &trans    &kp PAGE_UP    &kp PAGE_DOWN  &kp HOME    &kp END     &kp KP_NUMLOCK
+&trans     &trans  &trans  &trans  &trans        &trans  &trans    &trans         &trans         &trans      &trans      &trans
             >;
             sensor-bindings = <&inc_dec_kp PG_DN PG_UP>;
         };
@@ -185,10 +185,10 @@
         func {
             display-name = "func";
             bindings = <
-&kp F1  &kp F2   &kp F3   &kp F4   &f2_menu      &trans  &trans    &help_menu    &kp F13   &kp F14   &kp F15    &kp F16
-&kp F5  &kp F6   &kp F7   &kp F8   &f2_status    &trans  &trans    &pointer_tog  &kp F17   &kp F18   &kp F19    &kp F20
-&kp F9  &kp F10  &kp F11  &kp F12  &f2_dock      &trans  &trans    &discord_tog  &kp F21   &kp F22   &kp F23    &kp F24
-&trans  &trans   &trans   &trans   &trans        &trans  &trans    &trans        &trans    &trans    &trans     &trans
+&kp F1  &kp F2   &kp F3   &kp F4   &f2_menu      &trans  &trans    &help_menu  &kp F13   &kp F14   &kp F15    &kp F16
+&kp F5  &kp F6   &kp F7   &kp F8   &f2_status    &trans  &trans    &point_tog  &kp F17   &kp F18   &kp F19    &kp F20
+&kp F9  &kp F10  &kp F11  &kp F12  &f2_dock      &trans  &trans    &dis_tog    &kp F21   &kp F22   &kp F23    &kp F24
+&trans  &trans   &trans   &trans   &trans        &trans  &trans    &trans      &trans    &trans    &trans     &trans
             >;
         };
 

@@ -71,10 +71,10 @@
         numpad {
             display-name = "numpad";
             bindings = <
-&kp ASTERISK  &kp COMMA  &kp N7  &kp N8  &kp N9  &kp N0        &f2_menu     &f2_dock       &f2_status  &help_menu  &kp TAB         &f2_tool
-&kp SLASH     &kp DOT    &kp N4  &kp N5  &kp N6  &kp COLON     &kp LEFT     &kp DOWN       &kp UP      &kp RIGHT   &kp RETURN      &none
-&kp PLUS      &kp EQUAL  &kp N1  &kp N2  &kp N3  &kp MINUS     &kp PAGE_UP  &kp PAGE_DOWN  &kp HOME    &kp END     &kp KP_NUMLOCK  &win_close
-                                 &trans  &trans  &trans        &trans       &trans         &trans
+&kp ASTERISK  &kp COMMA  &kp N7  &kp N8  &kp N9  &kp N0        &kp BACKSPACE  &kp TAB        &kp RC(N)  &kp RC(P)  &kp SPACE       &none
+&kp SLASH     &kp DOT    &kp N4  &kp N5  &kp N6  &kp COLON     &kp LEFT       &kp DOWN       &kp UP     &kp RIGHT  &kp RETURN      &none
+&kp PLUS      &kp EQUAL  &kp N1  &kp N2  &kp N3  &kp MINUS     &kp PAGE_UP    &kp PAGE_DOWN  &kp HOME   &kp END    &kp KP_NUMLOCK  &none
+                                 &trans  &trans  &trans        &trans         &trans         &trans
             >;
         };
 
@@ -195,10 +195,10 @@
         func {
             display-name = "func";
             bindings = <
-&none  &kp F1  &kp F2   &kp F3   &kp F4   &f2_menu      &help_menu    &kp F13   &kp F14   &kp F15    &kp F16  &none
-&none  &kp F5  &kp F6   &kp F7   &kp F8   &f2_status    &pointer_tog  &kp F17   &kp F18   &kp F19    &kp F20  &none
-&none  &kp F9  &kp F10  &kp F11  &kp F12  &f2_dock      &discord_tog  &kp F21   &kp F22   &kp F23    &kp F24  &none
-                        &trans   &trans   &trans        &trans        &trans    &trans
+&none  &kp F1  &kp F2   &kp F3   &kp F4   &f2_menu      &help_menu  &kp F13   &kp F14   &kp F15    &kp F16  &none
+&none  &kp F5  &kp F6   &kp F7   &kp F8   &f2_status    &point_tog  &kp F17   &kp F18   &kp F19    &kp F20  &none
+&none  &kp F9  &kp F10  &kp F11  &kp F12  &f2_dock      &dis_tog    &kp F21   &kp F22   &kp F23    &kp F24  &none
+                        &trans   &trans   &trans        &trans      &trans    &trans
             >;
         };
 
