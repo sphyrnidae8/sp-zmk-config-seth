@@ -43,6 +43,9 @@
 &combo_act {
     key-positions = <39 44>;
 };
+&combo_function {
+    key-positions = <4 7>;
+};
 &combo_tmux {
     key-positions = <8 9 10>;
 };

@@ -98,10 +98,10 @@
         lighting {
             display-name = "lighting";
             bindings = <
-&none   &trans  &rgb_ug RGB_TOG  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &rgb_ug RGB_COLOR_HSB(25,100,0)      &glo C  &glo N  &kp F18  &kp F17  &kp F16  &trans
-&none   &none   &none            &rgb_ug RGB_SAI  &rgb_ug RGB_SAD  &rgb_ug RGB_COLOR_HSB(25,100,80)     &glo H  &glo Q  &kp F21  &kp F20  &kp F19  &none
-&none   &none   &none            &rgb_ug RGB_HUI  &rgb_ug RGB_HUD  &rgb_ug RGB_COLOR_HSB(25,0,100)      &glo N  &none   &kp F24  &kp F23  &kp F22  &none
-                                 &none            &none            &none                                &none   &none  &none
+&none   &trans  &rgb_ug RGB_TOG  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &rgb_ug RGB_COLOR_HSB(25,100,0)      &glo C  &glo N  &none  &none  &none  &trans
+&none   &none   &none            &rgb_ug RGB_SAI  &rgb_ug RGB_SAD  &rgb_ug RGB_COLOR_HSB(25,100,80)     &glo H  &glo Q  &none  &none  &none  &none
+&none   &none   &none            &rgb_ug RGB_HUI  &rgb_ug RGB_HUD  &rgb_ug RGB_COLOR_HSB(25,0,100)      &glo N  &none   &none  &none  &none  &none
+                                 &none            &none            &none                                &none   &none   &none
             >;
         };
 
@@ -168,6 +168,17 @@
 &none  &act A  &act S  &act D  &act F  &act G     &act H  &act J  &act K          &act L             &act COLON     &none
 &none  &act Z  &act X  &act C  &act V  &act B     &act N  &act M  &act LESS_THAN  &act GREATER_THAN  &act QUESTION  &none
                        &trans  &trans  &trans     &trans  &trans  &trans
+            >;
+        };
+
+        /* 14 Layer */
+        func {
+            display-name = "func";
+            bindings = <
+&none  &kp F1  &kp F2   &kp F3   &kp F4   &f2_menu      &help_menu    &kp F13   &kp F14   &kp F15    &kp F16  &none
+&none  &kp F5  &kp F6   &kp F7   &kp F8   &f2_status    &pointer_tog  &kp F17   &kp F18   &kp F19    &kp F20  &none
+&none  &kp F9  &kp F10  &kp F11  &kp F12  &f2_dock      &discord_tog  &kp F21   &kp F22   &kp F23    &kp F24  &none
+                        &trans   &trans   &trans        &trans        &trans    &trans
             >;
         };
 
