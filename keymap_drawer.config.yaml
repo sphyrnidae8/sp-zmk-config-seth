@@ -728,4 +728,4 @@ parse_config:
     combo_shifty:                 { align: bottom , o: 3.00  , arc_scale: 1.075 }
     combo_capsy:                  { align: top    , o: 1.85  , arc_scale: 1.075 }
     combo_adjust_tab:             { align: top    , o: 0.05  , arc_scale: 1.055 }
-    combo_act:                    { align: bottom , o: 0.25  , arc_scale: 1.03  }
+    combo_act:                    { align: bottom , o: 0.35  , arc_scale: 1.03  }
