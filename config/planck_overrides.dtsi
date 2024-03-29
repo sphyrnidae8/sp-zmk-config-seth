@@ -34,11 +34,11 @@
 &combo_tab_right {
     key-positions = <19 31>;
 };
-&combo_inverse_winl {
-    key-positions = <0 40>;
+&combo_left_act {
+    key-positions = <0  15>;
 };
-&combo_inverse_winr {
-    key-positions = <11 43>;
+&combo_right_act {
+    key-positions = <11 20>;
 };
 &combo_act {
     key-positions = <39 44>;

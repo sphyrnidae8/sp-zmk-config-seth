@@ -1,4 +1,4 @@
-#define VER_PATCH N3
+#define VER_PATCH N4
 #define VER_MINOR N4
 #define VER_MAJOR N3
 
@@ -512,18 +512,18 @@
             bindings = <&kp TAB>;
             layers = <DEFAULT>;
         };
-        combo_inverse_winl: combo_inverse_winl {
+        combo_left_act: combo_left_act {
             timeout-ms = <75>;
             slow-release;
-            key-positions = <1 38>;
-            bindings = <&mo WIN_RIGHT>;
+            key-positions = <1 16>;
+            bindings = <&sl ACT>;
             layers = <DEFAULT>;
         };
-        combo_inverse_winr: combo_inverse_winr {
+        combo_right_act: combo_right_act {
             timeout-ms = <75>;
             slow-release;
-            key-positions = <10 39>;
-            bindings = <&mo WIN_LEFT>;
+            key-positions = <10 19>;
+            bindings = <&sl ACT>;
             layers = <DEFAULT>;
         };
         combo_act: combo_act {
