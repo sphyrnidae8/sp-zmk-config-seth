@@ -1,10 +1,12 @@
-#define VER_PATCH N6
+#define VER_PATCH N7
 #define VER_MINOR N4
 #define VER_MAJOR N3
 
 // DEFINES {{{
 #define HYPER(X) LG(LA(LC(LS(X))))
 #define DISCORD_ACT LC(LS(N))
+#define CARD_ACT     HYPER(A)
+#define CARD_FUNC    HYPER(F)
 #define CARD_DISCORD HYPER(D)
 #define CARD_POINTER HYPER(P)
 #define CARD_DEACTIVATE HYPER(DELETE)
@@ -44,6 +46,10 @@
 // CONFIG {{{
 &sk {
     quick-release;
+};
+
+&sl {
+    release-after-ms = <10000>;
 };
 
 &mt {
@@ -106,6 +112,16 @@
                 , <&macro_param_1to1>
                 , <&macro_tap &kp MACRO_PLACEHOLDER>
                 , <&macro_release &kp LSHFT &kp LCTRL>
+                ;
+        };
+        osl: one_shot_layer {
+            compatible = "zmk,behavior-macro-two-param";
+            #binding-cells = <2>;
+            bindings
+                = <&macro_param_1to1>
+                , <&macro_tap &kp MACRO_PLACEHOLDER>
+                , <&macro_param_2to1>
+                , <&macro_tap &sl MACRO_PLACEHOLDER>
                 ;
         };
         glo: globe_pseudo_mod {
@@ -517,28 +533,28 @@
             timeout-ms = <75>;
             slow-release;
             key-positions = <1 16>;
-            bindings = <&sl ACT>;
+            bindings = <&osl CARD_ACT ACT>;
             layers = <DEFAULT>;
         };
         combo_right_act: combo_right_act {
             timeout-ms = <75>;
             slow-release;
             key-positions = <10 19>;
-            bindings = <&sl ACT>;
+            bindings = <&osl CARD_ACT ACT>;
             layers = <DEFAULT>;
         };
         combo_act: combo_act {
             timeout-ms = <75>;
             slow-release;
             key-positions = <37 40>;
-            bindings = <&sl ACT>;
+            bindings = <&osl CARD_ACT ACT>;
             layers = <DEFAULT POINTER DISCORD>;
         };
         combo_function: combo_function {
             timeout-ms = <75>;
             slow-release;
             key-positions = <5 6>;
-            bindings = <&sl FUNCTION>;
+            bindings = <&osl CARD_FUNC FUNCTION>;
             layers = <DEFAULT>;
         };
         combo_tmux: combo_tmux {
