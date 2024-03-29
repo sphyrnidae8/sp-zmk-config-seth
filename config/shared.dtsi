@@ -1,4 +1,4 @@
-#define VER_PATCH N2
+#define VER_PATCH N3
 #define VER_MINOR N4
 #define VER_MAJOR N3
 
@@ -332,40 +332,20 @@
             #binding-cells = <0>;
             bindings = <&kp LG(LC(N1))>;
         };
-        win_screen: win_next_screen {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LG(LC(LS(N1)))>;
-        };
         win_half: win_halves_resize {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LG(LC(N2))>;
-        };
-        win_vhalf: win_vertical_halves_resize {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LG(LC(LS(N2)))>;
         };
         win_third: win_thirds_resize {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LG(LC(N3))>;
         };
-        win_vthird: win_vertical_thirds_resize {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LG(LC(LS(N3)))>;
-        };
         win_quad: win_quads_resize {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LG(LC(N4))>;
-        };
-        win_vquad: win_vertical_quads_resize {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LG(LC(LS(N4)))>;
         };
         win_close: win_close {
             compatible = "zmk,behavior-macro";

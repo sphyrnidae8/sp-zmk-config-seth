@@ -555,34 +555,34 @@ parse_config:
       tap:     $$mdi:numeric-1-box-multiple-outline$$
       shifted: $$mdi:fullscreen$$
       type:    sym_by_sym
-    '&win_full':
-      tap:     $$mdi:numeric-1-box-multiple-outline$$
-      shifted: $$mdi:overscan$$
-      type:    sym_by_sym
+        #'&win_full':
+        #  tap:     $$mdi:numeric-1-box-multiple-outline$$
+        #  shifted: $$mdi:overscan$$
+        #  type:    sym_by_sym
     '&win_half':
       tap:     $$mdi:numeric-2-box-multiple-outline$$
       shifted: $$mdi:table-arrow-down$$
       type:    sym_by_sym
-    '&win_vhalf':
-      tap:     $$mdi:numeric-2-box-multiple-outline$$
-      shifted: $$mdi:table-arrow-right$$
-      type:    sym_by_sym
+        #'&win_vhalf':
+        #  tap:     $$mdi:numeric-2-box-multiple-outline$$
+        #  shifted: $$mdi:table-arrow-right$$
+        #  type:    sym_by_sym
     '&win_third':
       tap:     $$mdi:numeric-3-box-multiple-outline$$
       shifted: $$mdi:table-arrow-down$$
       type:    sym_by_sym
-    '&win_vthird':
-      tap:     $$mdi:numeric-3-box-multiple-outline$$
-      shifted: $$mdi:table-arrow-right$$
-      type:    sym_by_sym
+        #'&win_vthird':
+        #  tap:     $$mdi:numeric-3-box-multiple-outline$$
+        #  shifted: $$mdi:table-arrow-right$$
+        #  type:    sym_by_sym
     '&win_quad':
       tap:     $$mdi:numeric-4-box-multiple-outline$$
       shifted: $$mdi:table-arrow-down$$
       type:    sym_by_sym
-    '&win_vquad':
-      tap:     $$mdi:numeric-4-box-multiple-outline$$
-      shifted: $$mdi:table-arrow-right$$
-      type:    sym_by_sym
+        #'&win_vquad':
+        #  tap:     $$mdi:numeric-4-box-multiple-outline$$
+        #  shifted: $$mdi:table-arrow-right$$
+        #  type:    sym_by_sym
     '&tmux_pw':
       tap:     $$mdi:collage$$
       shifted: "pw"
