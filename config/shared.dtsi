@@ -124,6 +124,16 @@
                 , <&macro_tap &sl MACRO_PLACEHOLDER>
                 ;
         };
+        macro_sl_test: macro_sl_test {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp SINGLE_QUOTE>
+                , <&macro_tap &sl NUMPAD>
+                , <&macro_pause_for_release>
+                , <&macro_tap &kp SINGLE_QUOTE>
+                ;
+        };
         glo: globe_pseudo_mod {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
