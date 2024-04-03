@@ -1,4 +1,4 @@
-#define VER_PATCH N8
+#define VER_PATCH N9
 #define VER_MINOR N4
 #define VER_MAJOR N3
 
@@ -16,6 +16,7 @@
 // Timing Defaults
 
 #define VERT_COMBO_MS 75
+#define TRI_COMBO_MS  50
 #define ROLL_COMBO_MS 25
 
 // Layers
@@ -541,56 +542,56 @@
             layers = <DEFAULT>;
         };
         combo_left_act: combo_left_act {
-            timeout-ms = <75>;
+            timeout-ms = <VERT_COMBO_MS>;
             slow-release;
             key-positions = <1 16>;
             bindings = <&osl CARD_ACT ACT>;
             layers = <DEFAULT>;
         };
         combo_right_act: combo_right_act {
-            timeout-ms = <75>;
+            timeout-ms = <VERT_COMBO_MS>;
             slow-release;
             key-positions = <10 19>;
             bindings = <&osl CARD_ACT ACT>;
             layers = <DEFAULT>;
         };
         combo_act: combo_act {
-            timeout-ms = <50>;
+            timeout-ms = <ROLL_COMBO_MS>;
             slow-release;
             key-positions = <37 40>;
             bindings = <&osl CARD_ACT ACT>;
             layers = <DEFAULT POINTER DISCORD>;
         };
         combo_function: combo_function {
-            timeout-ms = <50>;
+            timeout-ms = <ROLL_COMBO_MS>;
             slow-release;
             key-positions = <5 6>;
             bindings = <&osl CARD_FUNC FUNCTION>;
             layers = <DEFAULT>;
         };
         combo_tmux: combo_tmux {
-            timeout-ms = <50>;
+            timeout-ms = <TRI_COMBO_MS>;
             slow-release;
             key-positions = <7 8 9>;
             bindings = <&kp LC(A)>;
             layers = <DEFAULT>;
         };
         combo_tmux_mode_select: combo_tmux_mode_select {
-            timeout-ms = <50>;
+            timeout-ms = <TRI_COMBO_MS>;
             slow-release;
             key-positions = <2 3 4>;
             bindings = <&tmux_mode_select>;
             layers = <DEFAULT>;
         };
         combo_capsy: combo_capsy {
-            timeout-ms = <150>;
+            timeout-ms = <ROLL_COMBO_MS>;
             slow-release;
             key-positions = <16 19>;
             bindings = <&capsy>;
             layers = <DEFAULT>;
         };
         combo_shifty: combo_shifty {
-            timeout-ms = <150>;
+            timeout-ms = <ROLL_COMBO_MS>;
             slow-release;
             key-positions = <13 22>;
             bindings = <&shifty>;
@@ -610,14 +611,14 @@
             layers = <DEFAULT>;
         };
         combo_backspace_left: combo_backspace_left {
-            timeout-ms = <50>;
+            timeout-ms = <VERT_COMBO_MS>;
             slow-release;
             key-positions = <1 13>;
             bindings = <&kp BACKSPACE>;
             layers = <DEFAULT>;
         };
         combo_backspace_right: combo_backspace_right {
-            timeout-ms = <50>;
+            timeout-ms = <VERT_COMBO_MS>;
             slow-release;
             key-positions = <10 22>;
             bindings = <&kp BACKSPACE>;
@@ -648,38 +649,38 @@
             layers = <DEFAULT>;
         };
         combo_swap_left: combo_swap_left {
-            timeout-ms = <50>;
+            timeout-ms = <ROLL_COMBO_MS>;
             key-positions = <16 25>;
             bindings = <&swap_ht 0 LG(TAB)>;
             layers = <DEFAULT DISCORD POINTER MIRROR>;
         };
         combo_swap_right: combo_swap_right {
-            timeout-ms = <50>;
+            timeout-ms = <ROLL_COMBO_MS>;
             key-positions = <19 34>;
             bindings = <&swap_ht 0 LG(TAB)>;
             layers = <DEFAULT DISCORD POINTER MIRROR>;
         };
         combo_winswap_left: combo_winswap_left {
-            timeout-ms = <50>;
+            timeout-ms = <ROLL_COMBO_MS>;
             key-positions = <25 28>;
             bindings = <&winswap_ht 0 LA(TAB)>;
             layers = <DEFAULT DISCORD POINTER MIRROR>;
         };
         combo_winswap_right: combo_winswap_right {
-            timeout-ms = <50>;
+            timeout-ms = <ROLL_COMBO_MS>;
             key-positions = <31 34>;
             bindings = <&winswap_ht 0 LA(TAB)>;
             layers = <DEFAULT DISCORD POINTER MIRROR>;
         };
        combo_lighting: combo_lighting {
-           timeout-ms = <75>;
+           timeout-ms = <VERT_COMBO_MS>;
            slow-release;
            key-positions = <1 10>;
            bindings = <&mo LIGHTING>;
            layers = <DEFAULT>;
        };
        combo_lighting_transitional: combo_lighting_transitional {
-           timeout-ms = <75>;
+           timeout-ms = <VERT_COMBO_MS>;
            slow-release;
            key-positions = <0 11>;
            bindings = <&mo LIGHTING>;
