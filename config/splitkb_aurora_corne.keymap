@@ -1,5 +1,7 @@
 // HEADERS {{{
 #include <behaviors.dtsi>
+#include <behaviors/mouse_keys.dtsi>
+#include <behaviors/mouse_move.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/bt.h>
@@ -37,8 +39,8 @@
             display-name = "araxia";
             bindings = <
  &mirror_sl  &lttp WIN_LEFT Q  &kp W         &kp E              &kp R             &kp T                &kp Y            &kp U               &iI                 &kp O         &lttp WIN_RIGHT P  &mirror_sl
- &point_tog  &hrml LCTRL A     &hrml LGUI S  &hrml LALT D       &hrsl LSHIFT F    &hrml GLOBE G        &h_bs            &hrsr RSHIFT J      &hrmr RALT K        &hrmr RGUI L  &hrsq RCTRL 0      &point_tog
- &dis_tog    &kp Z             &kp X         &kp C              &kp V             &kp B                &kp N            &m_cr               &kp COMMA           &kp DOT       &slashtick         &dis_tog
+ &point_tog  &hrml LCTRL A     &hrml LGUI S  &hrml LALT D       &hrsl LSHIFT F    &hrml GLOBE G        &h_bs            &hrsr RSHIFT J      &hrmr RALT K        &hrmr RGUI L  &hrmr RCTRL SEMI   &point_tog
+ &dis_tog    &kp Z             &kp X         &kp C              &kp V             &kp B                &kp N            &m_cr               &kp COMMA           &kp DOT       &kp SLASH          &dis_tog
                                              &mthp LGUI RETURN  &lthp LNUM LC(W)  &lthp SYMBOLS ESC    &lthp MEDIA ESC  &lttp NUMPAD SPACE  &lthp MIRROR COLON
             >;
             //sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
@@ -152,8 +154,8 @@
             display-name = "mirror";
             bindings = <
  &to DEFAULT  &lttp WIN_RIGHT P  &kp O         &iI                  &kp U               &kp Y              &kp T              &kp R             &kp E              &kp W         &lttp WIN_LEFT Q  &to DEFAULT
- &none        &hrsq RCTRL 0      &hrmr RGUI L  &hrmr RALT K         &hrsr RSHIFT J      &h_bs              &hrml GLOBE G      &hrsl LSHIFT F    &hrml LALT D       &hrml LGUI S  &hrml RCTRL A     &none
- &none        &slashtick         &kp DOT       &kp COMMA            &m_cr               &kp N              &kp B              &kp V             &kp C              &kp X         &kp Z             &none
+ &none        &hrmr RCTRL SEMI   &hrmr RGUI L  &hrmr RALT K         &hrsr RSHIFT J      &h_bs              &hrml GLOBE G      &hrsl LSHIFT F    &hrml LALT D       &hrml LGUI S  &hrml RCTRL A     &none
+ &none        &kp SLASH          &kp DOT       &kp COMMA            &m_cr               &kp N              &kp B              &kp V             &kp C              &kp X         &kp Z             &none
                                                &lthp DEFAULT COLON  &lthp NUMPAD SPACE  &lthp MEDIA ESC    &lthp SYMBOLS ESC  &lthp LNUM LC(W)  &mthp LGUI RETURN
             >;
         };

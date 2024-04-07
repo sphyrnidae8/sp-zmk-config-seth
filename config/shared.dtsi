@@ -1,5 +1,5 @@
-#define VER_PATCH N9
-#define VER_MINOR N4
+#define VER_PATCH N0
+#define VER_MINOR N5
 #define VER_MAJOR N3
 
 // DEFINES {{{
@@ -15,6 +15,7 @@
 
 // Timing Defaults
 
+#define CAPS_COMBO_MS 125
 #define VERT_COMBO_MS 75
 #define TRI_COMBO_MS  50
 #define ROLL_COMBO_MS 25
@@ -584,14 +585,14 @@
             layers = <DEFAULT>;
         };
         combo_capsy: combo_capsy {
-            timeout-ms = <ROLL_COMBO_MS>;
+            timeout-ms = <CAPS_COMBO_MS>;
             slow-release;
             key-positions = <16 19>;
             bindings = <&capsy>;
             layers = <DEFAULT>;
         };
         combo_shifty: combo_shifty {
-            timeout-ms = <ROLL_COMBO_MS>;
+            timeout-ms = <CAPS_COMBO_MS>;
             slow-release;
             key-positions = <13 22>;
             bindings = <&shifty>;
@@ -744,7 +745,7 @@
                 <&kp>,
                 <&kp>;
         };
-        hrsq: home_row_semi_quote {
+        /omit-if-no-ref/ hrsq: home_row_semi_quote {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             tapping-term-ms = <200>;
@@ -892,13 +893,13 @@
             tapping-term-ms = <250>;
             bindings = <&kp I>, <&kp LS(I)>;
         };
-        semiquote: semicolon_single_quote_uripunc {
+        /omit-if-no-ref/ semiquote: semicolon_single_quote_uripunc {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <250>;
             bindings = <&kp SEMICOLON>, <&kp SINGLE_QUOTE>, <&uripunc>;
         };
-        slashtick: slash_backtick_trigrave {
+        /omit-if-no-ref/ slashtick: slash_backtick_trigrave {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <250>;
