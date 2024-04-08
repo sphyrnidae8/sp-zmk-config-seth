@@ -855,7 +855,7 @@
         };
         mmv_input_listener {
             compatible = "zmk,input-listener";
-            scale-multiplier = <3>;
+            scale-multiplier = <2>;
             device = <&mmv>;
         };
         /omit-if-no-ref/ fmmv: fast_mouse_move {
@@ -868,7 +868,7 @@
         };
         fmmv_input_listener {
             compatible = "zmk,input-listener";
-            scale-multiplier = <7>;
+            scale-multiplier = <6>;
             device = <&fmmv>;
         };
         capsy: caps_word_and_lock {
