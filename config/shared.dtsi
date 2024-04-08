@@ -69,24 +69,6 @@
 
 // }}}
 / {
-// INPUT configs {{{
-    input_configs {
-        compatible = "zmk,input-configs";
-
-        mmv {
-            device = <&mmv>;
-            scale-multiplier = <5>;
-        };
-        fmmv {
-            device = <&fmmv>;
-            scale-multiplier = <20>;
-        };
-        msc {
-            device = <&msc>;
-            scale-multiplier = <5>;
-        };
-    };
-// }}}
 // MACROS LAYERS {{{
     macros {
         version: keymap_version {
@@ -871,6 +853,7 @@
         };
         fmmv_input_listener {
             compatible = "zmk,input-listener";
+            scale-multiplier = <7>;
             device = <&fmmv>;
         };
         capsy: caps_word_and_lock {
