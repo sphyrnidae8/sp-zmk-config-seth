@@ -843,6 +843,21 @@
             ignored-key-positions = <1 16 18 19 20 21 25 34 40>;
             ignored-layers = <DEFAULT NUMPAD>;
         };
+        // copied from mmv from `app/dts/behaviors/mouse_move.dtsi`
+        // just to be able to add configuration to its listener
+        /omit-if-no-ref/ mmv: slow_mouse_move {
+            compatible = "zmk,behavior-input-two-axis";
+            #binding-cells = <1>;
+            x-input-code = <INPUT_REL_X>;
+            y-input-code = <INPUT_REL_Y>;
+            time-to-max-speed-ms = <300>;
+            acceleration-exponent = <1>;
+        };
+        mmv_input_listener {
+            compatible = "zmk,input-listener";
+            scale-multiplier = <3>;
+            device = <&mmv>;
+        };
         /omit-if-no-ref/ fmmv: fast_mouse_move {
             compatible = "zmk,behavior-input-two-axis";
             #binding-cells = <1>;
