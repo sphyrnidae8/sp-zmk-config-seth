@@ -75,11 +75,11 @@
 
         mmv {
             device = <&mmv>;
-            scale-multiplier = <3>;
+            scale-multiplier = <5>;
         };
         fmmv {
             device = <&fmmv>;
-            scale-multiplier = <5>;
+            scale-multiplier = <20>;
         };
         msc {
             device = <&msc>;
@@ -866,7 +866,7 @@
             #binding-cells = <1>;
             x-input-code = <INPUT_REL_X>;
             y-input-code = <INPUT_REL_Y>;
-            time-to-max-speed-ms = <250>;
+            time-to-max-speed-ms = <200>;
             acceleration-exponent = <1>;
         };
         fmmv_input_listener {
