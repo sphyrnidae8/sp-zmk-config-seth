@@ -869,6 +869,10 @@
             time-to-max-speed-ms = <250>;
             acceleration-exponent = <1>;
         };
+        fmmv_input_listener {
+            compatible = "zmk,input-listener";
+            device = <&fmmv>;
+        };
         capsy: caps_word_and_lock {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
