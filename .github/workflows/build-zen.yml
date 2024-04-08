@@ -3,7 +3,8 @@ on:
   workflow_dispatch:  # can be triggered manually
   push:               # automatically run on changes to following paths
     paths:
-      - 'zen.yaml'
+      - 'build/zen.yaml'
+      - 'config/west.yml'
       - 'config/corneish_zen.*'
       - 'config/shared.dtsi'
 
@@ -11,5 +12,5 @@ jobs:
   build:
     uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
     with:
-      build_matrix_path: zen.yaml
+      build_matrix_path: build/zen.yaml
       archive_name: zen
