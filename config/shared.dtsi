@@ -1,4 +1,4 @@
-#define VER_PATCH N0
+#define VER_PATCH N1
 #define VER_MINOR N5
 #define VER_MAJOR N3
 
@@ -65,6 +65,13 @@
 
 &mmv {
     time-to-max-speed-ms = <700>;
+};
+
+&mmv_input_listener {
+    scale-multiplier = <2>;
+};
+&msc_input_listener {
+    scale-multiplier = <5>;
 };
 
 // }}}
@@ -842,21 +849,6 @@
             // include mode keys: h to hide (18), q to quit (1)
             ignored-key-positions = <1 16 18 19 20 21 25 34 40>;
             ignored-layers = <DEFAULT NUMPAD>;
-        };
-        // copied from mmv from `app/dts/behaviors/mouse_move.dtsi`
-        // just to be able to add configuration to its listener
-        /omit-if-no-ref/ mmv: slow_mouse_move {
-            compatible = "zmk,behavior-input-two-axis";
-            #binding-cells = <1>;
-            x-input-code = <INPUT_REL_X>;
-            y-input-code = <INPUT_REL_Y>;
-            time-to-max-speed-ms = <300>;
-            acceleration-exponent = <1>;
-        };
-        mmv_input_listener {
-            compatible = "zmk,input-listener";
-            scale-multiplier = <2>;
-            device = <&mmv>;
         };
         /omit-if-no-ref/ fmmv: fast_mouse_move {
             compatible = "zmk,behavior-input-two-axis";

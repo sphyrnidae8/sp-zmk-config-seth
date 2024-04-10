@@ -1,7 +1,5 @@
 // HEADERS {{{
 #include <behaviors.dtsi>
-#include <behaviors/mouse_keys.dtsi>
-#include <behaviors/mouse_move.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/bt.h>
