@@ -9,7 +9,7 @@ layers:
   - T
   - Y
   - U
-  - '&iI'
+  - I
   - O
   - {t: P, h: 'move [R]'}
   - '&macro_sl_test'
@@ -307,7 +307,7 @@ layers:
   - {t: '$$mdi:toggle-switch$$', h: '$$mdi:led-on$$', s: '$$mdi:led-outline$$', type: toggle}
   - {t: '$$mdi:led-on$$', s: '$$mdi:white-balance-sunny$$', type: sym_by_sym}
   - {t: '$$mdi:led-outline$$', s: '$$mdi:white-balance-sunny$$', type: sym_by_sym}
-  - {t: '$$mdi:led-on$$', h: '(25,100,0)', s: '$$mdi:gradient-horizontal$$', type: sym_by_sym}
+  - RGB COLOR HSB(251000)
   - '&glo C'
   - '&glo N'
   - ''
@@ -319,7 +319,7 @@ layers:
   - ''
   - {t: '$$mdi:led-on$$', s: '$$mdi:eyedropper$$', type: sym_by_sym}
   - {t: '$$mdi:led-outline$$', s: '$$mdi:eyedropper$$', type: sym_by_sym}
-  - {t: '$$mdi:led-on$$', h: '(25,100,80)', s: '$$mdi:gradient-horizontal$$', type: sym_by_sym}
+  - RGB COLOR HSB(2510080)
   - '&glo H'
   - '&glo Q'
   - ''
@@ -331,7 +331,7 @@ layers:
   - ''
   - {t: '$$mdi:led-on$$', s: '$$mdi:palette$$', type: sym_by_sym}
   - {t: '$$mdi:led-outline$$', s: '$$mdi:palette$$', type: sym_by_sym}
-  - {t: '$$mdi:led-on$$', h: '(25,0,100)', s: '$$mdi:gradient-horizontal$$', type: sym_by_sym}
+  - RGB COLOR HSB(250100)
   - '&glo N'
   - ''
   - ''
@@ -434,7 +434,7 @@ layers:
   - {t: araxia, h: '$$mdi:toggle-switch$$'}
   - {t: P, h: 'move [R]'}
   - O
-  - '&iI'
+  - I
   - U
   - Y
   - T
