@@ -307,7 +307,7 @@ layers:
   - {t: '$$mdi:toggle-switch$$', h: '$$mdi:led-on$$', s: '$$mdi:led-outline$$', type: toggle}
   - {t: '$$mdi:led-on$$', s: '$$mdi:white-balance-sunny$$', type: sym_by_sym}
   - {t: '$$mdi:led-outline$$', s: '$$mdi:white-balance-sunny$$', type: sym_by_sym}
-  - RGB COLOR HSB(251000)
+  - {t: '$$mdi:led-on$$', h: '(25,100,0)', s: '$$mdi:gradient-horizontal$$', type: sym_by_sym}
   - '&glo C'
   - '&glo N'
   - ''
@@ -319,7 +319,7 @@ layers:
   - ''
   - {t: '$$mdi:led-on$$', s: '$$mdi:eyedropper$$', type: sym_by_sym}
   - {t: '$$mdi:led-outline$$', s: '$$mdi:eyedropper$$', type: sym_by_sym}
-  - RGB COLOR HSB(2510080)
+  - {t: '$$mdi:led-on$$', h: '(25,100,80)', s: '$$mdi:gradient-horizontal$$', type: sym_by_sym}
   - '&glo H'
   - '&glo Q'
   - ''
@@ -331,7 +331,7 @@ layers:
   - ''
   - {t: '$$mdi:led-on$$', s: '$$mdi:palette$$', type: sym_by_sym}
   - {t: '$$mdi:led-outline$$', s: '$$mdi:palette$$', type: sym_by_sym}
-  - RGB COLOR HSB(250100)
+  - {t: '$$mdi:led-on$$', h: '(25,0,100)', s: '$$mdi:gradient-horizontal$$', type: sym_by_sym}
   - '&glo N'
   - ''
   - ''
@@ -704,7 +704,7 @@ combos:
   k: '&osl LG(LA(LC(LS(F)))) 14'
   l: [araxia]
 - p: [7, 8, 9]
-  k: Ctl+ A
+  k: tmux prefix
   l: [araxia]
   a: top
   o: 0.15
